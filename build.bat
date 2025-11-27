@@ -1,5 +1,5 @@
 ::ASM
-armips swordcraft3.asm
+armips swordcraft3.asm -temp swordcraft3-test_temp_asm.txt -sym swordcraft3-test_sym.txt -stat
 
 ::SYSTEM MESSAGES
 script_inserter\swordcraft3-menu swordcraft3-test.gba system_messages\magic.txt system_messages\weapons.txt system_messages\link.txt system_messages\effects.txt system_messages\special_attacks.txt system_messages\dictionary.txt system_messages\items.txt system_messages\menu.txt system_messages\bonus.txt system_messages\menu3.txt
@@ -211,4 +211,4 @@ tools\flips --create --ips swordcraft3.gba swordcraft3-test.gba patches\swordcra
 tools\flips --create --bps-linear swordcraft3.gba swordcraft3-test.gba patches\swordcraft3.bps
 tools\flips --create --bps-delta swordcraft3.gba swordcraft3-test.gba patches\swordcraft3_delta.bps
 
-pause
+
