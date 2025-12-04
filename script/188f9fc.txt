@@ -441,7 +441,7 @@ dialogtxt       "any other active teleporters."
 code0309        
 dialogtxt       "Strike it with your hammer,"
 dialogtxt       "then stand on top of it and"
-dialogtxt       "hit	the A button."
+dialogtxt       "hit the A button."
 code0309        
 dialogtxt       "Currently, there are no other"
 dialogtxt       "active teleporters."

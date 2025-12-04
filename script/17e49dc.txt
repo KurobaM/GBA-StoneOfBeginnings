@@ -138,7 +138,7 @@ goto            @Label_0572
 call            @Func_23c2
 jumpz           @Cond_05b8, ($b003 == 0)
 dialogtxt       "Assigning Identification"
-dialogtxt       "Code To "Enemy"."
+dialogtxt       "Code To \"Enemy\"."
 dialogtxt       "Entering Battle Mode."
 goto            @Cond_05b8
 

@@ -104,6 +104,232 @@ script_inserter\swordcraft3c swordcraft3-test.gba script\17d4b7c.txt --pos=17d4b
 script_inserter\swordcraft3c swordcraft3-test.gba script\17d4fac.txt --pos=17d4fac 
 script_inserter\swordcraft3c swordcraft3-test.gba script\17d535c.txt --pos=17d535c 
 
+echo DAY 2 SCRIPTS
+echo 17344cc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17344cc.txt --pos=17344cc
+echo 1734ecc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1734ecc.txt --pos=1734ecc
+echo 17358dc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17358dc.txt --pos=17358dc
+echo 1735c7c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1735c7c.txt --pos=1735c7c
+echo 173612c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173612c.txt --pos=173612c
+echo 1736ecc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1736ecc.txt --pos=1736ecc
+echo 173736c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173736c.txt --pos=173736c
+echo 173771c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173771c.txt --pos=173771c
+echo 1737b2c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1737b2c.txt --pos=1737b2c
+echo 173824c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173824c.txt --pos=173824c
+echo 17386cc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17386cc.txt --pos=17386cc
+echo 1739bec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1739bec.txt --pos=1739bec
+echo 17df6ac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17df6ac.txt --pos=17df6ac
+echo 17df99c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17df99c.txt --pos=17df99c
+echo 17e055c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e055c.txt --pos=17e055c
+echo 17e1b9c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e1b9c.txt --pos=17e1b9c
+echo 17e271c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e271c.txt --pos=17e271c
+echo 17e2bdc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e2bdc.txt --pos=17e2bdc
+echo 17e305c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e305c.txt --pos=17e305c
+echo 17e35ac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e35ac.txt --pos=17e35ac
+echo 17e3bdc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e3bdc.txt --pos=17e3bdc
+echo 17e41ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e41ec.txt --pos=17e41ec
+echo 17e49dc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e49dc.txt --pos=17e49dc
+echo 17e580c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e580c.txt --pos=17e580c
+echo 17e5e5c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e5e5c.txt --pos=17e5e5c
+echo 17e653c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e653c.txt --pos=17e653c
+echo 17e70bc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e70bc.txt --pos=17e70bc
+echo 17e85bc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e85bc.txt --pos=17e85bc
+echo 17e8a3c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e8a3c.txt --pos=17e8a3c
+echo 17e914c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e914c.txt --pos=17e914c
+echo 17e967c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e967c.txt --pos=17e967c
+echo 17e9c7c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17e9c7c.txt --pos=17e9c7c
+echo 17eabbc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17eabbc.txt --pos=17eabbc
+echo 17eb6ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17eb6ec.txt --pos=17eb6ec
+echo 17ebaac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ebaac.txt --pos=17ebaac
+echo 17ec06c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ec06c.txt --pos=17ec06c
+echo 17ed5ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ed5ec.txt --pos=17ed5ec
+echo 17eda5c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17eda5c.txt --pos=17eda5c
+echo 17ee28c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ee28c.txt --pos=17ee28c
+echo 17ee9ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ee9ec.txt --pos=17ee9ec
+echo 17eed6c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17eed6c.txt --pos=17eed6c
+echo 17ef42c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ef42c.txt --pos=17ef42c
+echo 17f034c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f034c.txt --pos=17f034c
+echo 17f08ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f08ec.txt --pos=17f08ec
+echo 17f0f1c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f0f1c.txt --pos=17f0f1c
+echo 17f44fc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f44fc.txt --pos=17f44fc
+echo 188ddcc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\188ddcc.txt --pos=188ddcc
+echo 188ee2c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\188ee2c.txt --pos=188ee2c
+echo 188f3bc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\188f3bc.txt --pos=188f3bc
+echo 18c69fc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\18c69fc.txt --pos=18c69fc
+echo 18c754c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\18c754c.txt --pos=18c754c
+
+echo DAY 3 SCRIPTS
+echo 17221cc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17221cc.txt --pos=17221cc
+echo 17224ac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17224ac.txt --pos=17224ac
+echo 1722c9c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1722c9c.txt --pos=1722c9c
+echo 173b12c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173b12c.txt --pos=173b12c
+echo 173b93c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173b93c.txt --pos=173b93c
+echo 173bf5c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173bf5c.txt --pos=173bf5c
+echo 173c34c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173c34c.txt --pos=173c34c
+echo 173c76c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173c76c.txt --pos=173c76c
+echo 173d0dc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173d0dc.txt --pos=173d0dc
+echo 173d7bc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173d7bc.txt --pos=173d7bc
+echo 173db2c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173db2c.txt --pos=173db2c
+echo 173df9c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173df9c.txt --pos=173df9c
+echo 173e35c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173e35c.txt --pos=173e35c
+echo 173edcc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173edcc.txt --pos=173edcc
+echo 173f26c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173f26c.txt --pos=173f26c
+echo 173fe0c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\173fe0c.txt --pos=173fe0c
+echo 17401ac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17401ac.txt --pos=17401ac
+echo 1740d0c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1740d0c.txt --pos=1740d0c
+echo 17f190c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f190c.txt --pos=17f190c
+echo 17f1f0c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f1f0c.txt --pos=17f1f0c
+echo 17f259c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f259c.txt --pos=17f259c
+echo 17f2c8c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f2c8c.txt --pos=17f2c8c
+echo 17f358c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f358c.txt --pos=17f358c
+echo 17f3a3c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f3a3c.txt --pos=17f3a3c
+echo 17f49ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f49ec.txt --pos=17f49ec
+echo 17f501c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f501c.txt --pos=17f501c
+echo 17f529c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f529c.txt --pos=17f529c
+echo 17f5bcc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f5bcc.txt --pos=17f5bcc
+echo 17f5e7c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f5e7c.txt --pos=17f5e7c
+echo 17f63dc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f63dc.txt --pos=17f63dc
+echo 17f6cdc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f6cdc.txt --pos=17f6cdc
+echo 17f78ac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f78ac.txt --pos=17f78ac
+echo 17f7cfc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f7cfc.txt --pos=17f7cfc
+echo 17f871c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f871c.txt --pos=17f871c
+echo 17f8f0c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17f8f0c.txt --pos=17f8f0c
+echo 17fa00c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fa00c.txt --pos=17fa00c
+echo 17fa2fc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fa2fc.txt --pos=17fa2fc
+echo 17fae8c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fae8c.txt --pos=17fae8c
+echo 17fbc3c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fbc3c.txt --pos=17fbc3c
+echo 17fc50c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fc50c.txt --pos=17fc50c
+echo 17fddbc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fddbc.txt --pos=17fddbc
+echo 17fe06c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fe06c.txt --pos=17fe06c
+echo 17fe32c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fe32c.txt --pos=17fe32c
+echo 17fe76c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fe76c.txt --pos=17fe76c
+echo 17fea8c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17fea8c.txt --pos=17fea8c
+echo 17ff12c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ff12c.txt --pos=17ff12c
+echo 17ffd2c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\17ffd2c.txt --pos=17ffd2c
+echo 18003cc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\18003cc.txt --pos=18003cc
+echo 1800aac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1800aac.txt --pos=1800aac
+echo 180119c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\180119c.txt --pos=180119c
+echo 188f9fc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\188f9fc.txt --pos=188f9fc
+echo 189038c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\189038c.txt --pos=189038c
+echo 1890d0c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1890d0c.txt --pos=1890d0c
+echo 18913bc.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\18913bc.txt --pos=18913bc
+echo 1891a4c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1891a4c.txt --pos=1891a4c
+echo 189201c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\189201c.txt --pos=189201c
+echo 189265c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\189265c.txt --pos=189265c
+echo 1892b5c.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\1892b5c.txt --pos=1892b5c
+echo 18930ec.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\18930ec.txt --pos=18930ec
+echo 18c53ac.txt
+script_inserter\swordcraft3c swordcraft3-test.gba script\18c53ac.txt --pos=18c53ac
+
 ::sidequests
 script_inserter\swordcraft3c swordcraft3-test.gba script\18c69fc.txt --pos=18c69fc
 script_inserter\swordcraft3c swordcraft3-test.gba script\18c754c.txt --pos=18c754c 

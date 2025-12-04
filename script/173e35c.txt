@@ -185,7 +185,7 @@ goto            @Label_0858
 
 @Cond_0828:
 dialogtxt       "I should really check out"
-dialogtxt       "this "Smile Inn" first..."
+dialogtxt       "this \"Smile Inn\" first..."
 goto            @Label_0858
 
 @Label_0858:
@@ -253,7 +253,7 @@ goto            @Label_0a60
 
 @Cond_0a30:
 dialogtxt       "I should really check out"
-dialogtxt       "this "Smile Inn" first..."
+dialogtxt       "this \"Smile Inn\" first..."
 goto            @Label_0a60
 
 @Label_0a60:

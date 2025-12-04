@@ -1081,7 +1081,7 @@ dialogtxt       "A great person once said,"
 code047b        
 code0309        
 code0479        0, 2, 17
-dialogtxt       ""Apples and oranges!""
+dialogtxt       "\"Apples and oranges!\""
 code0309        
 call            @Func_4378
 code0479        1, 5, 15
