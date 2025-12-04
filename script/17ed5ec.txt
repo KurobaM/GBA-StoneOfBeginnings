@@ -6,14 +6,14 @@ code0479        1, 0, 12
 code047d        1, 132
 call            @Func_0bf0
 call            @Func_0b58
-dialogtxt       "勝負の準備はできたのか？"
+dialogtxt       "Are you ready?"
 code047b        
 code0309        
 call            @Func_0bac
 code0479        0, 0, 12
 call            @Func_0b0a
-choicetxt       @Choice_00dc, "準備はカンペ[NAME 4]だよ！"
-choicetxt       @Choice_055c, "まだ何か忘れてる気が..."
+choicetxt       @Choice_00dc, "Any time!"
+choicetxt       @Choice_055c, "One more thing..."
 choicewait      
 
 @Choice_00dc:
@@ -44,13 +44,12 @@ code040d        15
 code0479        1, 0, 13
 call            @Func_0bf0
 call            @Func_0b58
-dialogtxt       "よっしゃ！"
-dialogtxt       "じゃあ、お前の実力"
-dialogtxt       "たしかめてやるぜ！"
+dialogtxt       "Alright!"
+dialogtxt       "Show me what you've got!"
 code047b        
 code0309        
 code0479        1, 2, 15
-dialogtxt       "この、不死身のジェイドがなっ！"
+dialogtxt       "I, the Immortal Jade, am ready."
 code0309        
 call            @Func_0c30
 call            @Func_0bac
@@ -80,13 +79,13 @@ call            @Func_0bda
 code0479        0, 2, 12
 call            @Func_0b0a
 jumpz           @Cond_039a, ($b002 == 0)
-dialogtxt       "いくぞ！"
-dialogtxt       "γ！"
+dialogtxt       "Let's go!"
+dialogtxt       "[NAME 1]!"
 goto            @Label_03b2
 
 @Cond_039a:
-dialogtxt       "いくよ！"
-dialogtxt       "γ！"
+dialogtxt       "Let's go!"
+dialogtxt       "[NAME 1]!"
 goto            @Label_03b2
 
 @Label_03b2:
@@ -114,22 +113,22 @@ goto            @Label_044a
 @Label_044a:
 call            @Func_0b76
 jumpz           @Cond_046c, ($b003 == 0)
-dialogtxt       "オー！"
+dialogtxt       "Roger!"
 goto            @Cond_046c
 
 @Cond_046c:
 jumpz           @Cond_048a, ($b003 == 1)
-dialogtxt       "承知！"
+dialogtxt       "Understood!"
 goto            @Cond_048a
 
 @Cond_048a:
 jumpz           @Cond_04ac, ($b003 == 2)
-dialogtxt       "好きにしろ"
+dialogtxt       "Yeah."
 goto            @Cond_04ac
 
 @Cond_04ac:
 jumpz           @Cond_04ca, ($b003 == 3)
-dialogtxt       "はい！"
+dialogtxt       "Yes!"
 goto            @Cond_04ca
 
 @Cond_04ca:

@@ -57,8 +57,8 @@ goto            @start
 
 @Event_021c:
 code0301        8, 7
-dialogtxt       "召喚獣トロッコに乗車の際には"
-dialogtxt       "足下に十分ご注意下さい"
+dialogtxt       "Please watch your step while riding"
+dialogtxt       "the Summon Creature trolley."
 code0309        
 code0302        7
 code040b        

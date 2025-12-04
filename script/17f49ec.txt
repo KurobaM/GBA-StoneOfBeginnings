@@ -6,26 +6,26 @@ code0479        1, 0, 12
 code047d        1, 109
 call            @Func_1012
 call            @Func_0f7a
-dialogtxt       "どうです？"
-dialogtxt       "やっぱり道案内があった方が"
-dialogtxt       "いいですよね？"
+dialogtxt       "So?"
+dialogtxt       "You'd love to have me"
+dialogtxt       "guide you around, right?"
 code047b        
 code0309        
 call            @Func_0fce
 code0479        0, 0, 12
 call            @Func_0f2c
-choicetxt       @Choice_0102, "案内を頼んでみようかな..."
-choicetxt       @Choice_08bc, "自力で道を切り開こう！"
+choicetxt       @Choice_0102, "I guess so..."
+choicetxt       @Choice_08bc, "I'll find a path myself!"
 choicewait      
 
 @Choice_0102:
 code0479        0, 0, 12
 jumpz           @Cond_013c, ($b002 == 0)
-dialogtxt       "じゃあ頼むぜ！"
+dialogtxt       "Alright, I'm counting on you!"
 goto            @Label_0152
 
 @Cond_013c:
-dialogtxt       "じゃあお願い！"
+dialogtxt       "Alright, I'm counting on you!"
 goto            @Label_0152
 
 @Label_0152:
@@ -33,8 +33,7 @@ code0309
 call            @Func_0f62
 code0479        1, 1, 12
 call            @Func_0f98
-dialogtxt       "それでは案内料"
-dialogtxt       "２００バームいただきまぁす！"
+dialogtxt       "That'll be 200 Boam!"
 code0309        
 code036c        280, 200
 jumpz           @Cond_078a, ($h216 == 1)
@@ -82,24 +81,23 @@ code0365
 code0479        1, 6, 13
 call            @Func_1012
 call            @Func_0f7a
-dialogtxt       "まいど〜！"
+dialogtxt       "Thank you!"
 code047b        
 code0309        
 code0479        1, 7, 12
-dialogtxt       "本日早くも２件目"
-dialogtxt       "今日はいい日だわ〜"
+dialogtxt       "Already the second one today..."
+dialogtxt       "Today's a good day~"
 code0309        
 call            @Func_0fce
 code0479        0, 0, 16
 call            @Func_0f2c
-dialogtxt       "２件目って？"
+dialogtxt       "The second one?"
 code0309        
 call            @Func_0f62
 code0479        1, 1, 16
 call            @Func_0f98
-dialogtxt       "いえいえ〜"
-dialogtxt       "こちらの話ですから〜"
-dialogtxt       "お気づかいなく〜"
+dialogtxt       "Oh don't mind me~"
+dialogtxt       "Just talking to myself~"
 code0309        
 call            @Func_103c
 call            @Func_0fce
@@ -115,9 +113,9 @@ code0309
 call            @Func_0f62
 code0479        1, 0, 12
 call            @Func_0f98
-dialogtxt       "ではわたしについてきてください"
-dialogtxt       "ここら辺、はぐれも多いから"
-dialogtxt       "気をつけてくださいね〜"
+dialogtxt       "Alright then, follow me."
+dialogtxt       "Please be careful, as there"
+dialogtxt       "are many Strays around too~."
 code0309        
 call            @Func_1068
 call            @Func_0fb6
@@ -157,25 +155,25 @@ setvar          $f0135, 1
 call            @Func_0fce
 code0479        0, 0, 16
 call            @Func_0f2c
-dialogtxt       "あれ..."
-dialogtxt       "お金が足りない..."
+dialogtxt       "Huh..."
+dialogtxt       "You don't have enough money..."
 code0309        
 call            @Func_0f62
 code0479        1, 2, 15
 call            @Func_0f98
-dialogtxt       "ちょっと、ひやかしなの！？"
-dialogtxt       "ひど〜い！"
+dialogtxt       "Are you trying to scam me!?"
+dialogtxt       "That's ho~rri~ble~!"
 code0309        
 call            @Func_0fce
 code0479        0, 5, 14
 call            @Func_0f2c
-dialogtxt       "いや、そういうつもりじゃ..."
+dialogtxt       "No no, we're not..."
 code0309        
 call            @Func_0f62
 code0479        1, 0, 12
 call            @Func_0f98
-dialogtxt       "じゃあ、ここで待ってるから"
-dialogtxt       "お金できたら来てね"
+dialogtxt       "Well, I'll be waiting here"
+dialogtxt       "when you do have the money."
 code0309        
 call            @Func_1068
 call            @Func_0fb6
@@ -187,18 +185,17 @@ goto            @Label_0988
 
 @Choice_08bc:
 code0479        0, 0, 12
-dialogtxt       "やっぱ、別にいいや"
+dialogtxt       "Actually, I'm fine."
 code0309        
 call            @Func_0f62
 code0479        1, 2, 17
 call            @Func_0f98
-dialogtxt       "ホントに！？"
-dialogtxt       "絶対考え直した方が"
-dialogtxt       "いいんだから！"
+dialogtxt       "Really!?"
+dialogtxt       "You'd better reconsider!"
 code0309        
 code0479        1, 0, 12
-dialogtxt       "はやく考え直して"
-dialogtxt       "わたしに知らせてね"
+dialogtxt       "Let me know when"
+dialogtxt       "you change your mind."
 code0309        
 call            @Func_1068
 call            @Func_0fb6

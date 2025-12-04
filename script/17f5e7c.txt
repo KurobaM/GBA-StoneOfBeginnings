@@ -32,9 +32,9 @@ code0479        1, 0, 12
 code047d        1, 109
 call            @Func_0f06
 call            @Func_0e6e
-dialogtxt       "おつかれさまでした〜"
-dialogtxt       "もう少しで召喚獣トロッコの駅のある"
-dialogtxt       "マー[NAME 6]イル宿場ですよ"
+dialogtxt       "Well done~"
+dialogtxt       "Just ahead is Marnail Station."
+dialogtxt       "There you'll find the railcar."
 code047b        
 code0309        
 call            @Func_0f46
@@ -45,14 +45,14 @@ code0479        1, 0, 12
 code047d        1, 108
 call            @Func_0ef0
 call            @Func_0e8c
-dialogtxt       "やっと中間地点だね"
-dialogtxt       "ま、この調子なら"
-dialogtxt       "今日中に町につくな"
+dialogtxt       "We're finally halfway."
+dialogtxt       "Well, at this rate we'll"
+dialogtxt       "get there before dark."
 code0309        
 call            @Func_0ec2
 code0479        0, 0, 16
 call            @Func_0e20
-dialogtxt       "あと半分か"
+dialogtxt       "Only halfway there, huh."
 code0309        
 call            @Func_0f5c
 call            @Func_0e3e
@@ -85,24 +85,23 @@ code047d        0, 2
 call            @Func_0f06
 call            @Func_0e02
 jumpz           @Cond_045a, ($b003 == 0)
-dialogtxt       "みゅーの様"
-dialogtxt       "大丈夫デスカ？"
+dialogtxt       "Lady Murno,"
+dialogtxt       "Are You Okay?"
 goto            @Cond_045a
 
 @Cond_045a:
 jumpz           @Cond_0486, ($b003 == 1)
-dialogtxt       "大丈夫か、ミューノ？"
+dialogtxt       "Murno, are you alright?"
 goto            @Cond_0486
 
 @Cond_0486:
 jumpz           @Cond_04b2, ($b003 == 2)
-dialogtxt       "お前、まだ歩けるか？"
+dialogtxt       "Can you still walk?"
 goto            @Cond_04b2
 
 @Cond_04b2:
 jumpz           @Cond_04e6, ($b003 == 3)
-dialogtxt       "大丈夫ですか？"
-dialogtxt       "ミューノ様"
+dialogtxt       "Are you alright, Lady Murno?"
 goto            @Cond_04e6
 
 @Cond_04e6:
@@ -111,8 +110,8 @@ code0309
 call            @Func_0e56
 code0479        1, 0, 12
 call            @Func_0e8c
-dialogtxt       "ええ"
-dialogtxt       "平気よ"
+dialogtxt       "Yeah."
+dialogtxt       "I'm fine."
 code0309        
 call            @Func_0f5c
 call            @Func_0eaa
@@ -125,8 +124,7 @@ code0479        1, 0, 12
 code047d        1, 109
 call            @Func_0ef0
 call            @Func_0e6e
-dialogtxt       "じゃあ、わたしに"
-dialogtxt       "ついてきてください！"
+dialogtxt       "Alrighty, please follow me~!"
 code047b        
 code0309        
 call            @Func_0f46
@@ -151,8 +149,8 @@ code040d        15
 code047d        0, 109
 code0301        8, 4
 code047e        0, 1
-dialogtxt       "あ！？"
-dialogtxt       "ア[NAME 8]は...！"
+dialogtxt       "Ah!?"
+dialogtxt       "That's...!"
 code0309        
 code047e        0, 0
 code0302        4
@@ -161,11 +159,11 @@ code0479        0, 2, 16
 call            @Func_0eda
 call            @Func_0e02
 jumpz           @Cond_0744, ($b002 == 0)
-dialogtxt       "なんだ？"
+dialogtxt       "What's wrong?"
 goto            @Label_0752
 
 @Cond_0744:
-dialogtxt       "なに？"
+dialogtxt       "What's wrong?"
 goto            @Label_0752
 
 @Label_0752:

@@ -26,15 +26,15 @@ code047d        1, 2
 call            @Func_0f9c
 call            @Func_0e98
 jumpz           @Cond_0164, ($b002 == 0)
-dialogtxt       "さて、親方が出発する前に勝負だ！"
-dialogtxt       "最高の武器を作ってオ[NAME 8]たちの力"
-dialogtxt       "みせつけてやろうぜ！"
+dialogtxt       "Alright, we have a match"
+dialogtxt       "with Master today!"
+dialogtxt       "Let's show her what we can do!"
 goto            @Label_01c8
 
 @Cond_0164:
-dialogtxt       "さて、親方が出発する前に勝負だよ！"
-dialogtxt       "最高の武器を作ってわたしたちの力"
-dialogtxt       "みせつけちゃおう！"
+dialogtxt       "Alright, we have a match"
+dialogtxt       "with Master today!"
+dialogtxt       "Let's show her what we can do!"
 goto            @Label_01c8
 
 @Label_01c8:
@@ -65,33 +65,31 @@ jumpz           @Cond_02e2, ($b003 == 0)
 dialogtxt       "..."
 code0309        
 code0479        1, 0, 12
-dialogtxt       "みゅーの様ヲ　町ニ　連[NAME 8]テ行クノハ"
-dialogtxt       "本当ニ　正シイ判断　ナノデショウカ？"
+dialogtxt       "Is Bringing Lady Murno With Us"
+dialogtxt       "Truly The Correct Decision?"
 goto            @Cond_02e2
 
 @Cond_02e2:
 jumpz           @Cond_033c, ($b003 == 1)
-dialogtxt       "しかし..."
-dialogtxt       "本当にミューノを町につれだしても"
-dialogtxt       "良いのじゃろうか..."
+dialogtxt       "..."
+dialogtxt       "Are you certain you want"
+dialogtxt       "Murno to come with us...?"
 goto            @Cond_033c
 
 @Cond_033c:
 jumpz           @Cond_03c0, ($b003 == 2)
-dialogtxt       "まったく"
-dialogtxt       "脳天気なやつだ..."
+dialogtxt       "Calm down boy..."
 code0309        
 code0479        1, 0, 16
-dialogtxt       "本当にあいつを"
-dialogtxt       "町につれていっても"
-dialogtxt       "大丈夫なのか..."
+dialogtxt       "Are you sure she should"
+dialogtxt       "be coming with us...?"
 goto            @Cond_03c0
 
 @Cond_03c0:
 jumpz           @Cond_041c, ($b003 == 3)
-dialogtxt       "でも..."
-dialogtxt       "本当にミューノ様を町につれだして"
-dialogtxt       "大丈夫なんでしょうか..."
+dialogtxt       "..."
+dialogtxt       "Is it really okay to"
+dialogtxt       "bring Lady Murno with us...?"
 goto            @Cond_041c
 
 @Cond_041c:
@@ -100,25 +98,23 @@ call            @Func_0f58
 code0479        0, 0, 14
 call            @Func_0eb6
 jumpz           @Cond_0516, ($b002 == 0)
-dialogtxt       "なんだよ、元気ないなぁ"
-dialogtxt       "今度の相手は親方なんだぜ"
-dialogtxt       "しっかりしてくれよ"
+dialogtxt       "We're fighting Master this time!"
+dialogtxt       "We need to go all out!"
 code0309        
 code0479        0, 0, 16
-dialogtxt       "オ[NAME 8]たちがみとめてもらえないと"
-dialogtxt       "ミューノまでオ[NAME 8]たちといっしょに"
-dialogtxt       "るすばんさせられるんだからさ"
+dialogtxt       "And you know..."
+dialogtxt       "If we lose, Murno's going"
+dialogtxt       "to be stuck here too."
 goto            @Label_05e4
 
 @Cond_0516:
-dialogtxt       "なによ、元気ないなぁ"
-dialogtxt       "今度の相手は親方なんだよ"
-dialogtxt       "しっかりしてよね"
+dialogtxt       "We're fighting Master this time!"
+dialogtxt       "We need to give it our all!"
 code0309        
 code0479        0, 0, 16
-dialogtxt       "わたしたちがみとめてもらえないと"
-dialogtxt       "ミューノまでわたしたちといっしょに"
-dialogtxt       "るすばんさせられちゃうんだから"
+dialogtxt       "And you know..."
+dialogtxt       "If we lose, Murno's going"
+dialogtxt       "to be stuck here too."
 goto            @Label_05e4
 
 @Label_05e4:
@@ -145,39 +141,38 @@ goto            @Label_067a
 @Label_067a:
 call            @Func_0f22
 jumpz           @Cond_06ea, ($b003 == 0)
-dialogtxt       "アナタト　ルスバン..."
+dialogtxt       "Stuck Here With You...?"
 code0309        
 code0479        1, 0, 12
-dialogtxt       "ワカリマシタ"
-dialogtxt       "絶対ニ　勝チマショウ！"
+dialogtxt       "Understood."
+dialogtxt       "We Will Win At Any Cost!"
 goto            @Cond_06ea
 
 @Cond_06ea:
 jumpz           @Cond_0756, ($b003 == 1)
-dialogtxt       "おぬしとるすばん..."
+dialogtxt       "Stuck here with you..."
 code0309        
 code0479        1, 2, 15
-dialogtxt       "うむ..."
-dialogtxt       "この勝負"
-dialogtxt       "絶対に負けられん！"
+dialogtxt       "Very well, then."
+dialogtxt       "We must win!"
 goto            @Cond_0756
 
 @Cond_0756:
 jumpz           @Cond_07ba, ($b003 == 2)
-dialogtxt       "[NAME 4]サマとるすばん...？"
+dialogtxt       "Stuck here with you...?"
 code0309        
 code0479        1, 3, 12
-dialogtxt       "しかたない"
-dialogtxt       "絶対に勝ってやる"
+dialogtxt       "Alright."
+dialogtxt       "We'll just have to win then."
 goto            @Cond_07ba
 
 @Cond_07ba:
 jumpz           @Cond_0822, ($b003 == 3)
-dialogtxt       "あなたとるすばん..."
+dialogtxt       "Stuck here with you...?"
 code0309        
 code0479        1, 2, 12
-dialogtxt       "わかりました"
-dialogtxt       "絶対に勝ちましょう！"
+dialogtxt       "Okay!"
+dialogtxt       "We have to win no matter what!"
 goto            @Cond_0822
 
 @Cond_0822:
@@ -186,15 +181,13 @@ call            @Func_0f58
 code0479        0, 5, 12
 call            @Func_0eb6
 jumpz           @Cond_0890, ($b002 == 0)
-dialogtxt       "お、おお..."
-dialogtxt       "なんだか知らんけど、その意気だ"
-dialogtxt       "たのむな"
+dialogtxt       "Y-Yeah, exactly..."
+dialogtxt       "I'm counting on you."
 goto            @Label_08d0
 
 @Cond_0890:
-dialogtxt       "あ、うん..."
-dialogtxt       "よくわからないけど、その意気よ"
-dialogtxt       "たのむね"
+dialogtxt       "Y-Yeah, exactly..."
+dialogtxt       "I'm counting on you."
 goto            @Label_08d0
 
 @Label_08d0:

@@ -4,27 +4,27 @@ code047d        0, 0
 call            @Func_0968
 call            @Func_0890
 jumpz           @Cond_0110, ($b002 == 0)
-dialogtxt       "ダメだダメだ..."
-dialogtxt       "ミューノも話したくないみたいだったし"
-dialogtxt       "これ以上考えるのはやめよう"
+dialogtxt       "It's hopeless..."
+dialogtxt       "Murno doesn't want to talk."
+dialogtxt       "I'll just leave it be."
 code047b        
 code0309        
 code0479        0, 2, 12
-dialogtxt       "今は親方との勝負に集中しなきゃな！"
-dialogtxt       "それがミューノのためにもなる"
-dialogtxt       "...と思うし"
+dialogtxt       "I have to concentrate on the match!"
+dialogtxt       "That'll help Murno too..."
+dialogtxt       "...I think."
 goto            @Label_01d4
 
 @Cond_0110:
-dialogtxt       "ダメダメ..."
-dialogtxt       "ミューノも話したくないみたいだったし"
-dialogtxt       "これ以上考えるのはやめよう"
+dialogtxt       "It's no good..."
+dialogtxt       "Murno doesn't want to talk,"
+dialogtxt       "I'll just have to leave it be."
 code047b        
 code0309        
 code0479        0, 2, 12
-dialogtxt       "今は親方との勝負に集中しなくちゃ！"
-dialogtxt       "それがミューノのためにもなる"
-dialogtxt       "...と思うし"
+dialogtxt       "I have to concentrate on the match!"
+dialogtxt       "That'll help Murno too..."
+dialogtxt       "...I think."
 goto            @Label_01d4
 
 @Label_01d4:
@@ -39,15 +39,15 @@ code0479        0, 0, 16
 call            @Func_0968
 call            @Func_0890
 jumpz           @Cond_025a, ($b002 == 0)
-dialogtxt       "ん？"
-dialogtxt       "誰かいるのか？"
-dialogtxt       "まさか..."
+dialogtxt       "Huh...?"
+dialogtxt       "Is somebody there?"
+dialogtxt       "Is that..."
 goto            @Label_0284
 
 @Cond_025a:
-dialogtxt       "あれ？"
-dialogtxt       "誰かいるの？"
-dialogtxt       "まさか..."
+dialogtxt       "Huh...?"
+dialogtxt       "Is somebody there?"
+dialogtxt       "Is that..."
 goto            @Label_0284
 
 @Label_0284:
@@ -57,11 +57,11 @@ call            @Func_09be
 call            @Func_08cc
 code047b        
 code0312        
-menutxt         @Menu_02d2, "ミューノ"
-menutxt         @Menu_02de, "γ"
-menutxt         @Menu_02ea, "ヴィー"
-menutxt         @Menu_02f6, "[NAME 8]ミィ"
-menutxt         @Menu_0302, "ジェイド"
+menutxt         @Menu_02d2, "Murno"
+menutxt         @Menu_02de, "[NAME 1]"
+menutxt         @Menu_02ea, "V.E"
+menutxt         @Menu_02f6, "Lemmy"
+menutxt         @Menu_0302, "Jade"
 menuwait        
 
 @Menu_02d2:

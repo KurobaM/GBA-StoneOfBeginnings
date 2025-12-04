@@ -10,7 +10,7 @@ code0412        4, 1
 code0418        2
 setvar          $b075, 1
 setvar          $b072, 0
-placetxt        "Mayor's house　second-hand shop"
+placetxt        "Chief's House　Tool Shop"
 code040c        1, @Label_03a6
 code040c        2, @Label_039c
 code0438        2, 367, 632, 1
@@ -114,7 +114,7 @@ code0412        4, 1
 code0418        2
 setvar          $b075, 1
 setvar          $b072, 0
-placetxt        "Mayor's house　second-hand shop"
+placetxt        "Chief's House　Tool Shop"
 code040c        1, @Label_03a6
 code040c        2, @Label_039c
 code0438        2, 367, 632, 1
@@ -372,56 +372,55 @@ ret
 code0301        8, 7
 code047d        0, 148
 code047e        0, 1
-dialogtxt       "あら、そのハンマーは鍛冶師ね"
-dialogtxt       "今、鍛冶師や鍛冶職人に会うために"
-dialogtxt       "旅をして面識を広げてるのよ"
+dialogtxt       "My, you must be a Craftknight."
+dialogtxt       "Right now I'm on a journey to meet"
+dialogtxt       "many Craftknights and blacksmiths."
 code0309        
-dialogtxt       "将来は大きな店をもって娘と２人で"
-dialogtxt       "暮らすためにお得意さんを"
-dialogtxt       "見つけるためにね"
+dialogtxt       "I hope that some of them"
+dialogtxt       "will become regular customers"
+dialogtxt       "when my daughter and I open a shop."
 code0309        
-dialogtxt       "鍛冶の事には詳しいから何か"
-dialogtxt       "知りたいことがあったら聞いてね"
+dialogtxt       "I know quite a lot about smithing."
+dialogtxt       "Feel free to ask me anything."
 code0309        
 code047e        0, 0
-choicetxt       @Choice_104e, "作製について教えてほしい"
-choicetxt       @Choice_115a, "鍛冶ランクについて教えてほしい"
-choicetxt       @Choice_1252, "今は特にない"
+choicetxt       @Choice_104e, "Teach me about crafting"
+choicetxt       @Choice_115a, "Teach me about smithing ranks"
+choicetxt       @Choice_1252, "Nothing right now"
 choicewait      
 
 @Choice_104e:
 code047e        0, 1
-dialogtxt       "作製で重要な武器マテルについて"
-dialogtxt       "説明してあげるね"
+dialogtxt       "I'll teach you a little bit"
+dialogtxt       "about Shapestones, then."
 code0309        
-dialogtxt       "武器マテルは全部で６種類あるの"
-dialogtxt       "それぞれに出来上がる武器が決まって"
-dialogtxt       "いて、同じ合成アイテムを使っても"
+dialogtxt       "Shapestones come in 6 varieties,"
+dialogtxt       "and determine the type of weapon."
+dialogtxt       "Using different materials"
 code0309        
-dialogtxt       "全く違う武器が完成するのよ"
-dialogtxt       "とにかく見つけたらまずは作って"
-dialogtxt       "確かめてみてね"
+dialogtxt       "can result in a completely"
+dialogtxt       "different weapon of that type."
+dialogtxt       "It's best to experiment."
 code0309        
 goto            @Label_127c
 
 @Choice_115a:
 code047e        0, 1
-dialogtxt       "鍛冶ランクの上げ方について"
-dialogtxt       "教えてあげるね"
+dialogtxt       "I'll teach you how to raise"
+dialogtxt       "your smithing rank."
 code0309        
-dialogtxt       "武器作製コマンドの修理以外を"
-dialogtxt       "繰り返すと、鍛冶経験値がたまって"
-dialogtxt       "ランクを上げることができるの"
+dialogtxt       "When you do anything outside"
+dialogtxt       "of repairing, you'll gain"
+dialogtxt       "experience."
 code0309        
-dialogtxt       "だから頑張っていっぱい武器を"
-dialogtxt       "作って鍛冶ランクを上げて"
-dialogtxt       "ガンバってね"
+dialogtxt       "Gather enough and you'll"
+dialogtxt       "raise your rank."
 code0309        
 goto            @Label_127c
 
 @Choice_1252:
 code047e        0, 1
-dialogtxt       "気が向いたらまた来てね"
+dialogtxt       "I'll be here if you need me."
 code0309        
 @Label_127c:
 code047e        0, 0

@@ -10,7 +10,7 @@ code0412        4, 1
 code0418        2
 setvar          $b075, 1
 setvar          $b072, 0
-placetxt        "マー[NAME 6]イル宿場"
+placetxt        "Marnail Post Station"
 code040c        1, @Label_0be4
 code040c        2, @Label_0bda
 jumpz           @Cond_013a, ($f0050 == 1 && $f0052 == 0)
@@ -116,7 +116,7 @@ setvar          $h319, 20
 code0409        
 code046e        14, 256, 0
 code041d        
-placetxt        "Marnail Station　Smile Inn Vicinity"
+placetxt        "Marnail Post Station　Smile Inn"
 jumpz           @Cond_0656, (($h309 & 0x00F0) == 16)
 code0006        22
 setvar          $h309, 0
@@ -180,12 +180,12 @@ code0301        8, 7
 code047d        0, 0
 code047e        0, 1
 jumpz           @Cond_0828, ($b002 == 0)
-dialogtxt       "まずほほえみ亭って宿屋に行こう"
+dialogtxt       "I should head to Smile Inn first."
 goto            @Label_0858
 
 @Cond_0828:
-dialogtxt       "先にほほえみ亭って"
-dialogtxt       "宿屋に行きたいな..."
+dialogtxt       "I should really check out"
+dialogtxt       "this "Smile Inn" first..."
 goto            @Label_0858
 
 @Label_0858:
@@ -203,11 +203,11 @@ code0301        8, 7
 code047d        0, 0
 code047e        0, 1
 jumpz           @Cond_08e4, ($b002 == 0)
-dialogtxt       "ほほえみ亭に戻るか..."
+dialogtxt       "Let's head back to the inn."
 goto            @Label_0900
 
 @Cond_08e4:
-dialogtxt       "ほほえみ亭に戻ろう..."
+dialogtxt       "Let's go back to the inn."
 goto            @Label_0900
 
 @Label_0900:
@@ -248,12 +248,12 @@ code0301        8, 7
 code047d        0, 0
 code047e        0, 1
 jumpz           @Cond_0a30, ($b002 == 0)
-dialogtxt       "まずほほえみ亭って宿屋に行こう"
+dialogtxt       "I should head to Smile Inn first."
 goto            @Label_0a60
 
 @Cond_0a30:
-dialogtxt       "先にほほえみ亭って"
-dialogtxt       "宿屋に行きたいな..."
+dialogtxt       "I should really check out"
+dialogtxt       "this "Smile Inn" first..."
 goto            @Label_0a60
 
 @Label_0a60:
@@ -555,42 +555,42 @@ ret
 code0301        8, 7
 code047d        0, 149
 code047e        0, 1
-dialogtxt       "私のお母様は、旅商人なの"
-dialogtxt       "今は２人で旅をして鍛冶師や職人に"
-dialogtxt       "顔を売っている段階なんだって"
+dialogtxt       "You know, my mom is a peddler."
+dialogtxt       "We're trying to make ourselves"
+dialogtxt       "known with craftsmen."
 code0309        
-dialogtxt       "将来は大きなお店をもつ予定なの"
-dialogtxt       "だから、旅費は私が頑張って稼ぐしか"
-dialogtxt       "無いってことなの"
+dialogtxt       "We plan on opening a shop."
+dialogtxt       "That's why I have to work hard"
+dialogtxt       "to save up money."
 code0309        
 jumpz           @Cond_18aa, ($f1246 == 0)
-dialogtxt       "ところであなたは、鍛冶師みたいだけど"
-dialogtxt       "強化の情報を聞いていかない？"
+dialogtxt       "You're a Craftknight, right?"
+dialogtxt       "Want to hear about enhancement?"
 code0309        
 code047e        0, 0
-choicetxt       @Choice_15f6, "聞いてみる"
-choicetxt       @Choice_18b2, "特に聞かない"
+choicetxt       @Choice_15f6, "Listen to her lecture"
+choicetxt       @Choice_18b2, "Not interested"
 choicewait      
 
 @Choice_15f6:
 code047e        0, 1
-dialogtxt       "えっとね、強化で「加速ゼンマイ」を"
-dialogtxt       "使うと、必殺技の「二連撃」が武器に"
-dialogtxt       "付加されるの"
+dialogtxt       "Do you know Acceleration Springs?"
+dialogtxt       "If you use one on your weapon,"
+dialogtxt       "it'll get Double Attack."
 code0309        
-dialogtxt       "あっ、でも武器タイプによって"
-dialogtxt       "必殺技が付加されない場合があるから"
-dialogtxt       "気を付けてね"
+dialogtxt       "Ah! But based on the weapon type"
+dialogtxt       "some abilities become unusable."
+dialogtxt       "So, watch out, okay?"
 code0309        
-dialogtxt       "でもって、今回はなんと"
-dialogtxt       "「加速ゼンマイ」を、３５０バームで"
-dialogtxt       "販売中なの〜"
+dialogtxt       "But anyway, I have this special"
+dialogtxt       "material on sale right now,"
+dialogtxt       "at a paltry price of 350 Boam~."
 code0309        
-dialogtxt       "買ってくれます？"
+dialogtxt       "Wanna buy it?"
 code0309        
 code047e        0, 0
-choicetxt       @Choice_174a, "買う"
-choicetxt       @Choice_1860, "買わない"
+choicetxt       @Choice_174a, "Buy"
+choicetxt       @Choice_1860, "Don't buy"
 choicewait      
 
 @Choice_174a:
@@ -605,7 +605,7 @@ code0445        16, 4
 code0446        16
 code0301        8, 7
 code047e        0, 1
-dialogtxt       "ありがと〜"
+dialogtxt       "Thanks~"
 code0309        
 goto            @Label_1902
 
@@ -617,9 +617,8 @@ code0445        16, 5
 code0446        16
 code0301        8, 7
 code047e        0, 1
-dialogtxt       "ええぇ〜これじゃ〜"
-dialogtxt       "お金たりないの〜"
-dialogtxt       "商談不成立だよ〜"
+dialogtxt       "Ehh~ What's this~"
+dialogtxt       "You don't have enough money~"
 code0309        
 goto            @Label_1902
 
@@ -627,8 +626,9 @@ goto            @Choice_1860
 
 @Choice_1860:
 code047e        0, 1
-dialogtxt       "え〜聞くだけ聞いて買ってくれないの〜"
-dialogtxt       "ケチ〜"
+dialogtxt       "Ehh..."
+dialogtxt       "You're not buying anything?"
+dialogtxt       "Cheapskate~"
 code0309        
 goto            @Label_1902
 
@@ -641,8 +641,9 @@ goto            @Choice_18b2
 
 @Choice_18b2:
 code047e        0, 1
-dialogtxt       "え〜聞いてくれないの〜"
-dialogtxt       "せっかくのお客さんだと思ったのに〜"
+dialogtxt       "You won't even listen?!"
+dialogtxt       "Just when I thought"
+dialogtxt       "I finally had a new client..."
 code0309        
 @Label_1902:
 code047e        0, 0
@@ -653,13 +654,13 @@ code040b
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
-dialogtxt       "あの人にも困ったもんだよ"
-dialogtxt       "薪割りを手伝って欲しいとか言いながら"
-dialogtxt       "素人には任せられないって"
+dialogtxt       "That person is such a pain."
+dialogtxt       "He wants help chopping wood,"
+dialogtxt       "but only from a professional."
 code0309        
-dialogtxt       "誰だって、最初は素人なのに"
-dialogtxt       "どうすれば、いいんだよ"
-dialogtxt       "薪割り入門書でもあるのかよ"
+dialogtxt       "Everyone's an amateur at first."
+dialogtxt       "If I don't get a chance, how am I"
+dialogtxt       "going to get experience at all?"
 code0309        
 code047e        0, 0
 code0302        7

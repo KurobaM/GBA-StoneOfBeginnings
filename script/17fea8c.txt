@@ -14,7 +14,7 @@ code0482
 code047d        0, 107
 code0301        16, 3
 code047e        0, 1
-dialogtxt       "あら、δ"
+dialogtxt       "Oh, [NAME 2]."
 code0309        
 code047e        0, 0
 code0302        3
@@ -45,26 +45,26 @@ code0479        1, 2, 12
 code047d        1, 107
 call            @Func_1226
 call            @Func_1122
-dialogtxt       "あ、ミューノ！"
+dialogtxt       "Ah, Murno!"
 code047b        
 code0309        
 call            @Func_1176
 code0479        1, 0, 13
 call            @Func_11ac
-dialogtxt       "どうしたの？"
-dialogtxt       "こんなところにいてもいいの？"
+dialogtxt       "What's wrong?"
+dialogtxt       "Is it okay for you to be here?"
 code0309        
 call            @Func_11e2
 code0479        0, 0, 16
 call            @Func_1140
 jumpz           @Cond_0330, ($b002 == 0)
-dialogtxt       "え...？"
-dialogtxt       "いや、別にいいと思うけど..."
+dialogtxt       "Eh...?"
+dialogtxt       "I don't see why not..."
 goto            @Label_0356
 
 @Cond_0330:
-dialogtxt       "え...？"
-dialogtxt       "別にいいと思うけど..."
+dialogtxt       "Eh...?"
+dialogtxt       "I don't see why not..."
 goto            @Label_0356
 
 @Label_0356:
@@ -72,23 +72,23 @@ code0309
 call            @Func_1176
 code0479        1, 2, 12
 call            @Func_11ac
-dialogtxt       "ホントに？"
-dialogtxt       "ティエちゃんといっしょに今後の計画を"
-dialogtxt       "立てるんじゃなかったの？"
+dialogtxt       "Really?"
+dialogtxt       "I thought you'd be with Tier,"
+dialogtxt       "planning your future together."
 code0309        
 call            @Func_11e2
 code0479        0, 5, 15
 call            @Func_1140
 jumpz           @Cond_0450, ($b002 == 0)
-dialogtxt       "どうしてそんなこと...！"
-dialogtxt       "ミューノはオ[NAME 8]があんなことすると"
-dialogtxt       "本気で思ってるのかよ！"
+dialogtxt       "This again...?"
+dialogtxt       "Murno, do you really think"
+dialogtxt       "I'd do something like that!?"
 goto            @Label_04ac
 
 @Cond_0450:
-dialogtxt       "どうしてそんなこと...！"
-dialogtxt       "ミューノはわたしがあんなことすると"
-dialogtxt       "本気で思ってるの！？"
+dialogtxt       "This again...?"
+dialogtxt       "Murno, do you really think"
+dialogtxt       "I'd do something like that!?"
 goto            @Label_04ac
 
 @Label_04ac:
@@ -96,35 +96,35 @@ code0309
 call            @Func_1176
 code0479        1, 2, 16
 call            @Func_11ac
-dialogtxt       "そ、それは..."
-dialogtxt       "でもδ"
-dialogtxt       "うれしそうだったし..."
+dialogtxt       "W-Well..."
+dialogtxt       "But [NAME 2]..."
+dialogtxt       "You seemed to be happy about it..."
 code0309        
 call            @Func_11e2
 code0479        0, 2, 16
 call            @Func_1140
 jumpz           @Cond_061e, ($b002 == 0)
-dialogtxt       "たしかに鍛冶師として働かないかって"
-dialogtxt       "言われたとき、少しうれしかったよ"
-dialogtxt       "オ[NAME 8]のウデが認められた気がしてさ"
+dialogtxt       "That's because she said I could"
+dialogtxt       "work for them as a Craftknight."
+dialogtxt       "I felt like she recognized my skill."
 code0309        
 code0479        0, 2, 14
 code0479        1, 2, 14
-dialogtxt       "でも、何だよ、ダンナって..."
-dialogtxt       "こんなことになるなんて"
-dialogtxt       "オ[NAME 8]だって思ってなかったよ..."
+dialogtxt       "But talking about marriage..."
+dialogtxt       "That's a completely"
+dialogtxt       "different topic..."
 goto            @Label_071c
 
 @Cond_061e:
-dialogtxt       "たしかに鍛冶師として働かないかって"
-dialogtxt       "言われたとき、少しうれしかったんだ"
-dialogtxt       "わたしのウデが認められた気がして"
+dialogtxt       "That's because she said I could"
+dialogtxt       "work for them as a Craftknight."
+dialogtxt       "I felt like she recognized my skill."
 code0309        
 code0479        0, 4, 14
 code0479        1, 2, 14
-dialogtxt       "でも、まさかカンバン娘だなんて..."
-dialogtxt       "こんなことになるなんて"
-dialogtxt       "わたしだって思ってなかったよ..."
+dialogtxt       "But working as a poster girl..."
+dialogtxt       "That's a completely"
+dialogtxt       "different topic..."
 goto            @Label_071c
 
 @Label_071c:
@@ -132,35 +132,35 @@ code0309
 call            @Func_1176
 code0479        1, 2, 14
 call            @Func_11ac
-dialogtxt       "本当？"
+dialogtxt       "Really?"
 code0309        
 call            @Func_11e2
 code0479        0, 1, 17
 call            @Func_1140
-dialogtxt       "本当だよ！"
+dialogtxt       "Really!"
 code0309        
 call            @Func_1176
 jumpz           @Cond_08c8, ($b002 == 0)
 code0479        1, 4, 16
 call            @Func_11ac
-dialogtxt       "でもティエちゃんにカッコイイって"
-dialogtxt       "言われたとき"
-dialogtxt       "まんざらでもない顔してたし..."
+dialogtxt       "Hmmm..."
+dialogtxt       "You looked quite satisfied"
+dialogtxt       "by Tier's praise..."
 code0309        
 call            @Func_11e2
 code0479        0, 10, 13
 code0479        1, 5, 12
 call            @Func_1140
-dialogtxt       "そりゃまあ"
-dialogtxt       "あんなこと言われたの初めてだし..."
-dialogtxt       "テ[NAME 8]るよなぁ..."
+dialogtxt       "That was, well, the first time"
+dialogtxt       "anyone's told me that..."
+dialogtxt       "I got embarrassed..."
 code0309        
 call            @Func_1176
 code0479        1, 2, 15
 call            @Func_11ac
-dialogtxt       "そうよね"
-dialogtxt       "ティエちゃんカワイイし"
-dialogtxt       "よかったよね！"
+dialogtxt       "Of course,"
+dialogtxt       "Tier is really cute,"
+dialogtxt       "of course you'd be happy!"
 code0309        
 call            @Func_11e2
 goto            @Label_0a46
@@ -168,27 +168,27 @@ goto            @Label_0a46
 @Cond_08c8:
 code0479        1, 2, 16
 call            @Func_11ac
-dialogtxt       "でもティエちゃんにカンバン娘って"
-dialogtxt       "言われたとき"
-dialogtxt       "まんざらでもない顔してたし..."
+dialogtxt       "Hmmm..."
+dialogtxt       "You looked quite satisfied"
+dialogtxt       "by Tier's praise..."
 code0309        
 call            @Func_11e2
 code0479        0, 10, 13
 call            @Func_1140
-dialogtxt       "そりゃまあ"
-dialogtxt       "あんなこと言われたの初めてだし..."
-dialogtxt       "テ[NAME 8]るよね..."
+dialogtxt       "That was, well, the first time"
+dialogtxt       "anyone complimented me like that."
+dialogtxt       "I got embarrassed..."
 code0309        
 call            @Func_1176
 code0479        1, 2, 15
 call            @Func_11ac
-dialogtxt       "そうよね！"
-dialogtxt       "ティエちゃんカワイイし"
-dialogtxt       "それに、明るいし"
+dialogtxt       "Of course,"
+dialogtxt       "Tier is really cute,"
+dialogtxt       "and she's always upbeat."
 code0309        
 code0479        0, 5, 16
-dialogtxt       "私みたいな暗い子といるより"
-dialogtxt       "ず〜っと楽しいわよね！"
+dialogtxt       "She's sooo much more fun than"
+dialogtxt       "a gloomy girl like me, isn't she!"
 code0309        
 call            @Func_11e2
 goto            @Label_0a46
@@ -196,12 +196,12 @@ goto            @Label_0a46
 @Label_0a46:
 code0479        0, 5, 17
 call            @Func_1140
-dialogtxt       "え？　あ！？"
+dialogtxt       "Eh? Ah!?"
 code0309        
 call            @Func_1176
 code0479        1, 2, 14
 call            @Func_11ac
-dialogtxt       "じゃあね"
+dialogtxt       "Bye."
 code0309        
 call            @Func_127c
 call            @Func_11ca
@@ -217,11 +217,11 @@ code040d        15
 code0479        0, 5, 15
 call            @Func_11fa
 call            @Func_1122
-dialogtxt       "あ、ちょっと...！"
+dialogtxt       "Ah, wait...!"
 code047b        
 code0309        
 code0479        0, 4, 16
-dialogtxt       "ああ..."
+dialogtxt       "Sigh..."
 code0309        
 call            @Func_1250
 call            @Func_115e

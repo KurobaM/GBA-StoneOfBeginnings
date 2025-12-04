@@ -37,22 +37,22 @@ code047d        1, 2
 call            @Func_0fd8
 call            @Func_0f56
 jumpz           @Cond_0196, ($b003 == 0)
-dialogtxt       "誰カイマス！"
+dialogtxt       "Someone Is Here!"
 goto            @Cond_0196
 
 @Cond_0196:
 jumpz           @Cond_01b6, ($b003 == 1)
-dialogtxt       "誰じゃ！"
+dialogtxt       "Who's there!?"
 goto            @Cond_01b6
 
 @Cond_01b6:
 jumpz           @Cond_01d4, ($b003 == 2)
-dialogtxt       "誰だ！"
+dialogtxt       "Who's there!?"
 goto            @Cond_01d4
 
 @Cond_01d4:
 jumpz           @Cond_01f6, ($b003 == 3)
-dialogtxt       "誰ですか！"
+dialogtxt       "Who's there!?"
 goto            @Cond_01f6
 
 @Cond_01f6:
@@ -88,9 +88,9 @@ code0479        0, 1, 17
 code047d        0, 132
 call            @Func_0fc2
 call            @Func_0eea
-dialogtxt       "いや〜..."
-dialogtxt       "やっぱムカついてると"
-dialogtxt       "だめだな..."
+dialogtxt       "Oh man~..."
+dialogtxt       "Like I thought, I'm too pissed"
+dialogtxt       "to be sneaking around..."
 code047b        
 code0309        
 call            @Func_0f3e
@@ -99,16 +99,16 @@ code0479        1, 5, 16
 code047d        1, 0
 call            @Func_0fd8
 call            @Func_0f74
-dialogtxt       "アニ[NAME 4]..."
-dialogtxt       "どうして？"
+dialogtxt       "Bro..."
+dialogtxt       "Why are you here...?"
 code047b        
 code0309        
 call            @Func_0faa
 code0479        0, 5, 16
 call            @Func_0f08
-dialogtxt       "かっ、関係ねえぞ！"
-dialogtxt       "ほら、ここらでも最近"
-dialogtxt       "はぐれが出たって話だし、それを..."
+dialogtxt       "Nothing to do with you."
+dialogtxt       "Look, there's talk on how strays"
+dialogtxt       "were showing up here and stuff, so..."
 code0309        
 call            @Func_0f3e
 code0479        1, 2, 14
@@ -118,80 +118,78 @@ code0309
 call            @Func_0faa
 code0479        0, 4, 12
 call            @Func_0f08
-dialogtxt       "う..."
-dialogtxt       "わかったよ！"
+dialogtxt       "Ugh..."
+dialogtxt       "Oh, fine!"
 code0309        
 code0479        0, 0, 12
-dialogtxt       "いや、ヴィーねえさんにはホラ"
-dialogtxt       "だまってろって言われたけど"
-dialogtxt       "やっぱ気になってな..."
+dialogtxt       "You see, V.E told me"
+dialogtxt       "not to say anything,"
+dialogtxt       "but it really bothers me..."
 code0309        
 code0479        0, 2, 12
-dialogtxt       "だってヤツらみたいなカス野郎は"
-dialogtxt       "どんな手をつかってくるか"
-dialogtxt       "わかったもんじゃないだろ？"
+dialogtxt       "After all, we don't know"
+dialogtxt       "what kind of things those punks"
+dialogtxt       "would do, right?"
 code0309        
 code0479        0, 0, 13
-dialogtxt       "だから、いざってときには"
-dialogtxt       "オ[NAME 8]のようなシッカリ者が"
-dialogtxt       "ついてないとだな..."
+dialogtxt       "So, I figured, just in case,"
+dialogtxt       "a reliable guy like me should"
+dialogtxt       "be around to protect you..."
 code0309        
 call            @Func_0f3e
 code0333        2, 20
 code0479        1, 1, 12
 call            @Func_0f74
-dialogtxt       "ありがとう、アニ[NAME 4]"
+dialogtxt       "Thanks Bro. I appreciate it."
 code0309        
 call            @Func_0faa
 code0334        
 code0331        31, 256
 code0479        0, 0, 16
 call            @Func_0f08
-dialogtxt       "δ..."
+dialogtxt       "[NAME 2]..."
 code0309        
 call            @Func_0f3e
 code0479        1, 2, 12
 call            @Func_0f74
 jumpz           @Cond_0702, ($b002 == 0)
-dialogtxt       "でも、オ[NAME 8]..."
-dialogtxt       "あいつらとの決着は"
-dialogtxt       "自分でつけたいんだ"
+dialogtxt       "But this time..."
+dialogtxt       "I want to settle things by myself."
 goto            @Label_0746
 
 @Cond_0702:
-dialogtxt       "でも、わたし..."
-dialogtxt       "あの人たちとの決着は"
-dialogtxt       "自分でつけたいんだ"
+dialogtxt       "But this time..."
+dialogtxt       "I want to settle things by myself."
 goto            @Label_0746
 
 @Label_0746:
 code0309        
 code0479        1, 2, 14
-dialogtxt       "だから..."
+dialogtxt       "So..."
 code0309        
 call            @Func_0faa
 code0479        0, 1, 12
 call            @Func_0f08
-dialogtxt       "わかったよ"
-dialogtxt       "手はださない"
-dialogtxt       "ギリギリまでな"
+dialogtxt       "I know, I know."
+dialogtxt       "I'll stay out of the way."
+dialogtxt       "I said \"just in case\", you know."
 code0309        
 call            @Func_0f3e
 code0479        1, 0, 12
 call            @Func_0f74
-dialogtxt       "ありがとう、アニ[NAME 4]"
+dialogtxt       "Thanks Bro."
 code0309        
 call            @Func_0faa
 code0479        0, 0, 13
 call            @Func_0f08
-dialogtxt       "礼なんかいい"
-dialogtxt       "だが"
-dialogtxt       "アニ[NAME 4]ってのは止めろ"
+dialogtxt       "Don't mention it."
+dialogtxt       "But seriously,"
+dialogtxt       "stop calling me \"Bro\"!"
 code0309        
 call            @Func_0f3e
 code0479        1, 1, 12
 call            @Func_0f74
-dialogtxt       "えへへ"
+dialogtxt       "Hehehe~"
 code0309        
 call            @Func_1044
 call            @Func_0f92

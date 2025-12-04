@@ -9,7 +9,7 @@ code0479        1, 0, 12
 code047d        1, 109
 call            @Func_076c
 call            @Func_06ea
-dialogtxt       "では、この穴に入りま〜す！"
+dialogtxt       "Now then, follow me!"
 code047b        
 code0309        
 call            @Func_07c2

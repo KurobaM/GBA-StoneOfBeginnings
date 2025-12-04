@@ -17,8 +17,8 @@ code047d        0, 0
 code047d        1, 120
 code0301        8, 7
 code047e        1, 1
-dialogtxt       "なんだ！？"
-dialogtxt       "はぐれの弟子がなんか用か！？"
+dialogtxt       "The Strays' apprentice, is it?"
+dialogtxt       "Why are you here!?"
 code0309        
 code047e        1, 0
 code0302        7
@@ -26,13 +26,13 @@ code0479        0, 0, 16
 call            @Func_0d6c
 call            @Func_0cb2
 jumpz           @Cond_01ae, ($b002 == 0)
-dialogtxt       "あの..."
-dialogtxt       "人をさがしてるんだけど..."
+dialogtxt       "Um..."
+dialogtxt       "I'm looking for someone..."
 goto            @Label_01d8
 
 @Cond_01ae:
-dialogtxt       "あの..."
-dialogtxt       "人をさがしてるんだけど..."
+dialogtxt       "Um..."
+dialogtxt       "I'm looking for someone..."
 goto            @Label_01d8
 
 @Label_01d8:
@@ -43,7 +43,7 @@ call            @Func_0ce8
 code047b        
 code0301        8, 7
 code047e        1, 1
-dialogtxt       "帰れ！"
+dialogtxt       "Get out!"
 code0309        
 code047e        1, 0
 code0302        7
@@ -78,8 +78,8 @@ call            @Func_0ce8
 code047b        
 code0301        8, 7
 code047e        1, 1
-dialogtxt       "なんだ？"
-dialogtxt       "やるのか？"
+dialogtxt       "What?"
+dialogtxt       "You got a problem?"
 code0309        
 code047e        1, 0
 code0302        7
@@ -88,8 +88,8 @@ code0479        0, 5, 17
 code047d        0, 0
 call            @Func_0d6c
 call            @Func_0cb2
-dialogtxt       "そっ...！"
-dialogtxt       "そうじゃなくて！"
+dialogtxt       "No...!"
+dialogtxt       "We don't!"
 code047b        
 code0309        
 call            @Func_0dc2
@@ -119,15 +119,15 @@ code0479        0, 0, 17
 call            @Func_0d6c
 call            @Func_0c94
 jumpz           @Cond_0538, ($b002 == 0)
-dialogtxt       "あ、ちょっと！"
-dialogtxt       "お前...！"
-dialogtxt       "[NAME 8]ミィ...！"
+dialogtxt       "Ah, hey!"
+dialogtxt       "That's...!"
+dialogtxt       "Lemmy...!"
 goto            @Label_056a
 
 @Cond_0538:
-dialogtxt       "あ、ちょっと！"
-dialogtxt       "あんた...！"
-dialogtxt       "[NAME 8]ミィ...！"
+dialogtxt       "Ah, hey!"
+dialogtxt       "That's...!"
+dialogtxt       "Lemmy...!"
 goto            @Label_056a
 
 @Label_056a:
@@ -157,13 +157,13 @@ code0479        0, 2, 15
 call            @Func_0d6c
 call            @Func_0c94
 jumpz           @Cond_0684, ($b002 == 0)
-dialogtxt       "なんだよ！？"
-dialogtxt       "ムシすんな！"
+dialogtxt       "What the heck!?"
+dialogtxt       "Don't ignore me!"
 goto            @Label_06aa
 
 @Cond_0684:
-dialogtxt       "なによ！？"
-dialogtxt       "ムシするなんて！"
+dialogtxt       "What the heck!?"
+dialogtxt       "Don't ignore me!"
 goto            @Label_06aa
 
 @Label_06aa:
@@ -175,7 +175,7 @@ code047b
 code047d        1, 120
 code0301        8, 7
 code047e        1, 1
-dialogtxt       "いいから出てけ！"
+dialogtxt       "Enough, just get out!"
 code0309        
 code047e        1, 0
 code0302        7

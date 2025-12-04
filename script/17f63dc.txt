@@ -34,22 +34,23 @@ code047d        1, 109
 call            @Func_1930
 call            @Func_1858
 jumpz           @Cond_018c, ($b003 == 0)
-dialogtxt       "ハグ[NAME 8]召喚獣ヲ　確認"
+dialogtxt       "Stray Summon Beast Confirmed."
 goto            @Cond_018c
 
 @Cond_018c:
 jumpz           @Cond_01b6, ($b003 == 1)
-dialogtxt       "はぐれ召喚獣じゃな"
+dialogtxt       "It's a Stray."
 goto            @Cond_01b6
 
 @Cond_01b6:
 jumpz           @Cond_01e2, ($b003 == 2)
-dialogtxt       "ちっ...はぐれ召喚獣か"
+dialogtxt       "Tch..."
+dialogtxt       "A Stray..."
 goto            @Cond_01e2
 
 @Cond_01e2:
 jumpz           @Cond_020c, ($b003 == 3)
-dialogtxt       "はぐれ召喚獣ですわ"
+dialogtxt       "That must be a Stray."
 goto            @Cond_020c
 
 @Cond_020c:
@@ -59,14 +60,13 @@ call            @Func_1894
 code047b        
 call            @Func_1946
 call            @Func_18c4
-dialogtxt       "あれ、前に見たことあるわ"
-dialogtxt       "ちっちゃいけど、凶暴なのよね..."
-dialogtxt       "でも、このあたりでははじめて見たわ"
+dialogtxt       "Hey, I know that one."
+dialogtxt       "It's stronger than it looks."
+dialogtxt       "But what is it doing here...?"
 code047b        
 code0309        
 code0479        1, 2, 16
-dialogtxt       "やっぱり最近"
-dialogtxt       "何かがおかしいのかも..."
+dialogtxt       "I knew something was off..."
 code047b        
 code0309        
 call            @Func_1918
@@ -76,15 +76,15 @@ code047d        0, 0
 call            @Func_1930
 call            @Func_1876
 jumpz           @Cond_035a, ($b002 == 0)
-dialogtxt       "まだこっちには"
-dialogtxt       "気がついてないみたいだけど"
-dialogtxt       "どうしよう？"
+dialogtxt       "Looks like it hasn't"
+dialogtxt       "noticed us yet."
+dialogtxt       "What should we do?"
 goto            @Label_039e
 
 @Cond_035a:
-dialogtxt       "まだこっちには"
-dialogtxt       "気がついてないみたいだけど"
-dialogtxt       "どうしよう？"
+dialogtxt       "Looks like it hasn't"
+dialogtxt       "noticed us yet."
+dialogtxt       "What should we do?"
 goto            @Label_039e
 
 @Label_039e:
@@ -98,9 +98,9 @@ code0479        1, 2, 12
 code047d        1, 108
 call            @Func_1946
 call            @Func_18e2
-dialogtxt       "ま、仕方ないね..."
-dialogtxt       "ここは大人で強くてカッコイイ"
-dialogtxt       "アタシの出番..."
+dialogtxt       "Welp..."
+dialogtxt       "I guess it's time for the mature,"
+dialogtxt       "strong, cool me to step up..."
 code047b        
 code0309        
 call            @Func_19b2
@@ -114,12 +114,13 @@ code0479        1, 3, 12
 code047d        1, 109
 call            @Func_1946
 call            @Func_18c4
-dialogtxt       "（いける...！"
-dialogtxt       "　コ[NAME 8]はいけるわ...！）"
+dialogtxt       "(Wait...!"
+dialogtxt       "　If I beat the Stray..."
+dialogtxt       "　Maybe I'll get a bonus...!)"
 code047b        
 code0309        
 code0479        1, 1, 12
-dialogtxt       "ちょっとどいてもらいましょう"
+dialogtxt       "Stand aside."
 code0309        
 call            @Func_199c
 call            @Func_1900
@@ -159,8 +160,7 @@ code0479        0, 5, 16
 code047d        0, 107
 call            @Func_1930
 call            @Func_1858
-dialogtxt       "え？"
-dialogtxt       "ティエちゃん...？"
+dialogtxt       "Tier...?"
 code0309        
 call            @Func_1986
 call            @Func_1894
@@ -223,7 +223,7 @@ code043a        5, 5, 0
 code043d        5, 116, 240
 code043c        5, 3
 code0301        8, 7
-dialogtxt       "ぐるるる..."
+dialogtxt       "Grrrr..."
 code0309        
 code0302        7
 code0445        3, 6
@@ -248,8 +248,8 @@ code0479        1, 2, 15
 code047d        1, 108
 call            @Func_1946
 call            @Func_18c4
-dialogtxt       "ちょっとアンタ！？"
-dialogtxt       "何してんだい！？"
+dialogtxt       "Wait, you-!?"
+dialogtxt       "What are you doing!?"
 code047b        
 code0309        
 call            @Func_199c
@@ -272,13 +272,12 @@ code0479        0, 2, 15
 code047d        0, 109
 call            @Func_195c
 call            @Func_1858
-dialogtxt       "ちょっ、はなしてください！"
-dialogtxt       "あのはぐれを"
-dialogtxt       "たおすんですから！"
+dialogtxt       "Hey, let go of me!"
+dialogtxt       "I'll defeat that Stray!"
 code047b        
 code0309        
 code0479        0, 1, 12
-dialogtxt       "あ！　これは別料金ですよ！"
+dialogtxt       "Oh, and it'll cost extra!"
 code0309        
 call            @Func_199c
 call            @Func_18ac
@@ -288,7 +287,7 @@ code0479        1, 5, 17
 code047d        1, 0
 call            @Func_1946
 call            @Func_18e2
-dialogtxt       "お金とるの！？"
+dialogtxt       "You're charging for it too!?"
 code047b        
 code0309        
 call            @Func_199c
@@ -299,9 +298,9 @@ code0479        1, 2, 17
 code047d        1, 108
 call            @Func_1946
 call            @Func_18e2
-dialogtxt       "何言ってるんだよ！"
-dialogtxt       "こういうときは大人に"
-dialogtxt       "まかせとけばいいんだ！"
+dialogtxt       "What are you saying!?"
+dialogtxt       "At times like these,"
+dialogtxt       "you should let an adult handle it!"
 code047b        
 code0309        
 call            @Func_19b2
@@ -315,15 +314,15 @@ code047d        0, 0
 call            @Func_1930
 call            @Func_1858
 jumpz           @Cond_0f0e, ($b002 == 0)
-dialogtxt       "ちょっと！"
-dialogtxt       "こんなときに何やってんだよ"
-dialogtxt       "ふたりとも"
+dialogtxt       "Hey!"
+dialogtxt       "Now's not the time"
+dialogtxt       "to argue..."
 goto            @Label_0f4c
 
 @Cond_0f0e:
-dialogtxt       "ちょっと！"
-dialogtxt       "こんなときに何やってんのよ"
-dialogtxt       "ふたりとも"
+dialogtxt       "Hey!"
+dialogtxt       "Now's not the time"
+dialogtxt       "to argue..."
 goto            @Label_0f4c
 
 @Label_0f4c:
@@ -347,8 +346,8 @@ code0479        0, 2, 16
 code047d        0, 107
 call            @Func_1930
 call            @Func_1858
-dialogtxt       "あのこ..."
-dialogtxt       "こっちに...！"
+dialogtxt       "Ah..."
+dialogtxt       "It's coming!"
 code047b        
 code0309        
 call            @Func_18ac
@@ -376,25 +375,24 @@ code047d        1, 2
 call            @Func_1946
 call            @Func_18e2
 jumpz           @Cond_112e, ($b003 == 0)
-dialogtxt       "コノママデハ　みゅーの様ガ"
-dialogtxt       "危険デス"
+dialogtxt       "Lady Murno Will Be In Danger."
+dialogtxt       "We Must Protect Her."
 goto            @Cond_112e
 
 @Cond_112e:
 jumpz           @Cond_116e, ($b003 == 1)
-dialogtxt       "この場は我らで"
-dialogtxt       "ミューノを守るのじゃ！"
+dialogtxt       "We'll protect Murno!"
 goto            @Cond_116e
 
 @Cond_116e:
 jumpz           @Cond_119a, ($b003 == 2)
-dialogtxt       "仕方ない..."
-dialogtxt       "やるか"
+dialogtxt       "Fine..."
+dialogtxt       "We'll take care of this!"
 goto            @Cond_119a
 
 @Cond_119a:
 jumpz           @Cond_11ce, ($b003 == 3)
-dialogtxt       "ミューノ様をお守りしなくては"
+dialogtxt       "We must protect Lady Murno!"
 goto            @Cond_11ce
 
 @Cond_11ce:
@@ -409,13 +407,13 @@ code047d        0, 0
 call            @Func_1930
 call            @Func_1876
 jumpz           @Cond_123e, ($b002 == 0)
-dialogtxt       "よし！"
-dialogtxt       "行こう！"
+dialogtxt       "Alright!"
+dialogtxt       "Let's do this!"
 goto            @Label_1258
 
 @Cond_123e:
-dialogtxt       "うん！"
-dialogtxt       "行くよ！"
+dialogtxt       "Alright!"
+dialogtxt       "Let's do this!"
 goto            @Label_1258
 
 @Label_1258:

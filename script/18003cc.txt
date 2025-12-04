@@ -14,7 +14,7 @@ code0482
 code047d        0, 110
 code0301        16, 3
 code047e        0, 1
-dialogtxt       "君の声だったのか..."
+dialogtxt       "So it's you..."
 code0309        
 code047e        0, 0
 code0302        3
@@ -46,27 +46,27 @@ code047d        1, 110
 call            @Func_1154
 code0479        0, 0, 16
 call            @Func_1050
-dialogtxt       "あ、[NAME 8]ミィ"
-dialogtxt       "どうしてこんなとこに？"
+dialogtxt       "Ah, Lemmy."
+dialogtxt       "Why are you here?"
 code047b        
 code0309        
 call            @Func_10a4
 code0479        1, 0, 16
 call            @Func_10da
-dialogtxt       "スゴイうめき声が聞こえたからね"
-dialogtxt       "またはぐれ召喚獣かと思って"
+dialogtxt       "I heard some really loud groaning."
+dialogtxt       "I thought it was another Stray."
 code0309        
 call            @Func_1110
 code0479        0, 4, 14
 call            @Func_106e
 jumpz           @Cond_0362, ($b002 == 0)
-dialogtxt       "はあ..."
-dialogtxt       "そうか..."
+dialogtxt       "Oh..."
+dialogtxt       "I see..."
 goto            @Label_037c
 
 @Cond_0362:
-dialogtxt       "はあ..."
-dialogtxt       "そっか..."
+dialogtxt       "Oh..."
+dialogtxt       "I see..."
 goto            @Label_037c
 
 @Label_037c:
@@ -74,41 +74,42 @@ code0309
 call            @Func_10a4
 code0479        1, 0, 13
 call            @Func_10da
-dialogtxt       "まだ元気がないみたいだね"
-dialogtxt       "いつもそれくらいおとなしいと"
-dialogtxt       "助かるのに"
+dialogtxt       "You don't look any better."
+dialogtxt       "Though I would appreciate it"
+dialogtxt       "if you were always this quiet."
 code0309        
 call            @Func_1110
 code0479        0, 4, 16
 call            @Func_106e
-dialogtxt       "はぁ..."
+dialogtxt       "Sigh..."
 code0309        
 call            @Func_10a4
 code0479        1, 4, 12
 call            @Func_10da
-dialogtxt       "まったく..."
+dialogtxt       "Jeez..."
 code0309        
 call            @Func_1110
 jumpz           @Cond_0572, ($b002 == 0)
 code0479        0, 4, 16
 call            @Func_106e
-dialogtxt       "あのさあ、お前..."
-dialogtxt       "ケッコンって考えたことある？"
+dialogtxt       "Hey, Lemmy..."
+dialogtxt       "Have you ever thought"
+dialogtxt       "about marriage?"
 code0309        
 call            @Func_10a4
 code0479        1, 11, 17
 call            @Func_10da
-dialogbig       24, 116, 1, 0, 0, "ケ、ケッコン！？"
+dialogbig       24, 116, 1, 0, 0, "M-Marriage!?"
 code030c        
 code0479        1, 6, 16
-dialogtxt       "い、いや..."
-dialogtxt       "まだないけど..."
+dialogtxt       "N-no..."
+dialogtxt       "Not yet..."
 code0309        
 call            @Func_1110
 code0479        0, 4, 12
 call            @Func_106e
-dialogtxt       "はあ...、いいなぁ..."
-dialogtxt       "お前、幸せだよ..."
+dialogtxt       "Sigh... How nice..."
+dialogtxt       "You're lucky..."
 code0309        
 call            @Func_10a4
 goto            @Label_06cc
@@ -116,24 +117,25 @@ goto            @Label_06cc
 @Cond_0572:
 code0479        0, 4, 16
 call            @Func_106e
-dialogtxt       "あのさあ、あなた..."
-dialogtxt       "わたしでもさ、どこかのお店の"
-dialogtxt       "カンバン娘になれると思う？"
+dialogtxt       "Hey, Lemmy..."
+dialogtxt       "Do you think I could be a"
+dialogtxt       "poster girl for a shop?"
 code0309        
 call            @Func_10a4
 code0479        1, 5, 17
 call            @Func_10da
-dialogbig       24, 116, 1, 0, 0, "か、カンバン娘？"
+dialogbig       24, 116, 1, 0, 0, "P-Poster girl?"
 code030c        
 code0479        1, 8, 16
-dialogtxt       "そんなこと自分で考えたら？"
+dialogtxt       "Why don't you think"
+dialogtxt       "about that yourself?"
 code0309        
 call            @Func_1110
 code0479        0, 4, 12
 call            @Func_106e
-dialogtxt       "だから悩んでるんじゃないの..."
-dialogtxt       "いいわね、あなた"
-dialogtxt       "お気楽で..."
+dialogtxt       "That's what I'm worried about..."
+dialogtxt       "You're lucky, Lemmy."
+dialogtxt       "So carefree..."
 code0309        
 call            @Func_10a4
 goto            @Label_06cc
@@ -141,25 +143,25 @@ goto            @Label_06cc
 @Label_06cc:
 code0479        1, 5, 12
 call            @Func_10da
-dialogtxt       "おどろいた..."
-dialogtxt       "君にそんなこと言われるだなんて..."
+dialogtxt       "That's surprising..."
+dialogtxt       "This isn't like you..."
 code0309        
 code0479        1, 2, 13
-dialogtxt       "毎日あれだけ好き勝手に生きてる君が"
-dialogtxt       "僕より不幸だって言うのかい？"
-dialogtxt       "笑えない冗談だよ"
+dialogtxt       "You make it seem like"
+dialogtxt       "you're worse off than I am."
+dialogtxt       "What a joke."
 code0309        
 call            @Func_1110
 code0479        0, 2, 15
 call            @Func_106e
 jumpz           @Cond_07ea, ($b002 == 0)
-dialogtxt       "なんだと...？"
-dialogtxt       "オ[NAME 8]は真剣に悩んでたんだよ！"
+dialogtxt       "What...?"
+dialogtxt       "I'm being serious over here!"
 goto            @Label_0822
 
 @Cond_07ea:
-dialogtxt       "なんですって...？"
-dialogtxt       "わたしは真剣に悩んでるのよ！"
+dialogtxt       "What...?"
+dialogtxt       "I'm being serious over here!"
 goto            @Label_0822
 
 @Label_0822:
@@ -168,24 +170,24 @@ call            @Func_10a4
 code0479        0, 2, 14
 code0479        1, 0, 16
 call            @Func_10da
-dialogtxt       "本当に真剣に悩んでいるのなら"
-dialogtxt       "今すぐ寝ることだね"
+dialogtxt       "If you really are,"
+dialogtxt       "go to sleep."
 code0309        
 code0479        1, 0, 13
-dialogtxt       "そうすれば明日の朝には"
-dialogtxt       "悩みなんて、忘れていると思うよ"
+dialogtxt       "You'll have forgotten everything"
+dialogtxt       "by the time the sun comes up."
 code0309        
 call            @Func_1110
 code0479        0, 2, 15
 call            @Func_106e
 jumpz           @Cond_0930, ($b002 == 0)
-dialogtxt       "な...、なんだよ！"
-dialogtxt       "ムカつく！"
+dialogtxt       "Wha... What!"
+dialogtxt       "You piss me off!"
 goto            @Label_095a
 
 @Cond_0930:
-dialogtxt       "な...、なによ、それ！"
-dialogtxt       "ムカつく！"
+dialogtxt       "Wha... What!"
+dialogtxt       "You piss me off!"
 goto            @Label_095a
 
 @Label_095a:
@@ -193,27 +195,27 @@ code0309
 call            @Func_10a4
 code0479        1, 0, 13
 call            @Func_10da
-dialogtxt       "なんだ..."
-dialogtxt       "もう元気になったじゃないか"
-dialogtxt       "よかった"
+dialogtxt       "Hah..."
+dialogtxt       "There's your usual energy."
+dialogtxt       "That's good."
 code0309        
 code0479        1, 4, 13
 code0479        0, 2, 14
-dialogtxt       "おとなしいのは助かるけど"
-dialogtxt       "君が元気じゃないと、こっちの調子まで"
-dialogtxt       "おかしくなっちゃうからね"
+dialogtxt       "It's nice of you to shut up,"
+dialogtxt       "but it makes me more uneasy"
+dialogtxt       "than your usual self."
 code0309        
 call            @Func_1110
 code0479        0, 1, 17
 call            @Func_106e
 jumpz           @Cond_0a94, ($b002 == 0)
-dialogtxt       "な、なんだよ！"
-dialogtxt       "知るか、そんなこと！"
+dialogtxt       "W-what!"
+dialogtxt       "Like I care!"
 goto            @Label_0ab0
 
 @Cond_0a94:
-dialogtxt       "なによ！"
-dialogtxt       "もーっ！"
+dialogtxt       "What!"
+dialogtxt       "Jeez!"
 goto            @Label_0ab0
 
 @Label_0ab0:

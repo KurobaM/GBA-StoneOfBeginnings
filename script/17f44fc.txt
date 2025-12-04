@@ -44,7 +44,7 @@ code0334
 code0331        28, 256
 call            @Func_0dbe
 call            @Func_0cba
-dialogtxt       "これで足りる？"
+dialogtxt       "Is this enough?"
 code047b        
 code0309        
 call            @Func_0e14
@@ -55,24 +55,25 @@ code0365
 code0479        1, 6, 13
 call            @Func_0dbe
 call            @Func_0d26
-dialogtxt       "まいど〜！"
+dialogtxt       "Yes!"
 code047b        
 code0309        
 code0479        1, 7, 12
-dialogtxt       "本日早くも２件目"
-dialogtxt       "今日はいい日だわ〜"
+dialogtxt       "You're already the second"
+dialogtxt       "one today."
+dialogtxt       "Business is booming."
 code0309        
 call            @Func_0d7a
 code0479        0, 0, 16
 call            @Func_0cd8
-dialogtxt       "２件目って？"
+dialogtxt       "The second?"
 code0309        
 call            @Func_0d0e
 code0479        1, 1, 16
 call            @Func_0d44
-dialogtxt       "いえいえ〜"
-dialogtxt       "こちらの話ですから〜"
-dialogtxt       "お気づかいなく〜"
+dialogtxt       "No, no~."
+dialogtxt       "Just talking to myself."
+dialogtxt       "Pay me no attention."
 code0309        
 call            @Func_0de8
 call            @Func_0d7a
@@ -88,9 +89,9 @@ code0309
 call            @Func_0d0e
 code0479        1, 0, 12
 call            @Func_0d44
-dialogtxt       "ではわたしについてきてください"
-dialogtxt       "ここら辺、はぐれも多いから"
-dialogtxt       "気をつけてくださいね〜"
+dialogtxt       "Now follow me."
+dialogtxt       "Strays are common around here,"
+dialogtxt       "so keep your wits about you."
 code0309        
 call            @Func_0e14
 call            @Func_0d62
@@ -128,24 +129,25 @@ goto            @Label_0734
 @Cond_0664:
 call            @Func_0dbe
 call            @Func_0cba
-dialogtxt       "これで足りる？"
+dialogtxt       "Is this enough?"
 code047b        
 code0309        
 call            @Func_0d0e
 code0479        1, 2, 16
 call            @Func_0d44
-dialogtxt       "まだ足りないわ..."
+dialogtxt       "Not quite..."
 code0309        
 call            @Func_0d7a
 code0479        0, 4, 16
 call            @Func_0cd8
-dialogtxt       "うう..."
+dialogtxt       "..."
 code0309        
 call            @Func_0d0e
 code0479        1, 0, 12
 call            @Func_0d44
-dialogtxt       "ここで待ってるから"
-dialogtxt       "お金できたら来てね"
+dialogtxt       "I'll be here a while,"
+dialogtxt       "so if you get enough money"
+dialogtxt       "please come back again."
 code0309        
 call            @Func_0e14
 call            @Func_0d62

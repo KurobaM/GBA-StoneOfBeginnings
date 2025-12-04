@@ -49,8 +49,8 @@ goto            @start
 
 @Event_01e4:
 code0301        8, 7
-dialogtxt       "召喚獣トロッコに乗車の際には"
-dialogtxt       "足下に十分ご注意下さい"
+dialogtxt       "Please watch your step"
+dialogtxt       "boarding the rail car."
 code0309        
 code0302        7
 code040b        
@@ -260,11 +260,12 @@ ret
 code0301        8, 7
 code047d        0, 123
 code047e        0, 1
-dialogtxt       "村の外には、はぐれが"
-dialogtxt       "いっぱいいるから"
-dialogtxt       "出ちゃいけないんだよ"
+dialogtxt       "There's a lot of Strays"
+dialogtxt       "outside the village."
+dialogtxt       "It's not safe to leave now."
 code0309        
-dialogtxt       "でも、いつか旅立つ日が来るのよ"
+dialogtxt       "But someday, I'll go on an"
+dialogtxt       "adventure."
 code0309        
 code047e        0, 0
 code0302        7

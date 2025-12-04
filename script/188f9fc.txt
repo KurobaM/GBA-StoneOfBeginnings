@@ -11,7 +11,7 @@ code0418        2
 code046c        1
 setvar          $b075, 1
 setvar          $b072, 1
-placetxt        "Cave"
+placetxt        "Forest Cave"
 placetxt        "Bajan Forest"
 code040c        0, @Label_0cd4
 code040c        1, @Label_1290
@@ -227,8 +227,8 @@ code043e        0, 3, 0
 code0301        8, 7
 code047d        0, 118
 code047e        0, 1
-dialogtxt       "修行するなら他行ってやりな"
-dialogtxt       "街道はあぶないからな"
+dialogtxt       "You should train elsewhere."
+dialogtxt       "The main road is dangerous."
 code0309        
 code047e        0, 0
 code0302        7
@@ -250,7 +250,7 @@ code043e        3, 3, 0
 code0301        8, 7
 code047d        0, 118
 code047e        0, 1
-dialogtxt       "修行がんばれよ"
+dialogtxt       "Work hard on your training."
 code0309        
 code047e        0, 0
 code0302        7
@@ -275,11 +275,13 @@ code0301        8, 7
 code047d        0, 0
 code047e        0, 1
 jumpz           @Cond_0d94, ($b002 == 0)
-dialogtxt       "今戻ったら見つかるぞ"
+dialogtxt       "If we go back now,"
+dialogtxt       "they'll find us."
 goto            @Label_0db6
 
 @Cond_0d94:
-dialogtxt       "今戻ると見つかっちゃうよお"
+dialogtxt       "They'll find us if we"
+dialogtxt       "go back now."
 goto            @Label_0db6
 
 @Label_0db6:
@@ -433,15 +435,17 @@ code0445        0, 11
 code0446        0
 code0301        0, 9
 code0305        1
-dialogtxt       "転送装置は起動中の転送装置間を一瞬で"
-dialogtxt       "移動することができます"
+dialogtxt       "This is a teleporter."
+dialogtxt       "It allows you to warp to"
+dialogtxt       "any other active teleporters."
 code0309        
-dialogtxt       "ハンマーで殴ると起動し、転送装置の"
-dialogtxt       "上に立ってＡボタンを押すことで"
-dialogtxt       "使用することができます"
+dialogtxt       "Strike it with your hammer,"
+dialogtxt       "then stand on top of it and"
+dialogtxt       "hit	the A button."
 code0309        
-dialogtxt       "今は別の転送装置が起動していないため"
-dialogtxt       "使用することはできません"
+dialogtxt       "Currently, there are no other"
+dialogtxt       "active teleporters."
+dialogtxt       "The teleporter cannot be used."
 code0309        
 code0302        9
 code0461        4

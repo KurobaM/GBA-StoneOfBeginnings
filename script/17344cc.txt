@@ -221,7 +221,7 @@ code043e        0, 3, 0
 code0301        8, 7
 code047d        0, 0
 code047e        0, 1
-dialogtxt       "修行はいつものトコでしよう"
+dialogtxt       "Let's train in the usual place."
 code0309        
 code047e        0, 0
 code0302        7
@@ -499,8 +499,8 @@ ret
 code0301        8, 7
 code047d        0, 122
 code047e        0, 1
-dialogtxt       "小豆は体にええぞぉ"
-dialogtxt       "こまめとかいてあずきじゃ"
+dialogtxt       "Red beans are simply the best."
+dialogtxt       "Can't get enough."
 code0309        
 code047e        0, 0
 code0302        7
@@ -510,42 +510,42 @@ code040b
 code0301        8, 7
 code047d        0, 149
 code047e        0, 1
-dialogtxt       "私のお母様は、旅商人なの"
-dialogtxt       "今は２人で旅をして鍛冶師や職人に"
-dialogtxt       "顔を売っている段階なんだって"
+dialogtxt       "You know, my mother is a peddler."
+dialogtxt       "We're trying to gain reputation"
+dialogtxt       "with Craftknights and blacksmiths."
 code0309        
-dialogtxt       "お母様は、私が遊びに行ってるって"
-dialogtxt       "思ってるみたいだけど、将来のために"
-dialogtxt       "商売をしているの"
+dialogtxt       "She thinks I'm out playing"
+dialogtxt       "around, but I'm earning money"
+dialogtxt       "for our future."
 code0309        
 jumpz           @Cond_191a, ($f1245 == 0)
-dialogtxt       "ところであなたは、鍛冶師みたいだけど"
-dialogtxt       "強化の情報を聞いていかない？"
+dialogtxt       "You're a Craftknight, aren't you?"
+dialogtxt       "Want to hear about enhancement?"
 code0309        
 code047e        0, 0
-choicetxt       @Choice_1658, "聞いてみる"
-choicetxt       @Choice_1922, "特に聞かない"
+choicetxt       @Choice_1658, "Sure!"
+choicetxt       @Choice_1922, "Nah, I'm fine."
 choicewait      
 
 @Choice_1658:
 code047e        0, 1
-dialogtxt       "えっとね、強化で「蓄電バッテリー」を"
-dialogtxt       "使うと、必殺技の「サンダーショット」"
-dialogtxt       "が武器に付加されるの"
+dialogtxt       "Okay so, if you add an"
+dialogtxt       "Electric Battery to a weapon,"
+dialogtxt       "it'll gain the move Thunder Shot."
 code0309        
-dialogtxt       "あっ、でも武器タイプによって"
-dialogtxt       "必殺技が付加されない場合があるから"
-dialogtxt       "気を付けてね"
+dialogtxt       "Oh, but, depending on the weapon,"
+dialogtxt       "there are cases where the move won't"
+dialogtxt       "be added, so be careful."
 code0309        
-dialogtxt       "でもって、今回はなんと"
-dialogtxt       "「蓄電バッテリー」を、２００バームで"
-dialogtxt       "販売中なの〜"
+dialogtxt       "And so, this time only,"
+dialogtxt       "I'll sell you an Electric Battery"
+dialogtxt       "for a mere 200 boam!"
 code0309        
-dialogtxt       "買ってくれます？"
+dialogtxt       "Will you buy it?"
 code0309        
 code047e        0, 0
-choicetxt       @Choice_17ba, "買う"
-choicetxt       @Choice_18d0, "買わない"
+choicetxt       @Choice_17ba, "Buy"
+choicetxt       @Choice_18d0, "Don't buy"
 choicewait      
 
 @Choice_17ba:
@@ -560,7 +560,7 @@ code0445        17, 4
 code0446        17
 code0301        8, 7
 code047e        0, 1
-dialogtxt       "ありがと〜"
+dialogtxt       "Thanks~"
 code0309        
 goto            @Label_1972
 
@@ -572,9 +572,8 @@ code0445        17, 5
 code0446        17
 code0301        8, 7
 code047e        0, 1
-dialogtxt       "ええぇ〜これじゃ〜"
-dialogtxt       "お金たりないの〜"
-dialogtxt       "商談不成立だよ〜"
+dialogtxt       "Aww~"
+dialogtxt       "But you don't have the money~"
 code0309        
 goto            @Label_1972
 
@@ -582,8 +581,9 @@ goto            @Choice_18d0
 
 @Choice_18d0:
 code047e        0, 1
-dialogtxt       "え〜聞くだけ聞いて買ってくれないの〜"
-dialogtxt       "ケチ〜"
+dialogtxt       "Aww~"
+dialogtxt       "You won't buy it?"
+dialogtxt       "Cheapskate..."
 code0309        
 goto            @Label_1972
 
@@ -596,8 +596,9 @@ goto            @Choice_1922
 
 @Choice_1922:
 code047e        0, 1
-dialogtxt       "え〜聞いてくれないの〜"
-dialogtxt       "せっかくのお客さんだと思ったのに〜"
+dialogtxt       "Aww~ You don't want to listen?"
+dialogtxt       "And I thought I finally had"
+dialogtxt       "a customer..."
 code0309        
 @Label_1972:
 code047e        0, 0

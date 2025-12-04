@@ -12,7 +12,7 @@ code0479        1, 0, 12
 code047d        1, 0
 call            @Func_0dd6
 call            @Func_0d54
-dialogtxt       "そうだ...、この道！"
+dialogtxt       "That's right...This path!"
 code047b        
 code0309        
 call            @Func_0e2c
@@ -42,22 +42,22 @@ code047d        1, 2
 call            @Func_0dd6
 call            @Func_0d54
 jumpz           @Cond_01a0, ($b003 == 0)
-dialogtxt       "[NAME 5]ノ道ガ　ドウカシマシタカ？"
+dialogtxt       "What About It?"
 goto            @Cond_01a0
 
 @Cond_01a0:
 jumpz           @Cond_01d0, ($b003 == 1)
-dialogtxt       "その道がどうしたのじゃ？"
+dialogtxt       "What about it?"
 goto            @Cond_01d0
 
 @Cond_01d0:
 jumpz           @Cond_01f8, ($b003 == 2)
-dialogtxt       "その道がなんだ？"
+dialogtxt       "What about it?"
 goto            @Cond_01f8
 
 @Cond_01f8:
 jumpz           @Cond_0224, ($b003 == 3)
-dialogtxt       "その道がなんですか？"
+dialogtxt       "What is the matter with it?"
 goto            @Cond_0224
 
 @Cond_0224:
@@ -71,15 +71,15 @@ code047d        0, 0
 call            @Func_0dc0
 call            @Func_0d06
 jumpz           @Cond_02d2, ($b002 == 0)
-dialogtxt       "昔、通った気がするんだ..."
-dialogtxt       "きっとこの道を行けば"
-dialogtxt       "村の外に出られたはず"
+dialogtxt       "I remember coming here before..."
+dialogtxt       "If we go through here,"
+dialogtxt       "we should be able to get outside."
 goto            @Label_0320
 
 @Cond_02d2:
-dialogtxt       "昔、通った気がするの..."
-dialogtxt       "きっとこの道を行けば"
-dialogtxt       "村の外に出られるはず"
+dialogtxt       "I remember coming here before..."
+dialogtxt       "If we go through here,"
+dialogtxt       "we should be able to get outside."
 goto            @Label_0320
 
 @Label_0320:
@@ -107,29 +107,25 @@ goto            @Label_03b8
 @Label_03b8:
 call            @Func_0d72
 jumpz           @Cond_0400, ($b003 == 0)
-dialogtxt       "ズイブン　アイマイナ"
-dialogtxt       "[NAME 4]オクノヨウデスガ..."
+dialogtxt       "You Have Quite A Vague Memory."
 goto            @Cond_0400
 
 @Cond_0400:
 jumpz           @Cond_0460, ($b003 == 1)
-dialogtxt       "なにやら雲をつかむような"
-dialogtxt       "[NAME 4]オクのようじゃが"
-dialogtxt       "自信だけはあるのじゃな"
+dialogtxt       "That's quite a vague memory..."
 goto            @Cond_0460
 
 @Cond_0460:
 jumpz           @Cond_04aa, ($b003 == 2)
-dialogtxt       "ちっ..."
-dialogtxt       "[NAME 4]サマの[NAME 4]オクなど"
-dialogtxt       "アテになるのか...？"
+dialogtxt       "Tch..."
+dialogtxt       "You sure we can even"
+dialogtxt       "trust your memory...?"
 goto            @Cond_04aa
 
 @Cond_04aa:
 jumpz           @Cond_050e, ($b003 == 3)
-dialogtxt       "思いだしているというよりは"
-dialogtxt       "やっぱりカンにたよってるような"
-dialogtxt       "気がしますわ"
+dialogtxt       "Are you sure?"
+dialogtxt       "You don't sound very confident..."
 goto            @Cond_050e
 
 @Cond_050e:
@@ -138,15 +134,15 @@ call            @Func_0da8
 code0479        0, 2, 15
 call            @Func_0d06
 jumpz           @Cond_057c, ($b002 == 0)
-dialogtxt       "なんだよ"
-dialogtxt       "行けばわかるって"
-dialogtxt       "ここまでは合ってたんだし"
+dialogtxt       "Hey, I've been right"
+dialogtxt       "up until now, at least."
+dialogtxt       "Let's just go and find out."
 goto            @Label_05ba
 
 @Cond_057c:
-dialogtxt       "なによ"
-dialogtxt       "行けばわかるって"
-dialogtxt       "ここまでは合ってたんだし"
+dialogtxt       "Hey, I've been right"
+dialogtxt       "up until now, at least."
+dialogtxt       "Let's just go and find out."
 goto            @Label_05ba
 
 @Label_05ba:
@@ -173,25 +169,25 @@ goto            @Label_0650
 @Label_0650:
 call            @Func_0d72
 jumpz           @Cond_0682, ($b003 == 0)
-dialogtxt       "自信ハ　アルノデス[NAME 6]..."
+dialogtxt       "You Are Very Confident..."
 goto            @Cond_0682
 
 @Cond_0682:
 jumpz           @Cond_06c2, ($b003 == 1)
-dialogtxt       "そうじゃな..."
-dialogtxt       "たしかに"
-dialogtxt       "行けばわかる"
+dialogtxt       "I suppose that may be true..."
+dialogtxt       "We'll see for ourselves"
+dialogtxt       "once we proceed onwards."
 goto            @Cond_06c2
 
 @Cond_06c2:
 jumpz           @Cond_06f6, ($b003 == 2)
-dialogtxt       "その自信、どこからくるのだ？"
+dialogtxt       "Where'd that confidence come from?"
 goto            @Cond_06f6
 
 @Cond_06f6:
 jumpz           @Cond_0736, ($b003 == 3)
-dialogtxt       "そっ、そうですか？"
-dialogtxt       "じゃあ行きましょう"
+dialogtxt       "I-Is that so...?"
+dialogtxt       "Then let's get going!"
 goto            @Cond_0736
 
 @Cond_0736:

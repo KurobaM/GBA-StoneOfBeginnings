@@ -107,7 +107,7 @@ goto            @Cond_0552
 goto            @Label_0556
 
 @Label_0556:
-placetxt        "Deckell Mine Area 1"
+placetxt        "Deckell Mine　Area 1"
 code040b        
 
 @Event_0574:
@@ -233,13 +233,13 @@ code0301        8, 7
 code047d        0, 0
 code047e        0, 1
 jumpz           @Cond_087a, ($b002 == 0)
-dialogtxt       "うーん"
-dialogtxt       "開かないなぁ..."
+dialogtxt       "Hnnnn...!"
+dialogtxt       "It won't open..."
 goto            @Label_089a
 
 @Cond_087a:
-dialogtxt       "うーん"
-dialogtxt       "開かないよぉ..."
+dialogtxt       "Hnnnn...!"
+dialogtxt       "It won't open..."
 goto            @Label_089a
 
 @Label_089a:

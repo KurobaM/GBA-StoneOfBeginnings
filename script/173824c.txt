@@ -10,7 +10,7 @@ code0412        4, 1
 code0418        2
 setvar          $b075, 1
 setvar          $b072, 0
-placetxt        "Mayor's house　Hall"
+placetxt        "Chief's House　Hall"
 code040c        1, @Label_02d4
 code040c        2, @Label_02ca
 jumpz           @Cond_01f6, ($f0042 == 0)
@@ -69,10 +69,11 @@ goto            @start
 code0301        8, 7
 code047d        0, 108
 code047e        0, 1
-dialogtxt       "アタシの見事な設定に"
-dialogtxt       "村長も号泣間違いナシだね！"
+dialogtxt       "I've no doubt he'll be"
+dialogtxt       "moved by my brilliant setting!"
 code0309        
-dialogtxt       "ところで修行はどうしたんだい？"
+dialogtxt       "By the way, aren't you"
+dialogtxt       "supposed to be training?"
 code0309        
 code047e        0, 0
 code0302        7
@@ -82,7 +83,8 @@ code040b
 code0301        8, 7
 code047d        0, 107
 code047e        0, 1
-dialogtxt       "村長さんがいい人そうでよかった..."
+dialogtxt       "He's seems nice..."
+dialogtxt       "What a relief..."
 code0309        
 code047e        0, 0
 code0302        7
@@ -92,9 +94,9 @@ code040b
 code0301        8, 7
 code047d        0, 119
 code047e        0, 1
-dialogtxt       "γといい、この子といい"
-dialogtxt       "ヴィーねえさんとこもにぎやかに"
-dialogtxt       "なったもんだ"
+dialogtxt       "First [NAME 1], now this girl!"
+dialogtxt       "Things have gotten lively"
+dialogtxt       "at V.E's place."
 code0309        
 code047e        0, 0
 code0302        7

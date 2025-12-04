@@ -85,7 +85,7 @@ jumpz           @Cond_042a, $h132
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
-dialogtxt       "武器を取りに来たのか？"
+dialogtxt       "Here to pick up a weapon?"
 code0309        
 code047e        0, 0
 code0302        7
@@ -95,7 +95,7 @@ goto            @Label_048a
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
-dialogtxt       "武器を預けに来たのか？"
+dialogtxt       "Here to drop off a weapon?"
 code0309        
 code047e        0, 0
 code0302        7
@@ -104,8 +104,8 @@ goto            @Label_048a
 @Label_048a:
 code0312        
 code0313        @Menu_0582
-menutxt         @Menu_04a8, "はい"
-menutxt         @Menu_0582, "いいえ"
+menutxt         @Menu_04a8, "Yes"
+menutxt         @Menu_0582, "No"
 menuwait        
 
 @Menu_04a8:
@@ -115,7 +115,7 @@ jumpz           @Cond_0530, ($b071 == 0 && ($h083 != -1 ? 1 : 0))
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
-dialogtxt       "預けられそうな武器が無いぞ"
+dialogtxt       "Doesn't look like you have any."
 code0309        
 code047e        0, 0
 code0302        7
@@ -361,9 +361,9 @@ ret
 code0301        8, 7
 code047d        0, 123
 code047e        0, 1
-dialogtxt       "おおきくなったらゆうしゃになるんだ"
-dialogtxt       "ゆうしゃはけんしより"
-dialogtxt       "つよいんだよ"
+dialogtxt       "I wanna be a hero when I"
+dialogtxt       "grow up. Heroes are stronger"
+dialogtxt       "than swordsmen."
 code0309        
 code047e        0, 0
 code0302        7

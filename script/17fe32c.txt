@@ -36,8 +36,7 @@ code0479        0, 0, 14
 code047d        0, 0
 call            @Func_0c20
 call            @Func_0b48
-dialogtxt       "アニ[NAME 4]の言ってたとおりだ"
-dialogtxt       "橋が落ちてる..."
+dialogtxt       "It's just like Bro said..."
 code047b        
 code0309        
 call            @Func_0b9c
@@ -46,8 +45,8 @@ code0479        1, 0, 16
 code047d        1, 108
 call            @Func_0c36
 call            @Func_0bd2
-dialogtxt       "結構ヒドかったもんね"
-dialogtxt       "この間の地震は"
+dialogtxt       "Yeah, that earthquake"
+dialogtxt       "caused a lot of damage."
 code047b        
 code0309        
 call            @Func_0c76
@@ -59,7 +58,7 @@ code047d        0, 107
 call            @Func_0c20
 call            @Func_0b66
 dialogtxt       "..."
-dialogtxt       "こんなところにも..."
+dialogtxt       "Even here..."
 code047b        
 code0309        
 call            @Func_0c8c
@@ -90,22 +89,22 @@ code047d        1, 2
 call            @Func_0c36
 call            @Func_0bd2
 jumpz           @Cond_0428, ($b003 == 0)
-dialogtxt       "みゅーの様..."
+dialogtxt       "Lady Murno..."
 goto            @Cond_0428
 
 @Cond_0428:
 jumpz           @Cond_044a, ($b003 == 1)
-dialogtxt       "ミューノ..."
+dialogtxt       "Murno..."
 goto            @Cond_044a
 
 @Cond_044a:
 jumpz           @Cond_046c, ($b003 == 2)
-dialogtxt       "ミューノ..."
+dialogtxt       "Murno..."
 goto            @Cond_046c
 
 @Cond_046c:
 jumpz           @Cond_0490, ($b003 == 3)
-dialogtxt       "ミューノ様..."
+dialogtxt       "Lady Murno..."
 goto            @Cond_0490
 
 @Cond_0490:
@@ -119,8 +118,8 @@ code0479        0, 0, 12
 code047d        0, 0
 call            @Func_0c20
 call            @Func_0b66
-dialogtxt       "しかたない"
-dialogtxt       "回り道をさがそう"
+dialogtxt       "I guess there's no choice."
+dialogtxt       "Let's search for a way around."
 code047b        
 code0309        
 call            @Func_0ca2

@@ -27,13 +27,13 @@ code047d        1, 2
 call            @Func_10f2
 call            @Func_0fee
 jumpz           @Cond_0136, ($b002 == 0)
-dialogtxt       "楽勝！"
-dialogtxt       "やっぱオ[NAME 8]たちは強いな！"
+dialogtxt       "Easy!"
+dialogtxt       "We really are strong!"
 goto            @Label_0164
 
 @Cond_0136:
-dialogtxt       "楽勝！"
-dialogtxt       "やっぱわたしたちって強いね！"
+dialogtxt       "Easy!"
+dialogtxt       "We really are strong!"
 goto            @Label_0164
 
 @Label_0164:
@@ -61,25 +61,25 @@ goto            @Label_01fc
 @Label_01fc:
 call            @Func_1078
 jumpz           @Cond_0226, ($b003 == 0)
-dialogtxt       "当然ノ結果デス"
+dialogtxt       "As Expected."
 goto            @Cond_0226
 
 @Cond_0226:
 jumpz           @Cond_0264, ($b003 == 1)
-dialogtxt       "うむ"
-dialogtxt       "もう少し歯ごたえが欲しかったな"
+dialogtxt       "Indeed."
+dialogtxt       "I hoped it would have had"
+dialogtxt       "a bit more mettle."
 goto            @Cond_0264
 
 @Cond_0264:
 jumpz           @Cond_0294, ($b003 == 2)
-dialogtxt       "...ふっ"
-dialogtxt       "うかれやがって"
+dialogtxt       "...Hmph."
+dialogtxt       "It was a mere weakling."
 goto            @Cond_0294
 
 @Cond_0294:
 jumpz           @Cond_02d4, ($b003 == 3)
-dialogtxt       "そのとおりですわ"
-dialogtxt       "私たちは強いのです！"
+dialogtxt       "Of course!"
 goto            @Cond_02d4
 
 @Cond_02d4:
@@ -88,13 +88,11 @@ call            @Func_10ae
 code0479        0, 0, 13
 call            @Func_100c
 jumpz           @Cond_0324, ($b002 == 0)
-dialogtxt       "それじゃ"
-dialogtxt       "先に進もうぜ！"
+dialogtxt       "Let's keep going then!"
 goto            @Label_034a
 
 @Cond_0324:
-dialogtxt       "それじゃ"
-dialogtxt       "先に行きましょう！"
+dialogtxt       "Let's keep going then!"
 goto            @Label_034a
 
 @Label_034a:
@@ -133,11 +131,11 @@ code047d        1, 2
 call            @Func_10f2
 call            @Func_0fee
 jumpz           @Cond_047a, ($b002 == 0)
-dialogtxt       "ちょっと油断したぜ..."
+dialogtxt       "I let my guard down..."
 goto            @Label_0498
 
 @Cond_047a:
-dialogtxt       "ちょっと油断したかな..."
+dialogtxt       "I let my guard down..."
 goto            @Label_0498
 
 @Label_0498:
@@ -165,28 +163,28 @@ goto            @Label_0530
 @Label_0530:
 call            @Func_1078
 jumpz           @Cond_0594, ($b003 == 0)
-dialogtxt       "本来ノチカラガ　出セテイ[NAME 8]バ"
-dialogtxt       "アンナ相手　問題デハ"
-dialogtxt       "アリマセンデシタ"
+dialogtxt       "If I Was Able To Use My Real Power,"
+dialogtxt       "That Opponent Would Not"
+dialogtxt       "Have Stood A Chance."
 goto            @Cond_0594
 
 @Cond_0594:
 jumpz           @Cond_05da, ($b003 == 1)
-dialogtxt       "あの程度の相手に苦戦するとは"
-dialogtxt       "情けないのぉ..."
+dialogtxt       "Having a close fight with"
+dialogtxt       "such an opponent is a bit saddening."
 goto            @Cond_05da
 
 @Cond_05da:
 jumpz           @Cond_0628, ($b003 == 2)
-dialogtxt       "ちっ..."
-dialogtxt       "あの程度の相手に"
-dialogtxt       "好き勝手やられるなどと..."
+dialogtxt       "Tch..."
+dialogtxt       "Letting an opponent like that"
+dialogtxt       "throw you around so easily..."
 goto            @Cond_0628
 
 @Cond_0628:
 jumpz           @Cond_066c, ($b003 == 3)
-dialogtxt       "す、少しだけですけど"
-dialogtxt       "あぶなかったですわ..."
+dialogtxt       "Th-That was just"
+dialogtxt       "a liiiitle bit dangerous..."
 goto            @Cond_066c
 
 @Cond_066c:
@@ -195,13 +193,13 @@ call            @Func_10ae
 code0479        0, 2, 13
 call            @Func_100c
 jumpz           @Cond_06c2, ($b002 == 0)
-dialogtxt       "気を取り直して"
-dialogtxt       "先に進もうぜ！"
+dialogtxt       "We can't let this get us down."
+dialogtxt       "Come on, let's go!"
 goto            @Label_06ee
 
 @Cond_06c2:
-dialogtxt       "気を取り直して"
-dialogtxt       "先に行きましょう！"
+dialogtxt       "We can't let this get us down."
+dialogtxt       "Come on, let's go!"
 goto            @Label_06ee
 
 @Label_06ee:
@@ -239,11 +237,11 @@ code047d        1, 2
 call            @Func_10f2
 call            @Func_0fee
 jumpz           @Cond_0810, ($b002 == 0)
-dialogtxt       "ざっとこんなもんだな！"
+dialogtxt       "We really did it!"
 goto            @Label_082c
 
 @Cond_0810:
-dialogtxt       "ざっとこんなもんね！"
+dialogtxt       "We really did it!"
 goto            @Label_082c
 
 @Label_082c:
@@ -271,26 +269,25 @@ goto            @Label_08c4
 @Label_08c4:
 call            @Func_1078
 jumpz           @Cond_090a, ($b003 == 0)
-dialogtxt       "アノ程度ノ相手ナラバ"
-dialogtxt       "問題デハアリマセン"
+dialogtxt       "An Opponent Of That Level"
+dialogtxt       "Is No Problem."
 goto            @Cond_090a
 
 @Cond_090a:
 jumpz           @Cond_0942, ($b003 == 1)
-dialogtxt       "うむ..."
-dialogtxt       "まあまあというところか"
+dialogtxt       "Hm..."
+dialogtxt       "That went alright."
 goto            @Cond_0942
 
 @Cond_0942:
 jumpz           @Cond_098a, ($b003 == 2)
-dialogtxt       "ちっ..."
-dialogtxt       "あの程度の相手に"
-dialogtxt       "モタモタするとは..."
+dialogtxt       "Tch..."
+dialogtxt       "Should've been an easy win..."
 goto            @Cond_098a
 
 @Cond_098a:
 jumpz           @Cond_09b4, ($b003 == 3)
-dialogtxt       "結構、余裕でしたわ"
+dialogtxt       "That wasn't too bad."
 goto            @Cond_09b4
 
 @Cond_09b4:
@@ -299,13 +296,11 @@ call            @Func_10ae
 code0479        0, 0, 13
 call            @Func_100c
 jumpz           @Cond_0a04, ($b002 == 0)
-dialogtxt       "それじゃ"
-dialogtxt       "先に進もうぜ！"
+dialogtxt       "Let's keep going then!"
 goto            @Label_0a2a
 
 @Cond_0a04:
-dialogtxt       "それじゃ"
-dialogtxt       "先に行きましょう！"
+dialogtxt       "Let's keep going then!"
 goto            @Label_0a2a
 
 @Label_0a2a:

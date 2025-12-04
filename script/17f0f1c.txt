@@ -14,7 +14,7 @@ code0482
 code047d        0, 132
 code0301        16, 3
 code047e        0, 1
-dialogtxt       "お、δじゃないか"
+dialogtxt       "Hey [NAME 2]."
 code0309        
 code047e        0, 0
 code0302        3
@@ -45,114 +45,111 @@ code0479        1, 0, 13
 code047d        1, 132
 call            @Func_115e
 call            @Func_10c6
-dialogtxt       "ねえさんとの試合の前だってのに"
-dialogtxt       "大丈夫なのか？"
-dialogtxt       "こんなとこでボーっとしててよ？"
+dialogtxt       "It's right before your match."
+dialogtxt       "Sure you've got time to waste?"
 code0309        
 call            @Func_111a
 code0479        0, 4, 13
 call            @Func_1078
-dialogtxt       "ボーっとなんかしてないけど"
-dialogtxt       "いまさらジタバタしても仕方ないよ"
-dialogtxt       "相手は親方なんだから"
+dialogtxt       "No, but..."
+dialogtxt       "Freaking out about it this late"
+dialogtxt       "isn't going to change anything."
 code0309        
 code0479        1, 0, 12
 code0479        0, 0, 16
-dialogtxt       "アニ[NAME 4]こそ"
-dialogtxt       "どうしたの？"
+dialogtxt       "And why are you here, Bro?"
 code0309        
 call            @Func_10ae
 code0479        1, 0, 16
 call            @Func_10e4
-dialogtxt       "村長んとこに泊まりに来た客に"
-dialogtxt       "やかましいヤツがいてさ"
-dialogtxt       "ちょっと席を外して..."
+dialogtxt       "There's this noisy guy staying at"
+dialogtxt       "Chief's place that was bothering me,"
+dialogtxt       "so I came out to get some air."
 code0309        
 code0479        0, 1, 16
 code0479        1, 2, 12
-dialogtxt       "...って"
-dialogtxt       "アニ[NAME 4]って呼ぶなって"
+dialogtxt       "...Hey!"
+dialogtxt       "I told you not to call me Bro!"
 code0309        
 call            @Func_111a
 code0479        1, 0, 12
 code0479        0, 0, 14
 call            @Func_1078
-dialogtxt       "村長んとこってお金かかるんでしょ？"
-dialogtxt       "ウチに泊まればいいのに"
+dialogtxt       "Staying there costs money, right?"
+dialogtxt       "You should just stay with us."
 code0309        
 call            @Func_10ae
 code0479        1, 4, 16
 call            @Func_10e4
-dialogtxt       "カンタンに言うけどお前んとこ"
-dialogtxt       "ミューノにγもふえて"
-dialogtxt       "いろいろ大変なんじゃないのか？"
+dialogtxt       "You say it like it's no big deal,"
+dialogtxt       "but you already have two guests."
+dialogtxt       "It's tough in a lot ways, right?"
 code0309        
 call            @Func_111a
 code0479        0, 0, 16
 call            @Func_1078
-dialogtxt       "さあ..."
-dialogtxt       "くわしくは知らないけど"
-dialogtxt       "親方もケガしてるし..."
+dialogtxt       "Well yeah."
+dialogtxt       "And Master's injured too..."
 code0309        
 call            @Func_10ae
 code0479        1, 2, 13
 call            @Func_10e4
-dialogtxt       "だからシッカリねえさんを"
-dialogtxt       "手伝わねぇとダメだぞ"
-dialogtxt       "ロブのためにもな"
+dialogtxt       "You better make sure"
+dialogtxt       "to help out V.E out."
+dialogtxt       "For Rob's sake and hers."
 code0309        
 call            @Func_111a
 code0479        0, 5, 16
 call            @Func_1078
-dialogtxt       "ロブ親方の..."
+dialogtxt       "For Master Rob..."
 code0309        
 call            @Func_10ae
 code0479        1, 1, 13
 call            @Func_10e4
-dialogtxt       "心配するな！　お前ならできるよ"
-dialogtxt       "なんせオ[NAME 8]との勝負に勝てるくらいの"
-dialogtxt       "修行をつんでるんだからな"
+dialogtxt       "Don't worry! You can handle it!"
+dialogtxt       "I mean, you're strong enough"
+dialogtxt       "to beat me, after all."
 code0309        
 call            @Func_111a
 code0479        0, 0, 16
 call            @Func_1078
 jumpz           @Cond_0710, ($b002 == 0)
-dialogtxt       "アニ[NAME 4]にとって今日の勝負は"
-dialogtxt       "オ[NAME 8]のウデ試しだろ？"
+dialogtxt       "Our match today..."
+dialogtxt       "You were just testing me, right?"
 goto            @Label_074e
 
 @Cond_0710:
-dialogtxt       "アニ[NAME 4]にとって今日の勝負は"
-dialogtxt       "わたしのウデ試しでしょ？"
+dialogtxt       "Our match today..."
+dialogtxt       "You were just testing me, right?"
 goto            @Label_074e
 
 @Label_074e:
 code0309        
 code0479        1, 0, 12
 code0479        0, 4, 12
-dialogtxt       "本気のアニ[NAME 4]だったら"
-dialogtxt       "γがいても"
-dialogtxt       "勝てるかどうかわからないよ"
+dialogtxt       "If you were serious,"
+dialogtxt       "I honestly don't know if I could"
+dialogtxt       "beat you even with [NAME 1]."
 code0309        
 call            @Func_10ae
 code0479        1, 0, 13
 call            @Func_10e4
-dialogtxt       "おお"
-dialogtxt       "めずらしくケン[NAME 4]ョな意見だな"
+dialogtxt       "That's suprisingly modest"
+dialogtxt       "coming from you."
 code0309        
 call            @Func_111a
 code0479        0, 0, 13
 call            @Func_1078
 jumpz           @Cond_088a, ($b002 == 0)
-dialogtxt       "本気で怒った時のアニ[NAME 4]は"
-dialogtxt       "おっそろしくコワイもんな"
-dialogtxt       "まさにその顔にピッタリだよ"
+dialogtxt       "When you're serious,"
+dialogtxt       "you get really terrifying."
+dialogtxt       "And your face becomes a perfect fit."
 goto            @Label_08e4
 
 @Cond_088a:
-dialogtxt       "本気で怒った時のアニ[NAME 4]は"
-dialogtxt       "おっそろしくコワイもんね"
-dialogtxt       "まさにその顔にピッタリだよ"
+dialogtxt       "When you're serious,"
+dialogtxt       "you get really terrifying."
+dialogtxt       "And your face becomes a perfect fit."
 goto            @Label_08e4
 
 @Label_08e4:
@@ -160,40 +157,40 @@ code0309
 call            @Func_10ae
 code0479        1, 3, 17
 call            @Func_10e4
-dialogtxt       "ンだとこらぁ"
+dialogtxt       "What'd you say!?"
 code0309        
 call            @Func_111a
 code0479        0, 1, 16
 call            @Func_1078
-dialogtxt       "ほら、コワイ"
+dialogtxt       "See, like that."
 code0309        
 call            @Func_10ae
 code0479        1, 0, 16
 call            @Func_10e4
-dialogtxt       "とにかくだ"
-dialogtxt       "明日の勝負にゃガッチリ勝って"
-dialogtxt       "ねえさんを安心させてやれ"
+dialogtxt       "Anyways, make sure to"
+dialogtxt       "deliver a solid victory"
+dialogtxt       "in the match tomorrow."
 code0309        
 code0479        0, 0, 12
 code0479        1, 2, 13
-dialogtxt       "というか、お前はオ[NAME 8]に勝ったんだ"
-dialogtxt       "そのお前がねえさんとの試合に"
-dialogtxt       "負けるなんて、許さねぇぞ"
+dialogtxt       "You beat me, so if V.E beats you,"
+dialogtxt       "that would mean..."
+dialogtxt       "...You can't lose this one."
 code0309        
 call            @Func_111a
 code0479        0, 4, 16
 call            @Func_1078
-dialogtxt       "そ、そんなこと..."
+dialogtxt       "W-Well..."
 code0309        
 call            @Func_10ae
 code0479        1, 3, 15
 call            @Func_10e4
-dialogtxt       "わかったな！"
+dialogtxt       "Got it!?"
 code0309        
 call            @Func_111a
 code0479        0, 2, 15
 call            @Func_1078
-dialogtxt       "はい！"
+dialogtxt       "Yeah!"
 code0309        
 call            @Func_11b4
 call            @Func_1096

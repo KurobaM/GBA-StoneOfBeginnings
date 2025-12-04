@@ -6,14 +6,14 @@ code0479        1, 0, 12
 code047d        1, 137
 call            @Func_0aa8
 call            @Func_0a10
-dialogtxt       "勝負の準備はできたのか？"
+dialogtxt       "You ready for the match?"
 code047b        
 code0309        
 call            @Func_0a64
 code0479        0, 0, 16
 call            @Func_09c2
-choicetxt       @Choice_00d6, "準備はバッチリ！"
-choicetxt       @Choice_0414, "そういえば忘れ物が..."
+choicetxt       @Choice_00d6, "Bring it on!"
+choicetxt       @Choice_0414, "Ehh, wait a bit..."
 choicewait      
 
 @Choice_00d6:
@@ -63,13 +63,13 @@ call            @Func_0aa8
 code0479        0, 2, 12
 call            @Func_09a4
 jumpz           @Cond_02ce, ($b002 == 0)
-dialogtxt       "よし！"
-dialogtxt       "行くぞ、γ！"
+dialogtxt       "Alright!"
+dialogtxt       "Let's do this, [NAME 1]!"
 goto            @Label_02ec
 
 @Cond_02ce:
-dialogtxt       "よし！"
-dialogtxt       "行くよ、γ！"
+dialogtxt       "Alright!"
+dialogtxt       "Let's do this, [NAME 1]!"
 goto            @Label_02ec
 
 @Label_02ec:
@@ -97,22 +97,22 @@ goto            @Label_0384
 @Label_0384:
 call            @Func_0a2e
 jumpz           @Cond_03a6, ($b003 == 0)
-dialogtxt       "オー！"
+dialogtxt       "Yes!"
 goto            @Cond_03a6
 
 @Cond_03a6:
 jumpz           @Cond_03c4, ($b003 == 1)
-dialogtxt       "承知！"
+dialogtxt       "Understood!"
 goto            @Cond_03c4
 
 @Cond_03c4:
 jumpz           @Cond_03e6, ($b003 == 2)
-dialogtxt       "好きにしろ"
+dialogtxt       "Whatever."
 goto            @Cond_03e6
 
 @Cond_03e6:
 jumpz           @Cond_0404, ($b003 == 3)
-dialogtxt       "はい！"
+dialogtxt       "Yes!"
 goto            @Cond_0404
 
 @Cond_0404:

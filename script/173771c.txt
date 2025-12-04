@@ -10,7 +10,7 @@ code0412        4, 1
 code0418        2
 setvar          $b075, 1
 setvar          $b072, 0
-placetxt        "Bostaph's workshop　Deckell Branch"
+placetxt        "Bostaph's Workshop　Deckell Branch"
 code040c        1, @Label_0260
 code040c        2, @Label_0256
 call            @Func_09fc
@@ -288,8 +288,8 @@ code040b
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
-dialogtxt       "身を守るための武器をって"
-dialogtxt       "思ったんだけどお金がね..."
+dialogtxt       "I was thinking of getting a weapon"
+dialogtxt       "to defend myself, but the price..."
 code0309        
 code047e        0, 0
 code0302        7

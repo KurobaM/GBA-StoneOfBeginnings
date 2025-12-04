@@ -3,19 +3,17 @@ code0479        0, 4, 17
 code047d        0, 0
 call            @Func_08b4
 call            @Func_07dc
-dialogbig       24, 116, 1, 0, 0, "はあぁ〜〜〜〜..."
+dialogbig       24, 116, 1, 0, 0, "Sigh~~~~..."
 code030c        
 code0479        0, 4, 16
 jumpz           @Cond_00ca, ($b002 == 0)
-dialogtxt       "あーあ..."
-dialogtxt       "なんでこんなことに"
-dialogtxt       "なってるんだろ..."
+dialogtxt       "Ugh..."
+dialogtxt       "Why is this happening to me...?"
 goto            @Label_0106
 
 @Cond_00ca:
-dialogtxt       "あーあ..."
-dialogtxt       "なんでこんなことに"
-dialogtxt       "なってるのかなぁ..."
+dialogtxt       "Ugh..."
+dialogtxt       "Why is this happening to me...?"
 goto            @Label_0106
 
 @Label_0106:
@@ -31,15 +29,15 @@ code0479        0, 0, 16
 call            @Func_08b4
 call            @Func_07dc
 jumpz           @Cond_018e, ($b002 == 0)
-dialogtxt       "ん？"
-dialogtxt       "誰かいるのか？"
-dialogtxt       "まさか..."
+dialogtxt       "Huh?"
+dialogtxt       "Is someone there?"
+dialogtxt       "Is that..."
 goto            @Label_01b8
 
 @Cond_018e:
-dialogtxt       "あれ？"
-dialogtxt       "誰かいるの？"
-dialogtxt       "まさか..."
+dialogtxt       "Huh?"
+dialogtxt       "Is someone there?"
+dialogtxt       "Is that..."
 goto            @Label_01b8
 
 @Label_01b8:
@@ -49,12 +47,12 @@ call            @Func_090a
 call            @Func_0818
 code047b        
 code0312        
-menutxt         @Menu_0212, "ミューノ"
-menutxt         @Menu_021e, "γ"
-menutxt         @Menu_022a, "ヴィー"
-menutxt         @Menu_0236, "[NAME 8]ミィ"
-menutxt         @Menu_0242, "ジェイド"
-menutxt         @Menu_024e, "ティエ"
+menutxt         @Menu_0212, "Murno"
+menutxt         @Menu_021e, "[NAME 1]"
+menutxt         @Menu_022a, "V.E"
+menutxt         @Menu_0236, "Lemmy"
+menutxt         @Menu_0242, "Jade"
+menutxt         @Menu_024e, "Tier"
 menuwait        
 
 @Menu_0212:

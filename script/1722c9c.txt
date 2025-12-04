@@ -1,38 +1,38 @@
 code0301        0, 7
-dialogtxt       "おまえのマ[NAME 4]割り職人度は..."
+dialogtxt       "Your firewood chopping level is:..."
 code0309        
 jumpz           @Cond_0052, ($h045 < 10)
-dialogtxt       "マ[NAME 4]割り素人"
+dialogtxt       "Chopping novice."
 goto            @Label_0108
 
 @Cond_0052:
 jumpz           @Cond_0078, ($h045 < 20)
-dialogtxt       "マ[NAME 4]割り見習い"
+dialogtxt       "Chopping apprentice."
 goto            @Label_0108
 
 @Cond_0078:
 jumpz           @Cond_009c, ($h045 < 40)
-dialogtxt       "マ[NAME 4]割り職人"
+dialogtxt       "Chopping artist."
 goto            @Label_0108
 
 @Cond_009c:
 jumpz           @Cond_00c0, ($h045 < 70)
-dialogtxt       "マ[NAME 4]割り名人"
+dialogtxt       "Chopping expert."
 goto            @Label_0108
 
 @Cond_00c0:
 jumpz           @Cond_00e4, ($h045 < 100)
-dialogtxt       "マ[NAME 4]割り達人"
+dialogtxt       "Chopping master."
 goto            @Label_0108
 
 @Cond_00e4:
 jumpz           @Label_0108, ($h045 >= 100)
-dialogtxt       "マ[NAME 4]割り鉄人"
+dialogtxt       "Chopping champion."
 goto            @Label_0108
 
 @Label_0108:
 code0309        
-dialogtxt       "だな"
+dialogtxt       "Yep."
 code0309        
 code0302        7
 code0443        0, 256, 0
@@ -98,9 +98,9 @@ goto            @Cond_030a
 
 @Cond_030a:
 code0301        0, 7
-dialogtxt       "これはマ[NAME 4]割りの報酬だ"
+dialogtxt       "Here's your reward."
 code0309        
-dialogtxt       "とっておきなさい"
+dialogtxt       "Take it."
 code0309        
 code0302        7
 code0364        $h219

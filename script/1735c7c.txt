@@ -73,11 +73,11 @@ code0301        8, 7
 code047d        0, 0
 code047e        0, 1
 jumpz           @Cond_0350, ($b002 == 0)
-dialogtxt       "こっちに用はないな..."
+dialogtxt       "Nothing to do here..."
 goto            @Label_036e
 
 @Cond_0350:
-dialogtxt       "こっちに用事はないよ..."
+dialogtxt       "I have nothing to do here..."
 goto            @Label_036e
 
 @Label_036e:
@@ -327,11 +327,11 @@ ret
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
-dialogtxt       "採掘場の橋がガタガタで"
-dialogtxt       "危なくって、しょうがない"
+dialogtxt       "The bridge is unstable,"
+dialogtxt       "so it could be dangerous."
 code0309        
-dialogtxt       "いくら最近、採掘量が減ってるからって"
-dialogtxt       "ちゃんとして欲しいもんだよ"
+dialogtxt       "No matter how rarely people use it,"
+dialogtxt       "I wish they'd fix it."
 code0309        
 code047e        0, 0
 code0302        7

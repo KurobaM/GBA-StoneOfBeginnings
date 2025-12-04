@@ -41,13 +41,13 @@ code0479        1, 1, 12
 code047d        1, 109
 call            @Func_18bc
 call            @Func_1824
-dialogtxt       "どうも〜"
+dialogtxt       "Oh hello there~"
 code047b        
 code0309        
 call            @Func_1878
 code0479        0, 2, 15
 call            @Func_17d6
-dialogtxt       "いつの間に！？"
+dialogtxt       "Huh? When did you...!?"
 code0309        
 call            @Func_18e6
 call            @Func_180c
@@ -88,25 +88,24 @@ code047d        0, 2
 call            @Func_1890
 call            @Func_17d6
 jumpz           @Cond_0436, ($b003 == 0)
-dialogtxt       "アヤシイ人物ヲ　確認！"
+dialogtxt       "Suspicious Individual Confirmed!"
 goto            @Cond_0436
 
 @Cond_0436:
 jumpz           @Cond_047a, ($b003 == 1)
-dialogtxt       "おぬしからはアヤシイにおいを"
-dialogtxt       "感じるのぉ..."
+dialogtxt       "You smell suspicious..."
 goto            @Cond_047a
 
 @Cond_047a:
 jumpz           @Cond_04b4, ($b003 == 2)
-dialogtxt       "[NAME 4]サマ..."
-dialogtxt       "あからさまにあやしいぞ"
+dialogtxt       "This girl..."
+dialogtxt       "Is very suspicous."
 goto            @Cond_04b4
 
 @Cond_04b4:
 jumpz           @Cond_04f2, ($b003 == 3)
-dialogtxt       "あなた、と〜っても"
-dialogtxt       "あやしいですわ！"
+dialogtxt       "You are veeery"
+dialogtxt       "suspicious!"
 goto            @Cond_04f2
 
 @Cond_04f2:
@@ -115,9 +114,9 @@ code0309
 call            @Func_180c
 code0479        1, 0, 13
 call            @Func_1842
-dialogtxt       "だからわたしは"
-dialogtxt       "ただのカワイイ道案内ですって！"
-dialogtxt       "ゼンゼンあやしくありません！"
+dialogtxt       "I told you,"
+dialogtxt       "I'm just a guide!"
+dialogtxt       "Not suspicious at all!"
 code0309        
 call            @Func_18e6
 call            @Func_1878
@@ -127,7 +126,7 @@ code0479        0, 2, 16
 code047d        0, 107
 call            @Func_1890
 call            @Func_17d6
-dialogtxt       "そうかしら..."
+dialogtxt       "Is that so..."
 code047b        
 code0309        
 call            @Func_18e6
@@ -139,18 +138,18 @@ code047d        0, 0
 call            @Func_1890
 code0479        1, 0, 16
 call            @Func_1842
-dialogtxt       "で、この先にもさっきみたいな"
-dialogtxt       "落とし穴がいっぱい"
-dialogtxt       "あるんだけど..."
+dialogtxt       "Now, as you've seen,"
+dialogtxt       "the area is riddle with holes."
+dialogtxt       "So..."
 code047b        
 code0309        
 code0479        1, 0, 12
-dialogtxt       "道案内はいかがですか〜？"
+dialogtxt       "How about I guide you through?"
 code0309        
 call            @Func_1878
 code0479        0, 2, 16
 call            @Func_17d6
-dialogtxt       "また〜？"
+dialogtxt       "This again?"
 code0309        
 call            @Func_18e6
 call            @Func_180c
@@ -160,9 +159,9 @@ code0479        0, 0, 16
 code047d        0, 108
 call            @Func_1890
 call            @Func_17d6
-dialogtxt       "だけどモグラみたいに落とし穴に"
-dialogtxt       "出入りするのはウンザリだし"
-dialogtxt       "ここはひとつ考えてみようか"
+dialogtxt       "It'd certainly be easier than"
+dialogtxt       "trying out every hole ourselves."
+dialogtxt       "I'll think about it."
 code047b        
 code0309        
 call            @Func_1912
@@ -177,65 +176,64 @@ code033b        396, 0, 0, 0, 1, 0
 code0479        1, 3, 12
 call            @Func_18a6
 call            @Func_1824
-dialogtxt       "（いける...！"
-dialogtxt       "　今度こそ、いけるわ...！）"
+dialogtxt       "(Almost got 'em!"
+dialogtxt       "　This time...!)"
 code047b        
 code0309        
 call            @Func_1878
 code0479        0, 2, 14
 call            @Func_1890
 call            @Func_17d6
-dialogtxt       "ところで"
-dialogtxt       "料金なんだけど..."
+dialogtxt       "By the way,"
+dialogtxt       "you said the fee was..."
 code047b        
 code0309        
 call            @Func_180c
 code043c        2, 3
 code0479        1, 1, 12
 call            @Func_1842
-dialogtxt       "はいはい"
-dialogtxt       "もちろん２００バーム"
-dialogtxt       "いただきますよ〜！"
+dialogtxt       "Yes, yes,"
+dialogtxt       "200 Boam!"
+dialogtxt       "Thank you!"
 code0309        
 call            @Func_1878
 code0479        0, 4, 12
 call            @Func_17d6
-dialogtxt       "おいおい"
-dialogtxt       "ココまでは案内なしに来たんだよ"
-dialogtxt       "同じ値段ってのは、あんまりだろ？"
+dialogtxt       "Hold on a second."
+dialogtxt       "We're further in now."
+dialogtxt       "Shouldn't it be cheaper?"
 code0309        
 call            @Func_180c
 code0479        1, 1, 15
 call            @Func_1842
-dialogtxt       "お！？"
-dialogtxt       "おほほほほほ..."
+dialogtxt       "Oh!?"
+dialogtxt       "Ohohohoho..."
 code0309        
 code033e        396
 code0479        1, 2, 14
-dialogtxt       "ちぇっ...！"
-dialogtxt       "こまかいわね...！"
+dialogtxt       "Tch...!"
+dialogtxt       "She's sharp...!"
 code0309        
 code0479        1, 0, 12
-dialogtxt       "じゃあ..."
+dialogtxt       "How about..."
 code0309        
 call            @Func_1878
 code0479        0, 2, 12
 call            @Func_17d6
-dialogtxt       "半額ってのはどうだい"
+dialogtxt       "We cut it down to half?"
 code0309        
 call            @Func_180c
 code0479        1, 5, 17
 call            @Func_1842
-dialogbig       84, 116, 1, 0, 0, "はっ！"
+dialogbig       84, 116, 1, 0, 0, "Half!?"
 code030c        
 code0479        1, 2, 16
-dialogtxt       "ちぇっ...！"
-dialogtxt       "しかたない..."
+dialogtxt       "Tch...!"
+dialogtxt       "Cheapskate..."
 code0309        
 code0479        1, 2, 12
-dialogtxt       "いいですわ"
-dialogtxt       "じゃあ半額の"
-dialogtxt       "１００バームで"
+dialogtxt       "Alright, fine."
+dialogtxt       "100 Boam it is, then."
 code0309        
 call            @Func_18e6
 call            @Func_1878
@@ -245,12 +243,12 @@ code0479        0, 0, 16
 code047d        0, 0
 call            @Func_1890
 call            @Func_17d6
-dialogtxt       "半額かー..."
-dialogtxt       "どうしよう？"
+dialogtxt       "100 Boam..."
+dialogtxt       "Hmm..."
 code047b        
 code0309        
-choicetxt       @Choice_0b6e, "半額なら案内を頼んでみようかな..."
-choicetxt       @Choice_0e34, "やっぱり自力で道を切り開こう！"
+choicetxt       @Choice_0b6e, "That might be worth it..."
+choicetxt       @Choice_0e34, "Nah, I'll figure it out myself!"
 choicewait      
 
 @Choice_0b6e:
@@ -265,24 +263,24 @@ code0479        1, 1, 12
 code0479        0, 0, 12
 call            @Func_18bc
 call            @Func_1824
-dialogtxt       "まいど〜！"
+dialogtxt       "Thank you!"
 code047b        
 code0309        
 code0479        1, 2, 16
-dialogtxt       "ちぇっ...！"
-dialogtxt       "本日２件目は、割が悪いわ"
+dialogtxt       "Tch...!"
+dialogtxt       "Not much profit from the second..."
 code0309        
 call            @Func_1878
 code0479        0, 0, 16
 call            @Func_17d6
-dialogtxt       "２件目って？"
+dialogtxt       "Second?"
 code0309        
 call            @Func_180c
 code0479        1, 1, 12
 call            @Func_1842
-dialogtxt       "いえいえ〜"
-dialogtxt       "こちらの話ですから〜"
-dialogtxt       "お気づかいなく〜"
+dialogtxt       "Oh no~"
+dialogtxt       "Don't mind me~"
+dialogtxt       "Just talking to myself~"
 code0309        
 call            @Func_18e6
 call            @Func_1878
@@ -298,27 +296,27 @@ code0309
 call            @Func_180c
 code0479        1, 0, 12
 call            @Func_1842
-dialogtxt       "ではわたしについてきてください"
-dialogtxt       "ここら辺、はぐれも多いから"
-dialogtxt       "気をつけてくださいね〜"
+dialogtxt       "Alright then, please follow me."
+dialogtxt       "Please be careful, as there"
+dialogtxt       "are many Strays around too~"
 code0309        
 goto            @Label_10ec
 
 goto            @Choice_0e34
 
 @Cond_0d74:
-dialogtxt       "あれ..."
-dialogtxt       "お金が足りない..."
+dialogtxt       "Huh..."
+dialogtxt       "You don't have enough money..."
 code0309        
 call            @Func_180c
 code0479        1, 2, 15
 call            @Func_1842
-dialogtxt       "ちょっと、ひっど〜い！？"
-dialogtxt       "ひやかしはダメ〜！"
+dialogtxt       "Are you trying to scam me!?"
+dialogtxt       "That's ho~rri~ble~!"
 code0309        
 code0479        1, 2, 16
-dialogtxt       "この先は穴も多くて"
-dialogtxt       "もっとたいへんなんだから"
+dialogtxt       "The area ahead is even"
+dialogtxt       "more dangerous than before."
 code0309        
 goto            @Label_0e84
 
@@ -328,8 +326,8 @@ goto            @Choice_0e34
 call            @Func_180c
 code0479        1, 2, 16
 call            @Func_1842
-dialogtxt       "この先は穴も多くて"
-dialogtxt       "もっとたいへんなんだから"
+dialogtxt       "The area ahead is even"
+dialogtxt       "more dangerous than before."
 code0309        
 @Label_0e84:
 call            @Func_18e6
@@ -340,9 +338,9 @@ code0479        0, 0, 12
 code047d        0, 108
 call            @Func_1890
 call            @Func_17d6
-dialogtxt       "そうなのかい"
-dialogtxt       "ま、半額だっていうんなら"
-dialogtxt       "アタシが払ってもいいよ"
+dialogtxt       "That so?"
+dialogtxt       "Well, I guess at half price,"
+dialogtxt       "I don't mind paying."
 code047b        
 code0309        
 call            @Func_18fc
@@ -353,44 +351,44 @@ code0479        1, 5, 12
 code047d        1, 0
 call            @Func_18a6
 call            @Func_1842
-dialogtxt       "ホント！？"
+dialogtxt       "Really!?"
 code047b        
 code0309        
 call            @Func_1878
 code0479        0, 0, 13
 call            @Func_17d6
-dialogtxt       "ああ"
-dialogtxt       "案内を頼むよ"
+dialogtxt       "Yeah."
+dialogtxt       "Lead the way."
 code0309        
 call            @Func_1912
 call            @Func_17f4
 code047b        
 setvar          $f0142, 1
-popuptxt        "ヴィーが支払ってくれた！"
+popuptxt        "V.E handed over the money!"
 code0318        
 code0478        1, 11
 code0479        1, 1, 12
 code047d        1, 109
 call            @Func_18bc
 call            @Func_1824
-dialogtxt       "まいどあり〜！"
+dialogtxt       "Thank you!"
 code047b        
 code0309        
 code0479        1, 2, 14
-dialogtxt       "ちぇっ...！"
-dialogtxt       "本日２件目は、割が悪いわ"
+dialogtxt       "Tch...!"
+dialogtxt       "Not much profit from the second..."
 code0309        
 call            @Func_1878
 code0479        0, 0, 16
 call            @Func_17d6
-dialogtxt       "なんか言った？"
+dialogtxt       "Hm? Did you say something?"
 code0309        
 call            @Func_180c
 code0479        1, 0, 12
 call            @Func_1842
-dialogtxt       "いえいえ"
-dialogtxt       "ここら辺、はぐれも多いから"
-dialogtxt       "気をつけてくださいね"
+dialogtxt       "Oh, nothing."
+dialogtxt       "There are many Strays here,"
+dialogtxt       "please be careful."
 code0309        
 @Label_10ec:
 call            @Func_1912

@@ -14,7 +14,7 @@ code0482
 code047d        0, 108
 code0301        16, 3
 code047e        0, 1
-dialogtxt       "ここだと思ったよ"
+dialogtxt       "I figured you were here."
 code0309        
 code047e        0, 0
 code0302        3
@@ -45,28 +45,28 @@ code0479        1, 0, 12
 code047d        1, 108
 call            @Func_0e34
 call            @Func_0d30
-dialogtxt       "親方"
+dialogtxt       "Master..."
 code047b        
 code0309        
 call            @Func_0d84
 code0479        1, 0, 12
 call            @Func_0dba
-dialogtxt       "勝負の前だってのに"
-dialogtxt       "ずいぶん余裕じゃないか？"
+dialogtxt       "You seem pretty relaxed."
+dialogtxt       "You know we have a match tomorrow?"
 code0309        
 call            @Func_0df0
 code0479        0, 0, 12
 call            @Func_0d4e
 jumpz           @Cond_034c, ($b002 == 0)
-dialogtxt       "そんなことないけど"
-dialogtxt       "いまさらジタバタしたって"
-dialogtxt       "仕方ないだろ？"
+dialogtxt       "Of course I do."
+dialogtxt       "It's more that there's no point"
+dialogtxt       "in getting worked up this late."
 goto            @Label_0396
 
 @Cond_034c:
-dialogtxt       "そんなことないけど"
-dialogtxt       "いまさらジタバタしたって"
-dialogtxt       "仕方ないでしょ？"
+dialogtxt       "Of course I do."
+dialogtxt       "It's more that there's no point"
+dialogtxt       "in getting worked up this late."
 goto            @Label_0396
 
 @Label_0396:
@@ -74,71 +74,68 @@ code0309
 call            @Func_0d84
 code0479        1, 2, 12
 call            @Func_0dba
-dialogtxt       "言うねぇ..."
-dialogtxt       "ジェイドをたおしたからって"
-dialogtxt       "調子に乗ってると、痛い目見るよ"
+dialogtxt       "So you say..."
+dialogtxt       "Don't get overconfident."
+dialogtxt       "Jade is nothing compared to me."
 code0309        
 call            @Func_0df0
 code0479        0, 2, 13
 call            @Func_0d4e
-dialogtxt       "そんなつもりはないって！"
-dialogtxt       "今までの修行の成果を"
-dialogtxt       "全部ぶつけるつもりでがんばるから"
+dialogtxt       "I'm taking this seriously!"
+dialogtxt       "I'm gonna try my best to show you"
+dialogtxt       "the results of my training."
 code0309        
 code0479        0, 2, 12
-dialogtxt       "みててよ！"
+dialogtxt       "So just watch me!"
 code0309        
 call            @Func_0d84
 code0479        1, 1, 13
 call            @Func_0dba
-dialogtxt       "アンタにもだんだん"
-dialogtxt       "本当の強さってものが"
-dialogtxt       "わかってきたみたいだね"
+dialogtxt       "Looks like you're slowly coming"
+dialogtxt       "to understand what true strength is."
 code0309        
 call            @Func_0df0
 code0479        0, 5, 16
 call            @Func_0d4e
-dialogtxt       "本当の強さ...？"
-dialogtxt       "そんなむずかしいこと"
-dialogtxt       "よくわからないよ"
+dialogtxt       "True strength...?"
+dialogtxt       "I still don't really understand"
+dialogtxt       "something like that yet."
 code0309        
 call            @Func_0d84
 code0479        1, 0, 12
 call            @Func_0dba
-dialogtxt       "強さってのはね、力だけじゃない..."
-dialogtxt       "なんて言うか、そうだね"
-dialogtxt       "魂の強さも大切なんだよ"
+dialogtxt       "Strength isn't just physical..."
+dialogtxt       "Like, how should I put this...?"
+dialogtxt       "Your conviction is important too."
 code0309        
 code0479        0, 0, 16
 code0479        1, 2, 16
-dialogtxt       "そして鍛冶師は"
-dialogtxt       "武器を通して自分の魂を伝え"
-dialogtxt       "相手の魂を感じ取るんだ"
+dialogtxt       "A strong Craftknight can feel their"
+dialogtxt       "spirit through their weapons."
 code0309        
 call            @Func_0df0
 code0479        0, 2, 12
 call            @Func_0d4e
-dialogtxt       "武器を通して感じる..."
-dialogtxt       "それは、なんとなくだけど"
-dialogtxt       "わかる気がするよ"
+dialogtxt       "Feel their spirit..."
+dialogtxt       "I think I kind of get it."
 code0309        
 call            @Func_0d84
 code0479        1, 1, 13
 call            @Func_0dba
-dialogtxt       "へぇ"
-dialogtxt       "いっちょまえのこと言うように"
-dialogtxt       "なったもんだ"
+dialogtxt       "Heh."
+dialogtxt       "I can tell you're"
+dialogtxt       "growing by the day."
 code0309        
 code0479        0, 0, 12
 code0479        1, 2, 12
-dialogtxt       "じゃあ明日は"
-dialogtxt       "その実力をみせてもらうよ"
+dialogtxt       "Tomorrow I'll have you show me"
+dialogtxt       "your true abilities in combat."
 code0309        
 call            @Func_0df0
 code0479        0, 2, 13
 call            @Func_0d4e
-dialogtxt       "うん"
-dialogtxt       "がんばるよ！"
+dialogtxt       "Yeah!"
+dialogtxt       "I'll do my best!"
 code0309        
 call            @Func_0e8a
 call            @Func_0d6c

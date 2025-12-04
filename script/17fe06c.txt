@@ -10,8 +10,9 @@ code0479        0, 0, 12
 code047d        0, 109
 call            @Func_0830
 call            @Func_0758
-dialogtxt       "ここの階段を上れば"
-dialogtxt       "地上に出られますよ〜！"
+dialogtxt       "Last one!"
+dialogtxt       "If we go up those stairs,"
+dialogtxt       "we'll come up above ground~!"
 code047b        
 code0309        
 call            @Func_0886

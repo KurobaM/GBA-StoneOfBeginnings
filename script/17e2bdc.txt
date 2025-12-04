@@ -34,22 +34,22 @@ jumpz           @Cond_04ee, ($f0132 == 1)
 call            @Func_0c0a
 call            @Func_0b72
 jumpz           @Cond_016e, ($b003 == 0)
-dialogtxt       "ドウシタノデスカ？"
+dialogtxt       "Is Something Wrong?"
 goto            @Cond_016e
 
 @Cond_016e:
 jumpz           @Cond_0194, ($b003 == 1)
-dialogtxt       "なにごとじゃ？"
+dialogtxt       "What is it?"
 goto            @Cond_0194
 
 @Cond_0194:
 jumpz           @Cond_01b4, ($b003 == 2)
-dialogtxt       "なんだ？"
+dialogtxt       "What now?"
 goto            @Cond_01b4
 
 @Cond_01b4:
 jumpz           @Cond_01de, ($b003 == 3)
-dialogtxt       "どうしたんですか？"
+dialogtxt       "Is there something wrong?"
 goto            @Cond_01de
 
 @Cond_01de:
@@ -59,15 +59,15 @@ call            @Func_0bc6
 code0479        0, 0, 13
 call            @Func_0b24
 jumpz           @Cond_0264, ($b002 == 0)
-dialogtxt       "そうだ...！"
-dialogtxt       "たしかこの先のディックル鉱洞に"
-dialogtxt       "街道への抜け道があったはずだ！"
+dialogtxt       "That's it!"
+dialogtxt       "There should be a way around"
+dialogtxt       "through Deckell Mine!"
 goto            @Label_02b8
 
 @Cond_0264:
-dialogtxt       "そうだ...！"
-dialogtxt       "たしかこの先のディックル鉱洞に"
-dialogtxt       "街道への抜け道があったはず！"
+dialogtxt       "That's it...!"
+dialogtxt       "There should be a way around"
+dialogtxt       "through Deckell Mine!"
 goto            @Label_02b8
 
 @Label_02b8:
@@ -94,26 +94,26 @@ goto            @Label_034e
 @Label_034e:
 call            @Func_0b90
 jumpz           @Cond_038c, ($b003 == 0)
-dialogtxt       "タシカ？"
-dialogtxt       "確実デハ　ナイノデスカ"
+dialogtxt       "Should?"
+dialogtxt       "That Is Not A Guarantee."
 goto            @Cond_038c
 
 @Cond_038c:
 jumpz           @Cond_03ce, ($b003 == 1)
-dialogtxt       "たしか...じゃと？"
-dialogtxt       "なにやらたよりないが..."
+dialogtxt       "Should... You say?"
+dialogtxt       "That's not reliable..."
 goto            @Cond_03ce
 
 @Cond_03ce:
 jumpz           @Cond_040c, ($b003 == 2)
-dialogtxt       "たしか...？"
-dialogtxt       "ムダ足にならんといいが..."
+dialogtxt       "Should...?"
+dialogtxt       "This better not be a fool's errand..."
 goto            @Cond_040c
 
 @Cond_040c:
 jumpz           @Cond_0452, ($b003 == 3)
-dialogtxt       "たしか...ですか？"
-dialogtxt       "あなたのカンは、ちょっと..."
+dialogtxt       "There...\"should\" be?"
+dialogtxt       "Your intuition is a bit flaky..."
 goto            @Cond_0452
 
 @Cond_0452:
@@ -122,13 +122,13 @@ call            @Func_0bc6
 code0479        0, 0, 12
 call            @Func_0b24
 jumpz           @Cond_04b0, ($b002 == 0)
-dialogtxt       "なんだよ！"
-dialogtxt       "行ってみれば思い出すって！"
+dialogtxt       "S-Shut up!"
+dialogtxt       "I'll remember when we get there!"
 goto            @Label_04de
 
 @Cond_04b0:
-dialogtxt       "なによ！"
-dialogtxt       "行ってみれば思い出すって！"
+dialogtxt       "S-Shut up!"
+dialogtxt       "I'll remember when we get there!"
 goto            @Label_04de
 
 @Label_04de:
@@ -142,9 +142,9 @@ goto            @Label_055e
 code0479        0, 0, 12
 call            @Func_0bde
 call            @Func_0b24
-dialogtxt       "抜け道をつかえば"
-dialogtxt       "門番さんにみつからないで"
-dialogtxt       "外に行けるぞ！"
+dialogtxt       "If we use the secret path,"
+dialogtxt       "we can go outside without"
+dialogtxt       "the guard noticing us!"
 code047b        
 code0309        
 call            @Func_0c34
