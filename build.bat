@@ -45,8 +45,9 @@ script_inserter\swordcraft3c swordcraft3-test.gba script\17cc5bc.txt --pos=17cc5
 script_inserter\swordcraft3c swordcraft3-test.gba script\172adec.txt --pos=172adec
 script_inserter\swordcraft3c swordcraft3-test.gba script\172c77c.txt --pos=172c77c
 script_inserter\swordcraft3c swordcraft3-test.gba script\172cb9c.txt --pos=172cb9c
-
-::DAY 1 SCRIPTS
+echo -------------------------------------------------------------
+echo DAY 1 SCRIPTS
+echo -------------------------------------------------------------
 script_inserter\swordcraft3c swordcraft3-test.gba script\17ccf1c.txt --pos=17ccf1c
 script_inserter\swordcraft3c swordcraft3-test.gba script\17cde8c.txt --pos=17cde8c
 script_inserter\swordcraft3c swordcraft3-test.gba script\17ce76c.txt --pos=17ce76c
@@ -103,8 +104,9 @@ script_inserter\swordcraft3c swordcraft3-test.gba script\1732aec.txt --pos=1732a
 script_inserter\swordcraft3c swordcraft3-test.gba script\17d4b7c.txt --pos=17d4b7c 
 script_inserter\swordcraft3c swordcraft3-test.gba script\17d4fac.txt --pos=17d4fac 
 script_inserter\swordcraft3c swordcraft3-test.gba script\17d535c.txt --pos=17d535c 
-
+echo -------------------------------------------------------------
 echo DAY 2 SCRIPTS
+echo -------------------------------------------------------------
 echo 17344cc.txt
 script_inserter\swordcraft3c swordcraft3-test.gba script\17344cc.txt --pos=17344cc
 echo 1734ecc.txt
@@ -207,8 +209,9 @@ echo 18c69fc.txt
 script_inserter\swordcraft3c swordcraft3-test.gba script\18c69fc.txt --pos=18c69fc
 echo 18c754c.txt
 script_inserter\swordcraft3c swordcraft3-test.gba script\18c754c.txt --pos=18c754c
-
+echo -------------------------------------------------------------
 echo DAY 3 SCRIPTS
+echo -------------------------------------------------------------
 echo 17221cc.txt
 script_inserter\swordcraft3c swordcraft3-test.gba script\17221cc.txt --pos=17221cc
 echo 17224ac.txt
