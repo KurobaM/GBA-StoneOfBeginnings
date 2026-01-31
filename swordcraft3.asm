@@ -25,6 +25,8 @@
 .include "asm/name_input.asm"
 .include "asm/sjis2ascii.asm"
 
+.include "asm/name_input_cursor.asm"
+
 ; Allow using the debug menu features.
 .include "asm/debug_menu.asm"
 
