@@ -118,10 +118,12 @@ dialogtxt       "Our match today…"
 dialogtxt       "You were just testing me, right?"
 goto            @Label_074e
 
+
 @Cond_0710:
 dialogtxt       "Our match today…"
 dialogtxt       "You were just testing me, right?"
 goto            @Label_074e
+
 
 @Label_074e:
 code0309        
@@ -146,11 +148,13 @@ dialogtxt       "you get really terrifying."
 dialogtxt       "And your face becomes a perfect fit."
 goto            @Label_08e4
 
+
 @Cond_088a:
 dialogtxt       "When you're serious,"
 dialogtxt       "you get really terrifying."
 dialogtxt       "And your face becomes a perfect fit."
 goto            @Label_08e4
+
 
 @Label_08e4:
 code0309        
@@ -198,12 +202,14 @@ code047b
 code0333        2, 30
 done            
 
+
 @Func_0ad6:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 @Func_0b16:
 code031b        7, -1, -1, $h136, $h137
@@ -212,17 +218,20 @@ code031f        7
 code031a        7
 ret             
 
+
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
 
+
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
 ret             
+
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
@@ -230,12 +239,14 @@ code031f        7
 code031a        7
 ret             
 
+
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -251,6 +262,7 @@ code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -262,151 +274,184 @@ code031f        6
 code031a        7
 ret             
 
+
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 jumpz           @Cond_0e1e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_1058
+
 
 @Cond_0e1e:
 jumpz           @Cond_0e44, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_1058
 
+
 @Cond_0e44:
 jumpz           @Cond_0e6a, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_1058
+
 
 @Cond_0e6a:
 jumpz           @Cond_0e90, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_1058
 
+
 @Cond_0e90:
 jumpz           @Cond_0eb6, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_1058
+
 
 @Cond_0eb6:
 jumpz           @Cond_0edc, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_1058
 
+
 @Cond_0edc:
 jumpz           @Cond_0f02, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_1058
+
 
 @Cond_0f02:
 jumpz           @Cond_0f28, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_1058
 
+
 @Cond_0f28:
 jumpz           @Cond_0f4e, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_1058
+
 
 @Cond_0f4e:
 jumpz           @Cond_0f74, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_1058
 
+
 @Cond_0f74:
 jumpz           @Cond_0f9a, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_1058
+
 
 @Cond_0f9a:
 jumpz           @Cond_0fc0, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_1058
 
+
 @Cond_0fc0:
 jumpz           @Cond_0fe6, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_1058
+
 
 @Cond_0fe6:
 jumpz           @Cond_100c, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_1058
 
+
 @Cond_100c:
 jumpz           @Cond_1032, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_1058
+
 
 @Cond_1032:
 jumpz           @Label_1058, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1058
 
+
 @Label_1058:
 ret             
+
 
 code0301        2, 4
 code047e        0, 1
 ret             
+
 
 @Func_1078:
 code0301        2, 7
 code047e        0, 1
 ret             
 
+
 @Func_1096:
 code047e        0, 0
 code0302        4
 ret             
+
 
 @Func_10ae:
 code047e        0, 0
 code0302        7
 ret             
 
+
 @Func_10c6:
 code0301        4, 5
 code047e        1, 1
 ret             
+
 
 @Func_10e4:
 code0301        4, 7
 code047e        1, 1
 ret             
 
+
 code047e        1, 0
 code0302        5
 ret             
+
 
 @Func_111a:
 code047e        1, 0
 code0302        7
 ret             
 
+
 code047a        0, 1, 1
 ret             
 
+
 code047a        1, 1, 1
 ret             
+
 
 @Func_115e:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
+
 code047a        0, 0, 1
 ret             
 
+
 code047a        1, 0, 1
 ret             
+
 
 @Func_11b4:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
+
 

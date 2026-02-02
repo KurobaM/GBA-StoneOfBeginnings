@@ -13,6 +13,7 @@ code0481        1
 code0482        
 goto            @Label_017a
 
+
 @Cond_00ba:
 jumpz           @Cond_00fa, ($b003 == 1)
 code047f        225
@@ -20,6 +21,7 @@ code0480        0, 1, 0, 0
 code0481        1
 code0482        
 goto            @Label_017a
+
 
 @Cond_00fa:
 jumpz           @Cond_013a, ($b003 == 2)
@@ -29,6 +31,7 @@ code0481        1
 code0482        
 goto            @Label_017a
 
+
 @Cond_013a:
 jumpz           @Label_017a, ($b003 == 3)
 code047f        227
@@ -36,6 +39,7 @@ code0480        0, 1, 0, 0
 code0481        1
 code0482        
 goto            @Label_017a
+
 
 @Label_017a:
 code047d        0, 2
@@ -45,19 +49,23 @@ jumpz           @Cond_01ca, ($b003 == 0)
 dialogtxt       "Found You…"
 goto            @Label_0246
 
+
 @Cond_01ca:
 jumpz           @Cond_01f2, ($b003 == 1)
 dialogtxt       "So this is where you were…"
 goto            @Label_0246
+
 
 @Cond_01f2:
 jumpz           @Cond_0224, ($b003 == 2)
 dialogtxt       "I was wondering where you'd gone…"
 goto            @Label_0246
 
+
 @Cond_0224:
 dialogtxt       "There you are."
 goto            @Label_0246
+
 
 @Label_0246:
 code0309        
@@ -88,19 +96,23 @@ jumpz           @Cond_03a0, ($b003 == 0)
 code0479        1, 0, 12
 goto            @Label_0408
 
+
 @Cond_03a0:
 jumpz           @Cond_03c8, ($b003 == 1)
 code0479        1, 0, 14
 goto            @Label_0408
+
 
 @Cond_03c8:
 jumpz           @Cond_03f0, ($b003 == 2)
 code0479        1, 3, 12
 goto            @Label_0408
 
+
 @Cond_03f0:
 code0479        1, 0, 16
 goto            @Label_0408
+
 
 @Label_0408:
 code047d        1, 2
@@ -137,11 +149,13 @@ dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_063e
 
+
 @Cond_05e2:
 dialogtxt       "That's true, but…"
 dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_063e
+
 
 @Label_063e:
 code0309        
@@ -160,11 +174,13 @@ dialogtxt       "Well, she wants to keep it a secret,"
 dialogtxt       "just like everything else…"
 goto            @Label_074a
 
+
 @Cond_06fe:
 dialogtxt       "If I just knew what…"
 dialogtxt       "Well, she wants to keep it a secret,"
 dialogtxt       "just like everything else…"
 goto            @Label_074a
+
 
 @Label_074a:
 code0309        
@@ -181,10 +197,12 @@ dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_07f4
 
+
 @Cond_07c8:
 dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_07f4
+
 
 @Label_07f4:
 code0309        
@@ -208,6 +226,7 @@ dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_09ec
 
+
 @Cond_093a:
 dialogtxt       "It's not like that…"
 dialogtxt       "As Master put it, a Craftknight's "
@@ -217,6 +236,7 @@ code0479        0, 2, 12
 dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_09ec
+
 
 @Label_09ec:
 code0309        
@@ -246,8 +266,8 @@ code0309
 call            @Func_2f0c
 code0479        0, 5, 17
 call            @Func_2e6a
-dialogtxt       "Wha…!"
-dialogtxt       "Why…!?"
+dialogtxt       "Wha— !"
+dialogtxt       "Why!?"
 code0309        
 call            @Func_2ea0
 code0479        1, 0, 12
@@ -265,11 +285,13 @@ dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_0c72
 
+
 @Cond_0c40:
 dialogtxt       "[NAME 1]…"
 dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_0c72
+
 
 @Label_0c72:
 code0309        
@@ -289,6 +311,7 @@ call            @Func_2fa6
 call            @Func_2e88
 code047b        
 goto            @Cond_0d20
+
 
 @Cond_0d20:
 jumpz           @Cond_16f0, ($b003 == 1)
@@ -318,10 +341,12 @@ dialogtxt       "Piddling?"
 dialogtxt       "What's that mean…"
 goto            @Label_0ea6
 
+
 @Cond_0e88:
 dialogtxt       "Piddling?"
 dialogtxt       "What's that mean…"
 goto            @Label_0ea6
+
 
 @Label_0ea6:
 code0309        
@@ -341,11 +366,13 @@ dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_0ffa
 
+
 @Cond_0f9e:
 dialogtxt       "That's true, but…"
 dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_0ffa
+
 
 @Label_0ffa:
 code0309        
@@ -365,11 +392,13 @@ dialogtxt       "Well, she wants to keep it a secret,"
 dialogtxt       "just like everything else…"
 goto            @Label_111c
 
+
 @Cond_10d0:
 dialogtxt       "If I just knew what…"
 dialogtxt       "Well, she wants to keep it a secret,"
 dialogtxt       "just like everything else…"
 goto            @Label_111c
+
 
 @Label_111c:
 code0309        
@@ -386,10 +415,12 @@ dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_11ca
 
+
 @Cond_119e:
 dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_11ca
+
 
 @Label_11ca:
 code0309        
@@ -415,6 +446,7 @@ dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_140c
 
+
 @Cond_1346:
 dialogtxt       "It's not like that…"
 dialogtxt       "As Master put it, a Craftknight's "
@@ -425,6 +457,7 @@ code0479        0, 2, 12
 dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_140c
+
 
 @Label_140c:
 code0309        
@@ -449,8 +482,8 @@ code0309
 call            @Func_2f0c
 code0479        0, 5, 17
 call            @Func_2e6a
-dialogtxt       "Wha…!"
-dialogtxt       "Why…!?"
+dialogtxt       "Wha— !"
+dialogtxt       "Why!?"
 code0309        
 call            @Func_2ea0
 code0479        1, 4, 12
@@ -468,11 +501,13 @@ dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_1646
 
+
 @Cond_1614:
 dialogtxt       "[NAME 1]…"
 dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_1646
+
 
 @Label_1646:
 code0309        
@@ -481,7 +516,7 @@ code0479        1, 2, 15
 call            @Func_2ed6
 dialogtxt       "Promise or not,"
 dialogtxt       "I will do whatever it"
-dialogtxt       "takes to keep her safe…!"
+dialogtxt       "takes to keep her safe!"
 code0309        
 call            @Func_2f0c
 code0479        0, 4, 14
@@ -492,6 +527,7 @@ call            @Func_2fa6
 call            @Func_2e88
 code047b        
 goto            @Cond_16f0
+
 
 @Cond_16f0:
 jumpz           @Cond_1f44, ($b003 == 2)
@@ -524,11 +560,13 @@ dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_1902
 
+
 @Cond_18a6:
 dialogtxt       "That's true, but…"
 dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_1902
+
 
 @Label_1902:
 code0309        
@@ -546,10 +584,12 @@ dialogtxt       "Another secret,"
 dialogtxt       "just like always…"
 goto            @Label_19d4
 
+
 @Cond_19a2:
 dialogtxt       "Another secret,"
 dialogtxt       "just like always…"
 goto            @Label_19d4
+
 
 @Label_19d4:
 code0309        
@@ -566,10 +606,12 @@ dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_1a82
 
+
 @Cond_1a56:
 dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_1a82
+
 
 @Label_1a82:
 code0309        
@@ -594,6 +636,7 @@ dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_1c9a
 
+
 @Cond_1bd4:
 dialogtxt       "It's not like that…"
 dialogtxt       "As Master put it, a Craftknight's "
@@ -604,6 +647,7 @@ code0479        0, 2, 12
 dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_1c9a
+
 
 @Label_1c9a:
 code0309        
@@ -628,8 +672,8 @@ code0309
 call            @Func_2f0c
 code0479        0, 5, 17
 call            @Func_2e6a
-dialogtxt       "Wha…!"
-dialogtxt       "Why…!?"
+dialogtxt       "Wha— !"
+dialogtxt       "Why!?"
 code0309        
 call            @Func_2ea0
 code0479        1, 3, 12
@@ -647,11 +691,13 @@ dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_1ed0
 
+
 @Cond_1e9a:
 dialogtxt       "[NAME 1]…"
 dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_1ed0
+
 
 @Label_1ed0:
 code0309        
@@ -670,6 +716,7 @@ call            @Func_2fa6
 call            @Func_2e88
 code047b        
 goto            @Cond_1f44
+
 
 @Cond_1f44:
 jumpz           @Cond_28b8, ($b003 == 3)
@@ -706,11 +753,13 @@ dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_21a4
 
+
 @Cond_2148:
 dialogtxt       "That's true, but…"
 dialogtxt       "Why didn't Murno want to"
 dialogtxt       "run away if it's so dangerous?"
 goto            @Label_21a4
+
 
 @Label_21a4:
 code0309        
@@ -730,11 +779,13 @@ dialogtxt       "Well, she wants to keep it a secret,"
 dialogtxt       "just like everything else…"
 goto            @Label_22c2
 
+
 @Cond_2276:
 dialogtxt       "If I just knew what…"
 dialogtxt       "Well, she wants to keep it a secret,"
 dialogtxt       "just like everything else…"
 goto            @Label_22c2
+
 
 @Label_22c2:
 code0309        
@@ -751,10 +802,12 @@ dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_2370
 
+
 @Cond_2344:
 dialogtxt       "Sigh…"
 dialogtxt       "So many things I don't know…"
 goto            @Label_2370
+
 
 @Label_2370:
 code0309        
@@ -778,6 +831,7 @@ dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_2576
 
+
 @Cond_24c4:
 dialogtxt       "It's not like that…"
 dialogtxt       "As Master put it, a Craftknight's "
@@ -787,6 +841,7 @@ code0479        0, 2, 12
 dialogtxt       "As long as you're my partner,"
 dialogtxt       "I will protect her."
 goto            @Label_2576
+
 
 @Label_2576:
 code0309        
@@ -814,8 +869,8 @@ code0309
 call            @Func_2f0c
 code0479        0, 5, 17
 call            @Func_2e6a
-dialogtxt       "Wha…!"
-dialogtxt       "Why…!?"
+dialogtxt       "Wha— !"
+dialogtxt       "Why!?"
 code0309        
 call            @Func_2ea0
 code0479        1, 0, 16
@@ -835,11 +890,13 @@ dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_280c
 
+
 @Cond_27da:
 dialogtxt       "[NAME 1]…"
 dialogtxt       "Would you really break your"
 dialogtxt       "oath as a Craftknight…?"
 goto            @Label_280c
+
 
 @Label_280c:
 code0309        
@@ -860,9 +917,11 @@ call            @Func_2e88
 code047b        
 goto            @Cond_28b8
 
+
 @Cond_28b8:
 code0333        2, 30
 done            
+
 
 @Func_28c8:
 code031a        7
@@ -871,6 +930,7 @@ code031c        7, 1
 code031f        7
 ret             
 
+
 @Func_2908:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -878,17 +938,20 @@ code031f        7
 code031a        7
 ret             
 
+
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
 
+
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
 ret             
+
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
@@ -896,12 +959,14 @@ code031f        7
 code031a        7
 ret             
 
+
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -917,6 +982,7 @@ code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -928,151 +994,184 @@ code031f        6
 code031a        7
 ret             
 
+
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 jumpz           @Cond_2c10, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_2e4a
+
 
 @Cond_2c10:
 jumpz           @Cond_2c36, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_2e4a
 
+
 @Cond_2c36:
 jumpz           @Cond_2c5c, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_2e4a
+
 
 @Cond_2c5c:
 jumpz           @Cond_2c82, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_2e4a
 
+
 @Cond_2c82:
 jumpz           @Cond_2ca8, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_2e4a
+
 
 @Cond_2ca8:
 jumpz           @Cond_2cce, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_2e4a
 
+
 @Cond_2cce:
 jumpz           @Cond_2cf4, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_2e4a
+
 
 @Cond_2cf4:
 jumpz           @Cond_2d1a, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_2e4a
 
+
 @Cond_2d1a:
 jumpz           @Cond_2d40, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_2e4a
+
 
 @Cond_2d40:
 jumpz           @Cond_2d66, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_2e4a
 
+
 @Cond_2d66:
 jumpz           @Cond_2d8c, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_2e4a
+
 
 @Cond_2d8c:
 jumpz           @Cond_2db2, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_2e4a
 
+
 @Cond_2db2:
 jumpz           @Cond_2dd8, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_2e4a
+
 
 @Cond_2dd8:
 jumpz           @Cond_2dfe, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_2e4a
 
+
 @Cond_2dfe:
 jumpz           @Cond_2e24, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_2e4a
+
 
 @Cond_2e24:
 jumpz           @Label_2e4a, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_2e4a
 
+
 @Label_2e4a:
 ret             
+
 
 code0301        2, 4
 code047e        0, 1
 ret             
+
 
 @Func_2e6a:
 code0301        2, 7
 code047e        0, 1
 ret             
 
+
 @Func_2e88:
 code047e        0, 0
 code0302        4
 ret             
+
 
 @Func_2ea0:
 code047e        0, 0
 code0302        7
 ret             
 
+
 @Func_2eb8:
 code0301        4, 5
 code047e        1, 1
 ret             
+
 
 @Func_2ed6:
 code0301        4, 7
 code047e        1, 1
 ret             
 
+
 code047e        1, 0
 code0302        5
 ret             
+
 
 @Func_2f0c:
 code047e        1, 0
 code0302        7
 ret             
 
+
 code047a        0, 1, 1
 ret             
 
+
 code047a        1, 1, 1
 ret             
+
 
 @Func_2f50:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
+
 code047a        0, 0, 1
 ret             
 
+
 code047a        1, 0, 1
 ret             
+
 
 @Func_2fa6:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
+
 

@@ -9,20 +9,24 @@ jumpz           @Cond_009a, ($b003 == 0)
 code0438        1, 41, 527, 6
 goto            @Cond_009a
 
+
 @Cond_009a:
 jumpz           @Cond_00c8, ($b003 == 1)
 code0438        1, 61, 527, 6
 goto            @Cond_00c8
+
 
 @Cond_00c8:
 jumpz           @Cond_00f6, ($b003 == 2)
 code0438        1, 81, 527, 6
 goto            @Cond_00f6
 
+
 @Cond_00f6:
 jumpz           @Cond_0124, ($b003 == 3)
 code0438        1, 101, 527, 6
 goto            @Cond_0124
+
 
 @Cond_0124:
 code043a        1, 1, 0
@@ -49,19 +53,23 @@ jumpz           @Cond_0288, ($b003 == 0)
 code0479        0, 0, 12
 goto            @Label_02f0
 
+
 @Cond_0288:
 jumpz           @Cond_02b0, ($b003 == 1)
 code0479        0, 2, 16
 goto            @Label_02f0
+
 
 @Cond_02b0:
 jumpz           @Cond_02d8, ($b003 == 2)
 code0479        0, 0, 12
 goto            @Label_02f0
 
+
 @Cond_02d8:
 code0479        0, 0, 12
 goto            @Label_02f0
+
 
 @Label_02f0:
 code047d        0, 2
@@ -87,10 +95,12 @@ dialogtxt       "Thank goodness!"
 dialogtxt       "Are you okay?"
 goto            @Label_03d6
 
+
 @Cond_03ac:
 dialogtxt       "Thank goodness!"
 dialogtxt       "Are you okay?"
 goto            @Label_03d6
+
 
 @Label_03d6:
 code0309        
@@ -110,11 +120,13 @@ dialogtxt       "you're okay then."
 dialogtxt       "What about Murno?"
 goto            @Label_04ec
 
+
 @Cond_04a2:
 dialogtxt       "I think that means"
 dialogtxt       "you're okay then."
 dialogtxt       "What about Murno?"
 goto            @Label_04ec
+
 
 @Label_04ec:
 code0309        
@@ -141,6 +153,7 @@ dialogtxt       "where are we?"
 code0309        
 goto            @Label_069e
 
+
 @Cond_0624:
 dialogtxt       "I see…"
 dialogtxt       "You saved us."
@@ -151,6 +164,7 @@ dialogtxt       "Speaking of which,"
 dialogtxt       "where are we?"
 code0309        
 goto            @Label_069e
+
 
 @Label_069e:
 call            @Func_50b2
@@ -173,6 +187,7 @@ dialogtxt       "break down the wall, right?"
 code0309        
 goto            @Label_0886
 
+
 @Cond_07c2:
 dialogtxt       "I see…"
 dialogtxt       "And we're stuck here."
@@ -184,6 +199,7 @@ dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 code0309        
 goto            @Label_0886
+
 
 @Label_0886:
 call            @Func_50b2
@@ -202,11 +218,13 @@ dialogtxt       "So you can't move…"
 dialogtxt       "Damn!"
 goto            @Label_09aa
 
+
 @Cond_095e:
 dialogtxt       "Bracelets?"
 dialogtxt       "So you can't move…"
 dialogtxt       "That's horrible!"
 goto            @Label_09aa
+
 
 @Label_09aa:
 code0309        
@@ -230,6 +248,7 @@ dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_0b5c
 
+
 @Cond_0ad0:
 dialogtxt       "They were after the"
 dialogtxt       "Demon Stone she had…"
@@ -239,6 +258,7 @@ code0479        1, 4, 12
 dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_0b5c
+
 
 @Label_0b5c:
 code0309        
@@ -256,9 +276,11 @@ jumpz           @Cond_0c1c, ($b002 == 0)
 dialogtxt       "Really?"
 goto            @Label_0c2e
 
+
 @Cond_0c1c:
 dialogtxt       "Really?"
 goto            @Label_0c2e
+
 
 @Label_0c2e:
 code0309        
@@ -278,11 +300,13 @@ dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_0d68
 
+
 @Cond_0d1a:
 dialogtxt       "Guarded?"
 dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_0d68
+
 
 @Label_0d68:
 code0309        
@@ -309,11 +333,13 @@ dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_0f5a
 
+
 @Cond_0f00:
 dialogtxt       "And then you ran…"
 dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_0f5a
+
 
 @Label_0f5a:
 code0309        
@@ -334,10 +360,12 @@ dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_1082
 
+
 @Cond_103c:
 dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_1082
+
 
 @Label_1082:
 code0309        
@@ -359,6 +387,7 @@ code0479        1, 2, 12
 dialogtxt       "So I'll do my best too!"
 goto            @Label_121c
 
+
 @Cond_1190:
 dialogtxt       "You know, I…"
 dialogtxt       "I feel like I know why"
@@ -367,6 +396,7 @@ code0309
 code0479        1, 2, 12
 dialogtxt       "So I'll do my best too!"
 goto            @Label_121c
+
 
 @Label_121c:
 code0309        
@@ -383,10 +413,12 @@ dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_1312
 
+
 @Cond_12c4:
 dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_1312
+
 
 @Label_1312:
 code0309        
@@ -403,9 +435,11 @@ jumpz           @Cond_1392, ($b002 == 0)
 dialogtxt       "Yeah!"
 goto            @Label_13a0
 
+
 @Cond_1392:
 dialogtxt       "Yeah!"
 goto            @Label_13a0
+
 
 @Label_13a0:
 code0309        
@@ -418,6 +452,7 @@ call            @Func_514c
 call            @Func_509a
 code047b        
 goto            @Cond_1404
+
 
 @Cond_1404:
 jumpz           @Cond_24da, ($b003 == 1)
@@ -442,10 +477,12 @@ dialogtxt       "Yep!"
 dialogtxt       "Are you okay, [NAME 1]?"
 goto            @Label_14f6
 
+
 @Cond_14d4:
 dialogtxt       "Yep!"
 dialogtxt       "Are you okay, [NAME 1]?"
 goto            @Label_14f6
+
 
 @Label_14f6:
 code0309        
@@ -484,6 +521,7 @@ code0479        1, 0, 16
 dialogtxt       "So, where are we?"
 goto            @Label_175a
 
+
 @Cond_16f0:
 dialogtxt       "I see…"
 dialogtxt       "You saved us…"
@@ -492,6 +530,7 @@ code0309
 code0479        1, 0, 16
 dialogtxt       "So, where are we?"
 goto            @Label_175a
+
 
 @Label_175a:
 code0309        
@@ -515,6 +554,7 @@ dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 goto            @Label_1952
 
+
 @Cond_18ac:
 dialogtxt       "You got that right."
 dialogtxt       "They threw us in prison…"
@@ -524,6 +564,7 @@ dialogtxt       "We have to find a way out…"
 dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 goto            @Label_1952
+
 
 @Label_1952:
 code0309        
@@ -539,13 +580,15 @@ code0479        1, 2, 15
 call            @Func_507c
 jumpz           @Cond_1a02, ($b002 == 0)
 dialogtxt       "Bracelets…?"
-dialogtxt       "Damn…!"
+dialogtxt       "Damn!"
 goto            @Label_1a22
+
 
 @Cond_1a02:
 dialogtxt       "Bracelets…?"
-dialogtxt       "That's horrible…!"
+dialogtxt       "That's horrible!"
 goto            @Label_1a22
+
 
 @Label_1a22:
 code0309        
@@ -569,6 +612,7 @@ dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_1be6
 
+
 @Cond_1b46:
 dialogtxt       "They were after the"
 dialogtxt       "Demon Stone she had…"
@@ -579,6 +623,7 @@ code0479        0, 0, 14
 dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_1be6
+
 
 @Label_1be6:
 code0309        
@@ -596,9 +641,11 @@ jumpz           @Cond_1caa, ($b002 == 0)
 dialogtxt       "Really?"
 goto            @Label_1cbc
 
+
 @Cond_1caa:
 dialogtxt       "Really?"
 goto            @Label_1cbc
+
 
 @Label_1cbc:
 code0309        
@@ -619,11 +666,13 @@ dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_1e0a
 
+
 @Cond_1dbc:
 dialogtxt       "Guarded?"
 dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_1e0a
+
 
 @Label_1e0a:
 code0309        
@@ -652,11 +701,13 @@ dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_2018
 
+
 @Cond_1fc6:
 dialogtxt       "And then you ran…"
 dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_2018
+
 
 @Label_2018:
 code0309        
@@ -676,11 +727,13 @@ dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_213e
 
+
 @Cond_20ea:
 dialogtxt       "No way…"
 dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_213e
+
 
 @Label_213e:
 code0309        
@@ -702,6 +755,7 @@ code0479        1, 2, 12
 dialogtxt       "So I'll do my best too!"
 goto            @Label_22f0
 
+
 @Cond_2264:
 dialogtxt       "You know, I…"
 dialogtxt       "I feel like I know why"
@@ -710,6 +764,7 @@ code0309
 code0479        1, 2, 12
 dialogtxt       "So I'll do my best too!"
 goto            @Label_22f0
+
 
 @Label_22f0:
 code0309        
@@ -726,10 +781,12 @@ dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_23e2
 
+
 @Cond_2394:
 dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_23e2
+
 
 @Label_23e2:
 code0309        
@@ -746,9 +803,11 @@ jumpz           @Cond_2468, ($b002 == 0)
 dialogtxt       "Yeah!"
 goto            @Label_2476
 
+
 @Cond_2468:
 dialogtxt       "Yeah!"
 goto            @Label_2476
+
 
 @Label_2476:
 code0309        
@@ -761,6 +820,7 @@ call            @Func_514c
 call            @Func_509a
 code047b        
 goto            @Cond_24da
+
 
 @Cond_24da:
 jumpz           @Cond_3914, ($b003 == 2)
@@ -785,10 +845,12 @@ dialogtxt       "Of course not."
 dialogtxt       "What about you?"
 goto            @Label_25e6
 
+
 @Cond_25b2:
 dialogtxt       "Of course not."
 dialogtxt       "What about you?"
 goto            @Label_25e6
+
 
 @Label_25e6:
 code0309        
@@ -807,11 +869,13 @@ dialogtxt       "So, what about Murno?"
 dialogtxt       "What happened to her?"
 goto            @Label_26ea
 
+
 @Cond_26a8:
 dialogtxt       "I see…"
 dialogtxt       "So, what about Murno?"
 dialogtxt       "What happened to her?"
 goto            @Label_26ea
+
 
 @Label_26ea:
 code0309        
@@ -845,18 +909,20 @@ dialogtxt       "You saved us…"
 dialogtxt       "Thanks…"
 goto            @Label_2896
 
+
 @Cond_285e:
 dialogtxt       "I see…"
 dialogtxt       "You saved us…"
 dialogtxt       "Thanks…"
 goto            @Label_2896
 
+
 @Label_2896:
 code0309        
 call            @Func_50b2
 code0479        0, 6, 14
 call            @Func_5010
-dialogtxt       "Tch…!"
+dialogtxt       "… Tsk!"
 dialogtxt       "Not like I wanted to do it."
 dialogtxt       "Don't thank me."
 code0309        
@@ -868,10 +934,12 @@ dialogtxt       "Okay, okay."
 dialogtxt       "So, where are we?"
 goto            @Label_296c
 
+
 @Cond_2944:
 dialogtxt       "Okay, okay."
 dialogtxt       "So, where are we?"
 goto            @Label_296c
+
 
 @Label_296c:
 code0309        
@@ -897,6 +965,7 @@ dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 goto            @Label_2b6e
 
+
 @Cond_2ac6:
 dialogtxt       "You're right…"
 dialogtxt       "They just threw us"
@@ -907,6 +976,7 @@ dialogtxt       "We have to find a way out…"
 dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 goto            @Label_2b6e
+
 
 @Label_2b6e:
 code0309        
@@ -925,10 +995,12 @@ dialogtxt       "Bracelets?"
 dialogtxt       "That's horrible!"
 goto            @Label_2c94
 
+
 @Cond_2c50:
 dialogtxt       "Bracelets?"
 dialogtxt       "That's horrible!"
 goto            @Label_2c94
+
 
 @Label_2c94:
 code0309        
@@ -962,6 +1034,7 @@ dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_2f60
 
+
 @Cond_2e6c:
 dialogtxt       "I know."
 dialogtxt       "Murno, right?"
@@ -977,6 +1050,7 @@ code0479        1, 4, 12
 dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_2f60
+
 
 @Label_2f60:
 code0309        
@@ -994,9 +1068,11 @@ jumpz           @Cond_2ffe, ($b002 == 0)
 dialogtxt       "Really?"
 goto            @Label_3010
 
+
 @Cond_2ffe:
 dialogtxt       "Really?"
 goto            @Label_3010
+
 
 @Label_3010:
 code0309        
@@ -1018,11 +1094,13 @@ dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_315c
 
+
 @Cond_310e:
 dialogtxt       "Guarded?"
 dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_315c
+
 
 @Label_315c:
 code0309        
@@ -1056,9 +1134,11 @@ jumpz           @Cond_32f2, ($b002 == 0)
 dialogtxt       "Anise…"
 goto            @Label_3308
 
+
 @Cond_32f2:
 dialogtxt       "Anise…"
 goto            @Label_3308
+
 
 @Label_3308:
 code0309        
@@ -1078,11 +1158,13 @@ dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_344c
 
+
 @Cond_33fa:
 dialogtxt       "And then you ran…"
 dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_344c
+
 
 @Label_344c:
 code0309        
@@ -1101,11 +1183,13 @@ dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_3566
 
+
 @Cond_3510:
 dialogtxt       "No way…"
 dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_3566
+
 
 @Label_3566:
 code0309        
@@ -1125,11 +1209,13 @@ dialogtxt       "I feel like I know why"
 dialogtxt       "you want to protect her…"
 goto            @Label_36ba
 
+
 @Cond_3662:
 dialogtxt       "You know, I…"
 dialogtxt       "I feel like I know why"
 dialogtxt       "you want to protect her…"
 goto            @Label_36ba
+
 
 @Label_36ba:
 code0309        
@@ -1149,6 +1235,7 @@ dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_3822
 
+
 @Cond_37a0:
 dialogtxt       "So I'll do my best too!"
 code0309        
@@ -1156,6 +1243,7 @@ code0479        1, 2, 13
 dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_3822
+
 
 @Label_3822:
 code0309        
@@ -1173,9 +1261,11 @@ jumpz           @Cond_38a2, ($b002 == 0)
 dialogtxt       "Yeah!"
 goto            @Label_38b0
 
+
 @Cond_38a2:
 dialogtxt       "Yeah!"
 goto            @Label_38b0
+
 
 @Label_38b0:
 code0309        
@@ -1188,6 +1278,7 @@ call            @Func_514c
 call            @Func_509a
 code047b        
 goto            @Cond_3914
+
 
 @Cond_3914:
 jumpz           @Cond_4a5e, ($b003 == 3)
@@ -1213,11 +1304,13 @@ dialogtxt       "I'm fine!"
 dialogtxt       "What about you, [NAME 1]?"
 goto            @Label_3a2c
 
+
 @Cond_39f2:
 dialogtxt       "Yeah!"
 dialogtxt       "I'm fine!"
 dialogtxt       "What about you, [NAME 1]?"
 goto            @Label_3a2c
+
 
 @Label_3a2c:
 code0309        
@@ -1235,11 +1328,13 @@ dialogtxt       "So, what about Murno?"
 dialogtxt       "What happened to her?"
 goto            @Label_3b10
 
+
 @Cond_3acc:
 dialogtxt       "Thank goodness…"
 dialogtxt       "So, what about Murno?"
 dialogtxt       "What happened to her?"
 goto            @Label_3b10
+
 
 @Label_3b10:
 code0309        
@@ -1265,6 +1360,7 @@ code0479        1, 0, 16
 dialogtxt       "So, where are we?"
 goto            @Label_3ce6
 
+
 @Cond_3c7c:
 dialogtxt       "I see…"
 dialogtxt       "You saved us…"
@@ -1273,6 +1369,7 @@ code0309
 code0479        1, 0, 16
 dialogtxt       "So, where are we?"
 goto            @Label_3ce6
+
 
 @Label_3ce6:
 code0309        
@@ -1296,6 +1393,7 @@ dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 goto            @Label_3eca
 
+
 @Cond_3e24:
 dialogtxt       "You got that right."
 dialogtxt       "They threw us in prison…"
@@ -1305,6 +1403,7 @@ dialogtxt       "We have to find a way out…"
 dialogtxt       "You should be able to"
 dialogtxt       "break down the wall, right?"
 goto            @Label_3eca
+
 
 @Label_3eca:
 code0309        
@@ -1323,10 +1422,12 @@ dialogtxt       "Strange bracelets?"
 dialogtxt       "I see…"
 goto            @Label_3fa2
 
+
 @Cond_3f7c:
 dialogtxt       "Strange bracelets?"
 dialogtxt       "I see…"
 goto            @Label_3fa2
+
 
 @Label_3fa2:
 code0309        
@@ -1350,6 +1451,7 @@ dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_416a
 
+
 @Cond_40ca:
 dialogtxt       "They were after the"
 dialogtxt       "Demon Stone she had…"
@@ -1360,6 +1462,7 @@ code0479        1, 4, 12
 dialogtxt       "… Er, it was a secret,"
 dialogtxt       "wasn't it."
 goto            @Label_416a
+
 
 @Label_416a:
 code0309        
@@ -1376,9 +1479,11 @@ jumpz           @Cond_4220, ($b002 == 0)
 dialogtxt       "Really?"
 goto            @Label_4232
 
+
 @Cond_4220:
 dialogtxt       "Really?"
 goto            @Label_4232
+
 
 @Label_4232:
 code0309        
@@ -1398,11 +1503,13 @@ dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_436c
 
+
 @Cond_431e:
 dialogtxt       "Guarded?"
 dialogtxt       "You said it's really powerful."
 dialogtxt       "Was it like a treasure?"
 goto            @Label_436c
+
 
 @Label_436c:
 code0309        
@@ -1432,11 +1539,13 @@ dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_45aa
 
+
 @Cond_4558:
 dialogtxt       "And then you ran…"
 dialogtxt       "So, how are the village"
 dialogtxt       "and her father doing now?"
 goto            @Label_45aa
+
 
 @Label_45aa:
 code0309        
@@ -1455,11 +1564,13 @@ dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_46cc
 
+
 @Cond_4676:
 dialogtxt       "No way…"
 dialogtxt       "Despite all that,"
 dialogtxt       "she didn't say anything…"
 goto            @Label_46cc
+
 
 @Label_46cc:
 code0309        
@@ -1482,6 +1593,7 @@ code0479        1, 2, 12
 dialogtxt       "So I'll do my best too!"
 goto            @Label_4882
 
+
 @Cond_47f6:
 dialogtxt       "You know, I…"
 dialogtxt       "I feel like I know why"
@@ -1490,6 +1602,7 @@ code0309
 code0479        1, 2, 12
 dialogtxt       "So I'll do my best too!"
 goto            @Label_4882
+
 
 @Label_4882:
 code0309        
@@ -1506,10 +1619,12 @@ dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_4974
 
+
 @Cond_4926:
 dialogtxt       "I'll work much, much harder,"
 dialogtxt       "and we'll protect her together!"
 goto            @Label_4974
+
 
 @Label_4974:
 code0309        
@@ -1526,9 +1641,11 @@ jumpz           @Cond_49ec, ($b002 == 0)
 dialogtxt       "Yeah!"
 goto            @Label_49fa
 
+
 @Cond_49ec:
 dialogtxt       "Yeah!"
 goto            @Label_49fa
+
 
 @Label_49fa:
 code0309        
@@ -1542,15 +1659,18 @@ call            @Func_509a
 code047b        
 goto            @Cond_4a5e
 
+
 @Cond_4a5e:
 code0333        2, 30
 done            
 
+
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -1558,11 +1678,13 @@ code031f        7
 code031a        7
 ret             
 
+
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
@@ -1570,17 +1692,20 @@ code031c        6, 1
 code031f        6
 ret             
 
+
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
 ret             
 
+
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -1597,6 +1722,7 @@ code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -1608,152 +1734,185 @@ code031f        6
 code031a        7
 ret             
 
+
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 jumpz           @Cond_4db6, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_4ff0
+
 
 @Cond_4db6:
 jumpz           @Cond_4ddc, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_4ff0
 
+
 @Cond_4ddc:
 jumpz           @Cond_4e02, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_4ff0
+
 
 @Cond_4e02:
 jumpz           @Cond_4e28, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_4ff0
 
+
 @Cond_4e28:
 jumpz           @Cond_4e4e, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_4ff0
+
 
 @Cond_4e4e:
 jumpz           @Cond_4e74, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_4ff0
 
+
 @Cond_4e74:
 jumpz           @Cond_4e9a, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_4ff0
+
 
 @Cond_4e9a:
 jumpz           @Cond_4ec0, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_4ff0
 
+
 @Cond_4ec0:
 jumpz           @Cond_4ee6, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_4ff0
+
 
 @Cond_4ee6:
 jumpz           @Cond_4f0c, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_4ff0
 
+
 @Cond_4f0c:
 jumpz           @Cond_4f32, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_4ff0
+
 
 @Cond_4f32:
 jumpz           @Cond_4f58, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_4ff0
 
+
 @Cond_4f58:
 jumpz           @Cond_4f7e, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_4ff0
+
 
 @Cond_4f7e:
 jumpz           @Cond_4fa4, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_4ff0
 
+
 @Cond_4fa4:
 jumpz           @Cond_4fca, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_4ff0
+
 
 @Cond_4fca:
 jumpz           @Label_4ff0, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_4ff0
 
+
 @Label_4ff0:
 ret             
+
 
 code0301        2, 4
 code047e        0, 1
 ret             
+
 
 @Func_5010:
 code0301        2, 7
 code047e        0, 1
 ret             
 
+
 code047e        0, 0
 code0302        4
 ret             
+
 
 @Func_5046:
 code047e        0, 0
 code0302        7
 ret             
 
+
 @Func_505e:
 code0301        4, 5
 code047e        1, 1
 ret             
+
 
 @Func_507c:
 code0301        4, 7
 code047e        1, 1
 ret             
 
+
 @Func_509a:
 code047e        1, 0
 code0302        5
 ret             
+
 
 @Func_50b2:
 code047e        1, 0
 code0302        7
 ret             
 
+
 @Func_50ca:
 code047a        0, 1, 1
 ret             
+
 
 @Func_50e0:
 code047a        1, 1, 1
 ret             
 
+
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
+
 code047a        0, 0, 1
 ret             
 
+
 code047a        1, 0, 1
 ret             
+
 
 @Func_514c:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
+
 

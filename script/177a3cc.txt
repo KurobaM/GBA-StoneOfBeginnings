@@ -19,16 +19,19 @@ jumpz           @Cond_010c, ($h319 == 34)
 code041c        1, 824, 24, 1
 goto            @Label_016a
 
+
 @Cond_010c:
 jumpz           @Cond_013a, ($h319 == 36)
 code041c        1, 72, 24, 1
 goto            @Label_016a
+
 
 @Cond_013a:
 jumpz           @Label_016a, ($h319 == 110)
 code041c        1, 448, 319, 3
 code0475        
 goto            @Label_016a
+
 
 @Label_016a:
 mapev           0, @Event_0268, 4
@@ -43,14 +46,17 @@ jumpz           @Cond_0230, ($f0035 == 1)
 code046e        38, 256, 0
 goto            @Label_0248
 
+
 @Cond_0230:
 code046e        15, 256, 0
 goto            @Label_0248
+
 
 @Label_0248:
 code041d        
 placetxt        "Prosban　South Gate Park"
 code040b        
+
 
 @Event_0268:
 setvar          $h096, 32
@@ -59,12 +65,14 @@ code041d
 code040a        
 gotomap         1135 ; map 1779cfc
 
+
 @Event_029a:
 setvar          $h096, 32
 code041c        17, 0, 0, 3
 code041d        
 code040a        
 gotomap         1137 ; map 177a8bc
+
 
 @Event_02cc:
 setvar          $h096, 32
@@ -75,12 +83,15 @@ code043e        0, 3, 0
 code0006        16
 goto            @Cond_0316
 
+
 @Cond_0316:
 jumpz           @Cond_0330, ($h101 == 1)
 call            @Func_08fa
 code040b        
 
+
 goto            @Cond_0330
+
 
 @Cond_0330:
 code041c        17, 0, 0, 1
@@ -88,9 +99,11 @@ code041d
 code040a        
 gotomap         3181 ; map 189731c
 
+
 @Label_0356:
 code0006        21
 code040b        
+
 
 @Label_0360:
 setvar          $h096, 63
@@ -98,13 +111,16 @@ code040a
 code034f        
 goto            @start
 
+
 done            
 
+
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -112,11 +128,13 @@ code031f        7
 code031a        7
 ret             
 
+
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
@@ -124,17 +142,20 @@ code031c        6, 1
 code031f        6
 ret             
 
+
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
 ret             
 
+
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -151,6 +172,7 @@ code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -162,93 +184,112 @@ code031f        6
 code031a        7
 ret             
 
+
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 jumpz           @Cond_06be, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_08f8
+
 
 @Cond_06be:
 jumpz           @Cond_06e4, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_08f8
 
+
 @Cond_06e4:
 jumpz           @Cond_070a, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_08f8
+
 
 @Cond_070a:
 jumpz           @Cond_0730, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_08f8
 
+
 @Cond_0730:
 jumpz           @Cond_0756, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_08f8
+
 
 @Cond_0756:
 jumpz           @Cond_077c, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_08f8
 
+
 @Cond_077c:
 jumpz           @Cond_07a2, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_08f8
+
 
 @Cond_07a2:
 jumpz           @Cond_07c8, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_08f8
 
+
 @Cond_07c8:
 jumpz           @Cond_07ee, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_08f8
+
 
 @Cond_07ee:
 jumpz           @Cond_0814, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_08f8
 
+
 @Cond_0814:
 jumpz           @Cond_083a, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_08f8
+
 
 @Cond_083a:
 jumpz           @Cond_0860, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_08f8
 
+
 @Cond_0860:
 jumpz           @Cond_0886, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_08f8
+
 
 @Cond_0886:
 jumpz           @Cond_08ac, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_08f8
 
+
 @Cond_08ac:
 jumpz           @Cond_08d2, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_08f8
+
 
 @Cond_08d2:
 jumpz           @Label_08f8, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_08f8
 
+
 @Label_08f8:
 ret             
+
 
 @Func_08fa:
 code046d        0, 192
@@ -257,11 +298,13 @@ walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
 ret             
 
+
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
 ret             
+
 
 code046d        0, 192
 code043e        0, 6, 0
@@ -269,11 +312,13 @@ walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
 ret             
 
+
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
 ret             
+
 
 code033a        196, 0
 code048e        
@@ -290,6 +335,7 @@ code031f        7
 code031a        7
 code033e        196
 ret             
+
 
 @Func_0afc:
 code0438        16, 405, 645, 1
@@ -314,9 +360,11 @@ mapev           20, @Event_0d4e, 32
 mapevpos        20, (54,17)-(57,17)
 ret             
 
+
 @Talk_0c66:
 code0006        3914
 code040b        
+
 
 @Talk_0c70:
 code0301        8, 7
@@ -333,12 +381,14 @@ code047e        0, 0
 code0302        7
 code040b        
 
+
 @Talk_0d2a:
 code0301        8, 7
 dialogtxt       "Miiii…"
 code0309        
 code0302        7
 code040b        
+
 
 @Event_0d4e:
 code0301        8, 7
@@ -347,4 +397,5 @@ dialogtxt       "　　　Our Hero Prosban"
 code0309        
 code0302        7
 code040b        
+
 

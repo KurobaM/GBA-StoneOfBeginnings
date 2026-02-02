@@ -21,11 +21,13 @@ dialogtxt       "If you hesitate,"
 dialogtxt       "we can't have a good fight."
 goto            @Label_0142
 
+
 @Cond_0100:
 dialogtxt       "You know…"
 dialogtxt       "If you hesitate,"
 dialogtxt       "we can't have a good fight."
 goto            @Label_0142
+
 
 @Label_0142:
 code0309        
@@ -44,11 +46,13 @@ dialogtxt       "It's like you can't focus…"
 dialogtxt       "It's that, isn't it? Your mother?"
 goto            @Label_026e
 
+
 @Cond_020e:
 dialogtxt       "How should I put this…"
 dialogtxt       "It's like you can't focus…"
 dialogtxt       "It's that, isn't it? Your mother?"
 goto            @Label_026e
+
 
 @Label_026e:
 code0309        
@@ -67,11 +71,13 @@ dialogtxt       "about your troubles?"
 dialogtxt       "It might make you feel better."
 goto            @Label_0396
 
+
 @Cond_0338:
 dialogtxt       "Why dont you try talking"
 dialogtxt       "about your troubles?"
 dialogtxt       "It might make you feel better."
 goto            @Label_0396
+
 
 @Label_0396:
 code0309        
@@ -88,10 +94,12 @@ dialogtxt       "And once you're feeling better,"
 dialogtxt       "we'll have another match!"
 goto            @Label_0450
 
+
 @Cond_0420:
 dialogtxt       "And once you're feeling better,"
 dialogtxt       "we'll have another match!"
 goto            @Label_0450
+
 
 @Label_0450:
 code0309        
@@ -116,11 +124,13 @@ dialogtxt       "and you're training as a smithy?"
 dialogtxt       "Isn't that odd?"
 goto            @Label_05c4
 
+
 @Cond_0568:
 dialogtxt       "But look, your mother's a Summoner,"
 dialogtxt       "and you're training as a smithy?"
 dialogtxt       "Isn't that odd?"
 goto            @Label_05c4
+
 
 @Label_05c4:
 code0309        
@@ -139,10 +149,12 @@ dialogtxt       "Is that so?"
 dialogtxt       "See, it's okay to be open!"
 goto            @Label_06d6
 
+
 @Cond_0696:
 dialogtxt       "Is that so?"
 dialogtxt       "See, it's okay to be open!"
 goto            @Label_06d6
+
 
 @Label_06d6:
 code0309        
@@ -169,11 +181,13 @@ dialogtxt       "This seems pretty serious."
 dialogtxt       "Um, if you don't want to talk…"
 goto            @Label_0878
 
+
 @Cond_082e:
 dialogtxt       "Ah…, um…"
 dialogtxt       "This seems pretty serious."
 dialogtxt       "Um, if you don't want to talk…"
 goto            @Label_0878
+
 
 @Label_0878:
 code0309        
@@ -267,6 +281,7 @@ dialogtxt       "She was even willing to"
 dialogtxt       "become Velvoren's secretary…"
 goto            @Label_0f9a
 
+
 @Cond_0e9c:
 dialogtxt       "…"
 dialogtxt       "I think I understand"
@@ -282,6 +297,7 @@ dialogtxt       "She was really thinking about you."
 dialogtxt       "She was even willing to"
 dialogtxt       "become Velvoren's secretary…"
 goto            @Label_0f9a
+
 
 @Label_0f9a:
 code0309        
@@ -300,10 +316,12 @@ dialogtxt       "And how can you be so sure?"
 dialogtxt       "You didn't ask her, did you?"
 goto            @Label_10da
 
+
 @Cond_1084:
 dialogtxt       "And how can you be so sure?"
 dialogtxt       "You didn't ask her, did you?"
 goto            @Label_10da
+
 
 @Label_10da:
 code0309        
@@ -343,6 +361,7 @@ dialogtxt       "Have you even though about how"
 dialogtxt       "difficult that must have been!?"
 goto            @Label_1384
 
+
 @Cond_12be:
 dialogtxt       "When your father died,"
 dialogtxt       "your mother had to care for you"
@@ -353,6 +372,7 @@ code0479        1, 0, 16
 dialogtxt       "Have you even though about how"
 dialogtxt       "difficult that must have been!?"
 goto            @Label_1384
+
 
 @Label_1384:
 code0309        
@@ -375,11 +395,13 @@ dialogtxt       "In times like these, family"
 dialogtxt       "members should support each other!"
 goto            @Label_14b6
 
+
 @Cond_1472:
 dialogtxt       "That's right…"
 dialogtxt       "In times like these, family"
 dialogtxt       "members should support each other!"
 goto            @Label_14b6
+
 
 @Label_14b6:
 code0309        
@@ -400,6 +422,7 @@ code0479        0, 0, 12
 dialogtxt       "You need to believe in her more…"
 goto            @Label_1646
 
+
 @Cond_15a4:
 dialogtxt       "I think your mother"
 dialogtxt       "is seriously"
@@ -408,6 +431,7 @@ code0309
 code0479        0, 0, 12
 dialogtxt       "You need to believe in her more…"
 goto            @Label_1646
+
 
 @Label_1646:
 code0309        
@@ -462,10 +486,12 @@ dialogtxt       "Alright!"
 dialogtxt       "I'll be waiting!"
 goto            @Label_1952
 
+
 @Cond_191e:
 dialogtxt       "Okay!"
 dialogtxt       "I'll be waiting!"
 goto            @Label_1952
+
 
 @Label_1952:
 code0309        
@@ -489,11 +515,13 @@ code0481        0
 code040d        1
 done            
 
+
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -501,11 +529,13 @@ code031f        7
 code031a        7
 ret             
 
+
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
+
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
@@ -513,17 +543,20 @@ code031c        6, 1
 code031f        6
 ret             
 
+
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
 ret             
 
+
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -540,6 +573,7 @@ code031f        6
 code031a        6
 ret             
 
+
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -551,153 +585,186 @@ code031f        6
 code031a        7
 ret             
 
+
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
+
 
 jumpz           @Cond_1d4a, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_1f84
+
 
 @Cond_1d4a:
 jumpz           @Cond_1d70, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_1f84
 
+
 @Cond_1d70:
 jumpz           @Cond_1d96, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_1f84
+
 
 @Cond_1d96:
 jumpz           @Cond_1dbc, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_1f84
 
+
 @Cond_1dbc:
 jumpz           @Cond_1de2, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_1f84
+
 
 @Cond_1de2:
 jumpz           @Cond_1e08, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_1f84
 
+
 @Cond_1e08:
 jumpz           @Cond_1e2e, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_1f84
+
 
 @Cond_1e2e:
 jumpz           @Cond_1e54, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_1f84
 
+
 @Cond_1e54:
 jumpz           @Cond_1e7a, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_1f84
+
 
 @Cond_1e7a:
 jumpz           @Cond_1ea0, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_1f84
 
+
 @Cond_1ea0:
 jumpz           @Cond_1ec6, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_1f84
+
 
 @Cond_1ec6:
 jumpz           @Cond_1eec, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_1f84
 
+
 @Cond_1eec:
 jumpz           @Cond_1f12, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_1f84
+
 
 @Cond_1f12:
 jumpz           @Cond_1f38, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_1f84
 
+
 @Cond_1f38:
 jumpz           @Cond_1f5e, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_1f84
+
 
 @Cond_1f5e:
 jumpz           @Label_1f84, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1f84
 
+
 @Label_1f84:
 ret             
+
 
 @Func_1f86:
 code0301        2, 4
 code047e        0, 1
 ret             
 
+
 @Func_1fa4:
 code0301        2, 7
 code047e        0, 1
 ret             
+
 
 @Func_1fc2:
 code047e        0, 0
 code0302        4
 ret             
 
+
 @Func_1fda:
 code047e        0, 0
 code0302        7
 ret             
+
 
 @Func_1ff2:
 code0301        4, 5
 code047e        1, 1
 ret             
 
+
 @Func_2010:
 code0301        4, 7
 code047e        1, 1
 ret             
+
 
 @Func_202e:
 code047e        1, 0
 code0302        5
 ret             
 
+
 @Func_2046:
 code047e        1, 0
 code0302        7
 ret             
 
+
 code047a        0, 1, 1
 ret             
 
+
 code047a        1, 1, 1
 ret             
+
 
 @Func_208a:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
+
 code047a        0, 0, 1
 ret             
 
+
 code047a        1, 0, 1
 ret             
+
 
 @Func_20e0:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
+
 
