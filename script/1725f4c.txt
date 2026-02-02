@@ -3,7 +3,6 @@ jumpz           @Cond_0028, ($b005 != 0)
 setvar          $b006, 2
 goto            @Label_00ba
 
-
 @Cond_0028:
 code0114        
 @Label_002a:
@@ -14,7 +13,6 @@ menutxt         @Menu_0052, "Let me get ready!"
 menutxt         @Menu_007e, "I'm ready to fight!"
 menuwait        
 
-
 @Menu_0052:
 setvar          $b075, 0
 setvar          $b072, 0
@@ -22,7 +20,6 @@ setvar          $b081, 1
 code0303        
 code034f        
 goto            @Label_002a
-
 
 @Menu_007e:
 code036f        
@@ -32,13 +29,10 @@ popuptxt        "Please equip only one weapon"
 code0318        
 goto            @Label_002a
 
-
 goto            @Cond_00b6
-
 
 @Cond_00b6:
 goto            @Label_00ba
-
 
 @Label_00ba:
 code035b        1
@@ -58,11 +52,9 @@ jumpz           @Cond_0178, ($b002 == 0)
 setvar          $h050, 65
 goto            @Label_0188
 
-
 @Cond_0178:
 setvar          $h050, 56
 goto            @Label_0188
-
 
 @Label_0188:
 code0331        6, 256
@@ -74,26 +66,20 @@ jumpz           @Cond_01c2, ($b004 == 1)
 code035c        
 goto            @Label_01d2
 
-
 @Cond_01c2:
 code035d        
 code000d        
 gotomap         1 ; map 1720aac
 
-
 goto            @Label_01d2
-
 
 @Label_01d2:
 goto            @Label_01dc
-
 
 @Cond_01d6:
 code035d        
 goto            @Label_01dc
 
-
 @Label_01dc:
 done            
-
 

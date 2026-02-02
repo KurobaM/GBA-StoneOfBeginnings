@@ -20,7 +20,6 @@ popuptxt        "The cat ran away!"
 code0318        
 goto            @Cond_0116
 
-
 @Cond_0116:
 code0366        520, -1
 code036a        508
@@ -31,7 +30,6 @@ code0318
 code0366        520, 1
 goto            @Cond_0170
 
-
 @Cond_0170:
 code040a        
 code04a4        
@@ -40,7 +38,5 @@ code0470        1428, 1442, 0
 code0470        1396, 1411, 0
 gotomap         406 ; map 173671c
 
-
 done            
-
 

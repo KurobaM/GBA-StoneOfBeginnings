@@ -14,7 +14,6 @@ code0481        1
 code0482        
 goto            @Label_0186
 
-
 @Cond_00c6:
 jumpz           @Cond_0106, ($b003 == 1)
 code047f        225
@@ -22,7 +21,6 @@ code0480        0, 1, 0, 0
 code0481        1
 code0482        
 goto            @Label_0186
-
 
 @Cond_0106:
 jumpz           @Cond_0146, ($b003 == 2)
@@ -32,7 +30,6 @@ code0481        1
 code0482        
 goto            @Label_0186
 
-
 @Cond_0146:
 jumpz           @Label_0186, ($b003 == 3)
 code047f        227
@@ -40,7 +37,6 @@ code0480        0, 1, 0, 0
 code0481        1
 code0482        
 goto            @Label_0186
-
 
 @Label_0186:
 code047d        0, 2
@@ -50,23 +46,19 @@ jumpz           @Cond_01d4, ($b003 == 0)
 dialogtxt       "Partner…"
 goto            @Label_021c
 
-
 @Cond_01d4:
 jumpz           @Cond_01f0, ($b003 == 1)
 dialogtxt       "[NAME 2]…"
 goto            @Label_021c
-
 
 @Cond_01f0:
 jumpz           @Cond_020c, ($b003 == 2)
 dialogtxt       "[NAME 2]…"
 goto            @Label_021c
 
-
 @Cond_020c:
 dialogtxt       "[NAME 2]…"
 goto            @Label_021c
-
 
 @Label_021c:
 code0309        
@@ -97,23 +89,19 @@ jumpz           @Cond_0376, ($b003 == 0)
 code0479        1, 0, 12
 goto            @Label_03de
 
-
 @Cond_0376:
 jumpz           @Cond_039e, ($b003 == 1)
 code0479        1, 0, 16
 goto            @Label_03de
-
 
 @Cond_039e:
 jumpz           @Cond_03c6, ($b003 == 2)
 code0479        1, 0, 16
 goto            @Label_03de
 
-
 @Cond_03c6:
 code0479        1, 0, 16
 goto            @Label_03de
-
 
 @Label_03de:
 code047d        1, 2
@@ -132,13 +120,11 @@ dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_04da
 
-
 @Cond_048a:
 dialogtxt       "We've captured Anise,"
 dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_04da
-
 
 @Label_04da:
 code0309        
@@ -156,12 +142,10 @@ dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_05aa
 
-
 @Cond_0580:
 dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_05aa
-
 
 @Label_05aa:
 code0309        
@@ -179,13 +163,11 @@ dialogtxt       "Since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_0686
 
-
 @Cond_0640:
 dialogtxt       "You know…"
 dialogtxt       "Since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_0686
-
 
 @Label_0686:
 code0309        
@@ -204,12 +186,10 @@ dialogtxt       "How was it?"
 dialogtxt       "Did you find it interesting?"
 goto            @Label_0786
 
-
 @Cond_074a:
 dialogtxt       "How was it?"
 dialogtxt       "Did you find it interesting?"
 goto            @Label_0786
-
 
 @Label_0786:
 code0309        
@@ -242,13 +222,11 @@ dialogtxt       "Your work is always so precise."
 dialogtxt       "I think you'd make a great smith."
 goto            @Label_097a
 
-
 @Cond_0932:
 dialogtxt       "Hmm…"
 dialogtxt       "Your work is always so precise."
 dialogtxt       "I think you'd make a great smith."
 goto            @Label_097a
-
 
 @Label_097a:
 code0309        
@@ -276,13 +254,11 @@ dialogtxt       "I don't really get it myself,"
 dialogtxt       "is that how it is?"
 goto            @Label_0b3c
 
-
 @Cond_0af8:
 dialogtxt       "Hmm…"
 dialogtxt       "I don't really get it myself,"
 dialogtxt       "is that how it is?"
 goto            @Label_0b3c
-
 
 @Label_0b3c:
 code0309        
@@ -301,12 +277,10 @@ dialogtxt       "That's not true!"
 dialogtxt       "You have a soul too, [NAME 1]!"
 goto            @Label_0c5e
 
-
 @Cond_0c26:
 dialogtxt       "That's not true!"
 dialogtxt       "You have a soul too, [NAME 1]!"
 goto            @Label_0c5e
-
 
 @Label_0c5e:
 code0309        
@@ -324,13 +298,11 @@ dialogtxt       "sometimes, even you get angry"
 dialogtxt       "about things, [NAME 1]!"
 goto            @Label_0d7a
 
-
 @Cond_0d1c:
 dialogtxt       "Well… I don't know, but"
 dialogtxt       "sometimes, even you get angry"
 dialogtxt       "about things, [NAME 1]!"
 goto            @Label_0d7a
-
 
 @Label_0d7a:
 code0309        
@@ -349,13 +321,11 @@ dialogtxt       "It's because you do have emotions,"
 dialogtxt       "that we've been able to get here…"
 goto            @Label_0eaa
 
-
 @Cond_0e52:
 dialogtxt       "I don't think that's true."
 dialogtxt       "It's because you do have emotions,"
 dialogtxt       "that we've been able to get here…"
 goto            @Label_0eaa
-
 
 @Label_0eaa:
 code0309        
@@ -378,7 +348,6 @@ call            @Func_3418
 code047b        
 goto            @Cond_0f4c
 
-
 @Cond_0f4c:
 jumpz           @Cond_1944, ($b003 == 1)
 call            @Func_3448
@@ -394,13 +363,11 @@ dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_1036
 
-
 @Cond_0fe6:
 dialogtxt       "We've captured Anise,"
 dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_1036
-
 
 @Label_1036:
 code0309        
@@ -419,12 +386,10 @@ dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_111a
 
-
 @Cond_10f0:
 dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_111a
-
 
 @Label_111a:
 code0309        
@@ -444,13 +409,11 @@ dialogtxt       "You know, since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_1250
 
-
 @Cond_11fa:
 dialogtxt       "Thanks, [NAME 1]…"
 dialogtxt       "You know, since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_1250
-
 
 @Label_1250:
 code0309        
@@ -469,12 +432,10 @@ dialogtxt       "How was it?"
 dialogtxt       "Did you find it interesting?"
 goto            @Label_1370
 
-
 @Cond_1334:
 dialogtxt       "How was it?"
 dialogtxt       "Did you find it interesting?"
 goto            @Label_1370
-
 
 @Label_1370:
 code0309        
@@ -499,13 +460,11 @@ dialogtxt       "Ever since we met, every day"
 dialogtxt       "has been full of excitement."
 goto            @Label_153e
 
-
 @Cond_14d4:
 dialogtxt       "I feel the same way."
 dialogtxt       "Ever since we met, every day"
 dialogtxt       "has been full of excitement."
 goto            @Label_153e
-
 
 @Label_153e:
 code0309        
@@ -530,13 +489,11 @@ dialogtxt       "One day, I'll make a weapon"
 dialogtxt       "just for you."
 goto            @Label_16d2
 
-
 @Cond_168a:
 dialogtxt       "Yeah, I will!"
 dialogtxt       "One day, I'll make a weapon"
 dialogtxt       "just for you."
 goto            @Label_16d2
-
 
 @Label_16d2:
 code0309        
@@ -556,13 +513,11 @@ dialogtxt       "Before we return the Demon Stone,"
 dialogtxt       "is there anything you'd like to do?"
 goto            @Label_17fa
 
-
 @Cond_17a8:
 dialogtxt       "That reminds me, [NAME 1]."
 dialogtxt       "Before we return the Demon Stone,"
 dialogtxt       "is there anything you'd like to do?"
 goto            @Label_17fa
-
 
 @Label_17fa:
 code0309        
@@ -582,12 +537,10 @@ dialogtxt       "I-is that so…"
 dialogtxt       "That makes me feel kinda lonely…"
 goto            @Label_18dc
 
-
 @Cond_18ac:
 dialogtxt       "I-is that so…"
 dialogtxt       "That makes me feel kinda lonely…"
 goto            @Label_18dc
-
 
 @Label_18dc:
 code0309        
@@ -602,7 +555,6 @@ call            @Func_3536
 call            @Func_3484
 code047b        
 goto            @Cond_1944
-
 
 @Cond_1944:
 jumpz           @Cond_244c, ($b003 == 2)
@@ -619,13 +571,11 @@ dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_1a2e
 
-
 @Cond_19de:
 dialogtxt       "We've captured Anise,"
 dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_1a2e
-
 
 @Label_1a2e:
 code0309        
@@ -644,12 +594,10 @@ dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_1b08
 
-
 @Cond_1ade:
 dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_1b08
-
 
 @Label_1b08:
 code0309        
@@ -667,13 +615,11 @@ dialogtxt       "Since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_1bea
 
-
 @Cond_1ba2:
 dialogtxt       "You know…"
 dialogtxt       "Since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_1bea
-
 
 @Label_1bea:
 code0309        
@@ -692,12 +638,10 @@ dialogtxt       "How was it?"
 dialogtxt       "Did you hate it after all?"
 goto            @Label_1d12
 
-
 @Cond_1ccc:
 dialogtxt       "How was it?"
 dialogtxt       "Did you hate it after all?"
 goto            @Label_1d12
-
 
 @Label_1d12:
 code0309        
@@ -719,13 +663,11 @@ dialogtxt       "It must have been tough."
 dialogtxt       "Sorry…"
 goto            @Label_1e3c
 
-
 @Cond_1e02:
 dialogtxt       "I see…"
 dialogtxt       "It must have been tough."
 dialogtxt       "Sorry…"
 goto            @Label_1e3c
-
 
 @Label_1e3c:
 code0309        
@@ -745,12 +687,10 @@ dialogtxt       "Geez…"
 dialogtxt       "What's with you…"
 goto            @Label_1f2a
 
-
 @Cond_1f0c:
 dialogtxt       "Geez…"
 dialogtxt       "What's with you…"
 goto            @Label_1f2a
-
 
 @Label_1f2a:
 code0309        
@@ -772,12 +712,10 @@ dialogtxt       "It's true, problems seem to"
 dialogtxt       "come up when I'm with you."
 goto            @Label_2058
 
-
 @Cond_2020:
 dialogtxt       "It's true, problems seem to"
 dialogtxt       "come up when I'm with you."
 goto            @Label_2058
-
 
 @Label_2058:
 code0309        
@@ -800,7 +738,6 @@ dialogtxt       "Craftknight and make a weapon"
 dialogtxt       "for you to use, [NAME 1]."
 goto            @Label_221c
 
-
 @Cond_2168:
 dialogtxt       "Hahaha…"
 dialogtxt       "Well, if I remember our training,"
@@ -811,7 +748,6 @@ dialogtxt       "I'm going to become a full-fledged"
 dialogtxt       "Craftknight and make a weapon"
 dialogtxt       "for you to use, [NAME 1]."
 goto            @Label_221c
-
 
 @Label_221c:
 code0309        
@@ -830,13 +766,11 @@ dialogtxt       "Before we return the Demon Stone,"
 dialogtxt       "is there anything you'd like to do?"
 goto            @Label_2324
 
-
 @Cond_22d2:
 dialogtxt       "That reminds me, [NAME 1]."
 dialogtxt       "Before we return the Demon Stone,"
 dialogtxt       "is there anything you'd like to do?"
 goto            @Label_2324
-
 
 @Label_2324:
 code0309        
@@ -856,12 +790,10 @@ dialogtxt       "I-is that so…"
 dialogtxt       "That makes me feel kinda lonely…"
 goto            @Label_2404
 
-
 @Cond_23d4:
 dialogtxt       "I-is that so…"
 dialogtxt       "That makes me feel kinda lonely…"
 goto            @Label_2404
-
 
 @Label_2404:
 code0309        
@@ -875,7 +807,6 @@ call            @Func_3536
 call            @Func_3484
 code047b        
 goto            @Cond_244c
-
 
 @Cond_244c:
 jumpz           @Cond_2e48, ($b003 == 3)
@@ -892,13 +823,11 @@ dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_2536
 
-
 @Cond_24e6:
 dialogtxt       "We've captured Anise,"
 dialogtxt       "so once we return the Demon Stone,"
 dialogtxt       "it'll be over…"
 goto            @Label_2536
-
 
 @Label_2536:
 code0309        
@@ -917,12 +846,10 @@ dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_2618
 
-
 @Cond_25ee:
 dialogtxt       "I see…"
 dialogtxt       "Murno must be happy…"
 goto            @Label_2618
-
 
 @Label_2618:
 code0309        
@@ -942,13 +869,11 @@ dialogtxt       "You know, since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_274a
 
-
 @Cond_26f8:
 dialogtxt       "Yeah…"
 dialogtxt       "You know, since I met you,"
 dialogtxt       "all sorts of things have happened…"
 goto            @Label_274a
-
 
 @Label_274a:
 code0309        
@@ -980,12 +905,10 @@ dialogtxt       "Ahaha…"
 dialogtxt       "I see… Sorry…"
 goto            @Label_28dc
 
-
 @Cond_28b4:
 dialogtxt       "Ahaha…"
 dialogtxt       "I see… Sorry…"
 goto            @Label_28dc
-
 
 @Label_28dc:
 code0309        
@@ -1034,13 +957,11 @@ dialogtxt       "One day, I'll make a weapon"
 dialogtxt       "for you to use."
 goto            @Label_2bd4
 
-
 @Cond_2b8c:
 dialogtxt       "Yeah, I will!"
 dialogtxt       "One day, I'll make a weapon"
 dialogtxt       "for you to use."
 goto            @Label_2bd4
-
 
 @Label_2bd4:
 code0309        
@@ -1059,13 +980,11 @@ dialogtxt       "Before we return the Demon Stone,"
 dialogtxt       "is there anything you'd like to do?"
 goto            @Label_2ce6
 
-
 @Cond_2c94:
 dialogtxt       "That reminds me, [NAME 1]."
 dialogtxt       "Before we return the Demon Stone,"
 dialogtxt       "is there anything you'd like to do?"
 goto            @Label_2ce6
-
 
 @Label_2ce6:
 code0309        
@@ -1086,12 +1005,10 @@ dialogtxt       "I-is that so…"
 dialogtxt       "That makes me feel kinda lonely…"
 goto            @Label_2dec
 
-
 @Cond_2dbc:
 dialogtxt       "I-is that so…"
 dialogtxt       "That makes me feel kinda lonely…"
 goto            @Label_2dec
-
 
 @Label_2dec:
 code0309        
@@ -1106,11 +1023,9 @@ call            @Func_3484
 code047b        
 goto            @Cond_2e48
 
-
 @Cond_2e48:
 code0333        2, 30
 done            
-
 
 @Func_2e58:
 code031a        7
@@ -1119,7 +1034,6 @@ code031c        7, 1
 code031f        7
 ret             
 
-
 @Func_2e98:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -1127,20 +1041,17 @@ code031f        7
 code031a        7
 ret             
 
-
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
 
-
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
 ret             
-
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
@@ -1148,14 +1059,12 @@ code031f        7
 code031a        7
 ret             
 
-
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -1171,7 +1080,6 @@ code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -1183,185 +1091,152 @@ code031f        6
 code031a        7
 ret             
 
-
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 jumpz           @Cond_31a0, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_33da
-
 
 @Cond_31a0:
 jumpz           @Cond_31c6, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_33da
 
-
 @Cond_31c6:
 jumpz           @Cond_31ec, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_33da
-
 
 @Cond_31ec:
 jumpz           @Cond_3212, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_33da
 
-
 @Cond_3212:
 jumpz           @Cond_3238, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_33da
-
 
 @Cond_3238:
 jumpz           @Cond_325e, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_33da
 
-
 @Cond_325e:
 jumpz           @Cond_3284, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_33da
-
 
 @Cond_3284:
 jumpz           @Cond_32aa, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_33da
 
-
 @Cond_32aa:
 jumpz           @Cond_32d0, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_33da
-
 
 @Cond_32d0:
 jumpz           @Cond_32f6, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_33da
 
-
 @Cond_32f6:
 jumpz           @Cond_331c, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_33da
-
 
 @Cond_331c:
 jumpz           @Cond_3342, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_33da
 
-
 @Cond_3342:
 jumpz           @Cond_3368, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_33da
-
 
 @Cond_3368:
 jumpz           @Cond_338e, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_33da
 
-
 @Cond_338e:
 jumpz           @Cond_33b4, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_33da
-
 
 @Cond_33b4:
 jumpz           @Label_33da, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_33da
 
-
 @Label_33da:
 ret             
-
 
 code0301        2, 4
 code047e        0, 1
 ret             
-
 
 @Func_33fa:
 code0301        2, 7
 code047e        0, 1
 ret             
 
-
 @Func_3418:
 code047e        0, 0
 code0302        4
 ret             
-
 
 @Func_3430:
 code047e        0, 0
 code0302        7
 ret             
 
-
 @Func_3448:
 code0301        4, 5
 code047e        1, 1
 ret             
-
 
 @Func_3466:
 code0301        4, 7
 code047e        1, 1
 ret             
 
-
 @Func_3484:
 code047e        1, 0
 code0302        5
 ret             
-
 
 @Func_349c:
 code047e        1, 0
 code0302        7
 ret             
 
-
 code047a        0, 1, 1
 ret             
 
-
 code047a        1, 1, 1
 ret             
-
 
 @Func_34e0:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
-
 code047a        0, 0, 1
 ret             
 
-
 code047a        1, 0, 1
 ret             
-
 
 @Func_3536:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
-
 

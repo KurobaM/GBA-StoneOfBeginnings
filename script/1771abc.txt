@@ -28,12 +28,10 @@ jumpz           @Cond_01b8, ($h319 == 57)
 code041c        2, 184, 40, 1
 goto            @Label_01e6
 
-
 @Cond_01b8:
 jumpz           @Label_01e6, ($h319 == 51)
 code041c        1, 128, 247, 3
 goto            @Label_01e6
-
 
 @Label_01e6:
 mapev           0, @Event_02cc, 4
@@ -50,7 +48,6 @@ code046e        16, 256, 0
 code041d        
 code040b        
 
-
 @Event_02cc:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
@@ -58,14 +55,12 @@ code041d
 code040a        
 gotomap         1062 ; map 176fdec
 
-
 @Event_02fe:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
 code041d        
 code040a        
 gotomap         1070 ; map 17716fc
-
 
 @Event_0330:
 code043e        2, 3, 0
@@ -76,9 +71,7 @@ code0351
 jumpz           @Cond_0376, ($b068 == -1)
 goto            @Cond_05e6
 
-
 goto            @Label_05e2
-
 
 @Cond_0376:
 setvar          $h096, 63
@@ -120,15 +113,12 @@ code0409
 code043e        2, 3, 0
 goto            @Label_05e2
 
-
 @Label_05e2:
 goto            @Label_0344
-
 
 @Cond_05e6:
 code043e        2, 0, 0
 code040b        
-
 
 @Label_05fc:
 code046c        0
@@ -136,13 +126,11 @@ code0006        21
 code046c        1
 code040b        
 
-
 @Label_0616:
 setvar          $h096, 63
 code040a        
 code034f        
 goto            @start
-
 
 @Talk_062a:
 code0301        8, 7
@@ -156,7 +144,6 @@ code047e        0, 0
 code0302        7
 code040b        
 
-
 @Event_06b6:
 code0301        8, 7
 dialogtxt       "A notice From Gallahan's Workshop:"
@@ -166,16 +153,13 @@ code0309
 code0302        7
 code040b        
 
-
 done            
 
-
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
-
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -183,13 +167,11 @@ code031f        7
 code031a        7
 ret             
 
-
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
-
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
@@ -197,20 +179,17 @@ code031c        6, 1
 code031f        6
 ret             
 
-
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
 ret             
 
-
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -227,7 +206,6 @@ code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -239,112 +217,93 @@ code031f        6
 code031a        7
 ret             
 
-
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 jumpz           @Cond_0a7a, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_0cb4
-
 
 @Cond_0a7a:
 jumpz           @Cond_0aa0, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_0cb4
 
-
 @Cond_0aa0:
 jumpz           @Cond_0ac6, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_0cb4
-
 
 @Cond_0ac6:
 jumpz           @Cond_0aec, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_0cb4
 
-
 @Cond_0aec:
 jumpz           @Cond_0b12, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_0cb4
-
 
 @Cond_0b12:
 jumpz           @Cond_0b38, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_0cb4
 
-
 @Cond_0b38:
 jumpz           @Cond_0b5e, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_0cb4
-
 
 @Cond_0b5e:
 jumpz           @Cond_0b84, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_0cb4
 
-
 @Cond_0b84:
 jumpz           @Cond_0baa, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_0cb4
-
 
 @Cond_0baa:
 jumpz           @Cond_0bd0, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_0cb4
 
-
 @Cond_0bd0:
 jumpz           @Cond_0bf6, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_0cb4
-
 
 @Cond_0bf6:
 jumpz           @Cond_0c1c, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_0cb4
 
-
 @Cond_0c1c:
 jumpz           @Cond_0c42, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_0cb4
-
 
 @Cond_0c42:
 jumpz           @Cond_0c68, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_0cb4
 
-
 @Cond_0c68:
 jumpz           @Cond_0c8e, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_0cb4
-
 
 @Cond_0c8e:
 jumpz           @Label_0cb4, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0cb4
 
-
 @Label_0cb4:
 ret             
-
 
 code046d        0, 192
 code043e        0, 6, 0
@@ -352,13 +311,11 @@ walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
 ret             
 
-
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
 ret             
-
 
 code046d        0, 192
 code043e        0, 6, 0
@@ -366,13 +323,11 @@ walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
 ret             
 
-
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
 ret             
-
 
 code033a        196, 0
 code048e        
@@ -390,7 +345,6 @@ code031a        7
 code033e        196
 ret             
 
-
 @Func_0eb8:
 code0438        16, 407, 651, 1
 code043a        16, 16, 0
@@ -399,7 +353,6 @@ code043c        16, 3
 code0442        16, @Talk_0f22
 code0444        16, -1
 ret             
-
 
 @Talk_0f22:
 code0301        8, 7
@@ -423,7 +376,6 @@ choicetxt       @Choice_1208, "Teach me about disassembly"
 choicetxt       @Choice_1348, "Nothing right now"
 choicewait      
 
-
 @Choice_10a6:
 code047e        0, 1
 dialogtxt       "This is very information."
@@ -446,7 +398,6 @@ dialogtxt       "Understand?"
 code0309        
 goto            @Label_1372
 
-
 @Choice_1208:
 code047e        0, 1
 dialogtxt       "Well then, this time I'll teach"
@@ -466,7 +417,6 @@ dialogtxt       "weapon you like."
 code0309        
 goto            @Label_1372
 
-
 @Choice_1348:
 code047e        0, 1
 dialogtxt       "Come again!"
@@ -475,5 +425,4 @@ code0309
 code047e        0, 0
 code0302        7
 code040b        
-
 

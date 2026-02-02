@@ -7,23 +7,19 @@ jumpz           @Cond_0076, ($b003 == 0)
 code0479        1, 0, 12
 goto            @Label_00de
 
-
 @Cond_0076:
 jumpz           @Cond_009e, ($b003 == 1)
 code0479        1, 0, 12
 goto            @Label_00de
-
 
 @Cond_009e:
 jumpz           @Cond_00c6, ($b003 == 2)
 code0479        1, 0, 12
 goto            @Label_00de
 
-
 @Cond_00c6:
 code0479        1, 0, 12
 goto            @Label_00de
-
 
 @Label_00de:
 code047d        1, 2
@@ -35,12 +31,10 @@ dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0158
 
-
 @Cond_0136:
 dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0158
-
 
 @Label_0158:
 code047b        
@@ -61,13 +55,11 @@ dialogtxt       "Gee, that kind of sucked…"
 dialogtxt       "Doesn't that bother you?"
 goto            @Label_0288
 
-
 @Cond_0236:
 dialogtxt       "Oh yeah, you can't feel fun…"
 dialogtxt       "Gee, that's too terrible…"
 dialogtxt       "Doesn't that bother you?"
 goto            @Label_0288
-
 
 @Label_0288:
 code0309        
@@ -87,13 +79,11 @@ dialogtxt       "I think Master said something about"
 dialogtxt       "the pure devotion thing…"
 goto            @Label_03f8
 
-
 @Cond_038a:
 dialogtxt       "You can't feel joy, nor anger too…"
 dialogtxt       "I think Master said something about"
 dialogtxt       "the pure devotion thing…"
 goto            @Label_03f8
-
 
 @Label_03f8:
 code0309        
@@ -113,13 +103,11 @@ dialogtxt       "And that makes you super"
 dialogtxt       "cool in your own way!"
 goto            @Label_04e2
 
-
 @Cond_04be:
 dialogtxt       "You're so diligent, [NAME 1]!"
 dialogtxt       "And that makes you super"
 dialogtxt       "cool in your own way!"
 goto            @Label_04e2
-
 
 @Label_04e2:
 code0309        
@@ -141,7 +129,6 @@ call            @Func_4494
 code047b        
 goto            @Cond_05a8
 
-
 @Cond_05a8:
 jumpz           @Cond_0ae2, ($b003 == 1)
 call            @Func_4458
@@ -150,12 +137,10 @@ dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0610
 
-
 @Cond_05ee:
 dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0610
-
 
 @Label_0610:
 code047b        
@@ -179,13 +164,11 @@ dialogtxt       "Now you fully get how I"
 dialogtxt       "feel as a Craftknight!"
 goto            @Label_0734
 
-
 @Cond_06fe:
 dialogtxt       "Am I hearing you correctly,"
 dialogtxt       "[NAME 1]!? Now you fully get"
 dialogtxt       "how I feel as a Craftknight!"
 goto            @Label_0734
-
 
 @Label_0734:
 code0309        
@@ -209,12 +192,10 @@ dialogtxt       "I-Is that so!?"
 dialogtxt       "My bad, my bad…"
 goto            @Label_0886
 
-
 @Cond_0860:
 dialogtxt       "I-Is that so!?"
 dialogtxt       "My bad, my bad…"
 goto            @Label_0886
-
 
 @Label_0886:
 code0309        
@@ -233,12 +214,10 @@ dialogtxt       "…And that is?"
 dialogtxt       "Tell me! I have to know!"
 goto            @Label_0960
 
-
 @Cond_093a:
 dialogtxt       "…And that is?"
 dialogtxt       "Tell me! I have to know!"
 goto            @Label_0960
-
 
 @Label_0960:
 code0309        
@@ -270,13 +249,11 @@ dialogtxt       "I'm gonna work even"
 dialogtxt       "harder, for sure!"
 goto            @Label_0ad2
 
-
 @Cond_0aaa:
 dialogtxt       "Then I will!"
 dialogtxt       "I'm gonna work even"
 dialogtxt       "harder, for sure!"
 goto            @Label_0ad2
-
 
 @Label_0ad2:
 code0309        
@@ -284,7 +261,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_0ae2
-
 
 @Cond_0ae2:
 jumpz           @Cond_0f2a, ($b003 == 2)
@@ -294,12 +270,10 @@ dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0b4a
 
-
 @Cond_0b28:
 dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0b4a
-
 
 @Label_0b4a:
 code047b        
@@ -325,13 +299,11 @@ dialogtxt       "you has been the most fun we had!"
 dialogtxt       "Admit it, [NAME 1]!"
 goto            @Label_0cbc
 
-
 @Cond_0c72:
 dialogtxt       "…Besides, training together with"
 dialogtxt       "you has been the most fun we had!"
 dialogtxt       "Come on, [NAME 1]!"
 goto            @Label_0cbc
-
 
 @Label_0cbc:
 code0309        
@@ -351,13 +323,11 @@ dialogtxt       "Do you really hate training"
 dialogtxt       "together with me that much?"
 goto            @Label_0dc4
 
-
 @Cond_0d82:
 dialogtxt       "What's with you!?"
 dialogtxt       "Do you really hate training"
 dialogtxt       "together with me that much?"
 goto            @Label_0dc4
-
 
 @Label_0dc4:
 code0309        
@@ -376,13 +346,11 @@ dialogtxt       "know you really had fun with me…"
 dialogtxt       "…Don't you?"
 goto            @Label_0eae
 
-
 @Cond_0e74:
 dialogtxt       "So you're not gonna admit it? I"
 dialogtxt       "know you really had fun with me…"
 dialogtxt       "…Don't you?"
 goto            @Label_0eae
-
 
 @Label_0eae:
 code0309        
@@ -402,7 +370,6 @@ call            @Func_4494
 code047b        
 goto            @Cond_0f2a
 
-
 @Cond_0f2a:
 jumpz           @Cond_13bc, ($b003 == 3)
 call            @Func_4458
@@ -411,12 +378,10 @@ dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0f92
 
-
 @Cond_0f70:
 dialogtxt       "Training sure is fun!"
 dialogtxt       "Don't you agree, [NAME 1]?"
 goto            @Label_0f92
-
 
 @Label_0f92:
 code047b        
@@ -437,13 +402,11 @@ dialogtxt       "Though I'm really grateful that"
 dialogtxt       "you're my partner, [NAME 1]."
 goto            @Label_10b6
 
-
 @Cond_1074:
 dialogtxt       "You didn't need to sugarcoat…"
 dialogtxt       "Though I'm really grateful that"
 dialogtxt       "you're my partner, [NAME 1]."
 goto            @Label_10b6
-
 
 @Label_10b6:
 code0309        
@@ -475,13 +438,11 @@ dialogtxt       "[NAME 1]?"
 dialogtxt       "Damn, this is embarassing…"
 goto            @Label_1214
 
-
 @Cond_11ea:
 dialogtxt       "Y-you really think so,"
 dialogtxt       "[NAME 1]?"
 dialogtxt       "Gosh, this is embarassing…"
 goto            @Label_1214
-
 
 @Label_1214:
 code0309        
@@ -512,12 +473,10 @@ dialogtxt       "Wait, are you complimenting me?"
 dialogtxt       "That sounded kinda awkward…"
 goto            @Label_13ac
 
-
 @Cond_1370:
 dialogtxt       "Wait, are you complimenting me?"
 dialogtxt       "That sounded kinda awkward…"
 goto            @Label_13ac
-
 
 @Label_13ac:
 code0309        
@@ -526,10 +485,8 @@ call            @Func_4494
 code047b        
 goto            @Cond_13bc
 
-
 @Cond_13bc:
 goto            @Label_4424
-
 
 @Cond_13c0:
 jumpz           @Cond_2ac8, ($h307 == 1)
@@ -541,23 +498,19 @@ jumpz           @Cond_1436, ($b003 == 0)
 code0479        1, 0, 12
 goto            @Label_149e
 
-
 @Cond_1436:
 jumpz           @Cond_145e, ($b003 == 1)
 code0479        1, 0, 16
 goto            @Label_149e
-
 
 @Cond_145e:
 jumpz           @Cond_1486, ($b003 == 2)
 code0479        1, 0, 12
 goto            @Label_149e
 
-
 @Cond_1486:
 code0479        1, 0, 16
 goto            @Label_149e
-
 
 @Label_149e:
 code047d        1, 2
@@ -570,13 +523,11 @@ dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_153c
 
-
 @Cond_1508:
 dialogtxt       "Hey, [NAME 1]…"
 dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_153c
-
 
 @Label_153c:
 code047b        
@@ -596,12 +547,10 @@ dialogtxt       "Is that so?"
 dialogtxt       "You must be worried for her…"
 goto            @Label_161a
 
-
 @Cond_15f4:
 dialogtxt       "Is that so?"
 dialogtxt       "You must be worried for her…"
 goto            @Label_161a
-
 
 @Label_161a:
 code0309        
@@ -625,12 +574,10 @@ dialogtxt       "His combat prowess…?"
 dialogtxt       "Wait, Wellman knows how to fight!?"
 goto            @Label_179a
 
-
 @Cond_1766:
 dialogtxt       "His combat prowess…?"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_179a
-
 
 @Label_179a:
 code0309        
@@ -669,13 +616,11 @@ dialogtxt       "Could it be that you're"
 dialogtxt       "actually worried about me?"
 goto            @Label_1a02
 
-
 @Cond_19d2:
 dialogtxt       "I-I see…"
 dialogtxt       "Could it be that you're"
 dialogtxt       "actually worried about me?"
 goto            @Label_1a02
-
 
 @Label_1a02:
 code0309        
@@ -683,7 +628,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_1a12
-
 
 @Cond_1a12:
 jumpz           @Cond_1fb4, ($b003 == 1)
@@ -694,13 +638,11 @@ dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_1a9e
 
-
 @Cond_1a6a:
 dialogtxt       "Hey, [NAME 1]…"
 dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_1a9e
-
 
 @Label_1a9e:
 code047b        
@@ -720,12 +662,10 @@ dialogtxt       "Is that so?"
 dialogtxt       "Are you still worried for her?"
 goto            @Label_1b84
 
-
 @Cond_1b5e:
 dialogtxt       "Is that so?"
 dialogtxt       "Are you still worried for her?"
 goto            @Label_1b84
-
 
 @Label_1b84:
 code0309        
@@ -761,12 +701,10 @@ dialogtxt       "Huh…?"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_1d8a
 
-
 @Cond_1d5c:
 dialogtxt       "Huh…?"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_1d8a
-
 
 @Label_1d8a:
 code0309        
@@ -805,13 +743,11 @@ dialogtxt       "Why do I feel like you're kind"
 dialogtxt       "of looking down on me, though?"
 goto            @Label_1fa4
 
-
 @Cond_1f70:
 dialogtxt       "O-Okay…?"
 dialogtxt       "Why do I feel like you're kind"
 dialogtxt       "of looking down on me, though?"
 goto            @Label_1fa4
-
 
 @Label_1fa4:
 code0309        
@@ -819,7 +755,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_1fb4
-
 
 @Cond_1fb4:
 jumpz           @Cond_255e, ($b003 == 2)
@@ -830,13 +765,11 @@ dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_2040
 
-
 @Cond_200c:
 dialogtxt       "Hey, [NAME 1]…"
 dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_2040
-
 
 @Label_2040:
 code047b        
@@ -857,13 +790,11 @@ dialogtxt       "So you really ARE"
 dialogtxt       "concerned for Munro!"
 goto            @Label_2102
 
-
 @Cond_20e0:
 dialogtxt       "Oooh…"
 dialogtxt       "So you really ARE"
 dialogtxt       "concerned for Munro!"
 goto            @Label_2102
-
 
 @Label_2102:
 code0309        
@@ -898,13 +829,11 @@ dialogtxt       "So that means…"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_2324
 
-
 @Cond_22e6:
 dialogtxt       "Huh…?"
 dialogtxt       "So that means…"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_2324
-
 
 @Label_2324:
 code0309        
@@ -942,13 +871,11 @@ dialogtxt       "Why do I feel that you're really"
 dialogtxt       "more worried for Murno right now?"
 goto            @Label_254e
 
-
 @Cond_2518:
 dialogtxt       "I-I see…"
 dialogtxt       "Why do I feel that you're really"
 dialogtxt       "more worried for Murno right now?"
 goto            @Label_254e
-
 
 @Label_254e:
 code0309        
@@ -956,7 +883,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_255e
-
 
 @Cond_255e:
 jumpz           @Cond_2ac4, ($b003 == 3)
@@ -967,13 +893,11 @@ dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_25ea
 
-
 @Cond_25b6:
 dialogtxt       "Hey, [NAME 1]…"
 dialogtxt       "Are you wondering how is"
 dialogtxt       "Murno doing right now?"
 goto            @Label_25ea
-
 
 @Label_25ea:
 code047b        
@@ -993,12 +917,10 @@ dialogtxt       "Is that so?"
 dialogtxt       "You must be worried for her…"
 goto            @Label_26d4
 
-
 @Cond_26ac:
 dialogtxt       "Is that so?"
 dialogtxt       "You must be worried for her…"
 goto            @Label_26d4
-
 
 @Label_26d4:
 code0309        
@@ -1034,13 +956,11 @@ dialogtxt       "So that means…"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_28fc
 
-
 @Cond_28be:
 dialogtxt       "Huh…?"
 dialogtxt       "So that means…"
 dialogtxt       "Wait, Wellman can fight!?"
 goto            @Label_28fc
-
 
 @Label_28fc:
 code0309        
@@ -1080,10 +1000,8 @@ call            @Func_4494
 code047b        
 goto            @Cond_2ac4
 
-
 @Cond_2ac4:
 goto            @Label_4424
-
 
 @Cond_2ac8:
 jumpz           @Label_4424, ($h307 == 2)
@@ -1095,23 +1013,19 @@ jumpz           @Cond_2b3e, ($b003 == 0)
 code0479        1, 0, 12
 goto            @Label_2ba6
 
-
 @Cond_2b3e:
 jumpz           @Cond_2b66, ($b003 == 1)
 code0479        1, 0, 12
 goto            @Label_2ba6
-
 
 @Cond_2b66:
 jumpz           @Cond_2b8e, ($b003 == 2)
 code0479        1, 0, 12
 goto            @Label_2ba6
 
-
 @Cond_2b8e:
 code0479        1, 0, 12
 goto            @Label_2ba6
-
 
 @Label_2ba6:
 code047d        1, 2
@@ -1124,13 +1038,11 @@ dialogtxt       "What was your life like before"
 dialogtxt       "you were summoned to Lyndbaum?"
 goto            @Label_2c76
 
-
 @Cond_2c2a:
 dialogtxt       "Oh yeah, [NAME 1]!"
 dialogtxt       "What was your life like before"
 dialogtxt       "you were summoned to Lyndbaum?"
 goto            @Label_2c76
-
 
 @Label_2c76:
 code047b        
@@ -1151,13 +1063,11 @@ dialogtxt       "That sounds kinda cool…What"
 dialogtxt       "exactly were you guarding, anyway?"
 goto            @Label_2d66
 
-
 @Cond_2d22:
 dialogtxt       "Important facilities…?"
 dialogtxt       "That sounds kinda cool…What"
 dialogtxt       "exactly were you guarding, anyway?"
 goto            @Label_2d66
-
 
 @Label_2d66:
 code0309        
@@ -1187,13 +1097,11 @@ dialogtxt       "It must've been REALLY important"
 dialogtxt       "if you're so defensive about it!"
 goto            @Label_2ee0
 
-
 @Cond_2e8c:
 dialogtxt       "Oho, I smell a juicy secret…!"
 dialogtxt       "It must've been REALLY important"
 dialogtxt       "if you're so defensive about it!"
 goto            @Label_2ee0
-
 
 @Label_2ee0:
 code0309        
@@ -1224,12 +1132,10 @@ dialogtxt       "Huh?"
 dialogtxt       "Then what EXACTLY is it?"
 goto            @Label_3032
 
-
 @Cond_300e:
 dialogtxt       "Huh?"
 dialogtxt       "Then what EXACTLY is it?"
 goto            @Label_3032
-
 
 @Label_3032:
 code0309        
@@ -1270,13 +1176,11 @@ dialogtxt       "so cool…Even I wouldn't manage"
 dialogtxt       "standing still for so long…"
 goto            @Label_31fe
 
-
 @Cond_31b4:
 dialogtxt       "Gee, [NAME 1], you're"
 dialogtxt       "so cool…Even I wouldn't manage"
 dialogtxt       "standing still for so long…"
 goto            @Label_31fe
-
 
 @Label_31fe:
 code0309        
@@ -1284,7 +1188,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_320e
-
 
 @Cond_320e:
 jumpz           @Cond_37c2, ($b003 == 1)
@@ -1299,7 +1202,6 @@ dialogtxt       "How'd you manage to"
 dialogtxt       "live so long, anyway?"
 goto            @Label_3348
 
-
 @Cond_32be:
 dialogtxt       "Oh yeah, [NAME 1]!"
 dialogtxt       "You've lived for a 100 years, so"
@@ -1309,7 +1211,6 @@ code0479        0, 0, 16
 dialogtxt       "How'd you manage to"
 dialogtxt       "live so long, anyway?"
 goto            @Label_3348
-
 
 @Label_3348:
 code047b        
@@ -1366,13 +1267,11 @@ dialogtxt       "So there are people like the one"
 dialogtxt       "you're finding. Interesting…"
 goto            @Label_3688
 
-
 @Cond_364e:
 dialogtxt       "Hm…"
 dialogtxt       "So there are people like the one"
 dialogtxt       "you're finding. Interesting…"
 goto            @Label_3688
-
 
 @Label_3688:
 code0309        
@@ -1396,12 +1295,10 @@ dialogtxt       "Yeah! I'm looking"
 dialogtxt       "forward to that!"
 goto            @Label_37b2
 
-
 @Cond_3792:
 dialogtxt       "Yay! I'm looking"
 dialogtxt       "forward to that!"
 goto            @Label_37b2
-
 
 @Label_37b2:
 code0309        
@@ -1409,7 +1306,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_37c2
-
 
 @Cond_37c2:
 jumpz           @Cond_3fac, ($b003 == 2)
@@ -1419,12 +1315,10 @@ dialogtxt       "Oh yeah, [NAME 1]!"
 dialogtxt       "Have you always been like that?"
 goto            @Label_385c
 
-
 @Cond_3822:
 dialogtxt       "Oh yeah, [NAME 1]!"
 dialogtxt       "Have you always been like that?"
 goto            @Label_385c
-
 
 @Label_385c:
 code047b        
@@ -1458,13 +1352,11 @@ dialogtxt       "I was only concerned, you know…"
 dialogtxt       "Were you always so confrontational?"
 goto            @Label_3a10
 
-
 @Cond_39c8:
 dialogtxt       "See? You're being so mean again!"
 dialogtxt       "I was only concerned, you know…"
 dialogtxt       "Were you always so confrontational?"
 goto            @Label_3a10
-
 
 @Label_3a10:
 code0309        
@@ -1487,7 +1379,6 @@ dialogtxt       "you'd have lots of friends!"
 dialogtxt       "Doesn't that sound great?"
 goto            @Label_3be2
 
-
 @Cond_3b30:
 dialogtxt       "Hey, don't be like that…"
 dialogtxt       "I know you said lots of mean stuff,"
@@ -1498,7 +1389,6 @@ dialogtxt       "If you acted nicer, I'm sure"
 dialogtxt       "you'd have lots of friends!"
 dialogtxt       "Doesn't that sound great?"
 goto            @Label_3be2
-
 
 @Label_3be2:
 code0309        
@@ -1523,13 +1413,11 @@ dialogtxt       "Sorry…"
 dialogtxt       "I didn't know…"
 goto            @Label_3d50
 
-
 @Cond_3d20:
 dialogtxt       "I…[NAME 1]…"
 dialogtxt       "Sorry…"
 dialogtxt       "I didn't mean to…"
 goto            @Label_3d50
-
 
 @Label_3d50:
 code0309        
@@ -1561,13 +1449,11 @@ dialogtxt       "Daaammmiiiit!"
 dialogtxt       "You fooled me!"
 goto            @Label_3eac
 
-
 @Cond_3e72:
 dialogtxt       "You're messed up! You liar!"
 dialogtxt       "You fooled me!"
 dialogtxt       "Meanie!"
 goto            @Label_3eac
-
 
 @Label_3eac:
 code0309        
@@ -1587,13 +1473,11 @@ dialogtxt       "And I won't fall for your"
 dialogtxt       "lies again by then!"
 goto            @Label_3f9c
 
-
 @Cond_3f6a:
 dialogtxt       "Geez…"
 dialogtxt       "And I won't fall for your"
 dialogtxt       "lies again by then!"
 goto            @Label_3f9c
-
 
 @Label_3f9c:
 code0309        
@@ -1601,7 +1485,6 @@ call            @Func_45b2
 call            @Func_4494
 code047b        
 goto            @Cond_3fac
-
 
 @Cond_3fac:
 jumpz           @Cond_4420, ($b003 == 3)
@@ -1612,13 +1495,11 @@ dialogtxt       "You mentioned you had a brother"
 dialogtxt       "a while ago! What is he like?"
 goto            @Label_4076
 
-
 @Cond_4024:
 dialogtxt       "By the way, [NAME 1]!"
 dialogtxt       "You mentioned you had a brother"
 dialogtxt       "a while ago! What is he like?"
 goto            @Label_4076
-
 
 @Label_4076:
 code047b        
@@ -1643,13 +1524,11 @@ dialogtxt       "I see…"
 dialogtxt       "He must be really special to you…"
 goto            @Label_41ea
 
-
 @Cond_41b8:
 dialogtxt       "I see…"
 dialogtxt       "He made you go through a"
 dialogtxt       "lot, didn't he…?"
 goto            @Label_41ea
-
 
 @Label_41ea:
 code0309        
@@ -1693,10 +1572,8 @@ call            @Func_4494
 code047b        
 goto            @Cond_4420
 
-
 @Cond_4420:
 goto            @Label_4424
-
 
 @Label_4424:
 setvar          $h307, ($h307 + 1)
@@ -1704,82 +1581,66 @@ jumpz           @Cond_4456, ($h307 > 2)
 setvar          $h307, 0
 goto            @Cond_4456
 
-
 @Cond_4456:
 done            
-
 
 @Func_4458:
 code0301        2, 4
 code047e        0, 1
 ret             
 
-
 @Func_4476:
 code0301        2, 7
 code047e        0, 1
 ret             
-
 
 @Func_4494:
 code047e        0, 0
 code0302        4
 ret             
 
-
 @Func_44ac:
 code047e        0, 0
 code0302        7
 ret             
 
-
 code0301        4, 5
 code047e        1, 1
 ret             
-
 
 @Func_44e2:
 code0301        4, 7
 code047e        1, 1
 ret             
 
-
 code047e        1, 0
 code0302        5
 ret             
-
 
 @Func_4518:
 code047e        1, 0
 code0302        7
 ret             
 
-
 code047a        0, 1, 1
 ret             
 
-
 code047a        1, 1, 1
 ret             
-
 
 @Func_455c:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
-
 code047a        0, 0, 1
 ret             
 
-
 code047a        1, 0, 1
 ret             
-
 
 @Func_45b2:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
-
 

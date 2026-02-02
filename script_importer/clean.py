@@ -14,8 +14,8 @@ if __name__ == '__main__':
                 paths.append(os.path.join(root, file))
                 
     for fn in paths:
-    with open(fn, 'r',encoding='utf-8') as f:
-        data = f.read()
-    cleaned = re.sub(r'(\r\n|\n)(\r\n|\n)+', '\n\n', data)
-    with open(fn, 'w', encoding='utf-8') as f:
-        f.write(cleaned)
+        with open(fn, 'r',encoding='utf-8') as f:
+            data = f.read()
+        cleaned = re.sub(r'(\r\n|\n)(\r\n|\n)+', '\n\n', data)
+        with open(fn, 'w', encoding='utf-8') as f:
+            f.write(cleaned)

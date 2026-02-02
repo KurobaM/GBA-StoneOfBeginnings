@@ -18,25 +18,21 @@ jumpz           @Cond_0100, ($h319 == 0)
 code041c        1, 16, 192, 4
 goto            @Label_018c
 
-
 @Cond_0100:
 jumpz           @Cond_0130, ($h319 == 50)
 code041c        1, 304, 24, 1
 code0475        
 goto            @Label_018c
 
-
 @Cond_0130:
 jumpz           @Cond_015e, ($h319 == 7)
 code041c        3, 384, 204, 1
 goto            @Label_018c
 
-
 @Cond_015e:
 jumpz           @Label_018c, ($h319 == 9)
 code041c        3, 128, 124, 1
 goto            @Label_018c
-
 
 @Label_018c:
 mapev           0, @Event_028a, 4
@@ -54,14 +50,12 @@ code041d
 placetxt        "Deckell Village　Suburbs"
 code040b        
 
-
 @Event_028a:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
 code041d        
 code040a        
 gotomap         1201 ; map 1782ccc
-
 
 @Event_02bc:
 setvar          $h096, 32
@@ -72,22 +66,18 @@ code043e        0, 3, 0
 code0006        16
 goto            @Cond_0306
 
-
 @Cond_0306:
 jumpz           @Cond_0320, ($h101 == 1)
 call            @Func_0a2e
 code040b        
 
-
 goto            @Cond_0320
-
 
 @Cond_0320:
 code041c        17, 0, 0, 3
 code041d        
 code040a        
 gotomap         3001 ; map 188bfec
-
 
 @Event_0346:
 setvar          $h096, 32
@@ -100,7 +90,6 @@ code041a        0, 0
 code040a        
 gotomap         1208 ; map 17848dc
 
-
 @Event_03c2:
 setvar          $h096, 32
 code0419        0, 2, 0, 14, 11, 0
@@ -112,27 +101,22 @@ code041a        0, 0
 code040a        
 gotomap         1210 ; map 1784efc
 
-
 @Label_043e:
 setvar          $h096, 63
 code040a        
 code034f        
 goto            @start
 
-
 code0006        1291
 code040b        
 
-
 done            
 
-
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
-
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -140,13 +124,11 @@ code031f        7
 code031a        7
 ret             
 
-
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
-
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
@@ -154,20 +136,17 @@ code031c        6, 1
 code031f        6
 ret             
 
-
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
 ret             
 
-
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -184,7 +163,6 @@ code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -196,119 +174,99 @@ code031f        6
 code031a        7
 ret             
 
-
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 jumpz           @Cond_07a6, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_09e0
-
 
 @Cond_07a6:
 jumpz           @Cond_07cc, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_09e0
 
-
 @Cond_07cc:
 jumpz           @Cond_07f2, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_09e0
-
 
 @Cond_07f2:
 jumpz           @Cond_0818, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_09e0
 
-
 @Cond_0818:
 jumpz           @Cond_083e, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_09e0
-
 
 @Cond_083e:
 jumpz           @Cond_0864, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_09e0
 
-
 @Cond_0864:
 jumpz           @Cond_088a, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_09e0
-
 
 @Cond_088a:
 jumpz           @Cond_08b0, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_09e0
 
-
 @Cond_08b0:
 jumpz           @Cond_08d6, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_09e0
-
 
 @Cond_08d6:
 jumpz           @Cond_08fc, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_09e0
 
-
 @Cond_08fc:
 jumpz           @Cond_0922, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_09e0
-
 
 @Cond_0922:
 jumpz           @Cond_0948, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_09e0
 
-
 @Cond_0948:
 jumpz           @Cond_096e, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_09e0
-
 
 @Cond_096e:
 jumpz           @Cond_0994, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_09e0
 
-
 @Cond_0994:
 jumpz           @Cond_09ba, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_09e0
-
 
 @Cond_09ba:
 jumpz           @Label_09e0, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_09e0
 
-
 @Label_09e0:
 ret             
-
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
 ret             
-
 
 @Func_0a2e:
 code046d        0, 192
@@ -317,20 +275,17 @@ walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
 ret             
 
-
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
 ret             
 
-
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
 ret             
-
 
 code033a        196, 0
 code048e        
@@ -347,7 +302,6 @@ code031f        7
 code031a        7
 code033e        196
 ret             
-
 
 @Func_0be4:
 code0438        16, 368, 632, 1
@@ -374,13 +328,11 @@ code043e        30, 6, 0
 walkto          30, 520, -8, 19
 goto            @Cond_0d8c
 
-
 @Cond_0d8c:
 jumpz           @Cond_0dce, ($f1141 == 1)
 code043e        30, 6, 0
 walkto          30, -8, -8, 67
 goto            @Cond_0dce
-
 
 @Cond_0dce:
 mapev           30, @Event_0f84, 4
@@ -389,10 +341,8 @@ mapev           31, @Event_0ffc, 4
 mapevpos        31, (45,39)-(48,46)
 goto            @Cond_0e32
 
-
 @Cond_0e32:
 ret             
-
 
 @Talk_0e34:
 code0301        8, 7
@@ -405,7 +355,6 @@ code0309
 code047e        0, 0
 code0302        7
 code040b        
-
 
 @Talk_0ec2:
 code0301        8, 7
@@ -422,7 +371,6 @@ code047e        0, 0
 code0302        7
 code040b        
 
-
 @Event_0f84:
 code033c        168, 0, 0, 0, 1, 3, 128
 setvar          $f1140, 1
@@ -432,7 +380,6 @@ code0461        30
 code0461        31
 code040b        
 
-
 @Event_0ffc:
 code033c        168, 0, 0, 0, 1, 3, 128
 setvar          $f1141, 1
@@ -441,5 +388,4 @@ walkto          30, -8, -8, 67
 code0461        30
 code0461        31
 code040b        
-
 

@@ -29,12 +29,10 @@ dialogtxt       "Damn it!"
 dialogtxt       "Outta my way!"
 goto            @Label_0192
 
-
 @Cond_016a:
 dialogtxt       "Knock it off already!"
 dialogtxt       "Get out of the way!"
 goto            @Label_0192
-
 
 @Label_0192:
 code047b        
@@ -47,23 +45,19 @@ jumpz           @Cond_01d6, ($b003 == 0)
 code0479        0, 2, 12
 goto            @Label_023e
 
-
 @Cond_01d6:
 jumpz           @Cond_01fe, ($b003 == 1)
 code0479        0, 3, 15
 goto            @Label_023e
-
 
 @Cond_01fe:
 jumpz           @Cond_0226, ($b003 == 2)
 code0479        0, 3, 15
 goto            @Label_023e
 
-
 @Cond_0226:
 code0479        0, 2, 15
 goto            @Label_023e
-
 
 @Label_023e:
 code047d        0, 2
@@ -74,12 +68,10 @@ jumpz           @Cond_028c, ($b003 == 0)
 dialogtxt       "Removing The Obstacle!"
 goto            @Cond_028c
 
-
 @Cond_028c:
 jumpz           @Cond_02b6, ($b003 == 1)
 dialogtxt       "You're quite stubborn!"
 goto            @Cond_02b6
-
 
 @Cond_02b6:
 jumpz           @Cond_02f0, ($b003 == 2)
@@ -87,12 +79,10 @@ dialogtxt       "Why, you…"
 dialogtxt       "Disappear, you eyesore!"
 goto            @Cond_02f0
 
-
 @Cond_02f0:
 jumpz           @Cond_031c, ($b003 == 3)
 dialogtxt       "You just don't know when to give up!"
 goto            @Cond_031c
-
 
 @Cond_031c:
 code047b        
@@ -281,23 +271,19 @@ jumpz           @Cond_0bf2, ($b003 == 0)
 code0479        1, 5, 12
 goto            @Label_0c5a
 
-
 @Cond_0bf2:
 jumpz           @Cond_0c1a, ($b003 == 1)
 code0479        1, 3, 16
 goto            @Label_0c5a
-
 
 @Cond_0c1a:
 jumpz           @Cond_0c42, ($b003 == 2)
 code0479        1, 3, 14
 goto            @Label_0c5a
 
-
 @Cond_0c42:
 code0479        1, 4, 15
 goto            @Label_0c5a
-
 
 @Label_0c5a:
 code047d        1, 2
@@ -307,24 +293,20 @@ jumpz           @Cond_0c8c, ($b003 == 0)
 dialogtxt       "…！"
 goto            @Cond_0c8c
 
-
 @Cond_0c8c:
 jumpz           @Cond_0cb2, ($b003 == 1)
 dialogtxt       "Th-this is…!"
 goto            @Cond_0cb2
-
 
 @Cond_0cb2:
 jumpz           @Cond_0cd8, ($b003 == 2)
 dialogtxt       "Th-this is…!"
 goto            @Cond_0cd8
 
-
 @Cond_0cd8:
 jumpz           @Cond_0cfe, ($b003 == 3)
 dialogtxt       "Th-this is…!"
 goto            @Cond_0cfe
-
 
 @Cond_0cfe:
 code047b        
@@ -340,13 +322,11 @@ dialogtxt       "Hey, what's going on?"
 dialogtxt       "[NAME 1]!?"
 goto            @Label_0da4
 
-
 @Cond_0d74:
 dialogtxt       "What!?"
 dialogtxt       "Hey, what's going on?"
 dialogtxt       "[NAME 1]!?"
 goto            @Label_0da4
-
 
 @Label_0da4:
 code047b        
@@ -471,23 +451,19 @@ jumpz           @Cond_1344, ($b003 == 0)
 code0479        1, 2, 12
 goto            @Label_13ac
 
-
 @Cond_1344:
 jumpz           @Cond_136c, ($b003 == 1)
 code0479        1, 3, 15
 goto            @Label_13ac
-
 
 @Cond_136c:
 jumpz           @Cond_1394, ($b003 == 2)
 code0479        1, 5, 15
 goto            @Label_13ac
 
-
 @Cond_1394:
 code0479        1, 5, 15
 goto            @Label_13ac
-
 
 @Label_13ac:
 code047d        1, 2
@@ -497,24 +473,20 @@ jumpz           @Cond_13e6, ($b003 == 0)
 dialogtxt       "GAgaGAfasfopifjai…"
 goto            @Cond_13e6
 
-
 @Cond_13e6:
 jumpz           @Cond_140c, ($b003 == 1)
 dialogtxt       "GwAaAaAh!"
 goto            @Cond_140c
-
 
 @Cond_140c:
 jumpz           @Cond_1432, ($b003 == 2)
 dialogtxt       "Uu…aAaAh!"
 goto            @Cond_1432
 
-
 @Cond_1432:
 jumpz           @Cond_1458, ($b003 == 3)
 dialogtxt       "Kya…aAaAh!"
 goto            @Cond_1458
-
 
 @Cond_1458:
 code047b        
@@ -533,24 +505,20 @@ jumpz           @Cond_14de, ($b003 == 0)
 code0438        1, 41, 527, 6
 goto            @Cond_14de
 
-
 @Cond_14de:
 jumpz           @Cond_150c, ($b003 == 1)
 code0438        1, 61, 527, 6
 goto            @Cond_150c
-
 
 @Cond_150c:
 jumpz           @Cond_153a, ($b003 == 2)
 code0438        1, 81, 527, 6
 goto            @Cond_153a
 
-
 @Cond_153a:
 jumpz           @Cond_1568, ($b003 == 3)
 code0438        1, 101, 527, 6
 goto            @Cond_1568
-
 
 @Cond_1568:
 code043a        1, 1, 0
@@ -570,13 +538,11 @@ dialogtxt       "Hey, [NAME 1]!"
 dialogtxt       "What's wrong!?"
 goto            @Label_1678
 
-
 @Cond_1644:
 dialogtxt       "Wha!?"
 dialogtxt       "Hey, [NAME 1]!"
 dialogtxt       "What's wrong!?"
 goto            @Label_1678
-
 
 @Label_1678:
 code047b        
@@ -601,12 +567,10 @@ dialogtxt       "What?"
 dialogtxt       "What's going on!?"
 goto            @Label_1772
 
-
 @Cond_1748:
 dialogtxt       "What?"
 dialogtxt       "What's going on!?"
 goto            @Label_1772
-
 
 @Label_1772:
 code0309        
@@ -678,12 +642,10 @@ dialogtxt       "Wha… what the hell!?"
 dialogtxt       "Are you serious…"
 goto            @Label_1aa2
 
-
 @Cond_1a70:
 dialogtxt       "Wh-what…!?"
 dialogtxt       "Are you serious…"
 goto            @Label_1aa2
-
 
 @Label_1aa2:
 code0309        
@@ -706,23 +668,19 @@ jumpz           @Cond_1b72, ($b003 == 0)
 code0479        0, 2, 12
 goto            @Label_1bda
 
-
 @Cond_1b72:
 jumpz           @Cond_1b9a, ($b003 == 1)
 code0479        0, 3, 14
 goto            @Label_1bda
-
 
 @Cond_1b9a:
 jumpz           @Cond_1bc2, ($b003 == 2)
 code0479        0, 5, 14
 goto            @Label_1bda
 
-
 @Cond_1bc2:
 code0479        0, 5, 14
 goto            @Label_1bda
-
 
 @Label_1bda:
 code047d        0, 2
@@ -741,23 +699,19 @@ jumpz           @Cond_1c7e, ($b003 == 0)
 code0479        0, 5, 12
 goto            @Label_1ce6
 
-
 @Cond_1c7e:
 jumpz           @Cond_1ca6, ($b003 == 1)
 code0479        0, 4, 14
 goto            @Label_1ce6
-
 
 @Cond_1ca6:
 jumpz           @Cond_1cce, ($b003 == 2)
 code0479        0, 4, 14
 goto            @Label_1ce6
 
-
 @Cond_1cce:
 code0479        0, 4, 14
 goto            @Label_1ce6
-
 
 @Label_1ce6:
 call            @Func_45e6
@@ -774,23 +728,19 @@ jumpz           @Cond_1d5c, ($b003 == 0)
 code0479        0, 2, 12
 goto            @Label_1dc4
 
-
 @Cond_1d5c:
 jumpz           @Cond_1d84, ($b003 == 1)
 code0479        0, 3, 14
 goto            @Label_1dc4
-
 
 @Cond_1d84:
 jumpz           @Cond_1dac, ($b003 == 2)
 code0479        0, 5, 14
 goto            @Label_1dc4
 
-
 @Cond_1dac:
 code0479        0, 5, 14
 goto            @Label_1dc4
-
 
 @Label_1dc4:
 call            @Func_45e6
@@ -799,13 +749,11 @@ dialogtxt       "…"
 dialogtxt       "R… Roger."
 goto            @Cond_1dee
 
-
 @Cond_1dee:
 jumpz           @Cond_1e14, ($b003 == 1)
 dialogtxt       "U…"
 dialogtxt       "Understood…"
 goto            @Cond_1e14
-
 
 @Cond_1e14:
 jumpz           @Cond_1e3e, ($b003 == 2)
@@ -813,13 +761,11 @@ dialogtxt       "U…"
 dialogtxt       "Understood…"
 goto            @Cond_1e3e
 
-
 @Cond_1e3e:
 jumpz           @Cond_1e66, ($b003 == 3)
 dialogtxt       "Y…"
 dialogtxt       "Yes…"
 goto            @Cond_1e66
-
 
 @Cond_1e66:
 code0309        
@@ -853,13 +799,11 @@ dialogtxt       "[NAME 1]…"
 dialogtxt       "Why…"
 goto            @Label_201a
 
-
 @Cond_1fea:
 dialogtxt       "No…"
 dialogtxt       "[NAME 1]…"
 dialogtxt       "Why…"
 goto            @Label_201a
-
 
 @Label_201a:
 code047b        
@@ -875,24 +819,20 @@ jumpz           @Cond_209a, ($b003 == 0)
 code0438        9, 46, 542, 3
 goto            @Cond_209a
 
-
 @Cond_209a:
 jumpz           @Cond_20c8, ($b003 == 1)
 code0438        9, 66, 543, 3
 goto            @Cond_20c8
-
 
 @Cond_20c8:
 jumpz           @Cond_20f6, ($b003 == 2)
 code0438        9, 86, 544, 3
 goto            @Cond_20f6
 
-
 @Cond_20f6:
 jumpz           @Cond_2124, ($b003 == 3)
 code0438        9, 106, 545, 3
 goto            @Cond_2124
-
 
 @Cond_2124:
 code043a        9, 9, 0
@@ -904,24 +844,20 @@ jumpz           @Cond_21a4, ($b003 == 0)
 code040d        30
 goto            @Label_21f8
 
-
 @Cond_21a4:
 jumpz           @Cond_21c0, ($b003 == 1)
 code040d        25
 goto            @Label_21f8
-
 
 @Cond_21c0:
 jumpz           @Cond_21dc, ($b003 == 2)
 code040d        25
 goto            @Label_21f8
 
-
 @Cond_21dc:
 jumpz           @Label_21f8, ($b003 == 3)
 code040d        20
 goto            @Label_21f8
-
 
 @Label_21f8:
 code033b        155, 64, 0, 0, 1, 1
@@ -932,12 +868,10 @@ jumpz           @Cond_2282, ($b002 == 0)
 code0438        10, 15, 513, 2
 goto            @Cond_2282
 
-
 @Cond_2282:
 jumpz           @Cond_22b0, ($b002 == 1)
 code0438        10, 35, 513, 2
 goto            @Cond_22b0
-
 
 @Cond_22b0:
 code043a        10, 10, 0
@@ -964,12 +898,10 @@ jumpz           @Cond_2404, ($b002 == 0)
 code0438        10, 1, 498, 6
 goto            @Cond_2404
 
-
 @Cond_2404:
 jumpz           @Cond_2432, ($b002 == 1)
 code0438        10, 21, 498, 6
 goto            @Cond_2432
-
 
 @Cond_2432:
 code043a        10, 10, 0
@@ -990,12 +922,10 @@ dialogtxt       "Gh…"
 dialogtxt       "That hurts…"
 goto            @Label_252e
 
-
 @Cond_2512:
 dialogtxt       "Ugh…"
 dialogtxt       "That hurts…"
 goto            @Label_252e
-
 
 @Label_252e:
 code047b        
@@ -1022,12 +952,10 @@ dialogtxt       "Stop it, [NAME 1]!"
 dialogtxt       "Open your eyes!"
 goto            @Label_2606
 
-
 @Cond_25de:
 dialogtxt       "Stop it, [NAME 1]!"
 dialogtxt       "Open your eyes!"
 goto            @Label_2606
-
 
 @Label_2606:
 code047b        
@@ -1038,23 +966,19 @@ jumpz           @Cond_2644, ($b003 == 0)
 code0479        1, 2, 12
 goto            @Label_26ac
 
-
 @Cond_2644:
 jumpz           @Cond_266c, ($b003 == 1)
 code0479        1, 3, 14
 goto            @Label_26ac
-
 
 @Cond_266c:
 jumpz           @Cond_2694, ($b003 == 2)
 code0479        1, 5, 14
 goto            @Label_26ac
 
-
 @Cond_2694:
 code0479        1, 5, 14
 goto            @Label_26ac
-
 
 @Label_26ac:
 code047d        1, 2
@@ -1090,12 +1014,10 @@ dialogtxt       "Dammit…"
 dialogtxt       "[NAME 1]…"
 goto            @Label_2804
 
-
 @Cond_27ea:
 dialogtxt       "No…"
 dialogtxt       "[NAME 1]…"
 goto            @Label_2804
-
 
 @Label_2804:
 code047b        
@@ -1143,23 +1065,19 @@ jumpz           @Cond_29cc, ($b003 == 0)
 code0479        1, 2, 12
 goto            @Label_2a34
 
-
 @Cond_29cc:
 jumpz           @Cond_29f4, ($b003 == 1)
 code0479        1, 3, 15
 goto            @Label_2a34
-
 
 @Cond_29f4:
 jumpz           @Cond_2a1c, ($b003 == 2)
 code0479        1, 5, 15
 goto            @Label_2a34
 
-
 @Cond_2a1c:
 code0479        1, 5, 15
 goto            @Label_2a34
-
 
 @Label_2a34:
 code047d        1, 2
@@ -1194,24 +1112,20 @@ jumpz           @Cond_2be6, ($b003 == 0)
 code040d        30
 goto            @Label_2c3a
 
-
 @Cond_2be6:
 jumpz           @Cond_2c02, ($b003 == 1)
 code040d        25
 goto            @Label_2c3a
-
 
 @Cond_2c02:
 jumpz           @Cond_2c1e, ($b003 == 2)
 code040d        25
 goto            @Label_2c3a
 
-
 @Cond_2c1e:
 jumpz           @Label_2c3a, ($b003 == 3)
 code040d        20
 goto            @Label_2c3a
-
 
 @Label_2c3a:
 code033a        155, 64
@@ -1375,12 +1289,10 @@ dialogtxt       "You're…"
 dialogtxt       "Anise…!"
 goto            @Label_352c
 
-
 @Cond_350e:
 dialogtxt       "You're…"
 dialogtxt       "Anise…!"
 goto            @Label_352c
-
 
 @Label_352c:
 code047b        
@@ -1486,7 +1398,6 @@ dialogtxt       "This is bad for you too, right?"
 dialogtxt       "What about Magdrad?"
 goto            @Label_3b10
 
-
 @Cond_3a78:
 dialogtxt       "A Summon Beast…!"
 dialogtxt       "Why are you doing this!?"
@@ -1495,7 +1406,6 @@ code0479        0, 2, 15
 dialogtxt       "This is bad for you too, right?"
 dialogtxt       "What about Magdrad?"
 goto            @Label_3b10
-
 
 @Label_3b10:
 code0309        
@@ -1516,11 +1426,9 @@ jumpz           @Cond_3c04, ($b002 == 0)
 dialogtxt       "Don't tell me, you…?"
 goto            @Label_3c34
 
-
 @Cond_3c04:
 dialogtxt       "Don't tell me, you…?"
 goto            @Label_3c34
-
 
 @Label_3c34:
 code0309        
@@ -1557,23 +1465,19 @@ jumpz           @Cond_3d6c, ($b003 == 0)
 code0479        1, 2, 12
 goto            @Label_3dd4
 
-
 @Cond_3d6c:
 jumpz           @Cond_3d94, ($b003 == 1)
 code0479        1, 3, 15
 goto            @Label_3dd4
-
 
 @Cond_3d94:
 jumpz           @Cond_3dbc, ($b003 == 2)
 code0479        1, 3, 15
 goto            @Label_3dd4
 
-
 @Cond_3dbc:
 code0479        1, 2, 15
 goto            @Label_3dd4
-
 
 @Label_3dd4:
 code047d        1, 2
@@ -1605,11 +1509,9 @@ dialogtxt       "Enough!"
 dialogtxt       "Stop it!"
 goto            @Label_3f22
 
-
 @Cond_3f0e:
 dialogtxt       "Stop it already!"
 goto            @Label_3f22
-
 
 @Label_3f22:
 code047b        
@@ -1629,39 +1531,32 @@ jumpz           @Cond_3fc6, ($f0261 == 1)
 code0006        2808
 goto            @Label_4042
 
-
 @Cond_3fc6:
 jumpz           @Cond_3fe2, ($f0262 == 1)
 code0006        2809
 goto            @Label_4042
-
 
 @Cond_3fe2:
 jumpz           @Cond_3ffe, ($f0263 == 1)
 code0006        2810
 goto            @Label_4042
 
-
 @Cond_3ffe:
 jumpz           @Cond_401a, ($f0264 == 1)
 code0006        2811
 goto            @Label_4042
-
 
 @Cond_401a:
 jumpz           @Cond_4036, ($f0265 == 1)
 code0006        2812
 goto            @Label_4042
 
-
 @Cond_4036:
 code0006        2813
 goto            @Label_4042
 
-
 @Label_4042:
 done            
-
 
 @Func_4044:
 code031a        7
@@ -1670,7 +1565,6 @@ code031c        7, 1
 code031f        7
 ret             
 
-
 @Func_4084:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -1678,20 +1572,17 @@ code031f        7
 code031a        7
 ret             
 
-
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
 
-
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
 ret             
-
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
@@ -1699,14 +1590,12 @@ code031f        7
 code031a        7
 ret             
 
-
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -1722,7 +1611,6 @@ code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -1734,190 +1622,157 @@ code031f        6
 code031a        7
 ret             
 
-
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 jumpz           @Cond_438c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_45c6
-
 
 @Cond_438c:
 jumpz           @Cond_43b2, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_45c6
 
-
 @Cond_43b2:
 jumpz           @Cond_43d8, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_45c6
-
 
 @Cond_43d8:
 jumpz           @Cond_43fe, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_45c6
 
-
 @Cond_43fe:
 jumpz           @Cond_4424, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_45c6
-
 
 @Cond_4424:
 jumpz           @Cond_444a, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_45c6
 
-
 @Cond_444a:
 jumpz           @Cond_4470, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_45c6
-
 
 @Cond_4470:
 jumpz           @Cond_4496, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_45c6
 
-
 @Cond_4496:
 jumpz           @Cond_44bc, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_45c6
-
 
 @Cond_44bc:
 jumpz           @Cond_44e2, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_45c6
 
-
 @Cond_44e2:
 jumpz           @Cond_4508, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_45c6
-
 
 @Cond_4508:
 jumpz           @Cond_452e, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_45c6
 
-
 @Cond_452e:
 jumpz           @Cond_4554, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_45c6
-
 
 @Cond_4554:
 jumpz           @Cond_457a, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_45c6
 
-
 @Cond_457a:
 jumpz           @Cond_45a0, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_45c6
-
 
 @Cond_45a0:
 jumpz           @Label_45c6, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_45c6
 
-
 @Label_45c6:
 ret             
-
 
 @Func_45c8:
 code0301        2, 4
 code047e        0, 1
 ret             
 
-
 @Func_45e6:
 code0301        2, 7
 code047e        0, 1
 ret             
-
 
 @Func_4604:
 code047e        0, 0
 code0302        4
 ret             
 
-
 @Func_461c:
 code047e        0, 0
 code0302        7
 ret             
-
 
 @Func_4634:
 code0301        4, 5
 code047e        1, 1
 ret             
 
-
 @Func_4652:
 code0301        4, 7
 code047e        1, 1
 ret             
-
 
 @Func_4670:
 code047e        1, 0
 code0302        5
 ret             
 
-
 @Func_4688:
 code047e        1, 0
 code0302        7
 ret             
 
-
 @Func_46a0:
 code047a        0, 1, 1
 ret             
 
-
 @Func_46b6:
 code047a        1, 1, 1
 ret             
-
 
 @Func_46cc:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
-
 @Func_46f6:
 code047a        0, 0, 1
 ret             
-
 
 @Func_470c:
 code047a        1, 0, 1
 ret             
 
-
 @Func_4722:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
-
 

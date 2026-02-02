@@ -21,7 +21,6 @@ popuptxt        "The cat ran away!"
 code0318        
 goto            @Cond_011e
 
-
 @Cond_011e:
 code0366        521, -1
 code036a        512
@@ -33,7 +32,6 @@ code0318
 code0366        520, 1
 goto            @Cond_0178
 
-
 @Cond_0178:
 code036a        518
 jumpz           @Cond_01c6, $b070
@@ -43,7 +41,6 @@ popuptxt        "of complaint from Zakk!"
 code0318        
 code0366        542, 1
 goto            @Cond_01c6
-
 
 @Cond_01c6:
 code040a        
@@ -56,29 +53,23 @@ jumpz           @Cond_0240, (($bv043 & 0x0002) || $bv043 == 4)
 setvar          $bv043, 0
 goto            @Label_0260
 
-
 @Cond_0240:
 jumpz           @Label_0260, ($bv043 != 0)
 setvar          $bv043, 4
 goto            @Label_0260
-
 
 @Label_0260:
 jumpz           @Cond_028c, (($bv044 & 0x0002) || $bv044 == 4)
 setvar          $bv044, 0
 goto            @Label_02ac
 
-
 @Cond_028c:
 jumpz           @Label_02ac, ($bv044 != 0)
 setvar          $bv044, 4
 goto            @Label_02ac
 
-
 @Label_02ac:
 gotomap         866 ; map 175b47c
 
-
 done            
-
 

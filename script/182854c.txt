@@ -4,23 +4,19 @@ jumpz           @Cond_0044, ($b003 == 0)
 code0479        0, 0, 12
 goto            @Label_00ac
 
-
 @Cond_0044:
 jumpz           @Cond_006c, ($b003 == 1)
 code0479        0, 2, 16
 goto            @Label_00ac
-
 
 @Cond_006c:
 jumpz           @Cond_0094, ($b003 == 2)
 code0479        0, 2, 16
 goto            @Label_00ac
 
-
 @Cond_0094:
 code0479        0, 2, 16
 goto            @Label_00ac
-
 
 @Label_00ac:
 code047d        0, 2
@@ -137,13 +133,11 @@ dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_061e
 
-
 @Cond_05d6:
 dialogtxt       "Murno…"
 dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_061e
-
 
 @Label_061e:
 code047b        
@@ -191,7 +185,6 @@ dialogtxt       "This Murno Is Most Likely A Fake."
 dialogtxt       "She Would Never Think That"
 dialogtxt       "Rulebreakers Are In The Right."
 goto            @Cond_08b0
-
 
 @Cond_08b0:
 jumpz           @Cond_1092, ($b003 == 1)
@@ -303,13 +296,11 @@ dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_0e20
 
-
 @Cond_0dd8:
 dialogtxt       "Murno…"
 dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_0e20
-
 
 @Label_0e20:
 code047b        
@@ -356,7 +347,6 @@ dialogtxt       "I swear on my topknot,"
 dialogtxt       "Murno would not cooperate with"
 dialogtxt       "the likes of them!"
 goto            @Cond_1092
-
 
 @Cond_1092:
 jumpz           @Cond_1890, ($b003 == 2)
@@ -471,13 +461,11 @@ dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_15fc
 
-
 @Cond_15b4:
 dialogtxt       "Murno…"
 dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_15fc
-
 
 @Label_15fc:
 code047b        
@@ -525,7 +513,6 @@ dialogtxt       "Murno being their accomplice…"
 dialogtxt       "Don't think you'll get away"
 dialogtxt       "with spouting such bullshit!"
 goto            @Cond_1890
-
 
 @Cond_1890:
 jumpz           @Cond_20b2, ($b003 == 3)
@@ -640,13 +627,11 @@ dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_1e14
 
-
 @Cond_1dcc:
 dialogtxt       "Murno…"
 dialogtxt       "You're Voijin's accomplice…?"
 dialogtxt       "Wha… What are you saying…?"
 goto            @Label_1e14
-
 
 @Label_1e14:
 code047b        
@@ -694,7 +679,6 @@ dialogtxt       "such a cruel lie about Lady Murno!"
 dialogtxt       "This will not stand!"
 goto            @Cond_20b2
 
-
 @Cond_20b2:
 code0309        
 call            @Func_2788
@@ -702,13 +686,11 @@ call            @Func_2704
 code047b        
 done            
 
-
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
-
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
@@ -716,13 +698,11 @@ code031f        7
 code031a        7
 ret             
 
-
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
 ret             
-
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
@@ -730,20 +710,17 @@ code031c        6, 1
 code031f        6
 ret             
 
-
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
 ret             
 
-
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -760,7 +737,6 @@ code031f        6
 code031a        6
 ret             
 
-
 code031a        7
 code031b        7, -1, -1, $h141, $h137
 code031c        7, 1
@@ -772,190 +748,157 @@ code031f        6
 code031a        7
 ret             
 
-
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
 ret             
-
 
 jumpz           @Cond_2408, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_2642
-
 
 @Cond_2408:
 jumpz           @Cond_242e, ($h131 == 1)
 setvar          $h139, ($h139 | 0x0002)
 goto            @Label_2642
 
-
 @Cond_242e:
 jumpz           @Cond_2454, ($h131 == 2)
 setvar          $h139, ($h139 | 0x0004)
 goto            @Label_2642
-
 
 @Cond_2454:
 jumpz           @Cond_247a, ($h131 == 3)
 setvar          $h139, ($h139 | 0x0008)
 goto            @Label_2642
 
-
 @Cond_247a:
 jumpz           @Cond_24a0, ($h131 == 4)
 setvar          $h139, ($h139 | 0x0010)
 goto            @Label_2642
-
 
 @Cond_24a0:
 jumpz           @Cond_24c6, ($h131 == 5)
 setvar          $h139, ($h139 | 0x0020)
 goto            @Label_2642
 
-
 @Cond_24c6:
 jumpz           @Cond_24ec, ($h131 == 6)
 setvar          $h139, ($h139 | 0x0040)
 goto            @Label_2642
-
 
 @Cond_24ec:
 jumpz           @Cond_2512, ($h131 == 7)
 setvar          $h139, ($h139 | 0x0080)
 goto            @Label_2642
 
-
 @Cond_2512:
 jumpz           @Cond_2538, ($h131 == 8)
 setvar          $h139, ($h139 | 0x0100)
 goto            @Label_2642
-
 
 @Cond_2538:
 jumpz           @Cond_255e, ($h131 == 9)
 setvar          $h139, ($h139 | 0x0200)
 goto            @Label_2642
 
-
 @Cond_255e:
 jumpz           @Cond_2584, ($h131 == 10)
 setvar          $h139, ($h139 | 0x0400)
 goto            @Label_2642
-
 
 @Cond_2584:
 jumpz           @Cond_25aa, ($h131 == 11)
 setvar          $h139, ($h139 | 0x0800)
 goto            @Label_2642
 
-
 @Cond_25aa:
 jumpz           @Cond_25d0, ($h131 == 12)
 setvar          $h139, ($h139 | 0x1000)
 goto            @Label_2642
-
 
 @Cond_25d0:
 jumpz           @Cond_25f6, ($h131 == 13)
 setvar          $h139, ($h139 | 0x2000)
 goto            @Label_2642
 
-
 @Cond_25f6:
 jumpz           @Cond_261c, ($h131 == 14)
 setvar          $h139, ($h139 | 0x4000)
 goto            @Label_2642
-
 
 @Cond_261c:
 jumpz           @Label_2642, ($h131 == 15)
 setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_2642
 
-
 @Label_2642:
 ret             
-
 
 @Func_2644:
 code0301        2, 4
 code047e        0, 1
 ret             
 
-
 @Func_2662:
 code0301        2, 7
 code047e        0, 1
 ret             
-
 
 @Func_2680:
 code047e        0, 0
 code0302        4
 ret             
 
-
 @Func_2698:
 code047e        0, 0
 code0302        7
 ret             
-
 
 @Func_26b0:
 code0301        4, 5
 code047e        1, 1
 ret             
 
-
 @Func_26ce:
 code0301        4, 7
 code047e        1, 1
 ret             
-
 
 @Func_26ec:
 code047e        1, 0
 code0302        5
 ret             
 
-
 @Func_2704:
 code047e        1, 0
 code0302        7
 ret             
 
-
 @Func_271c:
 code047a        0, 1, 1
 ret             
 
-
 @Func_2732:
 code047a        1, 1, 1
 ret             
-
 
 @Func_2748:
 code047a        0, 1, 1
 code047a        1, 1, 1
 ret             
 
-
 @Func_2772:
 code047a        0, 0, 1
 ret             
-
 
 @Func_2788:
 code047a        1, 0, 1
 ret             
 
-
 @Func_279e:
 code047a        0, 0, 1
 code047a        1, 0, 1
 ret             
-
 
