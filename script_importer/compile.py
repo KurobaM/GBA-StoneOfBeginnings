@@ -14,13 +14,13 @@ if __name__ == '__main__':
     else:
         delete = False if sys.argv[1] == '--keep' else True
     os.chdir(os.path.join(os.path.dirname(__file__), '..'))
-    dir = 'script'
+    folder = 'script'
     rom = 'build\\swordcraft3-test.gba'
     print('Checking script folder ...')
     scripts: dict[str, str] = dict()
     time: dict[str, float] = dict()
     paths: dict[str, str] = dict()
-    for root, dirs, files in os.walk(dir):
+    for root, dirs, files in os.walk(folder):
         for file in files:
             if file.split('.')[-1] == 'txt':
                 path = os.path.join(root, file)
