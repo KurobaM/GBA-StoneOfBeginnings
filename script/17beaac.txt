@@ -567,8 +567,6 @@ code047b
 code043c        0, 4
 done            
 
-
-
 jumpz           @Cond_1e3e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
 goto            @Label_2078

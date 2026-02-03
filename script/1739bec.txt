@@ -468,7 +468,7 @@ dialogtxt       "Let's go."
 goto            @Label_1586
 
 @Cond_1550:
-dialogtxt       "but no point worrying about it now."
+dialogtxt       "No point worrying about it now."
 dialogtxt       "Let's go."
 goto            @Label_1586
 
@@ -1403,7 +1403,7 @@ call            @Func_3cc4
 dialogtxt       "…"
 jumpz           @Cond_3c36, ($b002 == 0)
 dialogtxt       "You're right!"
-dialogtxt       "よし、行くぞ！　[NAME 1]"
+dialogtxt       "Let's give it our all, [NAME 1]!"
 goto            @Label_3c68
 
 @Cond_3c36:
