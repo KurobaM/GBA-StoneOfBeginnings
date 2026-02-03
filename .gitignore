@@ -11,3 +11,5 @@ swordcraft3-test_temp_asm.txt
 tracking.json
 __pycache__
 .vscode
+release.json
+version_config.json
