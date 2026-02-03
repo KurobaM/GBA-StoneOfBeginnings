@@ -7,28 +7,28 @@ jumpz           @Cond_00ec, ($b002 == 0)
 dialogtxt       "Master said Anise's gang"
 dialogtxt       "hasn't shown up since we left"
 dialogtxt       "for Louise Village."
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 2, 16
 dialogtxt       "They must be hiding somewhere…"
-code0309        
+code0309
 goto            @Label_018e
 
 @Cond_00ec:
 dialogtxt       "Master said Anise's gang"
 dialogtxt       "hasn't shown up since we left"
 dialogtxt       "for Louise Village."
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 2, 16
 dialogtxt       "They must be hiding somewhere…"
-code0309        
+code0309
 goto            @Label_018e
 
 @Label_018e:
 call            @Func_0952
 call            @Func_0860
-code047b        
+code047b
 code043c        0, 4
 code0445        0, 3
 code0446        0
@@ -38,18 +38,18 @@ call            @Func_0824
 dialogtxt       "Huh?"
 dialogtxt       "Someone's coming."
 dialogtxt       "It looks like…"
-code0309        
+code0309
 call            @Func_0952
 call            @Func_0860
-code047b        
-code0312        
+code047b
+code0312
 menutxt         @Menu_025a, "Murno"
 menutxt         @Menu_0266, "[NAME 1]"
 menutxt         @Menu_0272, "V.E"
 menutxt         @Menu_027e, "Lemmy"
 menutxt         @Menu_028a, "Jade"
 menutxt         @Menu_0296, "Tier"
-menuwait        
+menuwait
 
 @Menu_025a:
 code0006        2392
@@ -74,43 +74,43 @@ goto            @Label_029e
 @Menu_0296:
 code0006        2397
 @Label_029e:
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -125,7 +125,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -136,13 +136,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_05e8, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -224,61 +224,60 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0822
 
 @Label_0822:
-ret             
+ret
 
 @Func_0824:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0860:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_08fc:
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0952:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

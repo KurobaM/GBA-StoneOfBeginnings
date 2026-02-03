@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 194, 195, -1
 code0410        1, 194, 196, 198
 code0410        2, 194, 197, 199
-code0411        
+code0411
 code0430        200
 code0412        4, 1
 code0418        2
@@ -106,7 +106,7 @@ mapevpos        30, (9,19)-(10,19)
 mapev           31, @Event_0a46, 32
 mapevpos        31, (21,19)-(21,19)
 setvar          $h319, 38
-code0409        
+code0409
 jumpz           @Cond_06b2, ($f0035 == 1)
 code046e        38, 256, 0
 goto            @Label_06ca
@@ -116,8 +116,8 @@ code046e        15, 256, 0
 goto            @Label_06ca
 
 @Label_06ca:
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_06ce:
 setvar          $f0035, 1
@@ -130,30 +130,30 @@ code0439        4
 code043b        4
 code0439        5
 code043b        5
-code040b        
+code040b
 
 @Event_0730:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1131 ; map 17783dc
 
 @Event_0762:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1139 ; map 177b25c
 
 @Label_0794:
 code0006        21
-code040b        
+code040b
 
 @Label_079e:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_07b2:
@@ -162,10 +162,10 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Promise me you'll"
 dialogtxt       "come back safely, [NAME 2]."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_081a:
 code047d        0, 138
@@ -173,40 +173,40 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Go beat up"
 dialogtxt       "those bad guys!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0884:
 code047d        0, 133
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Mm."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_08ce:
 code047d        0, 138
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I wonder if Master is okay."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0932:
 code047d        0, 120
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "How did it come to this…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0990:
 code0301        8, 7
@@ -214,65 +214,65 @@ code047d        0, 120
 code047e        0, 1
 dialogtxt       "Ugh… I don't"
 dialogtxt       "want to clean the floors again…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_0a00:
 code0301        8, 7
 dialogtxt       "Before you forge a weapon,"
 dialogtxt       "you must first forge yourself."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_0a46:
 code0301        8, 7
 dialogtxt       "＜This is a reminder from Eliez＞"
 dialogtxt       "Please make sure to put the tools"
 dialogtxt       "back where you found them!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -287,7 +287,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -298,13 +298,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0e08, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -386,34 +386,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1042
 
 @Label_1042:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -426,5 +426,4 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
-
+ret

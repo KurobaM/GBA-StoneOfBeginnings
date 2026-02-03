@@ -4,7 +4,7 @@ code0445        0, 2
 code0446        0
 code0333        2, 30
 code0489        1, 1, 64
-code0334        
+code0334
 code046e        35, 256, 1
 code043e        1, 12, 0
 walkto          1, 304, -8, 1
@@ -31,14 +31,14 @@ dialogtxt       "you coward!"
 goto            @Label_01be
 
 @Label_01be:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_08b2
 call            @Func_0816
-code047b        
+code047b
 code0489        0, 1, 64
 walkwait        1
-done           
+done
 
 jumpz           @Cond_0532, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -120,61 +120,60 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_076c
 
 @Label_076c:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_07da:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_0816:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_085c:
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 @Func_08b2:
 code047a        1, 0, 1
-ret             
+ret
 
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

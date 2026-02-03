@@ -37,20 +37,20 @@ dialogtxt       "Let's hurry, [NAME 1]!"
 goto            @Label_017c
 
 @Label_017c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "Murno Is Located In An Underground"
 dialogtxt       "Palace Outside The Village"
 dialogtxt       "Called The Rekui Water Ruins."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
 dialogtxt       "I know that!"
-code0309        
+code0309
 code0479        0, 2, 16
 jumpz           @Cond_02a6, ($b002 == 0)
 dialogtxt       "I'm kind of worried about my gear…"
@@ -65,10 +65,10 @@ dialogtxt       "old man's workshop, but…"
 goto            @Label_02f2
 
 @Label_02f2:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_0302
 
 @Cond_0302:
@@ -85,20 +85,20 @@ dialogtxt       "Let's hurry, [NAME 1]!"
 goto            @Label_0382
 
 @Label_0382:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 16
 call            @Func_38ec
 dialogtxt       "Murno is in the underground palace"
 dialogtxt       "outside the village known as"
 dialogtxt       "Rekui Water Ruins. Let's move."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
 dialogtxt       "I know that!"
-code0309        
+code0309
 code0479        0, 2, 16
 jumpz           @Cond_04b2, ($b002 == 0)
 dialogtxt       "I'm kind of worried about my gear…"
@@ -113,10 +113,10 @@ dialogtxt       "old man's workshop, but…"
 goto            @Label_04fe
 
 @Label_04fe:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_050e
 
 @Cond_050e:
@@ -133,15 +133,15 @@ dialogtxt       "Let's hurry, [NAME 1]!"
 goto            @Label_058e
 
 @Label_058e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 12
 call            @Func_38ec
 dialogtxt       "Murno is in the Rekui Water Ruins,"
 dialogtxt       "located outside the village."
 dialogtxt       "Can you make it unseen?"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
@@ -154,7 +154,7 @@ dialogtxt       "Leave it to me!"
 goto            @Label_067c
 
 @Label_067c:
-code0309        
+code0309
 code0479        0, 2, 16
 jumpz           @Cond_06f0, ($b002 == 0)
 dialogtxt       "I'm kind of worried about my gear…"
@@ -169,10 +169,10 @@ dialogtxt       "old man's workshop, but…"
 goto            @Label_073c
 
 @Label_073c:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_074c
 
 @Cond_074c:
@@ -189,20 +189,20 @@ dialogtxt       "Let's hurry, [NAME 1]!"
 goto            @Label_07cc
 
 @Label_07cc:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 12
 call            @Func_38ec
 dialogtxt       "Lady Murno must be at this Rekui"
 dialogtxt       "Water Ruins outside the village."
 dialogtxt       "We must move carefully."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
 dialogtxt       "I know that!"
-code0309        
+code0309
 code0479        0, 2, 16
 jumpz           @Cond_0900, ($b002 == 0)
 dialogtxt       "I'm kind of worried about my gear…"
@@ -217,10 +217,10 @@ dialogtxt       "old man's workshop, but…"
 goto            @Label_094c
 
 @Label_094c:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_095c
 
 @Cond_095c:
@@ -266,15 +266,15 @@ dialogtxt       "One step closer to saving Murno!"
 goto            @Label_0b0e
 
 @Label_0b0e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "Murno Is Located In An Underground"
 dialogtxt       "Palace Outside The Village"
 dialogtxt       "Called The Rekui Water Ruins."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 15
 call            @Func_3880
@@ -291,10 +291,10 @@ dialogtxt       "eat Murno!"
 goto            @Label_0c54
 
 @Label_0c54:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_0c64
 
 @Cond_0c64:
@@ -311,15 +311,15 @@ dialogtxt       "One step closer to saving Murno!"
 goto            @Label_0d16
 
 @Label_0d16:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 14
 call            @Func_38ec
 dialogtxt       "Murno is in the underground palace"
 dialogtxt       "outside the village known as"
 dialogtxt       "Rekui Water Ruins. Let's move."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
@@ -336,10 +336,10 @@ dialogtxt       "eat Murno!"
 goto            @Label_0e62
 
 @Label_0e62:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_0e72
 
 @Cond_0e72:
@@ -356,15 +356,15 @@ dialogtxt       "One step closer to saving Murno!"
 goto            @Label_0f24
 
 @Label_0f24:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 13
 call            @Func_38ec
 dialogtxt       "Murno is in the Rekui Water Ruins,"
 dialogtxt       "located outside the village."
 dialogtxt       "Can you make it unseen?"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
@@ -381,10 +381,10 @@ dialogtxt       "eat Murno!"
 goto            @Label_107a
 
 @Label_107a:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_108a
 
 @Cond_108a:
@@ -401,15 +401,15 @@ dialogtxt       "One step closer to saving Murno!"
 goto            @Label_113c
 
 @Label_113c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 14
 call            @Func_38ec
 dialogtxt       "Lady Murno must be at this Rekui"
 dialogtxt       "Water Ruins outside the village."
 dialogtxt       "We must move carefully."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
@@ -426,10 +426,10 @@ dialogtxt       "eat Murno!"
 goto            @Label_128c
 
 @Label_128c:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_129c
 
 @Cond_129c:
@@ -477,24 +477,24 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_1468
 
 @Label_1468:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "I Detect A Faint Energy Source"
 dialogtxt       "From Within The Ruins."
 dialogtxt       "Please Be Cautious."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 16
 call            @Func_3880
 dialogtxt       "Not sure what you mean but…"
 dialogtxt       "Anyway, let's go!"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_153a
 
 @Cond_153a:
@@ -513,25 +513,25 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_1612
 
 @Label_1612:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 14
 call            @Func_38ec
 dialogtxt       "I can feel something"
 dialogtxt       "from within the ruins…"
 dialogtxt       "We must be careful!"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 16
 call            @Func_3880
 dialogtxt       "Hmm, I don't really"
 dialogtxt       "know what you mean, but…"
 dialogtxt       "Anyway, let's go!"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_16ee
 
 @Cond_16ee:
@@ -550,23 +550,23 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_17c6
 
 @Label_17c6:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 14
 call            @Func_38ec
 dialogtxt       "This faint feeling I'm getting…"
 dialogtxt       "I don't like it."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 16
 call            @Func_3880
 dialogtxt       "You're in a worse mood than usual…"
 dialogtxt       "Anyway, let's go!"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_187a
 
 @Cond_187a:
@@ -585,24 +585,24 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_1952
 
 @Label_1952:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 16
 call            @Func_38ec
 dialogtxt       "This strange sensation…"
 dialogtxt       "I have a bad feeling about this…"
 dialogtxt       "Please be careful."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 4, 14
 call            @Func_3880
 dialogtxt       "I hope it's just"
 dialogtxt       "your imagination…"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_1a10
 
 @Cond_1a10:
@@ -650,15 +650,15 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_1bf4
 
 @Label_1bf4:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "The Phenomenon That Caused Tier"
 dialogtxt       "To Appear Earlier May Reoccur."
 dialogtxt       "Please Be Cautious."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 1, 16
 call            @Func_3880
@@ -675,10 +675,10 @@ dialogtxt       "to avoid it!?"
 goto            @Label_1d4a
 
 @Label_1d4a:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_1d5a
 
 @Cond_1d5a:
@@ -697,15 +697,15 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_1e32
 
 @Label_1e32:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 14
 call            @Func_38ec
 dialogtxt       "Whatever caused Tier to"
 dialogtxt       "show up may happen again."
 dialogtxt       "Tread carefully."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 4, 14
 call            @Func_3880
@@ -720,17 +720,17 @@ dialogtxt       "I have no idea what to do…"
 goto            @Label_1f54
 
 @Label_1f54:
-code0309        
+code0309
 call            @Func_38b6
 code0479        1, 2, 12
 call            @Func_38ec
 dialogtxt       "Do not display fear. Ghosts,"
 dialogtxt       "when examined closely,"
 dialogtxt       "are nothing more than thin air."
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_390a
-code047b        
+code047b
 goto            @Cond_1fca
 
 @Cond_1fca:
@@ -749,14 +749,14 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_20a2
 
 @Label_20a2:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 16
 call            @Func_38ec
 dialogtxt       "That thing that looked like"
 dialogtxt       "Tier might show up again…"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 16
 call            @Func_3880
@@ -771,16 +771,16 @@ dialogtxt       "I have no idea what to do…"
 goto            @Label_21a2
 
 @Label_21a2:
-code0309        
+code0309
 call            @Func_38b6
 code0479        1, 2, 13
 call            @Func_38ec
 dialogtxt       "That should be obvious."
 dialogtxt       "Erase it."
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_390a
-code047b        
+code047b
 goto            @Cond_21f2
 
 @Cond_21f2:
@@ -799,15 +799,15 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_22ca
 
 @Label_22ca:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 16
 call            @Func_38ec
 dialogtxt       "That thing that looked like Tier"
 dialogtxt       "may appear again…"
 dialogtxt       "We must be careful…"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
@@ -824,16 +824,16 @@ dialogtxt       "We'll face it head on!"
 goto            @Label_241c
 
 @Label_241c:
-code0309        
+code0309
 call            @Func_38b6
 code0479        1, 2, 13
 call            @Func_38ec
 dialogtxt       "Right, we're just fine!"
 dialogtxt       "As I am not frightened at all!"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_390a
-code047b        
+code047b
 goto            @Cond_2482
 
 @Cond_2482:
@@ -870,15 +870,15 @@ jumpz           @Cond_26b4, ($b003 == 0)
 call            @Func_3862
 dialogtxt       "Why am I hearing"
 dialogtxt       "Masters voice here…?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "Source Cannot Be Determined…"
 dialogtxt       "There Is A Slight Disturbance"
 dialogtxt       "In My Sensors."
-code0309        
+code0309
 call            @Func_3922
 call            @Func_3862
 code0479        0, 2, 14
@@ -893,10 +893,10 @@ dialogtxt       "No choice but to check it out."
 goto            @Label_26a4
 
 @Label_26a4:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_26b4
 
 @Cond_26b4:
@@ -904,16 +904,16 @@ jumpz           @Cond_273c, ($b003 == 1)
 call            @Func_3862
 dialogtxt       "Why am I hearing"
 dialogtxt       "Masters voice here…?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 12
 call            @Func_38ec
 dialogtxt       "Shall we find out?"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_390a
-code047b        
+code047b
 goto            @Cond_273c
 
 @Cond_273c:
@@ -921,21 +921,21 @@ jumpz           @Cond_27f6, ($b003 == 2)
 call            @Func_3862
 dialogtxt       "Why am I hearing"
 dialogtxt       "Masters voice here…?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 14
 call            @Func_38ec
 dialogtxt       "This again…?"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 14
 call            @Func_3880
 dialogtxt       "Let's have a look."
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_27f6
 
 @Cond_27f6:
@@ -943,13 +943,13 @@ jumpz           @Cond_292c, ($b003 == 3)
 call            @Func_3862
 dialogtxt       "Why am I hearing"
 dialogtxt       "Masters voice here…?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 4, 17
 call            @Func_38ec
 dialogtxt       "W-w-w-what do we do?"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 14
 call            @Func_3880
@@ -964,10 +964,10 @@ dialogtxt       "Well, let's check it out."
 goto            @Label_291c
 
 @Label_291c:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_292c
 
 @Cond_292c:
@@ -1015,24 +1015,24 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_2af8
 
 @Label_2af8:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "The Appreance Of Tier, Brother,"
 dialogtxt       "And Master Must Be Related To"
 dialogtxt       "The Ruin's Energy. However…"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 16
 call            @Func_3880
 dialogtxt       "That's not all there is to it…"
 dialogtxt       "But we have to keep going!"
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_2bee
 
 @Cond_2bee:
@@ -1051,15 +1051,15 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_2cc6
 
 @Label_2cc6:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 16
 call            @Func_38ec
 dialogtxt       "Tier, Brother, and Master…"
 dialogtxt       "Their appearance must be related to"
 dialogtxt       "these ruins somehow, but…"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 16
 call            @Func_3880
@@ -1074,10 +1074,10 @@ dialogtxt       "But we have to keep going!"
 goto            @Label_2df6
 
 @Label_2df6:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_2e06
 
 @Cond_2e06:
@@ -1096,15 +1096,15 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_2ede
 
 @Label_2ede:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 13
 call            @Func_38ec
 dialogtxt       "Hmph…"
 dialogtxt       "I wonder who's going"
 dialogtxt       "to show up next."
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 1, 16
 call            @Func_3880
@@ -1117,10 +1117,10 @@ dialogtxt       "Hopefully not someone too strong…"
 goto            @Label_2fa8
 
 @Label_2fa8:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_2fb8
 
 @Cond_2fb8:
@@ -1139,15 +1139,15 @@ dialogtxt       "We'll find Murno there!"
 goto            @Label_3090
 
 @Label_3090:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 17
 call            @Func_38ec
 dialogtxt       "I am ready for"
 dialogtxt       "whoever comes next!"
 dialogtxt       "Let's hurry!"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 12
 call            @Func_3880
@@ -1162,10 +1162,10 @@ dialogtxt       "Keep 'em coming!"
 goto            @Label_3170
 
 @Label_3170:
-code0309        
+code0309
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_3180
 
 @Cond_3180:
@@ -1211,28 +1211,28 @@ dialogtxt       "The real Murno is…"
 goto            @Label_3306
 
 @Label_3306:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 0, 12
 call            @Func_38ec
 dialogtxt       "At The Bottom Of The Ruins!"
 dialogtxt       "If We Do Not Hurry,"
 dialogtxt       "Lady Murno Will…"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 15
 call            @Func_3880
 dialogtxt       "I won't let"
 dialogtxt       "that happen!"
-code0309        
+code0309
 jumpz           @Cond_33d6, ($f0139 == 1)
 goto            @Cond_33d6
 
 @Cond_33d6:
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_33e4
 
 @Cond_33e4:
@@ -1249,28 +1249,28 @@ dialogtxt       "The real Murno is…"
 goto            @Label_3476
 
 @Label_3476:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 15
 call            @Func_38ec
 dialogtxt       "At the lowest point in the ruins!"
 dialogtxt       "If we do not hurry,"
 dialogtxt       "Murno might be…"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 15
 call            @Func_3880
 dialogtxt       "I won't let"
 dialogtxt       "that happen!"
-code0309        
+code0309
 jumpz           @Cond_3550, ($f0139 == 1)
 goto            @Cond_3550
 
 @Cond_3550:
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_355e
 
 @Cond_355e:
@@ -1287,28 +1287,28 @@ dialogtxt       "The real Murno is…"
 goto            @Label_35f0
 
 @Label_35f0:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 3, 15
 call            @Func_38ec
 dialogtxt       "In the ruins' deepest point!"
 dialogtxt       "Hurry, or we'll see Murno"
 dialogtxt       "be eaten by a Summon Beast!"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 15
 call            @Func_3880
 dialogtxt       "I won't let"
 dialogtxt       "that happen!"
-code0309        
+code0309
 jumpz           @Cond_36ca, ($f0139 == 1)
 goto            @Cond_36ca
 
 @Cond_36ca:
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_36d8
 
 @Cond_36d8:
@@ -1325,94 +1325,93 @@ dialogtxt       "The real Murno is…"
 goto            @Label_376a
 
 @Label_376a:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_38b6
 code0479        1, 2, 15
 call            @Func_38ec
 dialogtxt       "In the deepest part of the ruins!"
 dialogtxt       "We must be quick, or Lady Murno"
 dialogtxt       "will be eaten by a Summon Beast!"
-code0309        
+code0309
 call            @Func_3922
 code0479        0, 2, 15
 call            @Func_3880
 dialogtxt       "I won't let"
 dialogtxt       "that happen!"
-code0309        
+code0309
 jumpz           @Cond_384e, ($f0139 == 1)
 goto            @Cond_384e
 
 @Cond_384e:
 call            @Func_39bc
 call            @Func_389e
-code047b        
+code047b
 goto            @Cond_385c
 
 @Cond_385c:
 goto            @Label_3860
 
 @Label_3860:
-done            
+done
 
 @Func_3862:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_3880:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_389e:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_38b6:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_38ec:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_390a:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_3922:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_3966:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_39bc:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

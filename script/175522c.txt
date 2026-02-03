@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 201, 202, -1
 code0410        1, 201, 203, 205
 code0410        2, 201, 204, 206
-code0411        
+code0411
 code0430        207
 code0412        4, 1
 code0418        2
@@ -33,7 +33,7 @@ mapevpos        30, (10,20)-(11,20)
 mapev           31, @Event_0328, 32
 mapevpos        31, (20,20)-(21,20)
 setvar          $h319, 39
-code0409        
+code0409
 jumpz           @Cond_0234, ($f0036 == 1)
 code046e        38, 256, 0
 goto            @Label_024c
@@ -43,86 +43,86 @@ code046e        15, 256, 0
 goto            @Label_024c
 
 @Label_024c:
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_0250:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         731 ; map 175161c
 
 @Label_0282:
 code0006        21
-code040b        
+code040b
 
 @Label_028c:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_02a0:
 setvar          $bv048, ($bv048 | 0x0001)
 code0461        1
-code040b        
+code040b
 
 @Event_02bc:
 code0301        8, 7
 dialogtxt       "Weak weapons have no value!"
 dialogtxt       "Strong weapons made with quality"
 dialogtxt       "Shapestones and ores do!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_0328:
 code0301        8, 7
 dialogtxt       "Strong hearts forge strong weapons!"
 dialogtxt       "Therefore, tempering the heart is"
 dialogtxt       "essential to your training!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -137,7 +137,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -148,13 +148,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_06f2, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -236,34 +236,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_092c
 
 @Label_092c:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -276,7 +276,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0b30:
 code0438        16, 406, 645, 1
@@ -285,15 +285,14 @@ code043d        16, 128, 56
 code043e        16, 3, 0
 mapev           20, @Event_0bb8, 32
 mapevpos        20, (15,9)-(16,9)
-ret             
+ret
 
 @Event_0bb8:
 code0301        8, 7
 code047d        0, 120
 code047e        0, 1
 dialogtxt       "…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

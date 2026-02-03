@@ -4,7 +4,7 @@ jumpz           @Cond_0076, ($h220 == 0)
 code0301        0, 7
 code0305        1
 dialogtxt       "It'll be sold out…"
-code0309        
+code0309
 code0302        7
 setvar          $h309, 0
 goto            @Label_0490
@@ -20,7 +20,7 @@ jumpz           @Cond_00e0, ($h311 < 8)
 code0301        0, 7
 code0305        1
 dialogtxt       "Coming Soon!"
-code0309        
+code0309
 code0302        7
 setvar          $h309, 0
 goto            @Label_0490
@@ -33,7 +33,7 @@ jumpz           @Cond_0142, ($h221 == 0)
 code0301        0, 7
 code0305        1
 dialogtxt       "That's a wrap!"
-code0309        
+code0309
 code0302        7
 setvar          $h309, 0
 goto            @Label_0490
@@ -60,7 +60,7 @@ dialogtxt       "more lottery tickets…"
 goto            @Label_01e0
 
 @Label_01e0:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 setvar          $h309, 0
@@ -84,7 +84,7 @@ dialogtxt       "more lottery tickets…"
 goto            @Label_028e
 
 @Label_028e:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 setvar          $h309, 0
@@ -93,8 +93,8 @@ goto            @Label_0490
 @Cond_02b6:
 setvar          $h096, 63
 code041c        16, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 jumpz           @Cond_03d4, ($h319 == 44)
 jumpz           @Cond_030c, ($h311 == 4)
 code038c        0
@@ -176,5 +176,4 @@ setvar          $h309, 1
 goto            @Label_0490
 
 @Label_0490:
-done            
-
+done

@@ -38,11 +38,11 @@ dialogtxt       "They were acting so different…"
 goto            @Label_017c
 
 @Label_017c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_104c
 call            @Func_0f5a
-code047b        
+code047b
 code0333        2, 30
 code033a        393, 0
 code031a        6
@@ -77,7 +77,7 @@ code0445        1, 10
 code0445        0, 10
 code0446        0
 code040d        10
-code0334        
+code0334
 code0331        36, 256
 code0479        0, 2, 15
 call            @Func_0ff6
@@ -93,8 +93,8 @@ dialogtxt       "Gone again…?"
 goto            @Label_03fe
 
 @Label_03fe:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0f72
 code043c        0, 3
 code043c        1, 1
@@ -103,13 +103,13 @@ call            @Func_0fa8
 jumpz           @Cond_05c0, ($b003 == 0)
 dialogtxt       "Confirmed Disturbance In"
 dialogtxt       "Energy Upon Disappearance."
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 0, 12
 dialogtxt       "As I Thought, It Is Connected"
 dialogtxt       "To The Energy That Fills"
 dialogtxt       "These Ruins…"
-code0309        
+code0309
 call            @Func_0fde
 code0479        0, 2, 14
 call            @Func_0f3c
@@ -131,8 +131,8 @@ jumpz           @Cond_06fe, ($b003 == 1)
 dialogtxt       "It seems to be related"
 dialogtxt       "to the unpleasant presence here."
 dialogtxt       "Don't let your guard down."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0fde
 code0479        0, 2, 14
 call            @Func_0f3c
@@ -154,8 +154,8 @@ jumpz           @Cond_083a, ($b003 == 2)
 dialogtxt       "As I thought, it must be related"
 dialogtxt       "to the energy filling these ruins."
 dialogtxt       "Is it showing us a mirage?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0fde
 code0479        0, 2, 14
 call            @Func_0f3c
@@ -177,8 +177,8 @@ jumpz           @Cond_093a, ($b003 == 3)
 dialogtxt       "Th-this is the second time."
 dialogtxt       "I have no idea what is going on."
 dialogtxt       "But I'm not scared. Not at all."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0fde
 code0479        0, 2, 12
 call            @Func_0f3c
@@ -198,55 +198,55 @@ goto            @Label_0936
 goto            @Cond_093a
 
 @Cond_093a:
-code0309        
+code0309
 call            @Func_1078
 call            @Func_0f5a
-code047b        
+code047b
 code0333        2, 30
 code040d        10
 code0489        0, 2, 16
-code0492        
+code0492
 code043c        0, 3
-code048c        
-code0334        
+code048c
+code0334
 code046e        21, 256, 2
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -261,7 +261,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -272,13 +272,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0ce2, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -360,67 +360,66 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0f1c
 
 @Label_0f1c:
-ret             
+ret
 
 @Func_0f1e:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0f3c:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0f5a:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0f72:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0fa8:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0fde:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_0ff6:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_100c:
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_104c:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_1078:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

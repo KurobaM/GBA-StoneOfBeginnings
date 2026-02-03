@@ -13,13 +13,13 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, "
 dialogtxt       "do you have any ζs?"
-code0309        
+code0309
 dialogtxt       "You know, ζ"
 dialogtxt       "is my favorite."
-code0309        
+code0309
 dialogtxt       "I want to own every"
 dialogtxt       "ζ in the world."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0174
@@ -30,7 +30,7 @@ code047e        0, 1
 dialogtxt       "I'll buy any ζs"
 dialogtxt       "you have."
 dialogtxt       "Sell 'em to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_069e
@@ -46,17 +46,17 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey,"
 dialogtxt       "have you got any ζs?"
-code0309        
+code0309
 dialogtxt       "They're great for preventing"
 dialogtxt       "drafts from coming in."
-code0309        
+code0309
 dialogtxt       "You know, my dream is to live"
 dialogtxt       "in a house build by my own hands."
-code0309        
+code0309
 dialogtxt       "I've built one before, but there"
 dialogtxt       "were cracks everywhere, and my"
 dialogtxt       "family made a big deal out of it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_031a
@@ -67,7 +67,7 @@ code047e        0, 1
 dialogtxt       "I'll buy any ζs"
 dialogtxt       "you have."
 dialogtxt       "Sell 'em to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_069e
@@ -83,11 +83,11 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey,"
 dialogtxt       "do you have any ζs?"
-code0309        
+code0309
 dialogtxt       "ζ, you know,"
 dialogtxt       "the way they feel is enticing."
 dialogtxt       "It'll take your breath away."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0440
@@ -98,7 +98,7 @@ code047e        0, 1
 dialogtxt       "I'll buy any ζs"
 dialogtxt       "you have. \"pant\""
 dialogtxt       "Sell 'em to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_069e
@@ -114,14 +114,14 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey,"
 dialogtxt       "do you have any ζs?"
-code0309        
+code0309
 dialogtxt       "They've gotten popular with some"
 dialogtxt       "people and can fetch a high price."
-code0309        
+code0309
 dialogtxt       "Ah, it's impossible for an amateur"
 dialogtxt       "to figure out how to do it, so"
 dialogtxt       "leave it to a pro like me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_05ac
@@ -132,7 +132,7 @@ code047e        0, 1
 dialogtxt       "I'll buy every ζ"
 dialogtxt       "you have."
 dialogtxt       "Sell 'em to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_069e
@@ -143,7 +143,7 @@ goto            @Label_05b0
 
 @Label_05b0:
 setvar          $bv031, 0
-done            
+done
 
 @Func_05be:
 jumpz           @Cond_05ea, ($bv031 == 1)
@@ -177,13 +177,13 @@ setvar          $bv030, $b070
 goto            @Cond_069c
 
 @Cond_069c:
-ret             
+ret
 
 @Func_069e:
 setvar          $h096, 63
-code040a        
+code040a
 code0354        $h232, $h233
-code0355        
+code0355
 code036a        $h232
 jumpz           @Cond_06e4, ($b070 < $bv030)
 setvar          $bv029, 2
@@ -194,46 +194,46 @@ setvar          $bv029, 3
 goto            @Label_06f4
 
 @Label_06f4:
-ret             
+ret
 
 @Func_06f6:
 code0301        8, 7
 dialogtxt       "Location error"
 dialogtxt       "POS_TEMP"
 dialogtxt       "is not set."
-code0309        
+code0309
 code0302        7
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret                      
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -248,7 +248,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -259,7 +259,7 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 jumpz           @Cond_0a90, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -341,57 +341,56 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0cca
 
 @Label_0cca:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

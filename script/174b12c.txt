@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 221, 222, -1
 code0410        1, 221, 223, 225
 code0410        2, 221, 224, 226
-code0411        
+code0411
 code0430        227
 code0412        4, 1
 code0418        2
@@ -30,26 +30,26 @@ mapevpos        1, (15,20)-(16,20)
 mapev           31, @Event_049e, 32
 mapevpos        31, (25,23)-(26,23)
 setvar          $h319, 45
-code0409        
+code0409
 code046e        28, 256, 0
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_020c:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         632 ; map 17464dc
 
 @Label_023e:
 code0006        21
-code040b        
+code040b
 
 @Label_0248:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_025c:
@@ -57,7 +57,7 @@ code043e        2, 3, 0
 @Label_0270:
 jumpz           @Cond_0488, 1
 code0350        2, 4
-code0351        
+code0351
 jumpz           @Cond_02a2, ($b068 == -1)
 goto            @Cond_0488
 
@@ -65,14 +65,14 @@ goto            @Label_0484
 
 @Cond_02a2:
 setvar          $h096, 63
-code040a        
-code0352        
+code040a
+code0352
 setvar          $b097, 0
 code0408        0
 code0410        0, 221, 222, -1
 code0410        1, 221, 223, 225
 code0410        2, 221, 224, 226
-code0411        
+code0411
 code0430        227
 code0412        4, 1
 code0418        2
@@ -92,7 +92,7 @@ mapev           1, @Event_025c, 32
 mapevpos        1, (15,20)-(16,20)
 mapev           31, @Event_049e, 32
 mapevpos        31, (25,23)-(26,23)
-code0409        
+code0409
 code043e        2, 3, 0
 goto            @Label_0484
 
@@ -101,54 +101,54 @@ goto            @Label_0270
 
 @Cond_0488:
 code043e        2, 0, 0
-code040b        
+code040b
 
 @Event_049e:
 code0301        8, 7
 dialogtxt       "Have you ever been injured"
 dialogtxt       "with no inn in sight?"
 dialogtxt       "When that happens, think of Bandage!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -163,7 +163,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -174,13 +174,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0860, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -262,34 +262,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a9a
 
 @Label_0a9a:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -302,7 +302,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0c9e:
 code0438        16, 407, 651, 1
@@ -311,7 +311,7 @@ code043d        16, 176, 176
 code043c        16, 2
 code0442        16, @Talk_0d08
 code0444        16, -1
-ret             
+ret
 
 @Talk_0d08:
 code0301        8, 7
@@ -320,53 +320,52 @@ code047e        0, 1
 dialogtxt       "My, you must be a Craftknight."
 dialogtxt       "Right now I'm on a journey to meet"
 dialogtxt       "many Craftknights and blacksmiths."
-code0309        
+code0309
 dialogtxt       "I only hope that some of them"
 dialogtxt       "will become regular customers"
 dialogtxt       "when my daughter and I open a shop."
-code0309        
+code0309
 dialogtxt       "I know quite a lot about smithing."
 dialogtxt       "Feel free to ask me anything."
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_0e8c, "Teach me about enhancement"
 choicetxt       @Choice_0f54, "Teach me about disassembly"
 choicetxt       @Choice_106c, "Nothing right now"
-choicewait      
+choicewait
 
 @Choice_0e8c:
 code047e        0, 1
 dialogtxt       "Enhancement is when you"
 dialogtxt       "combine items with a weapon"
 dialogtxt       "to make it stronger."
-code0309        
+code0309
 dialogtxt       "You can do it up to three times,"
 dialogtxt       "depending on your smithing rank."
 dialogtxt       "So make sure to raise it."
-code0309        
+code0309
 goto            @Label_1096
 
 @Choice_0f54:
 code047e        0, 1
 dialogtxt       "Dissassembly lets you break"
 dialogtxt       "down a weapon into a Shapestone."
-code0309        
+code0309
 dialogtxt       "But that's not all."
 dialogtxt       "The Shapestone will retain some"
 dialogtxt       "of the weapon's original strength."
-code0309        
+code0309
 dialogtxt       "How much depends on your skill,"
 dialogtxt       "and your smithing rank."
 dialogtxt       "The higher, the better."
-code0309        
+code0309
 goto            @Label_1096
 
 @Choice_106c:
 code047e        0, 1
 dialogtxt       "I'll be here if you need me."
-code0309        
+code0309
 @Label_1096:
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 27, 29, 32
 code0410        1, 27, 30, -1
 code0410        2, 28, 31, 33
-code0411        
+code0411
 code0430        34
 code0412        4, 1
 code0418        2
@@ -57,7 +57,7 @@ goto            @Label_035e
 @Cond_02d2:
 jumpz           @Cond_0302, ($h319 == 50)
 code041c        1, 304, 24, 1
-code0475        
+code0475
 goto            @Label_035e
 
 @Cond_0302:
@@ -83,9 +83,9 @@ mapevpos        2, (47,24)-(48,24)
 mapev           3, @Event_0664, 8
 mapevpos        3, (15,14)-(16,14)
 setvar          $h319, 1
-code0409        
+code0409
 code046e        13, 256, 0
-code041d        
+code041d
 jumpz           @Cond_04ae, ($f0035 == 1 && $f0036 == 0)
 setvar          $f0036, 1
 code043e        0, 3, 0
@@ -98,37 +98,37 @@ goto            @Cond_04ae
 
 @Cond_04ae:
 placetxt        "Deckell Village　Suburbs"
-code040b        
+code040b
 
 @Talk_04c8:
 code0006        1904
 jumpz           @Cond_052a, ($f0132 == 1)
 setvar          $f0035, 1
 setvar          $h096, 47
-code0332        
+code0332
 code033a        116, 0
 code0468        2
 code033e        116
-code040a        
+code040a
 code0006        45
 goto            @start
 
 goto            @Cond_052a
 
 @Cond_052a:
-code040b        
+code040b
 
 @Event_052c:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         501 ; map 173b12c
 
 @Event_055e:
 setvar          $h096, 32
 setvar          $h315, 0
-code04a3        
+code04a3
 jumpz           @Cond_05a8, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -137,14 +137,14 @@ goto            @Cond_05a8
 @Cond_05a8:
 jumpz           @Cond_05c2, ($h101 == 1)
 call            @Func_0cd0
-code040b        
+code040b
 
 goto            @Cond_05c2
 
 @Cond_05c2:
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3001 ; map 188bfec
 
 @Event_05e8:
@@ -153,9 +153,9 @@ code0419        0, 2, 0, 46, 21, 0
 code033a        109, 0
 code041b        0
 code041c        19, 384, 192, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         508 ; map 173d0dc
 
 @Event_0664:
@@ -164,58 +164,58 @@ code0419        0, 2, 0, 14, 11, 0
 code033a        109, 0
 code041b        0
 code041c        19, 128, 112, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         510 ; map 173d7bc
 
 @Label_06e0:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Label_06f4:
 code0006        21
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -230,7 +230,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -241,13 +241,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0a48, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -329,35 +329,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0c82
 
 @Label_0c82:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_0cd0:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -370,7 +370,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0e86:
 code0438        16, 362, 632, 1
@@ -401,16 +401,16 @@ code0444        19, -1
 goto            @Cond_1034
 
 @Cond_1034:
-ret             
+ret
 
 @Talk_1036:
 setvar          $bv031, 1
 code0006        3916
-code040b        
+code040b
 
 @Talk_104c:
 code0006        3915
-code040b        
+code040b
 
 @Talk_1056:
 code0301        8, 7
@@ -419,15 +419,14 @@ code047e        0, 1
 dialogtxt       "There's a lot of pits"
 dialogtxt       "in the cave in Bajan Forest."
 dialogtxt       "Watch out."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_10e0:
 code0301        8, 7
 dialogtxt       "Purr…"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

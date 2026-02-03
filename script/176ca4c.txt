@@ -11,7 +11,7 @@ code0408        0
 code0410        0, 188, 189, -1
 code0410        1, 188, 190, 192
 code0410        2, 188, 191, -1
-code0411        
+code0411
 code0430        193
 code0412        4, 1
 code0418        1
@@ -55,44 +55,44 @@ mapevpos        1, (15,11)-(16,11)
 mapev           2, @Event_03b8, 16
 mapevpos        2, (24,23)-(25,24)
 setvar          $h319, 37
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
+code041d
 jumpz           @Cond_0322, ($f0033 == 0)
 setvar          $f0033, 1
 code0006        2402
 goto            @Cond_0322
 
 @Cond_0322:
-code040b        
+code040b
 
 @Event_0324:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1040 ; map 176ce5c
 
 @Event_0356:
 setvar          $h096, 63
-code040a        
+code040a
 setvar          $h086, 2
 setvar          $h087, 0
 code0359        0
 goto            @Cond_0048
 
 @Label_0388:
-code0357        
+code0357
 jumpz           @Cond_03b2, ($b068 == 0)
 setvar          $h096, 63
-code040a        
-code0358        
+code040a
+code0358
 goto            @Cond_0048
 
 goto            @Event_03b8
 
 @Cond_03b2:
-code040b        
+code040b
 
 goto            @Event_03b8
 
@@ -104,63 +104,63 @@ setvar          $h137, 30
 call            @Func_045e
 code033a        112, 0
 code033e        112
-code0368        
+code0368
 code043d        0, 200, 192
 code043c        0, 1
 call            @Func_049e
 popuptxt        "You feel refreshed!"
-code0318        
-code040b        
+code0318
+code040b
 
 @Label_043e:
 code0006        21
-code040b        
+code040b
 
 @Label_0448:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @Cond_0048
 
-done            
+done
 
 @Func_045e:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_049e:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -175,7 +175,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -186,13 +186,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_07a6, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -274,34 +274,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_09e0
 
 @Label_09e0:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -314,5 +314,4 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
-
+ret

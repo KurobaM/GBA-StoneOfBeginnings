@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 139, 141, 144
 code0410        1, 139, 142, -1
 code0410        2, 140, 143, 145
-code0411        
+code0411
 code0430        146
 code0412        4, 1
 code0418        2
@@ -76,46 +76,46 @@ mapevpos        6, (49,18)-(50,18)
 mapev           7, @Event_061c, 4
 mapevpos        7, (66,18)-(69,18)
 setvar          $h319, 31
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_0412:
 setvar          $h096, 32
 setvar          $h318, 0
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1431 ; map 17a262c
 
 @Event_0450:
 setvar          $h096, 32
 setvar          $h318, 1
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1431 ; map 17a262c
 
 @Event_048e:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1434 ; map 17a389c
 
 @Event_04c0:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1435 ; map 17a3efc
 
 @Event_04f2:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1437 ; map 17a524c
 
 @Event_0524:
@@ -124,9 +124,9 @@ code0419        0, 2, 0, 27, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 232, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1445 ; map 17a724c
 
 @Event_05a0:
@@ -135,65 +135,65 @@ code0419        0, 2, 0, 48, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 400, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1446 ; map 17a76dc
 
 @Event_061c:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1447 ; map 17a7b5c
 
 @Label_064e:
 code0006        21
-code040b        
+code040b
 
 @Label_0658:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -208,7 +208,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -219,13 +219,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_09b6, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -307,34 +307,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0bf0
 
 @Label_0bf0:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -347,7 +347,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0df4:
 code0438        16, 395, 645, 1
@@ -374,7 +374,7 @@ mapev           21, @Event_121e, 32
 mapevpos        21, (56,21)-(58,21)
 mapev           22, @Event_1286, 32
 mapevpos        22, (76,37)-(76,38)
-ret             
+ret
 
 @Talk_0fbe:
 code0301        8, 7
@@ -382,14 +382,14 @@ code047d        0, 123
 code047e        0, 1
 dialogtxt       "Hey, let's play. I'll be the"
 dialogtxt       "legendary warrior."
-code0309        
+code0309
 dialogtxt       "I am the legendary warrior."
 dialogtxt       "You are the emperor of evil"
 dialogtxt       "plotting world domination."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_107e:
 code0301        8, 7
@@ -398,47 +398,46 @@ code047e        0, 1
 dialogtxt       "Myotaro has been a bit strange"
 dialogtxt       "today. How many times has he"
 dialogtxt       "bitten me today?"
-code0309        
+code0309
 dialogtxt       "But, I believe in Myotaro."
 dialogtxt       "I won't leave him just because"
 dialogtxt       "of this."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_1166:
 code0445        19, 6
 code0446        19
-code040b        
+code040b
 
 @Event_117e:
 code0301        8, 7
 dialogtxt       "　"
 dialogtxt       "　　　　 Hey… Hey you…"
-code0309        
+code0309
 dialogtxt       "I've been hearing a creepy voice"
 dialogtxt       "from the desk behind me. Can't"
 dialogtxt       "someone do something about it?"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_121e:
 code0301        8, 7
 dialogtxt       "Care to try our \"Lucky Draw\"?"
 dialogtxt       "It's available all day, everyday!"
 dialogtxt       "Guaranteed no losing tickets!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1286:
 code0301        8, 7
 dialogtxt       "The damage done by stray"
 dialogtxt       "Summon Beasts only rises."
 dialogtxt       "Please be careful!"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

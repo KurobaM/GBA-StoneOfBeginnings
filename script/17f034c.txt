@@ -10,12 +10,12 @@ code040d        30
 code047f        222
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code047d        0, 108
 code0301        16, 3
 code047e        0, 1
 dialogtxt       "I figured you were here."
-code0309        
+code0309
 code047e        0, 0
 code0302        3
 code040d        15
@@ -46,14 +46,14 @@ code047d        1, 108
 call            @Func_0e34
 call            @Func_0d30
 dialogtxt       "Master…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0d84
 code0479        1, 0, 12
 call            @Func_0dba
 dialogtxt       "You seem pretty relaxed."
 dialogtxt       "You know we have a match tomorrow?"
-code0309        
+code0309
 call            @Func_0df0
 code0479        0, 0, 12
 call            @Func_0d4e
@@ -70,116 +70,116 @@ dialogtxt       "in getting worked up this late."
 goto            @Label_0396
 
 @Label_0396:
-code0309        
+code0309
 call            @Func_0d84
 code0479        1, 2, 12
 call            @Func_0dba
 dialogtxt       "So you say…"
 dialogtxt       "Don't get overconfident."
 dialogtxt       "Jade is nothing compared to me."
-code0309        
+code0309
 call            @Func_0df0
 code0479        0, 2, 13
 call            @Func_0d4e
 dialogtxt       "I'm taking this seriously!"
 dialogtxt       "I'm gonna try my best to show you"
 dialogtxt       "the results of my training."
-code0309        
+code0309
 code0479        0, 2, 12
 dialogtxt       "So just watch me!"
-code0309        
+code0309
 call            @Func_0d84
 code0479        1, 1, 13
 call            @Func_0dba
 dialogtxt       "Looks like you're slowly coming"
 dialogtxt       "to understand what true strength is."
-code0309        
+code0309
 call            @Func_0df0
 code0479        0, 5, 16
 call            @Func_0d4e
 dialogtxt       "True strength…?"
 dialogtxt       "I still don't really understand"
 dialogtxt       "something like that yet."
-code0309        
+code0309
 call            @Func_0d84
 code0479        1, 0, 12
 call            @Func_0dba
 dialogtxt       "Strength isn't just physical…"
 dialogtxt       "Like, how should I put this…?"
 dialogtxt       "Your conviction is important too."
-code0309        
+code0309
 code0479        0, 0, 16
 code0479        1, 2, 16
 dialogtxt       "A strong Craftknight can feel their"
 dialogtxt       "spirit through their weapons."
-code0309        
+code0309
 call            @Func_0df0
 code0479        0, 2, 12
 call            @Func_0d4e
 dialogtxt       "Feel their spirit…"
 dialogtxt       "I think I kind of get it."
-code0309        
+code0309
 call            @Func_0d84
 code0479        1, 1, 13
 call            @Func_0dba
 dialogtxt       "Heh."
 dialogtxt       "I can tell you're"
 dialogtxt       "growing by the day."
-code0309        
+code0309
 code0479        0, 0, 12
 code0479        1, 2, 12
 dialogtxt       "Tomorrow I'll have you show me"
 dialogtxt       "your true abilities in combat."
-code0309        
+code0309
 call            @Func_0df0
 code0479        0, 2, 13
 call            @Func_0d4e
 dialogtxt       "Yeah!"
 dialogtxt       "I'll do my best!"
-code0309        
+code0309
 call            @Func_0e8a
 call            @Func_0d6c
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 @Func_07ac:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_07ec:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -194,7 +194,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -205,13 +205,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0af4, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -293,65 +293,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0d2e
 
 @Label_0d2e:
-ret             
+ret
 
 @Func_0d30:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0d4e:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0d6c:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0d84:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0dba:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0df0:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0e34:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0e8a:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

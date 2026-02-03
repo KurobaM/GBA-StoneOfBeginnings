@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 147, 149, 152
 code0410        1, 147, 150, -1
 code0410        2, 148, 151, -1
-code0411        
+code0411
 code0430        153
 code0412        4, 1
 code0418        2
@@ -28,25 +28,25 @@ goto            @Cond_016e
 mapev           0, @Event_01c4, 4
 mapevpos        0, (36,37)-(37,42)
 setvar          $h319, 32
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_01c4:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1231 ; map 1786f2c
 
 code0006        1291
-code040b        
+code040b
 
 @Label_0200:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_0214:
@@ -58,45 +58,45 @@ goto            @start
 goto            @Cond_0240
 
 @Cond_0240:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -111,7 +111,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -122,13 +122,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_058c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -210,34 +210,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_07c6
 
 @Label_07c6:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -250,19 +250,18 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_09ca:
 mapev           20, @Event_09fc, 32
 mapevpos        20, (32,36)-(34,36)
-ret             
+ret
 
 @Event_09fc:
 code0301        8, 7
 dialogtxt       "If you can only muster one speck of"
 dialogtxt       "magic damage, it's useless against"
 dialogtxt       "opponents immune to it."
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

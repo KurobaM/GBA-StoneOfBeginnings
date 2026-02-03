@@ -10,12 +10,12 @@ code040d        30
 code047f        221
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code047d        0, 132
 code0301        16, 3
 code047e        0, 1
 dialogtxt       "Hey [NAME 2]."
-code0309        
+code0309
 code047e        0, 0
 code0302        3
 code040d        15
@@ -47,69 +47,69 @@ call            @Func_115e
 call            @Func_10c6
 dialogtxt       "It's right before your match."
 dialogtxt       "Sure you've got time to waste?"
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 4, 13
 call            @Func_1078
 dialogtxt       "No, but…"
 dialogtxt       "Freaking out about it this late"
 dialogtxt       "isn't going to change anything."
-code0309        
+code0309
 code0479        1, 0, 12
 code0479        0, 0, 16
 dialogtxt       "And why are you here, Bro?"
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 0, 16
 call            @Func_10e4
 dialogtxt       "There's this noisy guy staying at"
 dialogtxt       "Chief's place that was bothering me,"
 dialogtxt       "so I came out to get some air."
-code0309        
+code0309
 code0479        0, 1, 16
 code0479        1, 2, 12
 dialogtxt       "…Hey!"
 dialogtxt       "I told you not to call me Bro!"
-code0309        
+code0309
 call            @Func_111a
 code0479        1, 0, 12
 code0479        0, 0, 14
 call            @Func_1078
 dialogtxt       "Staying there costs money, right?"
 dialogtxt       "You should just stay with us."
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 4, 16
 call            @Func_10e4
 dialogtxt       "You say it like it's no big deal,"
 dialogtxt       "but you already have two guests."
 dialogtxt       "It's tough in a lot ways, right?"
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 0, 16
 call            @Func_1078
 dialogtxt       "Well yeah."
 dialogtxt       "And Master's injured too…"
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 2, 13
 call            @Func_10e4
 dialogtxt       "You better make sure"
 dialogtxt       "to help out V.E out."
 dialogtxt       "For Rob's sake and hers."
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 5, 16
 call            @Func_1078
 dialogtxt       "For Master Rob…"
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 1, 13
 call            @Func_10e4
 dialogtxt       "Don't worry! You can handle it!"
 dialogtxt       "I mean, you're strong enough"
 dialogtxt       "to beat me, after all."
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 0, 16
 call            @Func_1078
@@ -124,19 +124,19 @@ dialogtxt       "You were just testing me, right?"
 goto            @Label_074e
 
 @Label_074e:
-code0309        
+code0309
 code0479        1, 0, 12
 code0479        0, 4, 12
 dialogtxt       "If you were serious,"
 dialogtxt       "I honestly don't know if I could"
 dialogtxt       "beat you even with [NAME 1]."
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 0, 13
 call            @Func_10e4
 dialogtxt       "That's suprisingly modest"
 dialogtxt       "coming from you."
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 0, 13
 call            @Func_1078
@@ -153,88 +153,88 @@ dialogtxt       "And your face becomes a perfect fit."
 goto            @Label_08e4
 
 @Label_08e4:
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 3, 17
 call            @Func_10e4
 dialogtxt       "What'd you say!?"
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 1, 16
 call            @Func_1078
 dialogtxt       "See, like that."
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 0, 16
 call            @Func_10e4
 dialogtxt       "Anyways, make sure to"
 dialogtxt       "deliver a solid victory"
 dialogtxt       "in the match tomorrow."
-code0309        
+code0309
 code0479        0, 0, 12
 code0479        1, 2, 13
 dialogtxt       "You beat me, so if V.E beats you,"
 dialogtxt       "that would mean…"
 dialogtxt       "…You can't lose this one."
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 4, 16
 call            @Func_1078
 dialogtxt       "W-Well…"
-code0309        
+code0309
 call            @Func_10ae
 code0479        1, 3, 15
 call            @Func_10e4
 dialogtxt       "Got it!?"
-code0309        
+code0309
 call            @Func_111a
 code0479        0, 2, 15
 call            @Func_1078
 dialogtxt       "Yeah!"
-code0309        
+code0309
 call            @Func_11b4
 call            @Func_1096
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 @Func_0ad6:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_0b16:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -249,7 +249,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -260,13 +260,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0e1e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -348,65 +348,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1058
 
 @Label_1058:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_1078:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_1096:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_10ae:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_10c6:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_10e4:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_111a:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_115e:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_11b4:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

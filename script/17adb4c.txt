@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 35, 37, -1
 code0410        1, 35, 39, -1
 code0410        2, 36, 40, -1
-code0411        
+code0411
 code0430        41
 code0412        4, 1
 code0418        2
@@ -31,9 +31,9 @@ mapevpos        0, (30,4)-(31,21)
 mapev           31, @Event_0296, 32
 mapevpos        31, (19,6)-(23,6)
 setvar          $h319, 2
-code0409        
+code0409
 code046e        13, 256, 0
-code041d        
+code041d
 jumpz           @Cond_0244, ($f0134 == 1)
 code043e        0, 3, 0
 code043e        2, 3, 0
@@ -41,32 +41,32 @@ code0006        2905
 goto            @Cond_0244
 
 @Cond_0244:
-code040b        
+code040b
 
 @Event_0246:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1501 ; map 17ace6c
 
 @Label_0278:
 code0006        21
-code040b        
+code040b
 
 @Label_0282:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_0296:
 code0301        8, 7
 dialogtxt       "Please watch your step when you"
 dialogtxt       "board the Summon Beast railway!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Talk_02ea:
 code0006        2905
@@ -124,56 +124,56 @@ code031a        4
 code040d        15
 code033e        394
 setvar          $h096, 47
-code0332        
+code0332
 code033a        116, 0
 code0468        2
 code033e        116
-code040a        
+code040a
 code0006        93
 goto            @start
 
 goto            @Cond_065e
 
 @Cond_065e:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -188,7 +188,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -199,13 +199,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_09aa, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -287,34 +287,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0be4
 
 @Label_0be4:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -327,7 +327,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0de8:
 code0438        16, 408, 652, 1
@@ -336,7 +336,7 @@ code043d        16, 120, 120
 code043c        16, 2
 code0442        16, @Talk_0e52
 code0444        16, -1
-ret             
+ret
 
 @Talk_0e52:
 code0301        8, 7
@@ -345,18 +345,18 @@ code047e        0, 1
 dialogtxt       "Mom says she wants a Master who is"
 dialogtxt       "proficient in one weapon, but I"
 dialogtxt       "want one who is proficient in ALL!"
-code0309        
+code0309
 dialogtxt       "Doesn't that sound REALLY awesome!?"
-code0309        
+code0309
 jumpz           @Cond_0f7e, (($f1268 == 0 || $f1269 == 0) || $f1270 == 0)
 dialogtxt       "…Anyway, how far have you"
 dialogtxt       "come along as a Craftknight?"
 dialogtxt       "Come on, I wanna know!"
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_0f86, "Tell her"
 choicetxt       @Choice_16c6, "Don't tell her"
-choicewait      
+choicewait
 
 goto            @Choice_0f86
 
@@ -414,21 +414,21 @@ code047e        0, 1
 dialogtxt       "WHAAAT!? OMIIIIGOSH!!!"
 dialogtxt       "ALL your Crafting Ranks are higher"
 dialogtxt       "than anyone else's! AMAZING!◎"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Craftknight Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        529, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Keeping the \"Ultimate Craftknight"
 dialogtxt       "Manual\" in your inventory while"
 dialogtxt       "saving unlocks \"Rob\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_1282
 
@@ -445,21 +445,21 @@ code047e        0, 1
 dialogtxt       "Wow…! Did you"
 dialogtxt       "get all the Secret Techniques?"
 dialogtxt       "That's such an amazing feat!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you. They call"
 dialogtxt       "this an \"Audio Listening Device\"?"
 dialogtxt       "I have no idea what it's for…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        531, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Audio Listening Device\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"VOICE\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_1428
 
@@ -476,21 +476,21 @@ code047e        0, 1
 dialogtxt       "Oh, you're kidding!"
 dialogtxt       "Did you really fight every Stray!?"
 dialogtxt       "You are so unreal!◎"
-code0309        
+code0309
 dialogtxt       "Here! This is for you. They call"
 dialogtxt       "this an \"Ultimate War Ticket\"?"
 dialogtxt       "I have no idea what it's for…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        533, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate War Ticket\""
 dialogtxt       "in your inventory while saving"
 dialogtxt       "unlocks \"Boss Attack\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_15da
 
@@ -504,7 +504,7 @@ code047e        0, 1
 dialogtxt       "Wow, look at you!"
 dialogtxt       "You've got nothing else to improve!"
 dialogtxt       "Well, keep working harder!"
-code0309        
+code0309
 goto            @Label_172c
 
 goto            @Label_16c2
@@ -515,7 +515,7 @@ code047e        0, 1
 dialogtxt       "Looks like you've gotta master"
 dialogtxt       "all weapons first before I"
 dialogtxt       "consider you the real deal!"
-code0309        
+code0309
 goto            @Label_172c
 
 goto            @Label_16c2
@@ -528,9 +528,8 @@ code047e        0, 1
 dialogtxt       "Whaaat!? You don't wanna talk about"
 dialogtxt       "it!? Gee, at least tell me a bit!"
 dialogtxt       "…Or not. You will soon enough!"
-code0309        
+code0309
 @Label_172c:
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

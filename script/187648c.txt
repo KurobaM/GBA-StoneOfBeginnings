@@ -60,8 +60,8 @@ dialogtxt       "different from before…"
 goto            @Label_029e
 
 @Label_029e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_154c
 call            @Func_15e6
 jumpz           @Cond_02d2, ($b003 == 0)
@@ -88,8 +88,8 @@ jumpz           @Cond_05f2, ($b003 == 0)
 dialogtxt       "The Surrounding Waves Have Become"
 dialogtxt       "Stronger. We Must Be Approaching"
 dialogtxt       "The Source."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_15b8
 code0479        0, 0, 14
 call            @Func_1516
@@ -106,13 +106,13 @@ dialogtxt       "labyrinth in Louise Village."
 goto            @Label_048c
 
 @Label_048c:
-code0309        
+code0309
 call            @Func_154c
 code0479        1, 0, 12
 call            @Func_1582
 dialogtxt       "That Is True."
 dialogtxt       "They May Be Related."
-code0309        
+code0309
 call            @Func_15b8
 code043c        0, 4
 code0479        0, 2, 15
@@ -130,7 +130,7 @@ dialogtxt       "We're gonna get Murno back!"
 goto            @Label_05b8
 
 @Label_05b8:
-code0309        
+code0309
 call            @Func_154c
 code043c        1, 2
 code0479        1, 5, 12
@@ -143,12 +143,12 @@ jumpz           @Cond_0918, ($b003 == 1)
 dialogtxt       "That unpleasant feeling is growing."
 dialogtxt       "Any average Summon Beast would"
 dialogtxt       "already have gone mad."
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 2, 14
 dialogtxt       "We are most likely closing"
 dialogtxt       "in on the source."
-code0309        
+code0309
 call            @Func_15b8
 code0479        0, 0, 14
 call            @Func_1516
@@ -165,14 +165,14 @@ dialogtxt       "labyrinth in Louise Village."
 goto            @Label_079e
 
 @Label_079e:
-code0309        
+code0309
 call            @Func_154c
 code0479        1, 2, 12
 call            @Func_1582
 dialogtxt       "Oh, so you noticed."
 dialogtxt       "The two places may be"
 dialogtxt       "related in some manner."
-code0309        
+code0309
 call            @Func_15b8
 code043c        0, 4
 code0479        0, 2, 15
@@ -190,7 +190,7 @@ dialogtxt       "We're gonna get Murno back!"
 goto            @Label_08de
 
 @Label_08de:
-code0309        
+code0309
 call            @Func_154c
 code043c        1, 2
 code0479        1, 2, 13
@@ -203,12 +203,12 @@ jumpz           @Cond_0c28, ($b003 == 2)
 dialogtxt       "Tch… You're dull."
 dialogtxt       "That unpleasant feeling is growing."
 dialogtxt       "An average Summon would go mad."
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 3, 14
 dialogtxt       "We must be getting close"
 dialogtxt       "to the source…"
-code0309        
+code0309
 call            @Func_15b8
 code0479        0, 0, 14
 call            @Func_1516
@@ -225,14 +225,14 @@ dialogtxt       "labyrinth in Louise Village."
 goto            @Label_0aaa
 
 @Label_0aaa:
-code0309        
+code0309
 call            @Func_154c
 code0479        1, 2, 16
 call            @Func_1582
 dialogtxt       "You just noticed?"
 dialogtxt       "They're so similar,"
 dialogtxt       "they may be related somehow."
-code0309        
+code0309
 call            @Func_15b8
 code043c        0, 4
 code0479        0, 2, 15
@@ -250,7 +250,7 @@ dialogtxt       "We're gonna get Murno back!"
 goto            @Label_0bec
 
 @Label_0bec:
-code0309        
+code0309
 call            @Func_154c
 code043c        1, 2
 code0479        1, 3, 12
@@ -263,11 +263,11 @@ jumpz           @Cond_0f26, ($b003 == 3)
 dialogtxt       "Urgh…"
 dialogtxt       "That unpleasant feeling is growing."
 dialogtxt       "I can't let my guard down…"
-code0309        
+code0309
 code0479        1, 2, 14
 dialogtxt       "With this strength,"
 dialogtxt       "we must be close to the source."
-code0309        
+code0309
 call            @Func_15b8
 code0479        0, 0, 14
 call            @Func_1516
@@ -284,13 +284,13 @@ dialogtxt       "labyrinth in Louise Village."
 goto            @Label_0db6
 
 @Label_0db6:
-code0309        
+code0309
 call            @Func_154c
 code0479        1, 2, 16
 call            @Func_1582
 dialogtxt       "Now that you mention it…"
 dialogtxt       "Are they connected somehow?"
-code0309        
+code0309
 call            @Func_15b8
 code043c        0, 4
 code0479        0, 2, 15
@@ -308,7 +308,7 @@ dialogtxt       "We're gonna get Murno back!"
 goto            @Label_0eec
 
 @Label_0eec:
-code0309        
+code0309
 call            @Func_154c
 code043c        1, 2
 code0479        1, 2, 12
@@ -317,52 +317,52 @@ dialogtxt       "Yes!"
 goto            @Cond_0f26
 
 @Cond_0f26:
-code0309        
+code0309
 call            @Func_1652
 call            @Func_15a0
-code047b        
+code047b
 code040d        10
 code0489        0, 2, 8
-code0492        
+code0492
 code043c        0, 1
 code046e        25, 256, 2
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -377,7 +377,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -388,13 +388,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_12bc, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -476,66 +476,65 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_14f6
 
 @Label_14f6:
-ret             
+ret
 
 @Func_14f8:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_1516:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_154c:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_1582:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_15a0:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_15b8:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_15d0:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_15e6:
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_1652:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

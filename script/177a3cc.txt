@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 170, 172, 175
 code0410        1, 170, 173, -1
 code0410        2, 171, 174, -1
-code0411        
+code0411
 code0430        176
 code0412        4, 1
 code0418        2
@@ -27,7 +27,7 @@ goto            @Label_016a
 @Cond_013a:
 jumpz           @Label_016a, ($h319 == 110)
 code041c        1, 448, 319, 3
-code0475        
+code0475
 goto            @Label_016a
 
 @Label_016a:
@@ -38,7 +38,7 @@ mapevpos        1, (4,0)-(13,2)
 mapev           2, @Event_02cc, 4
 mapevpos        2, (52,40)-(59,40)
 setvar          $h319, 35
-code0409        
+code0409
 jumpz           @Cond_0230, ($f0035 == 1)
 code046e        38, 256, 0
 goto            @Label_0248
@@ -48,28 +48,28 @@ code046e        15, 256, 0
 goto            @Label_0248
 
 @Label_0248:
-code041d        
+code041d
 placetxt        "Prosban　South Gate Park"
-code040b        
+code040b
 
 @Event_0268:
 setvar          $h096, 32
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1135 ; map 1779cfc
 
 @Event_029a:
 setvar          $h096, 32
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1137 ; map 177a8bc
 
 @Event_02cc:
 setvar          $h096, 32
 setvar          $h315, 2
-code04a3        
+code04a3
 jumpz           @Cond_0316, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -78,63 +78,63 @@ goto            @Cond_0316
 @Cond_0316:
 jumpz           @Cond_0330, ($h101 == 1)
 call            @Func_08fa
-code040b        
+code040b
 
 goto            @Cond_0330
 
 @Cond_0330:
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3181 ; map 189731c
 
 @Label_0356:
 code0006        21
-code040b        
+code040b
 
 @Label_0360:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -149,7 +149,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -160,13 +160,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_06be, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -248,35 +248,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_08f8
 
 @Label_08f8:
-ret             
+ret
 
 @Func_08fa:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -289,7 +289,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0afc:
 code0438        16, 405, 645, 1
@@ -312,11 +312,11 @@ code0442        18, @Talk_0d2a
 code0444        18, -1
 mapev           20, @Event_0d4e, 32
 mapevpos        20, (54,17)-(57,17)
-ret             
+ret
 
 @Talk_0c66:
 code0006        3914
-code040b        
+code040b
 
 @Talk_0c70:
 code0301        8, 7
@@ -324,27 +324,26 @@ code047d        0, 120
 code047e        0, 1
 dialogtxt       "It seems the kid who beat"
 dialogtxt       "Red Wing is around here."
-code0309        
+code0309
 dialogtxt       "By now, they've turned into a demon,"
 dialogtxt       "no longer recognizable as"
 dialogtxt       "a human child. Or so I heard."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0d2a:
 code0301        8, 7
 dialogtxt       "Miiii…"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_0d4e:
 code0301        8, 7
 dialogtxt       "　　　The Founder Of This City,"
 dialogtxt       "　　　Our Hero Prosban"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

@@ -15,8 +15,8 @@ call            @Func_0c48
 dialogtxt       "Well then, it's time"
 dialogtxt       "to craft a weapon."
 dialogtxt       "When you're using the forge..."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0c9c
 call            @Func_0bfa
 code0479        0, 2, 12
@@ -25,22 +25,22 @@ dialogtxt       "Right?"
 goto            @Label_0186
 
 @Label_0186:
-code0309        
+code0309
 call            @Func_0c30
 call            @Func_0c66
 code0479        1, 0, 13
 dialogtxt       "That's right."
 dialogtxt       "Do it properly,"
 dialogtxt       "so you don't hurt yourself."
-code0309        
+code0309
 call            @Func_0c9c
 call            @Func_0bfa
 code0479        0, 2, 13
 dialogtxt       "Right!"
-code0309        
+code0309
 call            @Func_0d36
 call            @Func_0c18
-code047b        
+code047b
 code043e        2, 6, 0
 walkto          2, 144, 120, 1
 walkwait        2
@@ -59,11 +59,11 @@ code047e        0, 1
 dialogtxt       "The first step to craft a weapon..."
 dialogtxt       "You need to put the"
 dialogtxt       "materials into a furnace."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0d0a
 call            @Func_0c18
-code047b        
+code047b
 code031b        7, -62, -16, 0, 60
 code031c        7, 1
 code0321        7, 30
@@ -73,15 +73,15 @@ code0305        1
 dialogtxt       "Approach the furnace,"
 dialogtxt       "then press the A button to open"
 dialogtxt       "the menu and select Create."
-code0309        
+code0309
 dialogtxt       "Choose a Shapestone for the base,"
 dialogtxt       "add the synthesis material,"
 dialogtxt       "and you're done."
-code0309        
+code0309
 dialogtxt       "Shapestones determine weapon type,"
 dialogtxt       "while the synthesis material"
 dialogtxt       "determines strength and appearance."
-code0309        
+code0309
 code0302        9
 code0320        7, 2
 code031d        7, 0
@@ -92,8 +92,8 @@ call            @Func_0cb4
 call            @Func_0bdc
 dialogtxt       "Alright!"
 dialogtxt       "Perfect!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0c30
 code0479        1, 2, 13
 call            @Func_0cca
@@ -101,65 +101,65 @@ call            @Func_0c66
 dialogtxt       "Now throw it all into the furnace!"
 dialogtxt       "Use your hammer to infuse your soul"
 dialogtxt       "into it, and shape it into a weapon!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0c9c
 code043c        0, 1
 call            @Func_0bfa
 code0479        0, 2, 15
 dialogtxt       "Yes!"
-code0309        
+code0309
 call            @Func_0c30
 call            @Func_0c66
 code0479        1, 0, 15
 dialogtxt       "Put your spirit into it!"
-code0309        
+code0309
 call            @Func_0c9c
 call            @Func_0bfa
 code0479        0, 2, 17
 dialogtxt       "Yeah!"
-code0309        
+code0309
 call            @Func_0d36
 call            @Func_0c18
-code047b        
+code047b
 code043c        0, 3
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -174,7 +174,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -185,13 +185,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_09a0, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -273,69 +273,68 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0bda
 
 @Label_0bda:
-ret             
+ret
 
 @Func_0bdc:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0bfa:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0c18:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0c30:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0c48:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0c66:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0c9c:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_0cb4:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_0cca:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0ce0:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0d0a:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0d36:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

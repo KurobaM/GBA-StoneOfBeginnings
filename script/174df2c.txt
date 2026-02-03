@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 42, 43, -1
 code0410        1, 42, 44, -1
 code0410        2, 42, 45, -1
-code0411        
+code0411
 code0430        46
 code0412        4, 1
 code0418        2
@@ -27,7 +27,7 @@ goto            @Label_0168
 @Cond_0138:
 jumpz           @Label_0168, ($h319 == 60)
 code041c        2, 128, 112, 1
-code0475        
+code0475
 goto            @Label_0168
 
 @Label_0168:
@@ -44,30 +44,30 @@ goto            @Cond_024a
 
 @Cond_024a:
 setvar          $h319, 3
-code0409        
+code0409
 code046e        13, 256, 0
-code041d        
+code041d
 placetxt        "Deckell Village　Mine Entrance"
-code040b        
+code040b
 
 @Event_028c:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         701 ; map 174cfac
 
 @Event_02be:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         705 ; map 174e3bc
 
 @Event_02f0:
 setvar          $h096, 32
 setvar          $h315, 0
-code04a3        
+code04a3
 jumpz           @Cond_033a, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -76,68 +76,68 @@ goto            @Cond_033a
 @Cond_033a:
 jumpz           @Cond_0354, ($h101 == 1)
 call            @Func_0986
-code040b        
+code040b
 
 goto            @Cond_0354
 
 @Cond_0354:
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3031 ; map 188ddcc
 
 @Label_037a:
 code0006        21
-code040b        
+code040b
 
 @Label_0384:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_0398:
 setvar          $bv048, ($bv048 | 0x0001)
 code0461        3
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -152,7 +152,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -163,13 +163,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_06fe, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -251,35 +251,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0938
 
 @Label_0938:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_0986:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -292,7 +292,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0b3c:
 code0438        16, 362, 632, 1
@@ -301,7 +301,7 @@ code043d        16, 136, 196
 code043c        16, 1
 code0442        16, @Talk_0ba6
 code0444        16, -1
-ret             
+ret
 
 @Talk_0ba6:
 code0301        8, 7
@@ -310,11 +310,10 @@ code047e        0, 1
 dialogtxt       "I wonder, is a Craftknight really"
 dialogtxt       "able to craft bows and drills"
 dialogtxt       "using a hammer?"
-code0309        
+code0309
 dialogtxt       "What's so fun about doing"
 dialogtxt       "something so bothersome?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

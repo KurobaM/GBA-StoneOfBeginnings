@@ -10,12 +10,12 @@ code040d        30
 code047f        222
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code047d        0, 108
 code0301        16, 3
 code047e        0, 1
 dialogtxt       "That was some sigh."
-code0309        
+code0309
 code047e        0, 0
 code0302        3
 code040d        15
@@ -47,14 +47,14 @@ call            @Func_1180
 code0479        0, 4, 16
 call            @Func_107c
 dialogtxt       "Ah, Master…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_10d0
 code0479        1, 1, 13
 call            @Func_1106
 dialogtxt       "What's the matter?"
 dialogtxt       "Running from your popularity?"
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 2, 15
 call            @Func_109a
@@ -71,14 +71,14 @@ dialogtxt       "through all this trouble!"
 goto            @Label_03ce
 
 @Label_03ce:
-code0309        
+code0309
 call            @Func_10d0
 code0479        1, 2, 15
 call            @Func_1106
 dialogtxt       "Don't drag me into it!"
 dialogtxt       "A first-rate Craftknight should"
 dialogtxt       "be able to deal with this much!"
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 2, 15
 call            @Func_109a
@@ -93,30 +93,30 @@ dialogtxt       "have to do with this!?"
 goto            @Label_04ca
 
 @Label_04ca:
-code0309        
+code0309
 call            @Func_10d0
 code0479        1, 2, 12
 call            @Func_1106
 dialogtxt       "That should go without saying."
 dialogtxt       "The best Craftknights are popular."
 dialogtxt       "They're cool, after all."
-code0309        
+code0309
 code0479        0, 0, 16
 code0479        1, 1, 13
 dialogtxt       "Rob was really popular too."
 dialogtxt       "Girls were drawn to him"
 dialogtxt       "like moths to a flame!"
-code0309        
+code0309
 code0479        1, 0, 16
 dialogtxt       "But he wasn't shocked"
 dialogtxt       "speechless like you are now."
-code0309        
+code0309
 call            @Func_113c
 jumpz           @Cond_064a, ($b002 == 0)
 code0479        0, 0, 14
 call            @Func_109a
 dialogtxt       "A-and? So what?"
-code0309        
+code0309
 call            @Func_10d0
 goto            @Label_070a
 
@@ -124,18 +124,18 @@ goto            @Label_070a
 code0479        0, 4, 12
 call            @Func_109a
 dialogtxt       "But I'm a girl…"
-code0309        
+code0309
 call            @Func_10d0
 code0479        1, 2, 12
 call            @Func_1106
 dialogtxt       "That's beside the point!"
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 1, 16
 call            @Func_109a
 dialogtxt       "Okay, okay."
 dialogtxt       "So, what did Master Rob do?"
-code0309        
+code0309
 call            @Func_10d0
 goto            @Label_070a
 
@@ -144,37 +144,37 @@ code0479        1, 0, 12
 call            @Func_1106
 dialogtxt       "Nothing."
 dialogtxt       "He didn't change."
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 0, 16
 call            @Func_109a
 dialogtxt       "Really?"
-code0309        
+code0309
 call            @Func_10d0
 code0479        1, 1, 13
 call            @Func_1106
 dialogtxt       "And finally, everyone realized."
 dialogtxt       "The fact that… I was the"
 dialogtxt       "only one he had eyes for."
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 0, 13
 call            @Func_109a
 dialogtxt       "How cool…"
-code0309        
+code0309
 call            @Func_10d0
 code0479        1, 2, 13
 call            @Func_1106
 dialogtxt       "Such a man fell for me,"
 dialogtxt       "meaning I must be an"
 dialogtxt       "expert Craftknight too, right?"
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 4, 12
 call            @Func_109a
 dialogtxt       "Hmmm…"
 dialogtxt       "Really…?"
-code0309        
+code0309
 call            @Func_10d0
 call            @Func_1106
 jumpz           @Cond_0912, ($b002 == 0)
@@ -190,13 +190,13 @@ dialogtxt       "be a great Craftknight."
 goto            @Label_0958
 
 @Label_0958:
-code0309        
+code0309
 call            @Func_113c
 code0479        0, 5, 16
 call            @Func_109a
 dialogtxt       "Oh…"
 dialogtxt       "I see."
-code0309        
+code0309
 call            @Func_10d0
 code0479        1, 0, 13
 call            @Func_1106
@@ -213,7 +213,7 @@ dialogtxt       "I would fall for you!"
 goto            @Label_0a56
 
 @Label_0a56:
-code0309        
+code0309
 call            @Func_113c
 jumpz           @Cond_0aa4, ($b002 == 0)
 code0479        0, 2, 13
@@ -230,50 +230,50 @@ dialogtxt       "I'll do my best!"
 goto            @Label_0adc
 
 @Label_0adc:
-code0309        
+code0309
 call            @Func_11d6
 call            @Func_10b8
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 @Func_0af8:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_0b38:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -288,7 +288,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -299,13 +299,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0e40, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -387,65 +387,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_107a
 
 @Label_107a:
-ret             
+ret
 
 @Func_107c:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_109a:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_10b8:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_10d0:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_1106:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_113c:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_1180:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_11d6:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

@@ -3,7 +3,7 @@ code0408        1
 code0410        0, -1, -1, -1
 code0410        1, -1, -1, -1
 code0410        2, 101, 102, -1
-code0411        
+code0411
 code0430        103
 code0412        2, 1
 code0418        2
@@ -23,7 +23,7 @@ code048a        0, 160
 goto            @Label_0120
 
 @Label_0120:
-code0409        
+code0409
 jumpz           @Cond_014a, ($h311 != 10)
 code046e        29, 256, 0
 goto            @Cond_014a
@@ -44,7 +44,7 @@ code048b        0, 48, 16
 goto            @Label_01c8
 
 @Label_01c8:
-code048c        
+code048c
 code040d        60
 setvar          $h136, 0
 setvar          $h137, 60
@@ -65,7 +65,7 @@ code048a        0, 160
 goto            @Label_0252
 
 @Label_0252:
-code0409        
+code0409
 code046e        29, 256, 0
 setvar          $h137, 60
 call            @Func_10ae
@@ -82,7 +82,7 @@ code048b        0, 48, 16
 goto            @Label_02e6
 
 @Label_02e6:
-code048c        
+code048c
 code040d        60
 setvar          $h139, 61
 setvar          $h140, -16
@@ -169,14 +169,14 @@ dialogtxt       "    Misfortune befalls those who    "
 dialogtxt       "   possess Govan's Demon Stone...   "
 code030a        6, 1
 dialogtxt       "       That's what Murno said.      "
-dialogtxt       "     Just what is that thing...?    "   
+dialogtxt       "     Just what is that thing...?    "
 dialogtxt       "   Maybe it affected Murno too...?  "
 code030a        6, 1
 goto            @Label_1048
 
 @Cond_09c6:
 jumpz           @Cond_0bd4, ($h311 == 3)
-dialogtxt       "         Those two men...        " 
+dialogtxt       "         Those two men...        "
 dialogtxt       "  Murno's enemies, they said...  "
 dialogtxt       " I wonder who they really are... "
 code030a        6, 1
@@ -238,7 +238,7 @@ goto            @Label_0eba
 dialogtxt       "I don't know, but it seems like   "
 dialogtxt       "   Murno will remain in town...   "
 code030a        6, 1
-dialogtxt       " I wonder what expression was on  "  
+dialogtxt       " I wonder what expression was on  "
 dialogtxt       "   my face when I found out...    "
 goto            @Label_0eba
 
@@ -281,46 +281,46 @@ goto            @Label_104c
 code0304        0
 code031d        7, 0
 code031f        7
-code040a        
-done            
+code040a
+done
 
 @Func_106e:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_10ae:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -335,7 +335,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -346,13 +346,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_13b6, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -434,5 +434,4 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_15f0
 
 @Label_15f0:
-ret             
-
+ret

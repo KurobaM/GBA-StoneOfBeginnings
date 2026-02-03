@@ -10,12 +10,12 @@ code040d        30
 code047f        228
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code047d        0, 109
 code0301        16, 3
 code047e        0, 1
 dialogtxt       "Ah, [NAME 2]!"
-code0309        
+code0309
 code047e        0, 0
 code0302        3
 code040d        15
@@ -45,50 +45,50 @@ code047d        1, 109
 call            @Func_0e1c
 call            @Func_0d84
 dialogtxt       "How are you feeling?"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 0, 13
 call            @Func_0d36
 dialogtxt       "What's this about?"
-code0309        
+code0309
 call            @Func_0d6c
 code0479        1, 2, 15
 call            @Func_0da2
 dialogtxt       "I mean, they did horrible"
 dialogtxt       "things to you, didn't they!?"
 dialogtxt       "Are you injured?"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 4, 12
 call            @Func_0d36
 dialogtxt       "Ah, that…"
 dialogtxt       "I'm fine."
 dialogtxt       "Physically."
-code0309        
+code0309
 call            @Func_0d6c
 code0479        1, 2, 17
 call            @Func_0da2
 dialogtxt       "Eh!?"
 dialogtxt       "Physically!?"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 4, 16
 call            @Func_0d36
 dialogtxt       "Um…, this really creepy guy"
 dialogtxt       "bear hugged me and…"
 dialogtxt       "I don't want to talk about it…"
-code0309        
+code0309
 call            @Func_0d6c
 code0479        1, 5, 15
 call            @Func_0da2
 dialogtxt       "Whwhwh-what!"
 dialogtxt       "Ah, I got it!"
 dialogtxt       "That man…, er… woman…"
-code0309        
+code0309
 code0479        1, 2, 15
 dialogtxt       "No, that man!"
 dialogtxt       "They defiled my [NAME 2]…"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 1, 15
 call            @Func_0d36
@@ -101,94 +101,94 @@ dialogtxt       "Stop talking like that!"
 goto            @Label_0546
 
 @Label_0546:
-code0309        
+code0309
 call            @Func_0d6c
 code0479        1, 4, 12
 call            @Func_0da2
 dialogtxt       "Poor [NAME 2]…"
 dialogtxt       "But don't worry."
 dialogtxt       "I won't grow to hate you"
-code0309        
+code0309
 code0479        1, 0, 13
 dialogtxt       "over something like that…"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 4, 12
 call            @Func_0d36
 dialogtxt       "I don't know if I should"
 dialogtxt       "be happy or not…"
-code0309        
+code0309
 call            @Func_0d6c
 code0479        1, 4, 12
 call            @Func_0da2
 dialogtxt       "It's okay, [NAME 2]."
 dialogtxt       "You don't have to hold back…"
 dialogtxt       "Here, come…"
-code0309        
+code0309
 code0479        1, 10, 12
 dialogtxt       "Fall into my arms…"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 7, 15
 call            @Func_0d36
 dialogtxt       "Th-thanks, Tier."
 dialogtxt       "Your feelings alone are"
 dialogtxt       "more than enough."
-code0309        
+code0309
 call            @Func_0d6c
 code0479        1, 11, 12
 call            @Func_0da2
 dialogtxt       "Oh [NAME 2],"
 dialogtxt       "you really are strong…"
-code0309        
+code0309
 call            @Func_0dd8
 code0479        0, 1, 16
 call            @Func_0d36
 dialogtxt       "I wonder why…"
-code0309        
+code0309
 call            @Func_0e72
 call            @Func_0d54
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 @Func_0794:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_07d4:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -203,7 +203,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -214,13 +214,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0adc, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -302,65 +302,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0d16
 
 @Label_0d16:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0d36:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0d54:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0d6c:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0d84:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0da2:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0dd8:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0e1c:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0e72:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

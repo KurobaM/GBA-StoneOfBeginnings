@@ -7,8 +7,8 @@ jumpz           @Cond_010a, ($b002 == 0)
 dialogtxt       "But still, I never expected"
 dialogtxt       "I'd have to go 1 on 1"
 dialogtxt       "against Tram."
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 4, 12
 dialogtxt       "Speaking of which,"
 dialogtxt       "no one knows what we're up to."
@@ -19,8 +19,8 @@ goto            @Label_01cc
 dialogtxt       "But still, I never expected"
 dialogtxt       "I'd have to go 1 on 1"
 dialogtxt       "against Tram."
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 4, 12
 dialogtxt       "Speaking of which,"
 dialogtxt       "no one knows what we're up to."
@@ -28,17 +28,17 @@ dialogtxt       "They must be worried…"
 goto            @Label_01cc
 
 @Label_01cc:
-code0309        
+code0309
 code0479        0, 4, 17
 dialogtxt       "I wonder how everyone"
 dialogtxt       "is doing right now…"
 dialogtxt       "Sigh…"
-code0309        
+code0309
 code0479        0, 4, 12
 choicetxt       @Choice_0290, "I want to eat Master's stew."
 choicetxt       @Choice_02a0, "I want to see Bro's scary face."
 choicetxt       @Choice_02b0, "I wonder how Tier's doing?"
-choicewait      
+choicewait
 
 @Choice_0290:
 setvar          $f0270, 1
@@ -53,7 +53,7 @@ setvar          $f0272, 1
 @Label_02bc:
 call            @Func_0a34
 call            @Func_0942
-code047b        
+code047b
 code033a        382, 0
 code033e        382
 code040d        15
@@ -65,15 +65,15 @@ call            @Func_09de
 call            @Func_0906
 dialogtxt       "Is someone there…?"
 dialogtxt       "It looks like…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0a34
 call            @Func_0942
-code047b        
-code0312        
+code047b
+code0312
 menutxt         @Menu_0368, "Murno"
 menutxt         @Menu_0374, "[NAME 1]"
-menuwait        
+menuwait
 
 @Menu_0368:
 code0006        2292
@@ -84,43 +84,43 @@ code0006        2293
 goto            @Label_0380
 
 @Label_0380:
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -135,7 +135,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -146,13 +146,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_06ca, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -234,61 +234,60 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0904
 
 @Label_0904:
-ret             
+ret
 
 @Func_0906:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0942:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_09de:
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0a34:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

@@ -8,7 +8,7 @@ setvar          $h313, ($h313 + $f1130)
 jumpz           @Cond_00e2, ($h313 < 2)
 code0301        8, 7
 dialogtxt       "No available places to travel to."
-code0309        
+code0309
 code0302        7
 goto            @Label_0464
 
@@ -48,7 +48,7 @@ goto            @Cond_022a
 
 @Cond_022a:
 menutxt         @Label_0464, "Quit"
-menuwait        
+menuwait
 
 @Menu_0238:
 call            @Func_0474
@@ -157,10 +157,10 @@ goto            @Label_0578
 setvar          $h096, 48
 setvar          $h319, -1
 code041c        24, 0, 0, -1
-code041d        
-code040a        
-code0332        
-code0330        
+code041d
+code040a
+code0332
+code0330
 code0470        544, 799, 0
 setvar          $f1156, 0
 setvar          $f1157, 0
@@ -177,8 +177,7 @@ setvar          $f1179, 0
 setvar          $f1180, 0
 setvar          $f1181, 0
 setvar          $f1182, 0
-ret             
+ret
 
 @Label_0578:
-done            
-
+done

@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 86, 87, 90
 code0410        1, 86, 88, -1
 code0410        2, 86, 89, 91
-code0411        
+code0411
 code0430        92
 code0412        4, 1
 code0418        2
@@ -35,23 +35,23 @@ mapevpos        1, (26,4)-(27,4)
 mapev           2, @Event_0298, 32
 mapevpos        2, (15,17)-(16,18)
 setvar          $h319, 10
-code0409        
+code0409
 code046e        28, 256, 0
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_0234:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1501 ; map 17ace6c
 
 @Event_0266:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1512 ; map 17b047c
 
 @Event_0298:
@@ -59,7 +59,7 @@ code043e        2, 3, 0
 @Label_02ac:
 jumpz           @Cond_04be, 1
 code0350        0, 99
-code0351        
+code0351
 jumpz           @Cond_02de, ($b068 == -1)
 goto            @Cond_04be
 
@@ -67,14 +67,14 @@ goto            @Label_04ba
 
 @Cond_02de:
 setvar          $h096, 63
-code040a        
-code0352        
+code040a
+code0352
 setvar          $b097, 0
 code0408        0
 code0410        0, 86, 87, 90
 code0410        1, 86, 88, -1
 code0410        2, 86, 89, 91
-code0411        
+code0411
 code0430        92
 code0412        4, 1
 code0418        2
@@ -94,7 +94,7 @@ mapev           1, @Event_0266, 4
 mapevpos        1, (26,4)-(27,4)
 mapev           2, @Event_0298, 32
 mapevpos        2, (15,17)-(16,18)
-code0409        
+code0409
 code043e        2, 3, 0
 goto            @Label_04ba
 
@@ -103,55 +103,55 @@ goto            @Label_02ac
 
 @Cond_04be:
 code043e        2, 0, 0
-code040b        
+code040b
 
 @Label_04d4:
 code0006        21
-code040b        
+code040b
 
 @Label_04de:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -166,7 +166,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -177,13 +177,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_083c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -265,34 +265,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a76
 
 @Label_0a76:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -305,7 +305,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0c7a:
 code0438        16, 363, 632, 1
@@ -320,7 +320,7 @@ code043d        17, 144, 176
 code043c        17, 2
 code0442        17, @Talk_0e1e
 code0444        17, -1
-ret             
+ret
 
 @Talk_0d4c:
 code0301        8, 7
@@ -329,14 +329,14 @@ code047e        0, 1
 dialogtxt       "You youngsters bring about a"
 dialogtxt       "promising new era, indeed."
 dialogtxt       "The years are getting to me…"
-code0309        
+code0309
 dialogtxt       "No, that's not it!"
 dialogtxt       "Argh, no matter what I say,"
 dialogtxt       "they they wouldn't listen!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0e1e:
 code0301        8, 7
@@ -345,20 +345,20 @@ code047e        0, 1
 dialogtxt       "You're so amazing! I never would've"
 dialogtxt       "thought you're a Craftknight!"
 dialogtxt       "You didn't seem like one to me."
-code0309        
+code0309
 jumpz           @Cond_1a80, ($f1267 == 0)
 dialogtxt       "Though I can see why you wouldn't"
 dialogtxt       "brag about being one when you're"
 dialogtxt       "busy honing your skills, and all."
-code0309        
+code0309
 dialogtxt       "Speaking of! Since"
 dialogtxt       "you're a skilled Craftknight, care"
 dialogtxt       "to show me your Crafting Rank?"
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_0f5c, "Tell her."
 choicetxt       @Choice_1a88, "Don't tell her."
-choicewait      
+choicewait
 
 @Choice_0f5c:
 code0302        7
@@ -371,21 +371,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, my goodness! Your Sword"
 dialogtxt       "Rank is the highest there is!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Sword Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        526, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate Sword Manual\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"Lemmy\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_110c
 
@@ -397,21 +397,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, my goodness! Your Axe"
 dialogtxt       "Rank is the highest there is!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Axe Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        524, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate Axe Manual\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"V.E\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_129e
 
@@ -423,21 +423,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "This is shocking! Your Spear"
 dialogtxt       "Rank is the highest there is!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Spear Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        528, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate Spear Manual\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"Anise\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_1432
 
@@ -449,21 +449,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "How wonderful! Your Knuckles"
 dialogtxt       "Rank is the highest there is!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Knuckle Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        525, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate Knuckle Manual\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"Jade\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_15ca
 
@@ -475,21 +475,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "This is a shocker! Your Drill"
 dialogtxt       "Rank is the highest there is!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Drill Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        530, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate Drill Manual\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"Bostaph\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_1760
 
@@ -501,21 +501,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Whaaaat!? Your Bow"
 dialogtxt       "Rank is the highest there is!"
-code0309        
+code0309
 dialogtxt       "Here! This is for you, the"
 dialogtxt       "\"Ultimate Bow Manual\"!"
 dialogtxt       "Please put it to good use!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0366        527, 1
-code0367        
+code0367
 code0301        0, 7
 code0305        1
 dialogtxt       "Having the \"Ultimate Bow Manual\""
 dialogtxt       "in your inventory while saving lets"
 dialogtxt       "you unlock \"Tier\" in Bonus Mode!"
-code0309        
+code0309
 code0302        7
 goto            @Cond_18ec
 
@@ -533,7 +533,7 @@ code047e        0, 1
 dialogtxt       "Goodness, you haven't mastered any"
 dialogtxt       "weapon yet, have you? That won't"
 dialogtxt       "do! You need to work harder!"
-code0309        
+code0309
 goto            @Label_1ac4
 
 goto            @Label_1a7c
@@ -544,7 +544,7 @@ code047e        0, 1
 dialogtxt       "You could at least pass as a"
 dialogtxt       "decent Craftknight, I think…"
 dialogtxt       "Make sure to keep improving!"
-code0309        
+code0309
 goto            @Label_1ac4
 
 goto            @Label_1a7c
@@ -562,10 +562,9 @@ code047e        0, 1
 dialogtxt       "…Oh, that's too bad…"
 dialogtxt       "Well, you could always give it"
 dialogtxt       "another shot next time!"
-code0309        
+code0309
 @Label_1ac4:
 code047e        0, 0
 code0302        7
 @Label_1ada:
-code040b        
-
+code040b

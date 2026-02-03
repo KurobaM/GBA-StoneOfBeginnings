@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 154, 156, 159
 code0410        1, 154, 157, -1
 code0410        2, 155, 158, 160
-code0411        
+code0411
 code0430        161
 code0412        4, 1
 code0418        2
@@ -26,7 +26,7 @@ goto            @Label_0160
 @Cond_0130:
 jumpz           @Label_0160, ($h319 == 100)
 code041c        3, 728, 228, 1
-code0475        
+code0475
 goto            @Label_0160
 
 @Label_0160:
@@ -37,23 +37,23 @@ mapevpos        1, (89,27)-(92,27)
 mapev           2, @Event_0336, 8
 mapevpos        2, (75,12)-(76,12)
 setvar          $h319, 33
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
+code041d
 placetxt        "Prosban　Mining District"
-code040b        
+code040b
 
 @Event_0230:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1232 ; map 17876ac
 
 @Event_0262:
 setvar          $h096, 32
 setvar          $h315, 2
-code04a3        
+code04a3
 jumpz           @Cond_02ac, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -62,7 +62,7 @@ goto            @Cond_02ac
 @Cond_02ac:
 jumpz           @Cond_02c6, ($h101 == 1)
 call            @Func_09e4
-code040b        
+code040b
 
 goto            @Cond_02c6
 
@@ -71,9 +71,9 @@ code0419        0, 2, 1, 89, 23, 0
 code033a        110, 0
 code041b        0
 code041c        19, 728, 208, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         3151 ; map 18955ec
 
 @Event_0336:
@@ -81,66 +81,66 @@ code0301        0, 7
 code0305        1
 dialogtxt       "　"
 dialogtxt       "　　　　　　　Closed today!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 setvar          $h096, 32
 code0419        0, 2, 0, 74, 9, 0
 code033a        110, 0
 code041b        0
 code041c        19, 608, 96, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1248 ; map 178c2cc
 
 code0006        1291
-code040b        
+code040b
 
 @Label_03fe:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -155,7 +155,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -166,13 +166,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_075c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -254,35 +254,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0996
 
 @Label_0996:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_09e4:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -295,7 +295,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0b9a:
 code0438        16, 405, 645, 1
@@ -312,7 +312,7 @@ code0442        17, @Talk_0cfa
 code0444        17, -1
 mapev           20, @Event_0d6a, 32
 mapevpos        20, (82,15)-(82,17)
-ret             
+ret
 
 @Talk_0c9c:
 code0301        8, 7
@@ -320,10 +320,10 @@ code047d        0, 118
 code047e        0, 1
 dialogtxt       "I feel uneasy about"
 dialogtxt       "you going out alone…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0cfa:
 code0301        8, 7
@@ -331,17 +331,16 @@ code047d        0, 123
 code047e        0, 1
 dialogtxt       "Hrmmm…"
 dialogtxt       "Hey, do you know any fun games?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_0d6a:
 code0301        8, 7
 dialogtxt       "We offer the best experience"
 dialogtxt       "only to select customers!"
 dialogtxt       "Want to give the lottery a try?"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

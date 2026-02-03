@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 154, 156, 159
 code0410        1, 154, 157, -1
 code0410        2, 155, 158, 160
-code0411        
+code0411
 code0430        161
 code0412        4, 1
 code0418        2
@@ -31,7 +31,7 @@ goto            @Label_01b6
 @Cond_0186:
 jumpz           @Label_01b6, ($h319 == 100)
 code041c        3, 728, 228, 1
-code0475        
+code0475
 goto            @Label_01b6
 
 @Label_01b6:
@@ -54,37 +54,37 @@ goto            @Cond_02e6
 
 @Cond_02e6:
 setvar          $h319, 33
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
+code041d
 placetxt        "Prosban　Mining District"
-code040b        
+code040b
 
 @Event_0326:
 setvar          $f0092, 1
 code043e        0, 3, 0
 code0006        2061
 code0461        3
-code040b        
+code040b
 
 @Event_0358:
 setvar          $f0048, 1
 code043e        0, 3, 0
 code0006        2018
 code0461        4
-code040b        
+code040b
 
 @Event_038a:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         632 ; map 17464dc
 
 @Event_03bc:
 setvar          $h096, 32
 setvar          $h315, 2
-code04a3        
+code04a3
 jumpz           @Cond_0406, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -93,7 +93,7 @@ goto            @Cond_0406
 @Cond_0406:
 jumpz           @Cond_0420, ($h101 == 1)
 call            @Func_0b84
-code040b        
+code040b
 
 goto            @Cond_0420
 
@@ -102,9 +102,9 @@ code0419        0, 2, 1, 89, 23, 0
 code033a        110, 0
 code041b        0
 code041c        19, 728, 208, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         3151 ; map 18955ec
 
 @Event_0490:
@@ -113,19 +113,19 @@ code0419        0, 2, 0, 74, 9, 0
 code033a        110, 0
 code041b        0
 code041c        19, 608, 96, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         648 ; map 174b7cc
 
 @Label_050c:
 code0006        21
-code040b        
+code040b
 
 @Label_0516:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_052a:
@@ -134,48 +134,48 @@ code047d        0, 118
 code047e        0, 1
 dialogtxt       "Spoat Grotto is off limits."
 dialogtxt       "You can go gather in Lute Cave."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -190,7 +190,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -201,13 +201,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_08fc, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -289,35 +289,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0b36
 
 @Label_0b36:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_0b84:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -330,7 +330,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0d3a:
 code0438        16, 402, 648, 1
@@ -355,14 +355,14 @@ code0442        21, @Talk_0ee0
 goto            @Label_0e48
 
 @Label_0e48:
-ret             
+ret
 
 @Talk_0e4a:
 code0301        8, 7
 dialogtxt       "Meow~"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Talk_0e6e:
 code0301        8, 7
@@ -370,10 +370,10 @@ code047d        0, 120
 code047e        0, 1
 dialogtxt       "Only those with a Membership"
 dialogtxt       "Card may pass."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0ee0:
 code0301        8, 7
@@ -381,11 +381,10 @@ code047d        0, 120
 code047e        0, 1
 dialogtxt       "Sorry, but only VIPs can"
 dialogtxt       "pass through here."
-code0309        
+code0309
 dialogtxt       "But, if you have a Membership"
 dialogtxt       "Card, we might let you in."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

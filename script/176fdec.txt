@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 269, 271, 274
 code0410        1, 269, 272, -1
 code0410        2, 270, 273, 275
-code0411        
+code0411
 code0430        276
 code0412        4, 1
 code0418        2
@@ -53,14 +53,14 @@ goto            @Label_0286
 @Cond_0256:
 jumpz           @Label_0286, ($h319 == -3)
 code041c        11, 688, 320, 1
-code0475        
+code0475
 goto            @Label_0286
 
 @Label_0286:
 code0450        0, 1, -1
 code0452        0, 85, 35
 code0453        0, @Label_0724, 0
-code04a3        
+code04a3
 jumpz           @Cond_02f6, ($h101 != 1)
 code0420        0, 5, 19
 code0422        0, 0
@@ -85,16 +85,16 @@ mapevpos        4, (41,36)-(42,36)
 mapev           5, @Event_06a8, 8
 mapevpos        5, (75,14)-(76,14)
 setvar          $h319, 51
-code0409        
+code0409
 code046e        16, 256, 0
-code041d        
+code041d
 placetxt        "Louise Village　Neighborhood"
-code040b        
+code040b
 
 @Event_0478:
 setvar          $h096, 32
 setvar          $h315, 3
-code04a3        
+code04a3
 jumpz           @Cond_04c2, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -103,21 +103,21 @@ goto            @Cond_04c2
 @Cond_04c2:
 jumpz           @Cond_04dc, ($h101 == 1)
 call            @Func_0d1c
-code040b        
+code040b
 
 goto            @Cond_04dc
 
 @Cond_04dc:
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1063 ; map 177046c
 
 @Event_0502:
 setvar          $h096, 32
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1061 ; map 176f5ac
 
 @Event_0534:
@@ -126,9 +126,9 @@ code0419        0, 2, 0, 26, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 224, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1071 ; map 1771abc
 
 @Event_05b0:
@@ -137,9 +137,9 @@ code0419        0, 2, 0, 76, 33, 0
 code033a        109, 0
 code041b        0
 code041c        19, 624, 288, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1072 ; map 177226c
 
 @Event_062c:
@@ -148,9 +148,9 @@ code0419        0, 2, 0, 40, 33, 0
 code033a        109, 0
 code041b        0
 code041c        19, 336, 288, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1073 ; map 177260c
 
 @Event_06a8:
@@ -159,9 +159,9 @@ code0419        0, 2, 0, 74, 11, 0
 code033a        109, 0
 code041b        0
 code041c        19, 608, 112, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1074 ; map 1772a4c
 
 @Label_0724:
@@ -172,16 +172,16 @@ gotomap         $h100
 goto            @Cond_0748
 
 @Cond_0748:
-code040b        
+code040b
 
 @Label_074a:
 code0006        21
-code040b        
+code040b
 
 @Label_0754:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_0768:
@@ -193,45 +193,45 @@ goto            @start
 goto            @Cond_0794
 
 @Cond_0794:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -246,7 +246,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -257,13 +257,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0ae0, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -345,35 +345,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0d1a
 
 @Label_0d1a:
-ret             
+ret
 
 @Func_0d1c:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -386,7 +386,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0f1e:
 code0438        17, 379, 638, 1
@@ -417,7 +417,7 @@ code0444        20, -1
 goto            @Cond_10cc
 
 @Cond_10cc:
-ret             
+ret
 
 @Talk_10ce:
 code0301        8, 7
@@ -426,15 +426,15 @@ code047e        0, 1
 dialogtxt       "I wanna leave this musty old village"
 dialogtxt       "and head for the big city! But…"
 dialogtxt       "Sigh, village rules and all…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_115e:
 setvar          $bv031, 4
 code0006        3916
-code040b        
+code040b
 
 @Talk_1174:
 code0301        8, 7
@@ -444,15 +444,14 @@ dialogtxt       "Mr. Gallahan is a good person, "
 dialogtxt       "but ever since THAT happened,"
 dialogtxt       "he's been hard to approach."
 dialogtxt       "Well, that's to be expected."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_1220:
 code0301        8, 7
 dialogtxt       "Purr…"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

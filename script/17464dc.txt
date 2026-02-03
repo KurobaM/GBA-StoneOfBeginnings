@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 139, 141, 144
 code0410        1, 139, 142, -1
 code0410        2, 140, 143, 145
-code0411        
+code0411
 code0430        146
 code0412        4, 1
 code0418        2
@@ -94,17 +94,17 @@ mapevpos        8, (49,18)-(50,18)
 mapev           9, @Event_0824, 4
 mapevpos        9, (66,18)-(69,18)
 setvar          $h319, 31
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_04f6:
 setvar          $f0040, 1
 code043e        0, 3, 0
 code0006        2009
 code0461        5
-code040b        
+code040b
 
 @Event_0528:
 code043e        0, 3, 0
@@ -122,54 +122,54 @@ dialogtxt       "I have to follow Bro!"
 goto            @Label_05ca
 
 @Label_05ca:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_0e92
-code040b        
+code040b
 
 @Event_05e8:
 setvar          $f0047, 1
 code043e        0, 3, 0
 code0006        2016
 code0461        5
-code040b        
+code040b
 
 @Event_061a:
 setvar          $h096, 32
 setvar          $h318, 0
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         631 ; map 1745b4c
 
 @Event_0658:
 setvar          $h096, 32
 setvar          $h318, 1
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         631 ; map 1745b4c
 
 @Event_0696:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         634 ; map 17472ec
 
 @Event_06c8:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         635 ; map 17478bc
 
 @Event_06fa:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         637 ; map 17485dc
 
 @Event_072c:
@@ -178,9 +178,9 @@ code0419        0, 2, 0, 27, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 232, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         645 ; map 174a8ac
 
 @Event_07a8:
@@ -189,65 +189,65 @@ code0419        0, 2, 0, 48, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 400, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         646 ; map 174ad1c
 
 @Event_0824:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         647 ; map 174b12c
 
 @Label_0856:
 code0006        21
-code040b        
+code040b
 
 @Label_0860:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -262,7 +262,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -273,13 +273,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0bbe, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -361,35 +361,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0df8
 
 @Label_0df8:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_0e92:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -402,7 +402,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0ffc:
 code0438        16, 408, 652, 1
@@ -435,7 +435,7 @@ mapev           21, @Event_183e, 32
 mapevpos        21, (56,21)-(58,21)
 mapev           22, @Event_18a6, 32
 mapevpos        22, (76,37)-(76,38)
-ret             
+ret
 
 @Talk_122e:
 code0301        8, 7
@@ -444,36 +444,36 @@ code047e        0, 1
 dialogtxt       "My mom and I are peddlers!"
 dialogtxt       "Currently we're getting to know"
 dialogtxt       "lots of Craftknights and artisans!"
-code0309        
+code0309
 dialogtxt       "My mom thinks I'm out"
 dialogtxt       "playing around, but I'm"
 dialogtxt       "earning money for our future."
-code0309        
+code0309
 jumpz           @Cond_15fc, ($f1247 == 0)
 dialogtxt       "You're a Craftknight, aren't you?"
 dialogtxt       "Wanna hear about enhancement tips?"
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_13a6, "Sure thing!"
 choicetxt       @Choice_1604, "Nah, I'm fine."
-choicewait      
+choicewait
 
 @Choice_13a6:
 code047e        0, 1
 dialogtxt       "Enhancing with a \"Ruin Switch\""
 dialogtxt       "will add the \"DUR Attack\""
 dialogtxt       "to your weapon."
-code0309        
+code0309
 dialogtxt       "And would you look at that,"
 dialogtxt       "I have one such \"Ruin Switch\""
 dialogtxt       "available for only…800 Boam!"
-code0309        
+code0309
 dialogtxt       "How about it?"
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_149c, "Buy"
 choicetxt       @Choice_15b2, "Don't buy"
-choicewait      
+choicewait
 
 @Choice_149c:
 code036c        370, 800
@@ -481,14 +481,14 @@ jumpz           @Cond_1530, ($h306 == 1)
 setvar          $f1247, 1
 code0302        7
 code0366        429, 1
-code0367        
+code0367
 code0364        -800
 code0445        16, 4
 code0446        16
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thank you for your patronage~"
-code0309        
+code0309
 goto            @Label_1654
 
 goto            @Choice_15b2
@@ -502,7 +502,7 @@ code047e        0, 1
 dialogtxt       "Whaaaaaat!? What do you mean"
 dialogtxt       "you don't have enough money!?"
 dialogtxt       "I'm calling this deal off!"
-code0309        
+code0309
 goto            @Label_1654
 
 goto            @Choice_15b2
@@ -512,7 +512,7 @@ code047e        0, 1
 dialogtxt       "Whaaat!? You make me talk a lot"
 dialogtxt       "but you don't want to buy from me?"
 dialogtxt       "Cheapskate!"
-code0309        
+code0309
 goto            @Label_1654
 
 goto            @Choice_1604
@@ -527,11 +527,11 @@ code047e        0, 1
 dialogtxt       "Whaaat? You're not interested?!"
 dialogtxt       "Just when I thought"
 dialogtxt       "I finally had a customer…"
-code0309        
+code0309
 @Label_1654:
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_166c:
 code0301        8, 7
@@ -540,10 +540,10 @@ code047e        0, 1
 dialogtxt       "I've saved up quite a lot."
 dialogtxt       "I should got to the"
 dialogtxt       "lottery shop soon…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_16ee:
 code0301        8, 7
@@ -552,43 +552,42 @@ code047e        0, 1
 dialogtxt       "Oh, you have a Summon Beast too."
 dialogtxt       "Nice to meet you. This is"
 dialogtxt       "my Summon Beast, Myoutarou."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_178a:
 code0445        19, 7
 code0446        19
-code040b        
+code040b
 
 @Event_17a2:
 code0301        8, 7
 dialogtxt       "　"
 dialogtxt       "Fishing Friends Newspaper No. 1"
-code0309        
+code0309
 dialogtxt       "It's said the Deckell Village Pond"
 dialogtxt       "contains a fish whose cuteness"
 dialogtxt       "cannot be put into words."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_183e:
 code0301        8, 7
 dialogtxt       "Care to try our \"Lucky Draw\"?"
 dialogtxt       "It's available all day, everyday!"
 dialogtxt       "Guaranteed no losing tickets!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_18a6:
 code0301        8, 7
 dialogtxt       "If you hear the alarm, that means"
 dialogtxt       "Strays have appeared nearby."
 dialogtxt       "Avoid leaving town."
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

@@ -24,7 +24,7 @@ code047d        0, 146
 code047e        0, 1
 dialogtxt       "You need a fishing rod!"
 dialogtxt       "Return when you get one."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_023a
@@ -72,24 +72,24 @@ menutitle       "What should I do?"
 menutxt         @Menu_01d4, "Fish"
 menutxt         @Menu_01f4, "Prize Exchange"
 menutxt         @Label_023a, "Cancel"
-menuwait        
+menuwait
 
 @Label_01a4:
 menutitle       "What should I do?"
 menutxt         @Menu_01f4, "Prize Exchange"
 menutxt         @Label_023a, "Cancel"
-menuwait        
+menuwait
 
 @Menu_01d4:
 setvar          $h096, 63
-code040a        
-code0389        
+code040a
+code0389
 setvar          $h309, 1
 goto            @Label_0246
 
 @Menu_01f4:
 setvar          $h096, 63
-code040a        
+code040a
 jumpz           @Cond_021e, ($h311 == 99)
 code0353        12
 goto            @Label_022a
@@ -105,5 +105,4 @@ goto            @Label_0246
 @Label_023a:
 setvar          $h309, 0
 @Label_0246:
-done            
-
+done

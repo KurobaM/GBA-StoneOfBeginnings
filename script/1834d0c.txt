@@ -6,7 +6,7 @@ walkto          0, ($h128 + 20), $h129, 1
 walkwait        0
 code043e        0, 3, 0
 code043c        0, 2
-code0334        
+code0334
 code0331        38, 256
 code0491        0
 setvar          0x0000, 0x0000, 2
@@ -14,7 +14,7 @@ code043e        2, 3, 0
 code043e        3, 3, 0
 code043c        2, 2
 code043c        3, 1
-code048c        
+code048c
 code0445        2, 15
 code0446        2
 code0478        1, 0
@@ -27,18 +27,18 @@ call            @Func_3738
 call            @Func_36a0
 dialogtxt       "Well?"
 dialogtxt       "Figure anything out, Murno?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code0479        0, 0, 16
 call            @Func_3652
 dialogtxt       "This Crystal Pillar…"
 dialogtxt       "Like I thought, maybe it's the"
 dialogtxt       "same as the one in my village…"
-code0309        
+code0309
 call            @Func_3778
 call            @Func_3688
-code047b        
+code047b
 code0478        1, 2
 jumpz           @Cond_0244, ($b003 == 0)
 code0479        1, 0, 12
@@ -66,23 +66,23 @@ jumpz           @Cond_0c86, ($b003 == 0)
 dialogtxt       "I Detect A Signal Coming From The"
 dialogtxt       "Pillar. It Must Be Affected By"
 dialogtxt       "Govan's Demon Stone."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code043c        2, 4
 code0479        0, 2, 16
 call            @Func_3652
 dialogtxt       "The Demon Stone…?"
-code0309        
+code0309
 call            @Func_3688
 code0479        1, 0, 12
 call            @Func_36be
 dialogtxt       "I Detected It When We Ran"
 dialogtxt       "From The Village."
-code0309        
+code0309
 call            @Func_378e
 call            @Func_36dc
-code047b        
+code047b
 code043c        0, 3
 code0478        1, 0
 code0479        1, 2, 16
@@ -100,11 +100,11 @@ dialogtxt       "What do you mean by that!?"
 goto            @Label_0480
 
 @Label_0480:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0443        2, 16, 0
 code0443        2, 32, 0
 code046d        2, 192
@@ -118,7 +118,7 @@ code040d        30
 code047f        231
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code040d        60
 code0481        0
 code040d        15
@@ -132,11 +132,11 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "I Advise Caution."
 dialogtxt       "The Demon Stone Is…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 call            @Func_29bc
 code0478        1, 0
 code0479        1, 5, 15
@@ -153,13 +153,13 @@ dialogtxt       "What's happening to it!?"
 goto            @Label_0688
 
 @Label_0688:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0489        4, 1, 32
-code048c        
+code048c
 code0445        4, 2
 code0446        4
 code043b        5
@@ -173,11 +173,11 @@ code047d        0, 142
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Grrrrrr…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0489        3, 1, 32
-code048c        
+code048c
 code043c        0, 3
 code043c        1, 3
 code043c        2, 3
@@ -192,14 +192,14 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
 code043c        1, 2
-code048c        
+code048c
 code0478        0, 6
 code0479        0, 2, 14
 code047d        0, 107
@@ -211,8 +211,8 @@ call            @Func_36a0
 dialogtxt       "Please Exercise Caution."
 dialogtxt       "Malicious Energy Waves From"
 dialogtxt       "The Crystal Pillars Detected"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code043c        2, 4
 code0479        0, 2, 16
@@ -220,10 +220,10 @@ call            @Func_3652
 dialogtxt       "Oh no…"
 dialogtxt       "Could it be that whatever it felt"
 dialogtxt       "from the stone made it go mad?"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_3670
-code047b        
+code047b
 code046d        2, 192
 code043e        2, 6, 0
 walkto          2, $h128, ($h129 - 24), 1
@@ -233,9 +233,9 @@ code043c        2, 3
 code043c        1, 3
 code0333        2, 30
 code0489        4, 1, 32
-code048c        
+code048c
 code0488        -1, 1
-code0334        
+code0334
 code046e        34, 256, 1
 call            @Func_2a90
 code0478        0, 6
@@ -244,13 +244,13 @@ code047d        0, 107
 call            @Func_370c
 call            @Func_3634
 dialogbig       60, 116, 1, 0, 0, "Eeek!"
-code047b        
-code030c        
+code047b
+code030c
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
-code048c        
+code048c
 code0478        1, 0
 code0479        1, 5, 15
 code047d        1, 0
@@ -266,11 +266,11 @@ dialogtxt       "Are you okay!?"
 goto            @Label_0b7c
 
 @Label_0b7c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0478        1, 2
 code0479        1, 0, 12
 code047d        1, 2
@@ -281,8 +281,8 @@ call            @Func_3738
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3688
 code043c        1, 2
 code0479        1, 5, 12
@@ -297,24 +297,24 @@ jumpz           @Cond_1622, ($b003 == 1)
 dialogtxt       "The air makes me naught but unease…"
 dialogtxt       "Was Govan's Demon Stone attached"
 dialogtxt       "To the Crystal Pillars?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code043c        2, 4
 code0479        0, 2, 16
 call            @Func_3652
 dialogtxt       "The Demon Stone…?"
-code0309        
+code0309
 call            @Func_3688
 code0479        1, 2, 16
 call            @Func_36be
 dialogtxt       "Where have I felt this before…"
 dialogtxt       "…Indeed, I recognized its aura"
 dialogtxt       "from when we fleed our village!"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_36dc
-code047b        
+code047b
 code043c        0, 3
 code0478        1, 0
 code0479        1, 2, 16
@@ -332,11 +332,11 @@ dialogtxt       "What do you mean by that!?"
 goto            @Label_0e38
 
 @Label_0e38:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0443        2, 16, 0
 code0443        2, 32, 0
 code046d        2, 192
@@ -350,7 +350,7 @@ code040d        30
 code047f        231
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code040d        60
 code0481        0
 code040d        15
@@ -364,11 +364,11 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "I can sense that something's amiss…"
 dialogtxt       "…The Demon Stone!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 call            @Func_29bc
 code0478        1, 0
 code0479        1, 5, 15
@@ -385,13 +385,13 @@ dialogtxt       "What's happening to it!?"
 goto            @Label_1040
 
 @Label_1040:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0489        4, 1, 32
-code048c        
+code048c
 code0445        4, 2
 code0446        4
 code043b        5
@@ -405,11 +405,11 @@ code047d        0, 142
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Grrrrrr…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0489        3, 1, 32
-code048c        
+code048c
 code043c        0, 3
 code043c        1, 3
 code043c        2, 3
@@ -424,14 +424,14 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
 code043c        1, 2
-code048c        
+code048c
 code0478        0, 6
 code0479        0, 2, 14
 code047d        0, 107
@@ -443,8 +443,8 @@ call            @Func_36a0
 dialogtxt       "Stay vigilant!"
 dialogtxt       "I can sense a strong and"
 dialogtxt       "malicious aura from it!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code043c        2, 4
 code0479        0, 2, 16
@@ -452,10 +452,10 @@ call            @Func_3652
 dialogtxt       "Oh no…"
 dialogtxt       "Could it be that whatever it felt"
 dialogtxt       "from the stone made it go mad?"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_3670
-code047b        
+code047b
 code046d        2, 192
 code043e        2, 6, 0
 walkto          2, $h128, ($h129 - 24), 1
@@ -465,9 +465,9 @@ code043c        2, 3
 code043c        1, 3
 code0333        2, 30
 code0489        4, 1, 32
-code048c        
+code048c
 code0488        -1, 1
-code0334        
+code0334
 code046e        34, 256, 1
 call            @Func_2a90
 code0478        0, 6
@@ -476,13 +476,13 @@ code047d        0, 107
 call            @Func_370c
 call            @Func_3634
 dialogbig       60, 116, 1, 0, 0, "Eeek!"
-code047b        
-code030c        
+code047b
+code030c
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
-code048c        
+code048c
 code0478        1, 0
 code0479        1, 5, 15
 code047d        1, 0
@@ -498,11 +498,11 @@ dialogtxt       "Are you okay!?"
 goto            @Label_1518
 
 @Label_1518:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0478        1, 2
 code0479        1, 0, 12
 code047d        1, 2
@@ -513,8 +513,8 @@ call            @Func_3738
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3688
 code043c        1, 2
 code0479        1, 3, 15
@@ -529,24 +529,24 @@ jumpz           @Cond_1f88, ($b003 == 2)
 dialogtxt       "Tch…I can sense malice."
 dialogtxt       "Was Govan's Demon Stone attached"
 dialogtxt       "To the Crystal Pillars?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code043c        2, 4
 code0479        0, 2, 16
 call            @Func_3652
 dialogtxt       "The Demon Stone…?"
-code0309        
+code0309
 call            @Func_3688
 code0479        1, 2, 16
 call            @Func_36be
 dialogtxt       "This feeling…I remember now!"
 dialogtxt       "Last I felt this malice was when"
 dialogtxt       "when we fleed from the village!"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_36dc
-code047b        
+code047b
 code043c        0, 3
 code0478        1, 0
 code0479        1, 2, 16
@@ -564,11 +564,11 @@ dialogtxt       "What do you mean by that!?"
 goto            @Label_17bc
 
 @Label_17bc:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0443        2, 16, 0
 code0443        2, 32, 0
 code046d        2, 192
@@ -582,7 +582,7 @@ code040d        30
 code047f        231
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code040d        60
 code0481        0
 code040d        15
@@ -596,11 +596,11 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "Something feels off here…"
 dialogtxt       "…The Demon Stone!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 call            @Func_29bc
 code0478        1, 0
 code0479        1, 5, 15
@@ -617,13 +617,13 @@ dialogtxt       "What's happening to it!?"
 goto            @Label_19c4
 
 @Label_19c4:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0489        4, 1, 32
-code048c        
+code048c
 code0445        4, 2
 code0446        4
 code043b        5
@@ -637,11 +637,11 @@ code047d        0, 142
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Grrrrrr…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0489        3, 1, 32
-code048c        
+code048c
 code043c        0, 3
 code043c        1, 3
 code043c        2, 3
@@ -656,14 +656,14 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
 code043c        1, 2
-code048c        
+code048c
 code0478        0, 6
 code0479        0, 2, 14
 code047d        0, 107
@@ -675,18 +675,18 @@ call            @Func_36a0
 dialogtxt       "… Tsk!"
 dialogtxt       "I can feel its malice"
 dialogtxt       "grow even stronger!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code0479        0, 5, 16
 call            @Func_3652
 dialogtxt       "Oh no…"
 dialogtxt       "Could it be that whatever it felt"
 dialogtxt       "from the stone made it go mad?"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_3670
-code047b        
+code047b
 code046d        2, 192
 code043e        2, 6, 0
 walkto          2, $h128, ($h129 - 24), 1
@@ -696,9 +696,9 @@ code043c        2, 3
 code043c        1, 3
 code0333        2, 30
 code0489        4, 1, 32
-code048c        
+code048c
 code0488        -1, 1
-code0334        
+code0334
 code046e        34, 256, 1
 call            @Func_2a90
 code0478        0, 6
@@ -707,13 +707,13 @@ code047d        0, 107
 call            @Func_370c
 call            @Func_3634
 dialogbig       60, 116, 1, 0, 0, "Eeek!"
-code047b        
-code030c        
+code047b
+code030c
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
-code048c        
+code048c
 code0478        1, 0
 code0479        1, 5, 15
 code047d        1, 0
@@ -729,11 +729,11 @@ dialogtxt       "Are you okay!?"
 goto            @Label_1e7c
 
 @Label_1e7c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0478        1, 2
 code0479        1, 0, 12
 code047d        1, 2
@@ -744,8 +744,8 @@ call            @Func_3738
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3688
 code043c        1, 2
 code0479        1, 3, 15
@@ -760,24 +760,24 @@ jumpz           @Cond_2926, ($b003 == 3)
 dialogtxt       "I feel queasy… I wonder if I"
 dialogtxt       "sensed Govan's Demon Stone?"
 dialogtxt       "It belonged to Lady Murno…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code043c        2, 4
 code0479        0, 2, 16
 call            @Func_3652
 dialogtxt       "Then, that meant the Demon Stone…"
-code0309        
+code0309
 call            @Func_3688
 code0479        1, 2, 16
 call            @Func_36be
 dialogtxt       "This feeling…indeed, it is…"
 dialogtxt       "This was the very same thing I"
 dialogtxt       "felt when we fled the village!"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_36dc
-code047b        
+code047b
 code043c        0, 3
 code0478        1, 0
 code0479        1, 2, 16
@@ -795,11 +795,11 @@ dialogtxt       "What do you mean by that!?"
 goto            @Label_2142
 
 @Label_2142:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0443        2, 16, 0
 code0443        2, 32, 0
 code046d        2, 192
@@ -813,7 +813,7 @@ code040d        30
 code047f        231
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code040d        60
 code0481        0
 code040d        15
@@ -827,11 +827,11 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "I can sense that something's amiss…"
 dialogtxt       "…The Demon Stone!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 call            @Func_29bc
 code0478        1, 0
 code0479        1, 5, 15
@@ -849,13 +849,13 @@ dialogtxt       "What's happening to it!?"
 goto            @Label_234a
 
 @Label_234a:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0489        4, 1, 32
-code048c        
+code048c
 code0445        4, 2
 code0446        4
 code043b        5
@@ -869,11 +869,11 @@ code047d        0, 142
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Grrrrrr…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code0489        3, 1, 32
-code048c        
+code048c
 code043c        0, 3
 code043c        1, 3
 code043c        2, 3
@@ -888,14 +888,14 @@ call            @Func_370c
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
 code043c        1, 2
-code048c        
+code048c
 code0478        0, 6
 code0479        0, 2, 14
 code047d        0, 107
@@ -907,18 +907,18 @@ call            @Func_36a0
 dialogtxt       "Please be careful!"
 dialogtxt       "I can feel its malice"
 dialogtxt       "grow even stronger!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_36f4
 code0479        0, 2, 16
 call            @Func_3652
 dialogtxt       "Oh no…"
 dialogtxt       "Could it be that whatever it felt"
 dialogtxt       "from the stone made it go mad?"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_3670
-code047b        
+code047b
 code046d        2, 192
 code043e        2, 6, 0
 walkto          2, $h128, ($h129 - 24), 1
@@ -928,9 +928,9 @@ code043c        2, 3
 code043c        1, 3
 code0333        2, 30
 code0489        4, 1, 32
-code048c        
+code048c
 code0488        -1, 1
-code0334        
+code0334
 code046e        34, 256, 1
 call            @Func_2a90
 code0478        0, 6
@@ -939,13 +939,13 @@ code047d        0, 107
 call            @Func_370c
 call            @Func_3634
 dialogbig       60, 116, 1, 0, 0, "Eeek!"
-code047b        
-code030c        
+code047b
+code030c
 call            @Func_3762
 call            @Func_3670
-code047b        
+code047b
 code048b        8, 212, 32
-code048c        
+code048c
 code0478        1, 0
 code0479        1, 5, 15
 code047d        1, 0
@@ -961,11 +961,11 @@ dialogtxt       "Are you okay!?"
 goto            @Label_2814
 
 @Label_2814:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3778
 call            @Func_36dc
-code047b        
+code047b
 code0478        1, 2
 code0479        1, 0, 12
 code047d        1, 2
@@ -976,8 +976,8 @@ call            @Func_3738
 call            @Func_3634
 dialogtxt       "Magdrad?"
 dialogtxt       "What's wrong!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_3688
 code043c        1, 2
 code0479        1, 2, 15
@@ -988,21 +988,21 @@ dialogtxt       "went berserk on its own!?"
 goto            @Cond_2926
 
 @Cond_2926:
-code0309        
+code0309
 call            @Func_36f4
 code0479        0, 5, 15
 call            @Func_3652
 dialogtxt       "Impossible!"
 dialogtxt       "It won't listen to what I say!"
-code0309        
+code0309
 code0479        0, 2, 14
 dialogtxt       "This is too dangerous!"
 dialogtxt       "We have to retreat! NOW!"
-code0309        
+code0309
 call            @Func_378e
 call            @Func_3670
-code047b        
-done            
+code047b
+done
 
 @Func_29bc:
 code0333        2, 30
@@ -1019,10 +1019,10 @@ code0445        1, 2
 code0445        3, 10
 code0445        2, 10
 code0446        2
-code0334        
+code0334
 code0331        37, 256
 code033e        403
-ret             
+ret
 
 @Func_2a90:
 code048d        2, 2
@@ -1031,7 +1031,7 @@ code047d        0, 142
 code0301        8, 7
 code047e        0, 1
 dialogbig       24, 116, 1, 0, 0, "Grrraaaah!!"
-code030c        
+code030c
 code047e        0, 0
 code0302        7
 code033e        402
@@ -1115,45 +1115,45 @@ code043c        5, 1
 code0443        5, 32, 0
 code0446        3
 code033e        221
-ret             
+ret
 
 @Func_30b0:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_30f0:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -1168,7 +1168,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -1179,13 +1179,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_33f8, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -1267,71 +1267,70 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_3632
 
 @Label_3632:
-ret             
+ret
 
 @Func_3634:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_3652:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_3670:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_3688:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_36a0:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_36be:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_36dc:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_36f4:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_370c:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_3722:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_3738:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_3762:
 code047a        0, 0, 1
-ret             
+ret
 
 @Func_3778:
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_378e:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

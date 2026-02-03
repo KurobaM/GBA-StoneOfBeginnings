@@ -4,21 +4,21 @@ setvar          $b006, 2
 goto            @Label_0082
 
 @Cond_0028:
-code0114        
+code0114
 @Label_002a:
-code0300        
-code0312        
+code0300
+code0312
 code0313        @Menu_007e
 menutxt         @Menu_0052, "Let me get ready!"
 menutxt         @Menu_007e, "I'm ready to fight!"
-menuwait        
+menuwait
 
 @Menu_0052:
 setvar          $b075, 0
 setvar          $b072, 0
 setvar          $b081, 1
-code0303        
-code034f        
+code0303
+code034f
 goto            @Label_002a
 
 @Menu_007e:
@@ -39,17 +39,17 @@ setvar          $b044, 0
 setvar          $w015, 0
 setvar          $b063, 0
 code0331        6, 256
-code0100        
-code0101        
+code0100
+code0101
 jumpz           @Cond_016e, ($b041 == 3)
-code0111        
+code0111
 jumpz           @Cond_015a, ($b004 == 1)
-code035c        
+code035c
 goto            @Label_016a
 
 @Cond_015a:
-code035d        
-code000d        
+code035d
+code000d
 gotomap         1 ; map 1720aac
 
 goto            @Label_016a
@@ -58,9 +58,8 @@ goto            @Label_016a
 goto            @Label_0174
 
 @Cond_016e:
-code035d        
+code035d
 goto            @Label_0174
 
 @Label_0174:
-done            
-
+done

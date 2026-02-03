@@ -7,14 +7,14 @@ code0446        0
 code0301        8, 7
 code0305        1
 dialogtxt       "Pieces of the portal disappeared!"
-code0309        
+code0309
 code0302        7
 goto            @Label_0376
 
 goto            @Cond_00ac
 
 @Cond_00ac:
-code04a0        
+code04a0
 setvar          $h312, -1
 setvar          $h319, -3
 jumpz           @Cond_00e6, ($h311 == 0)
@@ -114,10 +114,9 @@ goto            @Label_0354
 
 @Label_0354:
 code041c        27, 0, 0, -1
-code041d        
-code040a        
+code041d
+code040a
 goto            @Label_0376
 
 @Label_0376:
-done            
-
+done

@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 208, 209, -1
 code0410        1, 208, 210, 212
 code0410        2, 208, 211, -1
-code0411        
+code0411
 code0430        213
 code0412        4, 1
 code0418        2
@@ -63,9 +63,9 @@ goto            @Label_0354
 mapev           0, @Event_0434, 4
 mapevpos        0, (14,31)-(17,31)
 setvar          $h319, 40
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
+code041d
 jumpz           @Cond_0432, ($f0041 == 1 && $f0042 == 0)
 setvar          $f0042, 1
 code043e        0, 3, 0
@@ -74,7 +74,7 @@ setvar          $h096, 32
 setvar          $h137, 30
 setvar          $h136, 0
 call            @Func_0486
-code040a        
+code040a
 setvar          $h137, 1
 call            @Func_04c6
 gotomap         640 ; map 174936c
@@ -82,64 +82,64 @@ gotomap         640 ; map 174936c
 goto            @Cond_0432
 
 @Cond_0432:
-code040b        
+code040b
 
 @Event_0434:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         637 ; map 17485dc
 
 @Label_0466:
 code0006        21
-code040b        
+code040b
 
 @Label_0470:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 @Func_0486:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_04c6:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -154,7 +154,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -165,13 +165,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_07ce, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -253,34 +253,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a08
 
 @Label_0a08:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -293,7 +293,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0c0c:
 code0438        16, 399, 645, 1
@@ -315,7 +315,7 @@ code043d        18, 48, 216
 code043c        18, 1
 code0442        18, @Talk_0ec2
 code0444        18, -1
-ret             
+ret
 
 @Event_0d6c:
 code043e        16, 3, 0
@@ -324,10 +324,10 @@ code047d        0, 127
 code047e        0, 1
 dialogtxt       "Lately there've been so many"
 dialogtxt       "Strays even we can't keep up."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0e10:
 code0301        8, 7
@@ -335,16 +335,15 @@ code047d        0, 120
 code047e        0, 1
 dialogtxt       "There's just too many Strays"
 dialogtxt       "for us to deal with."
-code0309        
+code0309
 dialogtxt       "You'll think you've defeated them,"
 dialogtxt       "but go back and they'll be there."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0ec2:
 code0445        18, 7
 code0446        18
-code040b        
-
+code040b

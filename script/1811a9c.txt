@@ -30,14 +30,14 @@ call            @Func_0bdc
 dialogtxt       "(I know Murno doesn't"
 dialogtxt       "　intend to skip town"
 dialogtxt       "　just yet.)"
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 2, 16
 jumpz           @Cond_0206, ($b002 == 0)
 dialogtxt       "(But as for why that is…"
 dialogtxt       "　I have no idea…"
 dialogtxt       "　And neither does [NAME 1]…)"
-code0309        
+code0309
 code0479        0, 4, 16
 dialogtxt       "Sigh…"
 dialogtxt       "What am I supposed to do…"
@@ -47,14 +47,14 @@ goto            @Label_0292
 dialogtxt       "(But as for why that is…"
 dialogtxt       "　I have no idea…"
 dialogtxt       "　And neither does [NAME 1]…)"
-code0309        
+code0309
 code0479        0, 4, 16
 dialogtxt       "Sigh…"
 dialogtxt       "What am I supposed to do…"
 goto            @Label_0292
 
 @Label_0292:
-code0309        
+code0309
 call            @Func_0c30
 code043c        0, 4
 jumpz           @Cond_02ce, ($b003 == 0)
@@ -82,8 +82,8 @@ jumpz           @Cond_03e0, ($b003 == 0)
 dialogtxt       "As Long As We Are Here,"
 dialogtxt       "The Possibility That Murno"
 dialogtxt       "Will Be Discovered Is High."
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 0, 12
 dialogtxt       "We Must Stay Vigilant."
 goto            @Cond_03e0
@@ -93,8 +93,8 @@ jumpz           @Cond_046a, ($b003 == 1)
 dialogtxt       "As long as we're here,"
 dialogtxt       "it's very likely Murno"
 dialogtxt       "will be found out."
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 2, 14
 dialogtxt       "We must be cautious!"
 goto            @Cond_046a
@@ -104,7 +104,7 @@ jumpz           @Cond_04e8, ($b003 == 2)
 dialogtxt       "That girl…"
 dialogtxt       "This place is crawling with enemies."
 dialogtxt       "How long can she keep this up?"
-code047b        
+code047b
 goto            @Cond_04e8
 
 @Cond_04e8:
@@ -112,14 +112,14 @@ jumpz           @Cond_0578, ($b003 == 3)
 dialogtxt       "As long as we are here,"
 dialogtxt       "there is always the chance"
 dialogtxt       "Murno could be discovered!"
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 2, 14
 dialogtxt       "We must be cautious!"
 goto            @Cond_0578
 
 @Cond_0578:
-code0309        
+code0309
 call            @Func_0c9c
 code0479        0, 2, 14
 call            @Func_0bfa
@@ -134,52 +134,52 @@ dialogtxt       "I can't just sit here all day."
 goto            @Label_061c
 
 @Label_061c:
-code0309        
+code0309
 call            @Func_0d36
 call            @Func_0c18
-code047b        
+code047b
 code040d        10
 code0489        0, 2, 16
-code0492        
+code0492
 code043c        0, 1
-code048c        
-done            
+code048c
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -194,7 +194,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -205,13 +205,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_09a0, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -293,66 +293,65 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0bda
 
 @Label_0bda:
-ret             
+ret
 
 @Func_0bdc:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0bfa:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0c18:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0c30:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0c66:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0c9c:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_0cb4:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_0cca:
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0d36:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

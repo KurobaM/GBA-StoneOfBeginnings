@@ -9,7 +9,7 @@ code0408        1
 code0410        0, 316, 317, -1
 code0410        1, 316, 318, 320
 code0410        2, 316, 319, -1
-code0411        
+code0411
 code0430        321
 code0412        4, 1
 code0418        1
@@ -124,9 +124,9 @@ mapevpos        1, (15,11)-(16,11)
 mapev           2, @Event_0aa6, 16
 mapevpos        2, (24,23)-(25,24)
 setvar          $h319, 57
-code0409        
+code0409
 code046e        38, 256, 0
-code041d        
+code041d
 jumpz           @Cond_075c, ($f0035 == 1 && $f0036 == 0)
 setvar          $f0036, 1
 code043e        0, 3, 0
@@ -143,7 +143,7 @@ code0442        2, @Talk_0b4a
 goto            @Label_0758
 
 @Cond_0752:
-code040b        
+code040b
 
 goto            @Label_0758
 
@@ -157,17 +157,17 @@ code043e        0, 3, 0
 code0006        2208
 setvar          $h310, $b003
 code0361        255
-code036d        
+code036d
 setvar          $b003, $h310
 code041c        16, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         866 ; map 175b47c
 
 goto            @Cond_07f8
 
 @Cond_07f8:
-code040b        
+code040b
 
 @Talk_07fa:
 code043e        0, 3, 0
@@ -178,12 +178,12 @@ setvar          $f0038, 1
 code043e        0, 3, 0
 code0006        2207
 code0442        2, @Talk_0b4a
-code040b        
+code040b
 
 goto            @Event_0870
 
 @Cond_086a:
-code040b        
+code040b
 
 goto            @Event_0870
 
@@ -196,36 +196,36 @@ code047e        0, 1
 dialogtxt       "If you want us to trust you,"
 dialogtxt       "you shouldn't act suspicous,"
 dialogtxt       "right?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1146
-code040b        
+code040b
 
 goto            @Cond_092a
 
 @Cond_092a:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         871 ; map 175c4dc
 
 @Event_095c:
 jumpz           @Cond_0972, ($f0038 == 0)
-code040b        
+code040b
 
 goto            @Cond_0972
 
 @Cond_0972:
 jumpz           @Cond_09ba, ($f0038 == 1 && $f0039 == 0 && $f0127 == 0)
 code041c        16, 0, 0, 1
-code041d        
+code041d
 goto            @Cond_09ba
 
 @Cond_09ba:
 setvar          $h096, 63
-code040a        
+code040a
 jumpz           @Cond_0a52, ($f0038 == 1 && $f0039 == 0 && $f0127 == 0)
 setvar          $f0127, 1
 setvar          $h096, 48
@@ -246,17 +246,17 @@ code0359        0
 goto            @Cond_0034
 
 @Label_0a76:
-code0357        
+code0357
 jumpz           @Cond_0aa0, ($b068 == 0)
 setvar          $h096, 63
-code040a        
-code0358        
+code040a
+code0358
 goto            @Cond_0034
 
 goto            @Event_0aa6
 
 @Cond_0aa0:
-code040b        
+code040b
 
 goto            @Event_0aa6
 
@@ -268,22 +268,22 @@ setvar          $h137, 30
 call            @Func_0bc2
 code033a        112, 0
 code033e        112
-code0368        
+code0368
 code043d        0, 200, 192
 code043c        0, 1
 call            @Func_0c02
 popuptxt        "You feel refreshed!"
-code0318        
-code040b        
+code0318
+code040b
 
 @Label_0b2c:
 code0006        21
-code040b        
+code040b
 
 @Label_0b36:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @Cond_0034
 
 @Talk_0b4a:
@@ -293,50 +293,50 @@ code047e        0, 1
 dialogtxt       "What's wrong?"
 dialogtxt       "You should be able to at"
 dialogtxt       "least repair a sword."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 @Func_0bc2:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_0c02:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -351,7 +351,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -362,13 +362,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0f0a, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -450,35 +450,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1144
 
 @Label_1144:
-ret             
+ret
 
 @Func_1146:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -491,5 +491,4 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
-
+ret

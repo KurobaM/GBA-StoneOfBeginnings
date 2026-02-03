@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 180, 182, 185
 code0410        1, 180, 183, -1
 code0410        2, 181, 184, 186
-code0411        
+code0411
 code0430        187
 code0412        4, 1
 code0418        2
@@ -27,7 +27,7 @@ goto            @Label_0198
 @Cond_013a:
 jumpz           @Cond_016a, ($h319 == 170)
 code041c        1, 16, 728, 4
-code0475        
+code0475
 goto            @Label_0198
 
 @Cond_016a:
@@ -45,30 +45,30 @@ mapevpos        2, (0,86)-(1,98)
 mapev           3, @Event_0384, 8
 mapevpos        3, (20,13)-(21,13)
 setvar          $h319, 36
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
+code041d
 placetxt        "Prosban　West Gate"
-code040b        
+code040b
 
 @Event_0296:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1532 ; map 17b23ac
 
 @Event_02c8:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1536 ; map 17b410c
 
 @Event_02fa:
 setvar          $h096, 32
 setvar          $h315, 2
-code04a3        
+code04a3
 jumpz           @Cond_0344, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -77,14 +77,14 @@ goto            @Cond_0344
 @Cond_0344:
 jumpz           @Cond_035e, ($h101 == 1)
 call            @Func_0a88
-code040b        
+code040b
 
 goto            @Cond_035e
 
 @Cond_035e:
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3301 ; map 18a380c
 
 @Event_0384:
@@ -93,58 +93,58 @@ code0419        0, 2, 0, 19, 11, 0
 code033a        109, 0
 code041b        0
 code041c        19, 168, 96, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1542 ; map 17b59fc
 
 @Label_0400:
 code0006        21
-code040b        
+code040b
 
 @Label_040a:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -159,7 +159,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -170,13 +170,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0768, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -258,35 +258,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_09a2
 
 @Label_09a2:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 @Func_0a88:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -299,7 +299,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0ba6:
 code0438        16, 405, 645, 1
@@ -332,7 +332,7 @@ mapev           21, @Event_1036, 32
 mapevpos        21, (33,104)-(34,104)
 mapev           22, @Event_10ba, 32
 mapevpos        22, (37,104)-(38,104)
-ret             
+ret
 
 @Talk_0dd8:
 code0301        8, 7
@@ -341,10 +341,10 @@ code047e        0, 1
 dialogtxt       "It's nice that today's"
 dialogtxt       "peaceful and all, but…"
 dialogtxt       "…Man, I'm so bored!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0e4a:
 code0301        8, 7
@@ -353,13 +353,13 @@ code047e        0, 1
 dialogtxt       "Hey, hey, let's play pretend!"
 dialogtxt       "I'll be the Craftknight hero…"
 dialogtxt       "And you'll be my Master!"
-code0309        
+code0309
 dialogtxt       "\"There is nothing I can teach you!\"!"
 dialogtxt       "…Well!? How did I do!?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0f20:
 code0301        8, 7
@@ -368,44 +368,43 @@ code047e        0, 1
 dialogtxt       "I think I got scammed… Still,"
 dialogtxt       "I'm shouldering responsibility for"
 dialogtxt       "poor old Myoutarou here."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0fb8:
 code0445        19, 8
 code0446        19
-code040b        
+code040b
 
 @Event_0fd0:
 code0301        8, 7
 dialogtxt       "Want to chop some firewood together?"
 dialogtxt       "　　　　　　　　From Grandpa Maki"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1036:
 code0301        8, 7
 dialogtxt       "It can't be helped that things"
 dialogtxt       "don't go your way on some days."
-code0309        
+code0309
 dialogtxt       "Even a certain upstanding guy would"
 dialogtxt       "agree that today is an unlucky day!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_10ba:
 code0301        8, 7
 dialogtxt       "　"
 dialogtxt       "　"
 dialogtxt       "　●←Peep hole"
-code0309        
+code0309
 dialogtxt       "…Sorry, can't you let"
 dialogtxt       "this slide just one time?"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

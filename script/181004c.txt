@@ -10,12 +10,12 @@ code040d        30
 code047f        222
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code047d        0, 108
 code0301        16, 3
 code047e        0, 1
 dialogtxt       "I was wondering where you'd gone…"
-code0309        
+code0309
 code047e        0, 0
 code0302        3
 code040d        15
@@ -45,51 +45,51 @@ code047d        1, 108
 call            @Func_1146
 call            @Func_10ae
 dialogtxt       "[NAME 2]…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1102
 code0479        0, 4, 16
 call            @Func_1060
 dialogtxt       "Ah, sorry…"
 dialogtxt       "I went out for a walk,"
 dialogtxt       "and just ended up here…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 4, 12
 call            @Func_10cc
 dialogtxt       "Lots of things happened today."
 dialogtxt       "Don't make me worry so much…"
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 4, 14
 call            @Func_1060
 dialogtxt       "…"
 dialogtxt       "Sorry…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 2, 12
 call            @Func_10cc
 dialogtxt       "Hmm? Something wrong?"
 dialogtxt       "This isn't like you."
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 4, 12
 call            @Func_1060
 dialogtxt       "I wonder…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 0, 12
 call            @Func_10cc
 dialogtxt       "Well, I don't know what happened,"
 dialogtxt       "but in any case, I'm glad Murno"
 dialogtxt       "didn't decide to leave."
-code0309        
+code0309
 code0479        0, 0, 14
 code0479        1, 2, 16
 dialogtxt       "We still have to deal with Bostaph."
 dialogtxt       "That guy has no intention of"
 dialogtxt       "listening to what I have to say…"
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 2, 16
 call            @Func_1060
@@ -104,143 +104,143 @@ dialogtxt       "That he won't stop hunting Strays…"
 goto            @Label_05b8
 
 @Label_05b8:
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 2, 14
 call            @Func_10cc
 dialogtxt       "You met him?"
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 5, 17
 call            @Func_1060
 dialogtxt       "Ah!"
 dialogtxt       "Yeah…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 2, 16
 call            @Func_10cc
 dialogtxt       "He just walked out on me."
 dialogtxt       "Was that to exterminate Strays?"
 dialogtxt       "No, wait…"
-code0309        
+code0309
 code0479        0, 0, 16
 code0479        1, 2, 14
 dialogtxt       "…How could he"
 dialogtxt       "have known about them?"
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 2, 16
 call            @Func_1060
 dialogtxt       "Come to think of it…"
 dialogtxt       "Bro didn't know"
 dialogtxt       "about them either…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 2, 16
 call            @Func_10cc
 dialogtxt       "[NAME 2]…"
 dialogtxt       "What happened with you today?"
 dialogtxt       "Do you have some part in this?"
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 4, 14
 call            @Func_1060
 dialogtxt       "That's…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 2, 13
 call            @Func_10cc
 dialogtxt       "Can't tell me, huh?"
 dialogtxt       "I never thought you'd have"
 dialogtxt       "something to hide."
-code0309        
+code0309
 code0479        1, 4, 12
 dialogtxt       "Good grief…"
 dialogtxt       "That's the only part of"
 dialogtxt       "you that's grown."
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 4, 16
 call            @Func_1060
 dialogtxt       "…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 0, 12
 call            @Func_10cc
 dialogtxt       "Well, you have your reasons, right?"
 dialogtxt       "That's fine."
 dialogtxt       "I'll try asking Bostaph tomorrow."
-code0309        
+code0309
 code0479        1, 2, 16
 dialogtxt       "But try not to worry"
 dialogtxt       "about it too much."
 dialogtxt       "Or you might go crazy…"
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 2, 14
 call            @Func_1060
 dialogtxt       "…"
-code0309        
+code0309
 call            @Func_1096
 code0479        1, 0, 12
 call            @Func_10cc
 dialogtxt       "Don't forget,"
 dialogtxt       "I will always be there for you,"
 dialogtxt       "like I am now."
-code0309        
+code0309
 code0479        1, 1, 13
 dialogtxt       "You aren't alone."
-code0309        
+code0309
 call            @Func_1102
 code0479        0, 0, 12
 call            @Func_1060
 dialogtxt       "Yeah…"
 dialogtxt       "Thanks,"
 dialogtxt       "Master…"
-code0309        
+code0309
 call            @Func_119c
 call            @Func_107e
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 @Func_0abe:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_0afe:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -255,7 +255,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -266,13 +266,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0e06, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -354,65 +354,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1040
 
 @Label_1040:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_1060:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_107e:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_1096:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_10ae:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_10cc:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_1102:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_1146:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_119c:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

@@ -12,8 +12,8 @@ code0301        8, 5
 code047e        1, 1
 dialogtxt       "Hey. You."
 dialogtxt       "What are you doing over there?"
-code047b        
-code0309        
+code047b
+code0309
 code047e        1, 0
 code0302        5
 code0333        2, 30
@@ -25,7 +25,7 @@ code043a        2, 2, 0
 code043d        2, 304, 24
 code043e        2, 6, 0
 walkto          2, 304, 112, 1
-code0334        
+code0334
 code0331        37, 256
 walkwait        2
 code048b        140, 40, 8
@@ -33,7 +33,7 @@ walkto          2, 280, 112, 1
 walkwait        2
 code043e        2, 3, 0
 code043c        2, 2
-code048c        
+code048c
 code040d        15
 code0478        0, 0
 code0479        0, 0, 12
@@ -44,18 +44,18 @@ code047d        1, 106
 call            @Func_2492
 call            @Func_2410
 dialogtxt       "…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2464
 code0479        0, 5, 17
 call            @Func_247c
 call            @Func_23c2
 dialogtxt       "Wah!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_24d2
 call            @Func_23f8
-code047b        
+code047b
 code0478        0, 2
 jumpz           @Cond_02ea, ($b003 == 0)
 code0479        0, 5, 12
@@ -106,15 +106,15 @@ dialogtxt       "He came out of nowhere!"
 goto            @Cond_0480
 
 @Cond_0480:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_23f8
 code0479        1, 2, 12
 call            @Func_242e
 dialogtxt       "Hold up, you're a Summon"
 dialogtxt       "Beast aren't you?"
 dialogtxt       "What are you doing here?"
-code0309        
+code0309
 call            @Func_2464
 jumpz           @Cond_050a, ($b003 == 0)
 code0479        0, 2, 12
@@ -161,10 +161,10 @@ dialogtxt       "He's an enemy, right!?"
 goto            @Cond_0644
 
 @Cond_0644:
-code0309        
+code0309
 call            @Func_24fe
 call            @Func_23e0
-code047b        
+code047b
 code043c        0, 3
 code0478        0, 0
 code0479        0, 5, 15
@@ -173,11 +173,11 @@ call            @Func_247c
 call            @Func_23a4
 dialogtxt       "Wha!?"
 dialogtxt       "[NAME 1]!?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_24d2
 call            @Func_23e0
-code047b        
+code047b
 code0478        0, 2
 jumpz           @Cond_06f0, ($b003 == 0)
 code0479        0, 2, 12
@@ -206,15 +206,15 @@ call            @Func_2410
 dialogtxt       "You're lucky that you"
 dialogtxt       "get to fight me."
 dialogtxt       "Because…"
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 2, 15
 dialogtxt       "I'll beat you down before"
 dialogtxt       "you can even blink!"
-code0309        
+code0309
 call            @Func_24d2
 call            @Func_2464
-code047b        
+code047b
 code043c        0, 4
 code0478        0, 0
 code0479        0, 5, 15
@@ -223,15 +223,15 @@ call            @Func_247c
 call            @Func_23c2
 dialogtxt       "Huh!?"
 dialogtxt       "Bro, wait!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_24fe
 call            @Func_23e0
-code047b        
+code047b
 code0333        2, 30
 code0445        2, 6
 code0446        2
-code0334        
+code0334
 code0331        40, 256
 code047d        1, 132
 code0479        0, 0, 16
@@ -241,11 +241,11 @@ call            @Func_2410
 dialogtxt       "I told you not to"
 dialogtxt       "call me Bro, [NAME 2]."
 dialogtxt       "The name's Jade."
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 2, 13
 dialogtxt       "The Immortal Jade!"
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 4, 12
 call            @Func_23c2
@@ -253,7 +253,7 @@ jumpz           @Cond_0a2c, ($b002 == 0)
 dialogtxt       "Jeez…"
 dialogtxt       "It's too late for that…"
 dialogtxt       "\"Bro\" is just fine."
-code0309        
+code0309
 code0479        0, 0, 16
 dialogtxt       "And are you really still"
 dialogtxt       "claiming you're immortal?"
@@ -263,44 +263,44 @@ goto            @Label_0aac
 dialogtxt       "Jeez…"
 dialogtxt       "It's too late for that…"
 dialogtxt       "Just \"Bro\" is fine."
-code0309        
+code0309
 code0479        0, 0, 16
 dialogtxt       "And are you really still"
 dialogtxt       "claiming you're immortal?"
 goto            @Label_0aac
 
 @Label_0aac:
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 0, 12
 call            @Func_242e
 dialogtxt       "Nah, 'cause it's true! Ever since"
 dialogtxt       "the day I fought Rob, I'm still up"
 dialogtxt       "even if you try to whittle me down!"
-code0309        
+code0309
 code0479        1, 2, 17
 dialogtxt       "From that day forward,"
 dialogtxt       "I am…the Invincible Jade!"
-code0309        
+code0309
 code0479        1, 0, 13
 dialogtxt       "And I threw away the part of"
 dialogtxt       "myself which you called \"Bro\"!"
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 0, 14
 call            @Func_23c2
 dialogtxt       "…I don't think you've"
 dialogtxt       "at all, though…"
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 3, 17
 call            @Func_242e
 dialogtxt       "I'm completely different!"
-code0309        
+code0309
 code0333        2, 20
 call            @Func_24e8
 call            @Func_2464
-code047b        
+code047b
 code043c        0, 3
 code043c        1, 1
 code0478        1, 2
@@ -326,7 +326,7 @@ goto            @Label_0cf6
 code047d        1, 2
 call            @Func_2492
 call            @Func_242e
-code0334        
+code0334
 code0331        41, 256
 jumpz           @Cond_0d94, ($b003 == 0)
 dialogtxt       "So He Is This \"Bro\" Person?"
@@ -352,8 +352,8 @@ dialogtxt       "I was sure he was a villian!"
 goto            @Cond_0e7c
 
 @Cond_0e7c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2464
 code0479        0, 1, 17
 call            @Func_23c2
@@ -366,7 +366,7 @@ dialogtxt       "Why would you think that?"
 goto            @Label_0ee8
 
 @Label_0ee8:
-code0309        
+code0309
 call            @Func_23f8
 jumpz           @Cond_0f16, ($b003 == 0)
 code0479        1, 0, 12
@@ -414,17 +414,17 @@ dialogtxt       "Doesn't he look like a bully?"
 goto            @Cond_10a2
 
 @Cond_10a2:
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 0, 12
 call            @Func_23c2
 dialogtxt       "I guess that's true…"
 dialogtxt       "But, believe me! He's a good guy."
 dialogtxt       "Right, Bro?"
-code0309        
+code0309
 call            @Func_24e8
 call            @Func_23f8
-code047b        
+code047b
 code043c        0, 4
 code043c        1, 4
 code0478        1, 10
@@ -435,18 +435,18 @@ call            @Func_242e
 dialogtxt       "What was that?"
 dialogtxt       "Say that again, will ya?"
 dialogtxt       "I dare you."
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 1, 14
 call            @Func_23c2
 dialogtxt       "Ah… There it is…"
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 0, 16
 call            @Func_242e
 dialogtxt       "By the way, is that"
 dialogtxt       "Summon Beast yours?"
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 0, 12
 call            @Func_23c2
@@ -461,12 +461,12 @@ dialogtxt       "This is [NAME 1], my partner."
 goto            @Label_12ae
 
 @Label_12ae:
-code0309        
+code0309
 code0479        0, 1, 16
 dialogtxt       "Uhh… Well…"
 dialogtxt       "Chief was saying it was about time"
 dialogtxt       "that I got a partner of my own…"
-code0309        
+code0309
 call            @Func_24d2
 call            @Func_23f8
 code0478        0, 2
@@ -496,40 +496,40 @@ code0479        1, 5, 16
 call            @Func_242e
 dialogtxt       "This is your partner?"
 dialogtxt       "This machine?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2464
 code0479        0, 0, 12
 call            @Func_23c2
 dialogtxt       "Yes."
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 0, 12
 call            @Func_242e
 dialogtxt       "From some reason, looking at"
 dialogtxt       "this one reminds me of my Master…"
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 0, 12
 call            @Func_23c2
 dialogtxt       "…"
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 0, 16
 call            @Func_242e
 dialogtxt       "Hey…?"
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 3, 12
 call            @Func_23c2
 dialogtxt       "Yes."
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 5, 16
 call            @Func_242e
 dialogtxt       "W-Why are you crying!?"
 dialogtxt       "It's not malfunctioning, is it…?"
-code0309        
+code0309
 call            @Func_24fe
 call            @Func_244c
 goto            @Cond_157e
@@ -540,26 +540,26 @@ code0479        1, 5, 16
 call            @Func_242e
 dialogtxt       "This is your partner?"
 dialogtxt       "This cat?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2464
 code0479        0, 2, 15
 call            @Func_23c2
 dialogtxt       "I am not a cat!"
 dialogtxt       "I am a tiger Youkai, a Toramata!"
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 4, 12
 call            @Func_242e
 dialogtxt       "Hey, hey, if you're a Craftknight,"
 dialogtxt       "you gotta heat up the weapon, yeah?"
 dialogtxt       "Don't heat up yourself there."
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 3, 17
 call            @Func_23c2
 dialogtxt       "Mrrreoww! Hiss!"
-code0309        
+code0309
 call            @Func_24fe
 call            @Func_23e0
 goto            @Cond_16e2
@@ -570,30 +570,30 @@ code0479        1, 5, 16
 call            @Func_242e
 dialogtxt       "This is your partner?"
 dialogtxt       "This skinny kid?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2464
 code0479        0, 3, 14
 call            @Func_23c2
 dialogtxt       "Say another word,"
 dialogtxt       "and I'll make you disappear."
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 0, 12
 call            @Func_242e
 dialogtxt       "It's great that's he's got spirit,"
 dialogtxt       "but man, he's such a short fuse…"
-code0309        
+code0309
 code0479        1, 0, 13
 dialogtxt       "You need to chill out, y'know,"
 dialogtxt       "or else, you won't be a"
 dialogtxt       "great guy like me."
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 3, 14
 call            @Func_23c2
 dialogtxt       "L-Like you!?"
-code0309        
+code0309
 call            @Func_24fe
 call            @Func_23e0
 goto            @Cond_1870
@@ -605,48 +605,48 @@ call            @Func_242e
 dialogtxt       "This is your partner?"
 dialogtxt       "This young lady?"
 dialogtxt       "She's pretty cute."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2464
 code0479        0, 2, 14
 call            @Func_23c2
 dialogtxt       "Hmph…"
 dialogtxt       "Are you mocking me?"
-code0309        
+code0309
 code0479        0, 2, 12
 dialogtxt       "I'll have you know,"
 dialogtxt       "I am quite strong!"
 dialogtxt       "I'm not a-afraid of you!"
-code0309        
+code0309
 call            @Func_23f8
 code0479        1, 1, 13
 call            @Func_242e
 dialogtxt       "Haha…"
 dialogtxt       "She's a real cutie when mad too."
-code0309        
+code0309
 call            @Func_2464
 code0479        0, 2, 16
 call            @Func_23c2
 dialogtxt       "You…you definitely"
 dialogtxt       "are mocking me!"
-code0309        
+code0309
 call            @Func_24fe
 call            @Func_23e0
 goto            @Cond_1a54
 
 @Cond_1a54:
-code047b        
+code047b
 code0478        0, 0
 code0479        0, 4, 13
 code047d        0, 0
 call            @Func_247c
 call            @Func_23a4
 dialogtxt       "Now, now."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_24d2
 call            @Func_23e0
-code047b        
+code047b
 code0438        3, 360, 632, 1
 code043a        3, 3, 0
 code043d        3, 304, 24
@@ -662,27 +662,27 @@ code0301        8, 5
 code047e        1, 1
 dialogtxt       "Ah! [NAME 2]?"
 dialogtxt       "Since when did you get out!?"
-code0309        
+code0309
 code047e        1, 0
 code0302        7
 code0479        0, 1, 16
 call            @Func_247c
 call            @Func_23c2
 dialogtxt       "Umm… Well…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_24d2
 call            @Func_23f8
-code047b        
+code047b
 code0301        8, 7
 code047e        1, 1
 dialogtxt       "I see!"
 dialogtxt       "I know you wanted to help, but…"
-code0309        
+code0309
 dialogtxt       "You're too late."
 dialogtxt       "The Strays you were after"
 dialogtxt       "were already defeated by Jade!"
-code0309        
+code0309
 code047e        1, 0
 code0302        7
 code0479        0, 5, 17
@@ -697,8 +697,8 @@ dialogbig       36, 116, 1, 0, 0, "What!?"
 goto            @Label_1d6e
 
 @Label_1d6e:
-code047b        
-code030c        
+code047b
+code030c
 call            @Func_23f8
 code043c        2, 2
 code0478        1, 10
@@ -709,49 +709,49 @@ call            @Func_242e
 dialogtxt       "Ah, so that is why you were here."
 dialogtxt       "Looks like your job is done!"
 dialogtxt       "Now, let's get back to the village."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_24fe
 call            @Func_244c
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -766,7 +766,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -777,13 +777,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_2168, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -865,71 +865,70 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_23a2
 
 @Label_23a2:
-ret             
+ret
 
 @Func_23a4:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_23c2:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_23e0:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_23f8:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_2410:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_242e:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_244c:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_2464:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_247c:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_2492:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_24a8:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_24d2:
 code047a        0, 0, 1
-ret             
+ret
 
 @Func_24e8:
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_24fe:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

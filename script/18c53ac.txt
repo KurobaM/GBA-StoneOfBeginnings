@@ -13,7 +13,7 @@ code047e        0, 1
 dialogtxt       "Oh, that's right."
 dialogtxt       "The Miga Stone is broken, but"
 dialogtxt       "could you still deliver it?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0238, ($bv029 != 0)
@@ -21,7 +21,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, that's it!"
 dialogtxt       "Give it to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -29,14 +29,14 @@ jumpz           @Cond_01e0, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Take this…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Do your best."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0234
@@ -45,7 +45,7 @@ goto            @Label_0234
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, it's not for me…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0234
@@ -61,7 +61,7 @@ jumpz           @Cond_0404, ($bv018 == 1)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Did you bring the Miga Stone?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0400, ($bv029 != 0)
@@ -69,7 +69,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, that's it!"
 dialogtxt       "Give it to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -77,14 +77,14 @@ jumpz           @Cond_03a8, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Take this…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Do your best."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_03fc
@@ -93,7 +93,7 @@ goto            @Label_03fc
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, it's not for me…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_03fc
@@ -109,7 +109,7 @@ jumpz           @Label_045a, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Do your best."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_045a
@@ -126,11 +126,11 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, could you find me"
 dialogtxt       "some Cutting Ore?"
-code0309        
+code0309
 dialogtxt       "I have a customer who wants it."
 dialogtxt       "I'll give you a good deal, okay?"
 dialogtxt       "Please?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0668, ($bv029 != 0)
@@ -138,7 +138,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ah, that's it."
 dialogtxt       "Give it to me, please."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -146,7 +146,7 @@ jumpz           @Cond_0622, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is this enough?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -156,7 +156,7 @@ goto            @Label_0664
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Cheapskate~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0664
@@ -172,9 +172,9 @@ jumpz           @Cond_0838, ($bv018 == 1)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, the Cutting Ore…"
-code0309        
+code0309
 dialogtxt       "Give it. Okay? Please?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0834, ($bv029 != 0)
@@ -182,7 +182,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ah, that's it."
 dialogtxt       "Give it to me, please."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -190,14 +190,14 @@ jumpz           @Cond_07ee, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is this enough?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll count on you again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0830
@@ -206,7 +206,7 @@ goto            @Label_0830
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Cheapskate~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0830
@@ -222,7 +222,7 @@ jumpz           @Label_0898, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll count on you again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0898
@@ -240,7 +240,7 @@ code047e        0, 1
 dialogtxt       "I'm in need of"
 dialogtxt       "a Kicker Potion…"
 dialogtxt       "Could you find some for me?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0ad8, ($bv029 != 0)
@@ -248,7 +248,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "That's it, that's it."
 dialogtxt       "Can you give it to me?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -256,14 +256,14 @@ jumpz           @Cond_0a7e, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Take this…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll not forget this favor."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0ad4
@@ -272,7 +272,7 @@ goto            @Label_0ad4
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, it's not for me…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0ad4
@@ -289,7 +289,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Are there any"
 dialogtxt       "Kicker Potions anywhere…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0ccc, ($bv029 != 0)
@@ -297,7 +297,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "That's it, that's it."
 dialogtxt       "Can you give it to me?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -305,14 +305,14 @@ jumpz           @Cond_0c72, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Take this…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll not forget this favor."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0cc8
@@ -321,7 +321,7 @@ goto            @Label_0cc8
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, it's not for me…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0cc8
@@ -337,7 +337,7 @@ jumpz           @Label_0d2c, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll not forget this favor."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0d2c
@@ -355,11 +355,11 @@ code047e        0, 1
 dialogtxt       "Ah, you there."
 dialogtxt       "Have you seen a charm"
 dialogtxt       "that protects from evil?"
-code0309        
+code0309
 dialogtxt       "Recently, I've been worried"
 dialogtxt       "about my safety."
 dialogtxt       "Where could I find one…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_0f90, ($bv029 != 0)
@@ -367,7 +367,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, there it is."
 dialogtxt       "Please give it to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -375,14 +375,14 @@ jumpz           @Cond_0f38, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll give you this as thanks."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0f8c
@@ -391,7 +391,7 @@ goto            @Label_0f8c
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Okay then, I'll find another."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0f8c
@@ -408,7 +408,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is there a charm that protects"
 dialogtxt       "from evil anywhere?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_116e, ($bv029 != 0)
@@ -416,7 +416,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Oh, there it is."
 dialogtxt       "Please give it to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -424,14 +424,14 @@ jumpz           @Cond_1116, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll give you this as thanks."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_116a
@@ -440,7 +440,7 @@ goto            @Label_116a
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Okay then, I'll find another."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_116a
@@ -456,7 +456,7 @@ jumpz           @Label_11c8, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_11c8
@@ -474,18 +474,18 @@ code047e        0, 1
 dialogtxt       "Going out for something?"
 dialogtxt       "While you're out, could"
 dialogtxt       "you find me a Backlight Lamp?"
-code0309        
+code0309
 dialogtxt       "In exchange, I'll give you"
 dialogtxt       "something quite nice."
 dialogtxt       "I can't say what it is though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_149c, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ahh, that's it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -494,7 +494,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -502,12 +502,12 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hm?"
 dialogtxt       "It's not that great?"
-code0309        
+code0309
 dialogtxt       "Well, I thought it was a great deal."
 dialogtxt       "Ahahaha."
-code0309        
+code0309
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1498
@@ -517,7 +517,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "That's too bad. It is a"
 dialogtxt       "really great item, though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1498
@@ -535,17 +535,17 @@ code047e        0, 1
 dialogtxt       "It's fine if you're busy,"
 dialogtxt       "but I'd appreciate it if you"
 dialogtxt       "could find me a Backlight Lamp."
-code0309        
+code0309
 dialogtxt       "I've heard that it's"
 dialogtxt       "a fishing prize in some town."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_172e, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ahh, that's it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -554,7 +554,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -562,10 +562,10 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hm?"
 dialogtxt       "It's not that great?"
-code0309        
+code0309
 dialogtxt       "Well, I thought it was a great deal."
 dialogtxt       "Ahahaha."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_172a
@@ -575,7 +575,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "That's too bad. It is a"
 dialogtxt       "really great item, though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_172a
@@ -591,7 +591,7 @@ jumpz           @Label_1788, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1788
@@ -612,21 +612,21 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Will you be staying here"
 dialogtxt       "for a while?"
-code0309        
+code0309
 dialogtxt       "If you are, then"
 dialogtxt       "could you take the opportunity"
 dialogtxt       "to find some Black Ore for me?"
-code0309        
+code0309
 dialogtxt       "I'll give you something good"
 dialogtxt       "for it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_1a3a, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Yeah! That's it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -635,7 +635,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -643,7 +643,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Let's do this again, okay?"
 dialogtxt       "Take care of yourself."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1a36
@@ -652,7 +652,7 @@ goto            @Label_1a36
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hohoho, no good?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1a36
@@ -670,14 +670,14 @@ code047e        0, 1
 dialogtxt       "If you're in a hurry, it's fine."
 dialogtxt       "Let me know if you find"
 dialogtxt       "any Black Ore though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_1c48, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Yeah! That's it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -686,7 +686,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -694,7 +694,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Let's do this again, okay?"
 dialogtxt       "Take care of yourself."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1c44
@@ -703,7 +703,7 @@ goto            @Label_1c44
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hohoho, no good?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1c44
@@ -720,7 +720,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Let's do this again, okay?"
 dialogtxt       "Take care of yourself."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1cb8
@@ -738,18 +738,18 @@ code047e        0, 1
 dialogtxt       "Are you about to go out?"
 dialogtxt       "Could you find a"
 dialogtxt       "Vampire Pump for me?"
-code0309        
+code0309
 dialogtxt       "In exchange, I'll give you"
 dialogtxt       "something quite nice."
 dialogtxt       "I can't say what it is though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_1f3a, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ahh, that's it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -758,14 +758,14 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1f36
@@ -775,7 +775,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "That's too bad. It is a"
 dialogtxt       "really great item, though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1f36
@@ -793,14 +793,14 @@ code047e        0, 1
 dialogtxt       "It's fine if it's in the way,"
 dialogtxt       "but could you find me"
 dialogtxt       "a Vampire Pump, please?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_2144, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ahh, that's it."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -809,14 +809,14 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_2140
@@ -826,7 +826,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "That's too bad. It is a"
 dialogtxt       "really great item, though."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_2140
@@ -842,7 +842,7 @@ jumpz           @Label_219e, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_219e
@@ -860,9 +860,9 @@ code047e        0, 1
 dialogtxt       "Ah~"
 dialogtxt       "I really want to eat rice with"
 dialogtxt       "eggs on it right now."
-code0309        
+code0309
 dialogtxt       "But, I can't leave my post~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_23ea, ($bv029 != 0)
@@ -870,7 +870,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Aha!"
 dialogtxt       "That smell, could it be…eggs?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -879,14 +879,14 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_23e6
@@ -896,7 +896,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "It's getting cold…"
 dialogtxt       "Damn it~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_23e6
@@ -912,9 +912,9 @@ jumpz           @Cond_25d8, ($bv018 == 1)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Rice with egg on top…"
-code0309        
+code0309
 dialogtxt       "Ahh~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_25d4, ($bv029 != 0)
@@ -922,7 +922,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Aha!"
 dialogtxt       "That smell, could it be…eggs?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -931,14 +931,14 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
 dialogtxt       "Take this in exchange."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_25d0
@@ -948,7 +948,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "It's getting cold…"
 dialogtxt       "Damn it~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_25d0
@@ -964,7 +964,7 @@ jumpz           @Label_262e, ($bv018 == 7)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Until we meet again."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_262e
@@ -985,17 +985,17 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, you."
 dialogtxt       "Have you seen some Alle Fruit?"
-code0309        
+code0309
 dialogtxt       "If I had that,"
 dialogtxt       "I could make it through."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_28a8, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "There it is. Give it to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -1003,7 +1003,7 @@ jumpz           @Cond_285a, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -1011,7 +1011,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'm sorry about asking for"
 dialogtxt       "something so unreasonable…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_28a4
@@ -1020,7 +1020,7 @@ goto            @Label_28a4
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll look for it myself."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_28a4
@@ -1037,14 +1037,14 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "I wonder if the Alle Fruit"
 dialogtxt       "is here anywhere…?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 jumpz           @Cond_2a9a, ($bv029 != 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "There it is. Give it to me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d18
@@ -1052,7 +1052,7 @@ jumpz           @Cond_2a4c, ($bv018 == 3)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_2d72
@@ -1060,7 +1060,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'm sorry about asking for"
 dialogtxt       "something so unreasonable…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_2a96
@@ -1069,7 +1069,7 @@ goto            @Label_2a96
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'll look for it myself."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_2a96
@@ -1086,7 +1086,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "I'm sorry about asking for"
 dialogtxt       "something so unreasonable…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_2b10
@@ -1103,7 +1103,7 @@ jumpz           @Label_2b3c, ($h311 == 99)
 goto            @Label_2b3c
 
 @Label_2b3c:
-done            
+done
 
 @Func_2b3e:
 jumpz           @Cond_2b52, ($h311 == 0)
@@ -1181,14 +1181,14 @@ goto            @Label_2d0a
 
 @Label_2d0a:
 setvar          $bv029, $b070
-ret             
+ret
 
 @Func_2d18:
 code037c        $h232
 menutitle       "Will you hand over [NAME 4]?"
 menutxt         @Menu_2d4c, "Hand it over"
 menutxt         @Menu_2d70, "Keep it"
-menuwait        
+menuwait
 
 @Menu_2d4c:
 setvar          $bv018, ($bv018 | 0x0002)
@@ -1196,7 +1196,7 @@ code0366        $h232, -1
 goto            @Menu_2d70
 
 @Menu_2d70:
-ret             
+ret
 
 @Func_2d72:
 jumpz           @Cond_2d86, ($h311 == 0)
@@ -1264,45 +1264,45 @@ jumpz           @Label_2f08, ($h311 == 99)
 goto            @Label_2f08
 
 @Label_2f08:
-code0367        
+code0367
 setvar          $bv018, ($bv018 | 0x0004)
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -1317,7 +1317,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -1328,13 +1328,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_3266, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -1416,57 +1416,56 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_34a0
 
 @Label_34a0:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

@@ -343,7 +343,7 @@ goto            @Label_0690
 
 @Label_0690:
 setvar          $bv031, 0
-done            
+done
 
 @Func_069e:
 code047d        0, 145
@@ -351,10 +351,10 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Cat error."
 dialogtxt       "POS_TEMP is not set."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0718:
 code047d        0, 145
@@ -364,10 +364,10 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, have you seen a"
 dialogtxt       "white cat somewhere?"
-code0309        
+code0309
 dialogtxt       "I think I can hear"
 dialogtxt       "one crying for help."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_18f0
@@ -377,13 +377,13 @@ goto            @Label_090a
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Welcome back, Shiro~"
-code0309        
+code0309
 dialogtxt       "Oh, I'm sorry."
 dialogtxt       "I was so happy,"
 dialogtxt       "I just fell into a trance."
-code0309        
+code0309
 dialogtxt       "I'll give you this as a reward."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1918
@@ -391,7 +391,7 @@ setvar          $bv033, ($bv033 + 1)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Don't go anywhere dangerous anymore~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_090a
@@ -403,13 +403,13 @@ goto            @Label_096e
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Don't go anywhere dangerous anymore~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_096e
 
 @Label_096e:
-ret             
+ret
 
 @Func_0970:
 code047d        0, 145
@@ -419,15 +419,15 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Shiro has disappeared."
 dialogtxt       "But…"
-code0309        
+code0309
 dialogtxt       "I don't think she's lost."
 dialogtxt       "I think she set out"
 dialogtxt       "on a journey on her own."
-code0309        
+code0309
 dialogtxt       "And it looks like I've"
 dialogtxt       "found a new friend."
 dialogtxt       "Aah~ This is true happiness."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0af8
@@ -436,7 +436,7 @@ goto            @Label_0af8
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is there a cute cat anywhere?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0af8
@@ -449,18 +449,18 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "I think there's two types of people"
 dialogtxt       "in this world."
-code0309        
+code0309
 dialogtxt       "Those who like cats,"
 dialogtxt       "and those who don't."
-code0309        
+code0309
 dialogtxt       "Which one are you?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0b9c
 
 @Label_0b9c:
-ret             
+ret
 
 @Func_0b9e:
 code047d        0, 120
@@ -470,10 +470,10 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, have you seen a"
 dialogtxt       "white cat somewhere?"
-code0309        
+code0309
 dialogtxt       "I think I can hear"
 dialogtxt       "one crying for help."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_18f0
@@ -483,12 +483,12 @@ goto            @Label_0d74
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Shiroooo~~"
-code0309        
+code0309
 dialogtxt       "Ah."
-code0309        
+code0309
 dialogtxt       "I can't thank you enough."
 dialogtxt       "Please, take this."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1918
@@ -498,7 +498,7 @@ code047e        0, 1
 dialogtxt       "Alright Shiro,"
 dialogtxt       "no more getting yourself"
 dialogtxt       "into trouble now~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0d74
@@ -512,13 +512,13 @@ code047e        0, 1
 dialogtxt       "Alright Shiro,"
 dialogtxt       "no more getting yourself"
 dialogtxt       "into trouble now~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0dde
 
 @Label_0dde:
-ret             
+ret
 
 @Func_0de0:
 code047d        0, 145
@@ -526,16 +526,16 @@ jumpz           @Cond_0efe, ($bv034 > 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Shiro has left."
-code0309        
+code0309
 dialogtxt       "But, they seemed full of"
 dialogtxt       "determination when they left."
-code0309        
+code0309
 dialogtxt       "It's hard being apart"
 dialogtxt       "from Shiro."
-code0309        
+code0309
 dialogtxt       "I'll have to get along"
 dialogtxt       "with the one left in her place."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0f56
@@ -544,13 +544,13 @@ goto            @Label_0f56
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is there a cute cat anywhere?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_0f56
 
 @Label_0f56:
-ret             
+ret
 
 @Func_0f58:
 code047d        0, 145
@@ -560,17 +560,17 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, have you seen a"
 dialogtxt       "white cat somewhere?"
-code0309        
+code0309
 jumpz           @Cond_1040, ($h311 == 8 && ($bv034 != 0 ? 1 : 0))
 dialogtxt       "They came back the other day,"
 dialogtxt       "but disappeared again…"
-code0309        
+code0309
 goto            @Cond_1040
 
 @Cond_1040:
 dialogtxt       "I think I can hear"
 dialogtxt       "one crying for help."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_18f0
@@ -580,11 +580,11 @@ goto            @Label_11a4
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ohh, there, there."
-code0309        
+code0309
 dialogtxt       "I'm sorry."
 dialogtxt       "I don't think this is enough,"
 dialogtxt       "but accept this as thanks."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1918
@@ -592,7 +592,7 @@ setvar          $bv035, ($bv035 + 1)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Don't go anywhere dangerous anymore~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_11a4
@@ -604,13 +604,13 @@ goto            @Label_120c
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Don't go anywhere dangerous anymore~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_120c
 
 @Label_120c:
-ret             
+ret
 
 @Func_120e:
 code047d        0, 145
@@ -618,15 +618,15 @@ jumpz           @Cond_1316, ($bv035 > 0)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Shiro went off somewhere…"
-code0309        
+code0309
 dialogtxt       "Mysteriously, I'm at peace."
 dialogtxt       "I can feel they're happy,"
 dialogtxt       "wherever they are."
-code0309        
+code0309
 dialogtxt       "And it looks like they"
 dialogtxt       "got new friends."
 dialogtxt       "Aah~ I'm quite happy."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_137e
@@ -636,13 +636,13 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is there a cute cat anywhere?"
 dialogtxt       "I'm so lonely."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_137e
 
 @Label_137e:
-ret             
+ret
 
 @Func_1380:
 code047d        0, 145
@@ -652,10 +652,10 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Hey, have you seen a"
 dialogtxt       "white cat somewhere?"
-code0309        
+code0309
 dialogtxt       "I think I can hear"
 dialogtxt       "one crying for help."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_18f0
@@ -665,13 +665,13 @@ goto            @Label_1552
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Welcome back, [NAME 1]."
-code0309        
+code0309
 dialogtxt       "Mm?"
 dialogtxt       "Would naming them [NAME 1]"
 dialogtxt       "be considered strange?"
-code0309        
+code0309
 dialogtxt       "I'll give you this as thanks."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1918
@@ -679,7 +679,7 @@ setvar          $bv036, ($bv036 + 1)
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Don't go anywhere dangerous anymore~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1552
@@ -691,13 +691,13 @@ goto            @Label_15b6
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Don't go anywhere dangerous anymore~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_15b6
 
 @Label_15b6:
-ret             
+ret
 
 @Func_15b8:
 code047d        0, 145
@@ -706,13 +706,13 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "They suddenly showed up at our home"
 dialogtxt       "and suddenly went off somewhere."
-code0309        
+code0309
 dialogtxt       "It feels like [NAME 1]"
 dialogtxt       "is doing fine, wherever they are."
-code0309        
+code0309
 dialogtxt       "In exchange, it looks like"
 dialogtxt       "they brought their friends."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_170a
@@ -721,13 +721,13 @@ goto            @Label_170a
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Is there a cute cat anywhere?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_170a
 
 @Label_170a:
-ret             
+ret
 
 @Func_170c:
 code047d        0, 145
@@ -737,12 +737,12 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "You're a real cat lover."
 dialogtxt       "I can tell just looking at you."
-code0309        
+code0309
 dialogtxt       "No cat lover is a bad person."
-code0309        
+code0309
 dialogtxt       "And so, I'll give you this,"
 dialogtxt       "as a present."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1918
@@ -754,7 +754,7 @@ code047e        0, 1
 dialogtxt       "Shiro brought back"
 dialogtxt       "a bunch of friends this time too."
 dialogtxt       "It's like a kingdom of cats."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_18a0
@@ -766,13 +766,13 @@ goto            @Label_18ee
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Meow, meow~"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_18ee
 
 @Label_18ee:
-ret             
+ret
 
 @Func_18f0:
 jumpz           @Cond_1916, ($bv020 == 0)
@@ -780,7 +780,7 @@ setvar          $bv020, ($bv020 | 0x0001)
 goto            @Cond_1916
 
 @Cond_1916:
-ret             
+ret
 
 @Func_1918:
 jumpz           @Cond_193a, ($h311 != 99)
@@ -854,45 +854,45 @@ code0366        385, 1
 goto            @Label_1ade
 
 @Label_1ade:
-code0367        
+code0367
 setvar          $bv020, ($bv020 | 0x0002)
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -907,7 +907,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -918,13 +918,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_1e3c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -1006,57 +1006,56 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_2076
 
 @Label_2076:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

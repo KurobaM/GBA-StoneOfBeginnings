@@ -4,7 +4,7 @@ code0408        1
 code0410        0, 390, 392, -1
 code0410        1, 390, 393, -1
 code0410        2, 391, 394, -1
-code0411        
+code0411
 code0430        395
 code0412        4, 1
 code0418        2
@@ -85,7 +85,7 @@ goto            @Cond_05ac
 code041c        0, 304, 24, 1
 jumpz           @Cond_05f6, ($h319 == 0)
 code041c        1, 304, 24, 1
-code0475        
+code0475
 goto            @Label_06e4
 
 @Cond_05f6:
@@ -96,13 +96,13 @@ goto            @Label_06e4
 @Cond_0624:
 jumpz           @Cond_0654, ($h319 == 62)
 code041c        5, 48, 104, 1
-code0475        
+code0475
 goto            @Label_06e4
 
 @Cond_0654:
 jumpz           @Cond_0684, ($h319 == -1)
 code041c        8, 384, 134, 1
-code0475        
+code0475
 goto            @Label_06e4
 
 @Cond_0684:
@@ -112,9 +112,9 @@ goto            @Label_06e4
 
 @Cond_06b2:
 jumpz           @Label_06e4, ($h319 == -3)
-code04a1        
+code04a1
 code041c        11, 0, 0, 1
-code0475        
+code0475
 goto            @Label_06e4
 
 @Label_06e4:
@@ -174,9 +174,9 @@ goto            @Cond_09f0
 
 @Cond_09f0:
 setvar          $h319, 70
-code0409        
+code0409
 code046e        19, 256, 0
-code041d        
+code041d
 jumpz           @Cond_0a44, ($b073 == 1)
 setvar          $b073, 0
 code0006        13
@@ -208,7 +208,7 @@ goto            @Cond_0aec
 
 @Cond_0aec:
 placetxt        "Bajan Forest　Area 1"
-code040b        
+code040b
 
 @Event_0b08:
 code046c        0
@@ -219,7 +219,7 @@ setvar          $h096, 48
 setvar          $h137, 60
 setvar          $h136, 0
 call            @Func_12c2
-code040a        
+code040a
 gotomap         401 ; map 17344cc
 
 @Event_0b6a:
@@ -229,11 +229,11 @@ code047d        0, 118
 code047e        0, 1
 dialogtxt       "You should train elsewhere."
 dialogtxt       "The main road is dangerous."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_18de
-code040b        
+code040b
 
 @Event_0bfc:
 code046c        0
@@ -242,7 +242,7 @@ code043e        0, 3, 0
 code0006        1963
 code046c        1
 code0461        5
-code040b        
+code040b
 
 @Event_0c3e:
 code043e        0, 3, 0
@@ -251,20 +251,20 @@ code0301        8, 7
 code047d        0, 118
 code047e        0, 1
 dialogtxt       "Work hard on your training."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code043e        3, 0, 0
 call            @Func_18de
-code040b        
+code040b
 
 @Label_0cd4:
 setvar          $h096, 47
-code0332        
+code0332
 code033a        116, 0
 code0468        0
 code033e        116
-code040a        
+code040a
 code0006        31
 goto            @start
 
@@ -285,11 +285,11 @@ dialogtxt       "go back now."
 goto            @Label_0db6
 
 @Label_0db6:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1892
-code040b        
+code040b
 
 goto            @Cond_0dd8
 
@@ -298,8 +298,8 @@ setvar          $h096, 48
 code0006        20
 code0470        544, 799, 0
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 jumpz           @Cond_0e3a, ($h311 == 0)
 gotomap         201 ; map 172940c
 
@@ -386,8 +386,8 @@ goto            @Event_0fa6
 @Event_0fa6:
 setvar          $h096, 48
 code041c        21, 72, 527, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3063 ; map 1890d0c
 
 @Event_0fd8:
@@ -395,8 +395,8 @@ setvar          $h096, 48
 code0006        20
 code0470        544, 799, 0
 code041c        21, 48, 95, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3033 ; map 188e8ac
 
 @Event_1026:
@@ -411,7 +411,7 @@ call            @Func_1302
 code0461        3
 mapev           3, @Event_10bc, 16
 mapevpos        3, (47,16)-(48,17)
-code040b        
+code040b
 
 @Event_10bc:
 code0006        12
@@ -421,7 +421,7 @@ gotomap         $h313
 goto            @Cond_10e0
 
 @Cond_10e0:
-code040b        
+code040b
 
 @Event_10e2:
 setvar          $f1139, 1
@@ -438,73 +438,73 @@ code0305        1
 dialogtxt       "This is a teleporter."
 dialogtxt       "It allows you to warp to"
 dialogtxt       "any other active teleporters."
-code0309        
+code0309
 dialogtxt       "Strike it with your hammer,"
 dialogtxt       "then stand on top of it and"
 dialogtxt       "hit the A button."
-code0309        
+code0309
 dialogtxt       "Currently, there are no other"
 dialogtxt       "active teleporters."
 dialogtxt       "The teleporter cannot be used."
-code0309        
+code0309
 code0302        9
 code0461        4
-code040b        
+code040b
 
 @Label_1286:
 code0006        21
-code040b        
+code040b
 
 @Label_1290:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_12a4:
 setvar          $bv048, ($bv048 | 0x0001)
 code0461        5
-code040b        
+code040b
 
-done            
+done
 
 @Func_12c2:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_1302:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -519,7 +519,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -530,13 +530,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_160a, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -618,36 +618,36 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1844
 
 @Label_1844:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_1892:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_18de:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -660,5 +660,4 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
-
+ret

@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 35, 37, -1
 code0410        1, 35, 39, -1
 code0410        2, 36, 40, -1
-code0411        
+code0411
 code0430        41
 code0412        4, 1
 code0418        2
@@ -25,7 +25,7 @@ mapevpos        0, (30,4)-(31,21)
 mapev           31, @Event_021c, 32
 mapevpos        31, (19,6)-(23,6)
 setvar          $h319, 2
-code0409        
+code0409
 jumpz           @Cond_01b0, ($f0046 == 1 && $f0051 == 0)
 code046e        38, 256, 0
 goto            @Label_01c8
@@ -35,71 +35,71 @@ code046e        13, 256, 0
 goto            @Label_01c8
 
 @Label_01c8:
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_01cc:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         401 ; map 17344cc
 
 @Label_01fe:
 code0006        21
-code040b        
+code040b
 
 @Label_0208:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_021c:
 code0301        8, 7
 dialogtxt       "Please watch your step when you"
 dialogtxt       "board the Summon Beast railway!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -114,7 +114,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -125,13 +125,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_05ba, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -213,34 +213,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_07f4
 
 @Label_07f4:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -253,7 +253,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_09f8:
 code0438        16, 362, 632, 1
@@ -262,10 +262,9 @@ code043d        16, 144, 200
 code043c        16, 1
 code0442        16, @Talk_0a62
 code0444        16, -1
-ret             
+ret
 
 @Talk_0a62:
 setvar          $bv031, 1
 code0006        3916
-code040b        
-
+code040b

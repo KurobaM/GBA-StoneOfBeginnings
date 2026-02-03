@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 20, 22, -1
 code0410        1, 20, 23, -1
 code0410        2, 21, 24, 25
-code0411        
+code0411
 code0430        26
 code0412        4, 1
 code0418        2
@@ -36,7 +36,7 @@ goto            @Label_0278
 @Cond_01ea:
 jumpz           @Cond_021a, ($h319 == 70)
 code041c        1, 256, 311, 3
-code0475        
+code0475
 goto            @Label_0278
 
 @Cond_021a:
@@ -47,14 +47,14 @@ goto            @Label_0278
 @Cond_0248:
 jumpz           @Label_0278, ($h319 == -3)
 code041c        11, 384, 136, 1
-code0475        
+code0475
 goto            @Label_0278
 
 @Label_0278:
 code0450        0, 1, -1
 code0452        0, 47, 12
 code0453        0, @Label_05d6, 0
-code04a3        
+code04a3
 jumpz           @Cond_02e8, ($h101 != 1)
 code0420        0, 5, 19
 code0422        0, 0
@@ -77,37 +77,37 @@ mapevpos        3, (29,39)-(34,39)
 mapev           4, @Event_055a, 8
 mapevpos        4, (31,15)-(32,15)
 setvar          $h319, 0
-code0409        
+code0409
 code046e        13, 256, 0
-code041d        
+code041d
 placetxt        "Deckell Village　Square"
-code040b        
+code040b
 
 @Event_043a:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1202 ; map 178329c
 
 @Event_046c:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1203 ; map 178385c
 
 @Event_049e:
 setvar          $h096, 32
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1204 ; map 1783c1c
 
 @Event_04d0:
 setvar          $h096, 32
 setvar          $h315, 0
-code04a3        
+code04a3
 jumpz           @Cond_051a, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -116,14 +116,14 @@ goto            @Cond_051a
 @Cond_051a:
 jumpz           @Cond_0534, ($h101 == 1)
 call            @Func_0ba0
-code040b        
+code040b
 
 goto            @Cond_0534
 
 @Cond_0534:
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3061 ; map 188f9fc
 
 @Event_055a:
@@ -132,9 +132,9 @@ code0419        0, 2, 0, 30, 12, 0
 code033a        109, 0
 code041b        0
 code041c        19, 256, 112, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1211 ; map 178528c
 
 @Label_05d6:
@@ -145,54 +145,54 @@ gotomap         $h100
 goto            @Cond_05fa
 
 @Cond_05fa:
-code040b        
+code040b
 
 code0006        1291
-code040b        
+code040b
 
 @Label_0606:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -207,7 +207,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -218,13 +218,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0964, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -306,35 +306,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0b9e
 
 @Label_0b9e:
-ret             
+ret
 
 @Func_0ba0:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -347,7 +347,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0da2:
 code0438        16, 364, 632, 1
@@ -373,17 +373,17 @@ code043d        21, 240, 288
 code043c        21, 1
 code0442        21, @Talk_1034
 code0444        21, -1
-ret             
+ret
 
 @Talk_0f36:
 code0301        8, 7
 code047d        0, 122
 code047e        0, 1
 dialogtxt       "Azuki beans are good for the body."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0f90:
 code0301        8, 7
@@ -392,23 +392,22 @@ code047e        0, 1
 dialogtxt       "Becoming a hero or a swordsman"
 dialogtxt       "both seem too hard…"
 dialogtxt       "Maybe I'll be a Craftknight instead."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_101e:
 setvar          $bv031, 1
 code0006        3917
-code040b        
+code040b
 
 @Talk_1034:
 code0301        8, 7
 code047d        0, 118
 code047e        0, 1
 dialogtxt       "Well, do your best."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

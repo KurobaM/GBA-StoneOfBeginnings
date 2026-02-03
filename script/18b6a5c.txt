@@ -4,7 +4,7 @@ code0408        1
 code0410        0, 567, 905, -1
 code0410        1, 568, 906, -1
 code0410        2, 569, 907, 611
-code0411        
+code0411
 code0430        908
 code0412        4, 1
 code0418        2
@@ -72,9 +72,9 @@ goto            @Label_044a
 
 @Cond_0418:
 jumpz           @Label_044a, ($h319 == -3)
-code04a1        
+code04a1
 code041c        11, 0, 0, 1
-code0475        
+code0475
 goto            @Label_044a
 
 @Label_044a:
@@ -123,9 +123,9 @@ goto            @Label_0712
 
 @Label_0712:
 setvar          $h319, 281
-code0409        
+code0409
 code046e        26, 256, 0
-code041d        
+code041d
 jumpz           @Cond_0766, ($b073 == 1)
 setvar          $b073, 0
 code0006        13
@@ -148,23 +148,23 @@ goto            @Label_07b6
 
 @Label_07b6:
 placetxt        "Gumag Fire Ruins　Area 2"
-code040b        
+code040b
 
 @Label_07d4:
 setvar          $h096, 47
-code0332        
+code0332
 code033a        116, 0
 code0468        3
 code033e        116
-code040a        
+code040a
 code0006        31
 goto            @start
 
 @Event_080e:
 setvar          $h096, 48
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3541 ; map 18b662c
 
 @Event_0840:
@@ -174,9 +174,9 @@ code0419        3, 2, 10, 18, 4, 0
 code033a        110, 0
 code041b        3
 code041c        19, 160, 72, 3
-code041d        
+code041d
 code041a        3, 0
-code040a        
+code040a
 gotomap         3543 ; map 18b713c
 
 @Event_08c8:
@@ -186,9 +186,9 @@ code0419        3, 2, 10, 34, 4, 0
 code033a        110, 0
 code041b        3
 code041c        19, 288, 72, 3
-code041d        
+code041d
 code041a        3, 0
-code040a        
+code040a
 gotomap         3543 ; map 18b713c
 
 @Event_0950:
@@ -198,8 +198,8 @@ setvar          $h144, 0
 setvar          $h145, 0
 setvar          $f1072, 1
 code041c        19, 480, 72, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3543 ; map 18b713c
 
 @Event_09b2:
@@ -231,7 +231,7 @@ goto            @Cond_0a9c
 goto            @Label_0aa0
 
 @Label_0aa0:
-code040b        
+code040b
 
 @Event_0aa2:
 setvar          $h145, ($h145 ^ 0x0001)
@@ -262,7 +262,7 @@ goto            @Cond_0b8c
 goto            @Label_0b90
 
 @Label_0b90:
-code040b        
+code040b
 
 @Label_0b92:
 code0419        0, 2, 11, 58, 4, 0
@@ -271,7 +271,7 @@ code041b        0
 code0461        5
 mapev           5, @Event_0950, 4
 mapevpos        5, (59,9)-(60,9)
-code040b        
+code040b
 
 @Label_0c08:
 code041a        0, 0
@@ -282,64 +282,64 @@ code0461        5
 mapev           5, @Event_0c9a, 8
 mapevpos        5, (59,9)-(60,9)
 code041a        0, 0
-code040b        
+code040b
 
 @Event_0c9a:
 code0301        8, 7
 dialogtxt       "Open the door by pressing"
 dialogtxt       "the matching switch for"
 dialogtxt       "the weapon shown."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Label_0cf8:
 code0006        21
-code040b        
+code040b
 
 @Label_0d02:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -354,7 +354,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -365,13 +365,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_1060, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -453,34 +453,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_129a
 
 @Label_129a:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -493,5 +493,4 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
-
+ret

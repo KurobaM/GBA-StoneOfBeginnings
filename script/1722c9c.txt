@@ -1,6 +1,6 @@
 code0301        0, 7
 dialogtxt       "Your firewood chopping level is:…"
-code0309        
+code0309
 jumpz           @Cond_0052, ($h045 < 10)
 dialogtxt       "Chopping novice."
 goto            @Label_0108
@@ -31,9 +31,9 @@ dialogtxt       "Chopping champion."
 goto            @Label_0108
 
 @Label_0108:
-code0309        
+code0309
 dialogtxt       "Yep."
-code0309        
+code0309
 code0302        7
 code0443        0, 256, 0
 jumpz           @Cond_019c, ($h045 < 10)
@@ -99,12 +99,12 @@ goto            @Cond_030a
 @Cond_030a:
 code0301        0, 7
 dialogtxt       "Here's your reward."
-code0309        
+code0309
 dialogtxt       "Take it."
-code0309        
+code0309
 code0302        7
 code0364        $h219
-code0365        
+code0365
 jumpz           @Cond_0374, ($h045 < 10)
 goto            @Label_0428
 
@@ -113,34 +113,33 @@ goto            @Label_0428
 @Cond_0374:
 jumpz           @Cond_0398, ($h045 < 20)
 code0366        336, 5
-code0367        
+code0367
 goto            @Label_0428
 
 @Cond_0398:
 jumpz           @Cond_03bc, ($h045 < 40)
 code0366        337, 4
-code0367        
+code0367
 goto            @Label_0428
 
 @Cond_03bc:
 jumpz           @Cond_03e0, ($h045 < 70)
 code0366        338, 3
-code0367        
+code0367
 goto            @Label_0428
 
 @Cond_03e0:
 jumpz           @Cond_0404, ($h045 < 100)
 code0366        339, 2
-code0367        
+code0367
 goto            @Label_0428
 
 @Cond_0404:
 jumpz           @Label_0428, ($h045 >= 100)
 code0366        340, 1
-code0367        
+code0367
 goto            @Label_0428
 
 @Label_0428:
 setvar          $h219, 0
-done            
-
+done

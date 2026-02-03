@@ -18,66 +18,66 @@ call            @Func_2962
 dialogtxt       "My, you are…"
 dialogtxt       "That's right…"
 dialogtxt       "I may be able to use them…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_29b6
 code0479        0, 0, 16
 call            @Func_2914
 dialogtxt       "Yes?"
 dialogtxt       "What is it?"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 0, 12
 call            @Func_2980
 dialogtxt       "You may not know this, but"
 dialogtxt       "we, the Gold Faction, control all"
 dialogtxt       "Summoning affairs in this area."
-code0309        
+code0309
 code0479        1, 2, 12
 dialogtxt       "We punish Summoners"
 dialogtxt       "who abuse their powers"
 dialogtxt       "and endanger others…"
-code0309        
+code0309
 code0479        1, 2, 16
 dialogtxt       "We also hunt any resulting"
 dialogtxt       "Summons that become Strays."
-code0309        
+code0309
 call            @Func_29b6
 code0479        0, 2, 14
 call            @Func_2914
 dialogtxt       "Okay…?"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 2, 12
 call            @Func_2980
 dialogtxt       "There are rumors you"
 dialogtxt       "have considerable skill."
-code0309        
+code0309
 code0479        1, 2, 13
 dialogtxt       "Will you put that skill"
 dialogtxt       "to use, and help us "
 dialogtxt       "exterminate Strays?"
-code0309        
+code0309
 code0479        1, 0, 12
 dialogtxt       "As compensation, we can"
 dialogtxt       "provide you with high quality"
 dialogtxt       "materials for crafting."
-code0309        
+code0309
 code0479        1, 1, 13
 dialogtxt       "To a Craftknight,"
 dialogtxt       "that's better than money, correct?"
-code0309        
+code0309
 call            @Func_29b6
 code0479        0, 2, 16
 call            @Func_2914
 dialogtxt       "Okay…?"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 0, 16
 call            @Func_2980
 dialogtxt       "Let me know if you want to"
 dialogtxt       "take the job."
-code0309        
+code0309
 call            @Func_2a50
 call            @Func_299e
 setvar          $bv045, ($bv045 | 0x0001)
@@ -92,8 +92,8 @@ call            @Func_2962
 dialogtxt       "If you're here about the Strays,"
 dialogtxt       "I'm sorry. I have no work for"
 dialogtxt       "you at the moment."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_0604
@@ -105,8 +105,8 @@ call            @Func_2962
 dialogtxt       "If you're here about the Strays,"
 dialogtxt       "I have something you can help with."
 dialogtxt       "Want to give it a try?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_17ee
 call            @Func_2a50
 call            @Func_299e
@@ -126,8 +126,8 @@ code0476        -14973, $w014, 0
 dialogtxt       "About [NAME 5] [NAME 6]s left…"
 call            @Func_1d26
 dialogtxt       "Good luck!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_073c
@@ -138,8 +138,8 @@ code0479        1, 0, 13
 call            @Func_2962
 dialogtxt       "Thanks for hunting those strays."
 dialogtxt       "Here's you reward."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 call            @Func_1b60
@@ -156,8 +156,8 @@ call            @Func_2962
 dialogtxt       "If you're here about the Strays,"
 dialogtxt       "I'm sorry. I have no work for"
 dialogtxt       "you at the moment."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_0880
@@ -170,8 +170,8 @@ call            @Func_2962
 dialogtxt       "If you're here about Strays, sorry."
 dialogtxt       "There's not enough to go around"
 dialogtxt       "right now."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_0880
@@ -195,71 +195,71 @@ jumpz           @Cond_0d00, !($bv045 & 0x0002)
 call            @Func_2962
 dialogtxt       "Oh, you all…"
 dialogtxt       "Are you free right now?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_29b6
 code0479        0, 0, 16
 call            @Func_2914
 dialogtxt       "I mean…"
 dialogtxt       "I guess so…?"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 0, 14
 call            @Func_2980
 dialogtxt       "Well, Lady Ianna asked me to"
 dialogtxt       "hunt some Strays."
-code0309        
+code0309
 code0479        1, 0, 16
 dialogtxt       "But right now, all the strong"
 dialogtxt       "people seem to be busy…"
-code0309        
+code0309
 dialogtxt       "And Lady Ianna won't give me"
 dialogtxt       "much in the way of a budget…"
-code0309  
+code0309
 code0479        1, 4, 14
 dialogtxt       "And some of the targets seem a"
 dialogtxt       "little too strong for me…"
-code0309        
+code0309
 call            @Func_29b6
 code0479        0, 0, 14
 call            @Func_2914
 dialogtxt       "Okay…?"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 0, 12
 call            @Func_2980
 dialogtxt       "So I thought maybe you kind souls"
 dialogtxt       "could lend this poor man"
 dialogtxt       "a helping hand?"
-code0309        
+code0309
 call            @Func_29b6
 code0479        0, 2, 16
 call            @Func_2914
 dialogtxt       "A helping hand…"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 0, 13
 call            @Func_2980
 dialogtxt       "If you could accept this request"
 dialogtxt       "of mine, I'll give you an item"
 dialogtxt       "that can enchance your weapons!"
-code0309        
+code0309
 code0479        1, 1, 12
 dialogtxt       "Lady Ianna told me this item"
 dialogtxt       "is worth it's weight in gold"
 dialogtxt       "to any Craftnight!"
-code0309        
+code0309
 call            @Func_29b6
 code0479        0, 4, 12
 call            @Func_2914
 dialogtxt       "Okay…?"
-code0309        
+code0309
 call            @Func_294a
 code0479        1, 0, 12
 call            @Func_2980
 dialogtxt       "Great!"
 dialogtxt       "Just let me know when you're ready."
-code0309        
+code0309
 call            @Func_2a50
 call            @Func_299e
 setvar          $bv045, ($bv045 | 0x0002)
@@ -271,8 +271,8 @@ jumpz           @Cond_0d76, ($bv044 == 1)
 call            @Func_2962
 dialogtxt       "Sorry. We don't have any requests"
 dialogtxt       "to hunt strays right now."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_0de6
@@ -282,8 +282,8 @@ call            @Func_2962
 dialogtxt       "Yes, we had a new Stray hunting"
 dialogtxt       "request come in."
 dialogtxt       "Care to help?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_17ee
 call            @Func_2a50
 call            @Func_299e
@@ -301,8 +301,8 @@ code0476        -14973, $w014, 0
 dialogtxt       "About [NAME 5] [NAME 6]s left…"
 call            @Func_1d26
 dialogtxt       "Good luck!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_0ebc
@@ -312,8 +312,8 @@ call            @Func_2962
 dialogtxt       "I see you've been hunting strays."
 dialogtxt       "I thank you."
 dialogtxt       "Take this as your reward."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 call            @Func_1b60
@@ -327,8 +327,8 @@ jumpz           @Cond_0f26, ($bv043 == 3)
 call            @Func_2962
 dialogtxt       "Sorry. We don't have any requests"
 dialogtxt       "to hunt strays right now."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_1032
@@ -341,15 +341,15 @@ call            @Func_2962
 dialogtxt       "Oh…"
 dialogtxt       "Did you forget your current"
 dialogtxt       "objective…？"
-code047b        
-code0309        
+code047b
+code0309
 code0479        1, 4, 16
 dialogtxt       "How troublesome…"
 code0309
 dialogtxt       "Alright."
 dialogtxt       "We'll act like you never accepted"
 dialogtxt       "the request."
-code0309        
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_1032
@@ -368,23 +368,23 @@ code047e        0, 1
 jumpz           @Cond_11f2, !($bv045 & 0x0004)
 dialogtxt       "You're looking for work?"
 dialogtxt       "At such a young age…"
-code0309        
+code0309
 dialogtxt       "Well…, at this establishment"
 dialogtxt       "we help combat the growing"
 dialogtxt       "number of Stray Summons."
-code0309        
+code0309
 dialogtxt       "Just the weaker ones, though."
-code0309        
+code0309
 dialogtxt       "It can be dull, and we don't"
 dialogtxt       "get paid much…"
-code0309        
+code0309
 dialogtxt       "But our dull efforts are what"
 dialogtxt       "maintain the peace around here!"
-code0309        
+code0309
 dialogtxt       "Well, how about it?"
 dialogtxt       "Think you can see yourself"
 dialogtxt       "working here?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 setvar          $bv045, ($bv045 | 0x0004)
@@ -396,7 +396,7 @@ jumpz           @Cond_1278, ($bv043 == 1)
 dialogtxt       "Hmm… Doesn't look like we have"
 dialogtxt       "anything for you right now."
 dialogtxt       "Maybe next time…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_12e4
@@ -405,7 +405,7 @@ goto            @Label_12e4
 dialogtxt       "Lookin' for some work?"
 dialogtxt       "Today's work'll be a bit rough…"
 dialogtxt       "Feeling up to the challenge?"
-code0309        
+code0309
 call            @Func_17ee
 code047e        0, 0
 code0302        7
@@ -421,9 +421,9 @@ jumpz           @Cond_136c, ($bv029 == 0)
 code0476        -14973, $w014, 0
 dialogtxt       "About [NAME 5] [NAME 6]s left…"
 call            @Func_1d26
-code0309        
+code0309
 dialogtxt       "Good luck, kid."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_13ce
@@ -432,7 +432,7 @@ goto            @Label_13ce
 dialogtxt       "Looks like you're all finished."
 dialogtxt       "Good work out there!"
 dialogtxt       "Here's your pay."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1b60
@@ -446,7 +446,7 @@ jumpz           @Cond_144c, ($bv044 == 3)
 dialogtxt       "Hmm… Doesn't look like we have"
 dialogtxt       "anything for you right now."
 dialogtxt       "Maybe next time…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1500
@@ -455,13 +455,13 @@ goto            @Label_1500
 jumpz           @Label_1500, ($bv044 == 4)
 dialogtxt       "Again?"
 dialogtxt       "Looks like you haven't finished yet…"
-code0309        
+code0309
 dialogtxt       "I can't let someone so"
 dialogtxt       "irresponsible keep working here."
-code0309        
+code0309
 dialogtxt       "You won't be getting any work"
 dialogtxt       "for a while…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 goto            @Label_1500
@@ -518,14 +518,14 @@ dialogtxt       "You're in the way."
 goto            @Label_1742
 
 @Label_1742:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
 goto            @Label_1752
 
 @Label_1752:
-done            
+done
 
 jumpz           @Cond_1780, (($bv043 & 0x0002) || $bv043 == 4)
 setvar          $bv043, 0
@@ -547,7 +547,7 @@ setvar          $bv044, 4
 goto            @Label_17ec
 
 @Label_17ec:
-ret             
+ret
 
 @Func_17ee:
 jumpz           @Cond_194c, ($bv031 == 3)
@@ -630,14 +630,14 @@ goto            @Label_1a86
 code0476        -14973, $h233, 0
 dialogtxt       "[NAME 6] and　[NAME 5]"
 call            @Func_1d26
-code0309        
-ret             
+code0309
+ret
 
 @Func_1aae:
 menutitle       "Accept request?"
 menutxt         @Menu_1ad6, "Yes"
 menutxt         @Menu_1b5e, "No"
-menuwait        
+menuwait
 
 @Menu_1ad6:
 jumpz           @Cond_1afc, ($bv031 == 3)
@@ -650,7 +650,7 @@ goto            @Label_1b12
 
 @Label_1b12:
 code0366        539, 1
-code0367        
+code0367
 setvar          $w013, $h232
 setvar          $w014, $h233
 setvar          $b116, $h233
@@ -658,7 +658,7 @@ code0476        -14461, $w014, 0
 goto            @Menu_1b5e
 
 @Menu_1b5e:
-ret             
+ret
 
 @Func_1b60:
 jumpz           @Cond_1c42, ($bv031 == 3)
@@ -722,9 +722,9 @@ setvar          $bv043, ($bv043 | 0x0002)
 goto            @Label_1d14
 
 @Label_1d14:
-code0367        
+code0367
 code0366        539, -1
-ret             
+ret
 
 @Func_1d26:
 jumpz           @Cond_1ebc, ($bv031 == 3)
@@ -834,7 +834,7 @@ goto            @Label_20ee
 goto            @Label_20f2
 
 @Label_20f2:
-ret             
+ret
 
 call            @Func_2962
 jumpz           @Cond_214e, (($h311 - ($bv041 + $bv042)) == 2)
@@ -876,47 +876,47 @@ dialogtxt       "Maybe you aren't fit for this job."
 goto            @Label_2364
 
 @Label_2364:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2a50
 call            @Func_299e
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -931,7 +931,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -942,13 +942,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_26ba, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -1030,65 +1030,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_28f4
 
 @Label_28f4:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_2914:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_294a:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_2962:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_2980:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_299e:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_29b6:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_29fa:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_2a50:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

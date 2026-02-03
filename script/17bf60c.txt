@@ -1,6 +1,6 @@
 code0488        -1, 1
 code0489        2, 1, 24
-code048c        
+code048c
 code0478        0, 0
 code0479        0, 0, 13
 code047d        0, 0
@@ -8,8 +8,8 @@ call            @Func_0b3c
 call            @Func_0a64
 dialogtxt       "Ah!"
 dialogtxt       "It's Master!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0b92
 call            @Func_0aa0
 code043e        0, 6, 0
@@ -25,8 +25,8 @@ call            @Func_0ad0
 dialogtxt       "How's it going, δ?"
 dialogtxt       "You seem ready to rock."
 dialogtxt       "Find any interesting materials?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0b24
 code0478        0, 0
 code0479        0, 1, 12
@@ -35,46 +35,46 @@ call            @Func_0b3c
 call            @Func_0a82
 dialogtxt       "Yep!"
 dialogtxt       "The Chief gave some to me..."
-code0309        
+code0309
 code0479        0, 5, 16
 dialogtxt       "...wait, that was supposed"
 dialogtxt       "to be a secret..."
 
-code0309        
+code0309
 call            @Func_0ab8
 call            @Func_0aee
 code0479        1, 0, 16
 dialogtxt       "Huh? You're mumbling."
 dialogtxt       "Your speech reflects your skill as"
 dialogtxt       "a professional. Speak clearly."
-code0309        
+code0309
 call            @Func_0b24
 call            @Func_0a82
 code0479        0, 7, 17
 dialogtxt       "Uhh,"
 dialogtxt       "th-the Chief gave you..."
 dialogtxt       "his thanks!"
-code0309        
+code0309
 call            @Func_0ab8
 call            @Func_0aee
 code0479        1, 0, 12
 dialogtxt       "Hm? I see."
 dialogtxt       "Anyway, if you've got everything,"
 dialogtxt       "let's start crafting right now."
-code0309        
+code0309
 code0479        0, 0, 12
 code0479        1, 0, 13
 dialogtxt       "Come inside the workshop and"
 dialogtxt       "let's get the forge fired up!"
-code0309        
+code0309
 call            @Func_0b24
 call            @Func_0a82
 code0479        0, 0, 13
 dialogtxt       "Yeah!"
-code0309        
+code0309
 call            @Func_0bbe
 call            @Func_0aa0
-code047b        
+code047b
 code043e        2, 6, 0
 walkto          2, 384, 204, 1
 walkwait        2
@@ -93,7 +93,7 @@ code041b        0
 code041a        0, 0
 code0488        -1, 1
 code0489        0, 1, 24
-done                     
+done
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -108,7 +108,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -119,13 +119,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0828, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -207,68 +207,67 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a62
 
 @Label_0a62:
-ret             
+ret
 
 @Func_0a64:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0a82:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0aa0:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0ab8:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0ad0:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0aee:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0b24:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_0b3c:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_0b52:
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0b92:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0bbe:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

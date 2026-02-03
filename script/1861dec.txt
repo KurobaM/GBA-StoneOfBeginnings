@@ -1,4 +1,4 @@
-code0332        
+code0332
 code046e        31, 256, 1
 code033a        215, 0
 code046d        1, 192
@@ -32,8 +32,8 @@ call            @Func_1d68
 call            @Func_1ce6
 dialogtxt       "Tch…"
 dialogtxt       "I'm so pathetic…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1d3a
 code0479        0, 1, 12
 call            @Func_1d52
@@ -47,13 +47,13 @@ dialogtxt       "Thanks, [NAME 1]."
 goto            @Label_0254
 
 @Label_0254:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 5, 16
 call            @Func_1d04
 dialogtxt       "Wha…"
 dialogtxt       "For what…?"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 0, 12
 call            @Func_1c98
@@ -70,14 +70,14 @@ dialogtxt       "blown away in an instant."
 goto            @Label_0360
 
 @Label_0360:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 2, 14
 call            @Func_1d04
 dialogtxt       "Wha…!"
 dialogtxt       "It's not like I was"
 dialogtxt       "holding back for you…!"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 1, 12
 call            @Func_1c98
@@ -85,7 +85,7 @@ jumpz           @Cond_04a6, ($b002 == 0)
 dialogtxt       "I know, I know."
 dialogtxt       "For Murno's sake,"
 dialogtxt       "right?"
-code0309        
+code0309
 code0479        0, 0, 16
 dialogtxt       "Of course, if you had really"
 dialogtxt       "tried to erase me then even"
@@ -96,7 +96,7 @@ goto            @Label_0564
 dialogtxt       "I know, I know."
 dialogtxt       "For Murno's sake,"
 dialogtxt       "right?"
-code0309        
+code0309
 code0479        0, 0, 16
 dialogtxt       "Of course, if you had really"
 dialogtxt       "tried to erase me then even"
@@ -104,13 +104,13 @@ dialogtxt       "Murno would be angry at you."
 goto            @Label_0564
 
 @Label_0564:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 3, 15
 call            @Func_1d04
 dialogtxt       "Don't mess with me!"
 dialogtxt       "Why would I care about her…"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 4, 12
 call            @Func_1c98
@@ -127,12 +127,12 @@ dialogtxt       "treasure her."
 goto            @Label_0686
 
 @Label_0686:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 5, 17
 call            @Func_1d04
 dialogtxt       "Wha! No I don't!"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 0, 16
 call            @Func_1c98
@@ -149,13 +149,13 @@ dialogtxt       "Murno would be happy."
 goto            @Label_07a0
 
 @Label_07a0:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 3, 14
 call            @Func_1d04
 dialogtxt       "Why you…!"
 dialogtxt       "Listen to me!"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 2, 14
 call            @Func_1c98
@@ -172,28 +172,28 @@ dialogtxt       "want to protect her?"
 goto            @Label_08a0
 
 @Label_08a0:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 5, 16
 call            @Func_1d04
 dialogtxt       "No…!"
-code0309        
+code0309
 code0479        1, 0, 17
 dialogtxt       "It's just, I…"
 dialogtxt       "I owe her a debt…"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 0, 16
 call            @Func_1c98
 dialogtxt       "…?"
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 0, 12
 call            @Func_1d04
 dialogtxt       "Yeas ago, Murno once"
 dialogtxt       "risked her life for me…"
 dialogtxt       "So…"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 5, 14
 call            @Func_1c98
@@ -208,40 +208,40 @@ dialogtxt       "What on earth happened?"
 goto            @Label_0a46
 
 @Label_0a46:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 2, 13
 call            @Func_1d04
 dialogtxt       "Don't freak out now…"
-code0309        
+code0309
 code0479        1, 2, 16
 code0479        0, 0, 14
 dialogtxt       "It was a dog."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 2, 16
 call            @Func_1c98
 dialogbig       84, 116, 1, 0, 0, "Huh…?"
-code030c        
+code030c
 call            @Func_1cce
 code0479        1, 2, 14
 call            @Func_1d04
 dialogtxt       "I said, a dog."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 4, 14
 call            @Func_1c98
 dialogtxt       "Ummm…"
 dialogtxt       "Murno risked her life,"
 dialogtxt       "to protect you from… a dog?"
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 2, 16
 call            @Func_1d04
 dialogtxt       "That's what I said."
 dialogtxt       "Don't make me repeat myself."
 dialogtxt       "It's annoying."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 5, 17
 call            @Func_1c98
@@ -258,51 +258,51 @@ dialogtxt       "[NAME 1], are you scared of dogs?"
 goto            @Label_0ca6
 
 @Label_0ca6:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 5, 15
 call            @Func_1d04
 dialogtxt       "N-no way!"
 dialogtxt       "There's no way I'd be"
 dialogtxt       "scared of a mere dog!"
-code0309        
+code0309
 code0479        1, 2, 12
 code0479        0, 0, 14
 dialogtxt       "Murno was the scared one!"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 1, 16
 call            @Func_1c98
 dialogtxt       "Um…"
 dialogtxt       "I'm not following…"
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 0, 16
 call            @Func_1d04
 dialogtxt       "There was a noisy dog in the"
 dialogtxt       "village. Murno couldn't handle it."
 dialogtxt       "You could even say she was afraid."
-code0309        
+code0309
 code0479        1, 0, 12
 code0479        0, 0, 16
 dialogtxt       "It's name was Gau."
 dialogtxt       "One day, I stealthily"
 dialogtxt       "lured her close to the dog."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 4, 14
 call            @Func_1c98
 dialogtxt       "Why'd you do tha…"
 dialogtxt       "…Actually, that does sound"
 dialogtxt       "like something you'd do."
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 2, 13
 call            @Func_1d04
 dialogtxt       "Then, obviously, the dog barked,"
 dialogtxt       "and she fled in terror."
 dialogtxt       "Her scream was simply amazing…"
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 4, 16
 call            @Func_1c98
@@ -315,57 +315,57 @@ dialogtxt       "[NAME 1]…"
 goto            @Label_0fe6
 
 @Label_0fe6:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 0, 14
 call            @Func_1d04
 dialogtxt       "However, after she ran, the dog"
 dialogtxt       "kept barking at me. It was annoying,"
 dialogtxt       "so I thought I'd get rid of it…"
-code0309        
+code0309
 code0479        1, 0, 16
 code0479        0, 0, 14
 dialogtxt       "Murno must have misunderstood,"
 dialogtxt       "because she stepped between the"
 dialogtxt       "dog and I, and said…"
-code0309        
+code0309
 code0479        1, 4, 13
 dialogtxt       "It's okay, [NAME 1]."
 dialogtxt       "I'll scare Gau away for you."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 5, 16
 call            @Func_1c98
 dialogtxt       "Eh…?"
 dialogtxt       "So that's…"
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 2, 16
 call            @Func_1d04
 dialogtxt       "For her, facing Gau was like when"
 dialogtxt       "you challenged the Phantom Dragon."
 dialogtxt       "She put her life on the line…"
-code0309        
+code0309
 code0479        1, 2, 12
 code0479        0, 0, 16
 dialogtxt       "It doesn't feel right to owe"
 dialogtxt       "such a large debt to a human…"
 dialogtxt       "So until I can repay her…"
-code0309        
+code0309
 code0479        1, 3, 13
 dialogtxt       "I decided I would protect her."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 2, 14
 call            @Func_1c98
 dialogtxt       "So, just because of that,"
 dialogtxt       "you've been protecting Murno…?"
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 0, 16
 call            @Func_1d04
 dialogtxt       "Yes, but no longer."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 5, 17
 call            @Func_1c98
@@ -380,24 +380,24 @@ dialogtxt       "What do you mean?"
 goto            @Label_13b4
 
 @Label_13b4:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 0, 17
 call            @Func_1d04
 dialogtxt       "You've said it yourself. I quote,"
 dialogtxt       "while we are partners, I'm going"
 dialogtxt       "to protect Murno myself."
-code0309        
+code0309
 code0479        1, 0, 16
 code0479        0, 2, 14
 dialogtxt       "Moreover, you've defeated me."
 dialogtxt       "Now that you are protecting her,"
 dialogtxt       "you don't need my help, right?"
-code0309        
+code0309
 code0479        1, 3, 13
 dialogtxt       "So I entrust Murno to you."
 dialogtxt       "Protect her with your life."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 2, 16
 call            @Func_1c98
@@ -414,75 +414,75 @@ dialogtxt       "really okay with you…?"
 goto            @Label_15a8
 
 @Label_15a8:
-code0309        
+code0309
 call            @Func_1cce
 code0479        1, 6, 12
 call            @Func_1d04
 dialogtxt       "It's fine… with her taken"
 dialogtxt       "care of, I can fully devote"
 dialogtxt       "my time towards you."
-code0309        
+code0309
 call            @Func_1d3a
 code0479        0, 5, 14
 call            @Func_1c98
 dialogtxt       "Eh?"
-code0309        
+code0309
 call            @Func_1dd4
 call            @Func_1cb6
-code047b        
+code047b
 code047f        226
 code0480        1, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code040d        15
 code047d        0, 2
 code0301        16, 7
 code047e        0, 1
 dialogtxt       "Hmph…"
 dialogtxt       "It's nothing."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 code040d        15
 code0481        0
 code040d        1
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -497,7 +497,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -508,13 +508,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_1a3e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -596,66 +596,65 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1c78
 
 @Label_1c78:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_1c98:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_1cb6:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_1cce:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_1ce6:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_1d04:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_1d3a:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_1d52:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_1d68:
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_1dd4:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 104, 106, -1
 code0410        1, 104, 107, -1
 code0410        2, 105, 108, 109
-code0411        
+code0411
 code0430        110
 code0412        4, 1
 code0418        2
@@ -49,19 +49,19 @@ goto            @Label_03e0
 @Cond_02f2:
 jumpz           @Cond_0322, ($h319 == 71)
 code041c        1, 560, 24, 1
-code0475        
+code0475
 goto            @Label_03e0
 
 @Cond_0322:
 jumpz           @Cond_0352, ($h319 == 90)
 code041c        1, 400, 391, 3
-code0475        
+code0475
 goto            @Label_03e0
 
 @Cond_0352:
 jumpz           @Cond_0382, ($h319 == 80)
 code041c        1, 679, 144, 2
-code0475        
+code0475
 goto            @Label_03e0
 
 @Cond_0382:
@@ -72,7 +72,7 @@ goto            @Label_03e0
 @Cond_03b0:
 jumpz           @Label_03e0, ($h319 == -3)
 code041c        11, 600, 152, 1
-code0475        
+code0475
 goto            @Label_03e0
 
 @Label_03e0:
@@ -84,7 +84,7 @@ goto            @Cond_040e
 code0450        0, 1, -1
 code0452        0, 74, 13
 code0453        0, @Label_0b88, 0
-code04a3        
+code04a3
 jumpz           @Cond_047e, ($h101 != 1)
 code0420        0, 5, 19
 code0422        0, 0
@@ -113,9 +113,9 @@ goto            @Cond_05b4
 mapev           6, @Event_0b0c, 8
 mapevpos        6, (49,15)-(50,15)
 setvar          $h319, 20
-code0409        
+code0409
 code046e        14, 256, 0
-code041d        
+code041d
 placetxt        "Marnail Post Station　Smile Inn"
 jumpz           @Cond_0656, (($h309 & 0x00F0) == 16)
 code0006        22
@@ -130,31 +130,31 @@ code0006        1918
 goto            @Cond_069e
 
 @Cond_069e:
-code040b        
+code040b
 
 @Talk_06a0:
 setvar          $f0051, 1
 code0006        1920
-code040b        
+code040b
 
 @Event_06b6:
 setvar          $f0054, 1
 code043e        0, 3, 0
 code0006        1923
 code0461        4
-code040b        
+code040b
 
 @Event_06e8:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         522 ; map 173edcc
 
 @Event_071a:
 setvar          $h096, 32
 setvar          $h315, 1
-code04a3        
+code04a3
 jumpz           @Cond_0764, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -163,14 +163,14 @@ goto            @Cond_0764
 @Cond_0764:
 jumpz           @Cond_077e, ($h101 == 1)
 call            @Func_11f8
-code040b        
+code040b
 
 goto            @Cond_077e
 
 @Cond_077e:
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3062 ; map 189038c
 
 @Event_07a4:
@@ -189,11 +189,11 @@ dialogtxt       "this \"Smile Inn\" first…"
 goto            @Label_0858
 
 @Label_0858:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_11ac
-code040b        
+code040b
 
 goto            @Label_0922
 
@@ -211,18 +211,18 @@ dialogtxt       "Let's go back to the inn."
 goto            @Label_0900
 
 @Label_0900:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_11ac
-code040b        
+code040b
 
 goto            @Label_0922
 
 @Label_0922:
 setvar          $h096, 32
 setvar          $h315, 1
-code04a3        
+code04a3
 jumpz           @Cond_096c, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -231,14 +231,14 @@ goto            @Cond_096c
 @Cond_096c:
 jumpz           @Cond_0986, ($h101 == 1)
 call            @Func_11ac
-code040b        
+code040b
 
 goto            @Cond_0986
 
 @Cond_0986:
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3121 ; map 189368c
 
 @Event_09ac:
@@ -257,18 +257,18 @@ dialogtxt       "this \"Smile Inn\" first…"
 goto            @Label_0a60
 
 @Label_0a60:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_1244
-code040b        
+code040b
 
 goto            @Cond_0a82
 
 @Cond_0a82:
 setvar          $h096, 32
 setvar          $h315, 1
-code04a3        
+code04a3
 jumpz           @Cond_0acc, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -277,14 +277,14 @@ goto            @Cond_0acc
 @Cond_0acc:
 jumpz           @Cond_0ae6, ($h101 == 1)
 call            @Func_1244
-code040b        
+code040b
 
 goto            @Cond_0ae6
 
 @Cond_0ae6:
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3091 ; map 189201c
 
 @Event_0b0c:
@@ -293,9 +293,9 @@ code0419        0, 2, 0, 48, 12, 0
 code033a        109, 0
 code041b        0
 code041c        19, 400, 112, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         523 ; map 173f26c
 
 @Label_0b88:
@@ -306,7 +306,7 @@ gotomap         $h100
 goto            @Cond_0bac
 
 @Cond_0bac:
-code040b        
+code040b
 
 @Event_0bae:
 code0006        18
@@ -316,18 +316,18 @@ goto            @start
 goto            @Label_0bda
 
 @Cond_0bd4:
-code040b        
+code040b
 
 goto            @Label_0bda
 
 @Label_0bda:
 code0006        21
-code040b        
+code040b
 
 @Label_0be4:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_0bf8:
@@ -339,45 +339,45 @@ goto            @start
 goto            @Cond_0c24
 
 @Cond_0c24:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -392,7 +392,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -403,13 +403,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0f70, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -491,37 +491,37 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_11aa
 
 @Label_11aa:
-ret             
+ret
 
 @Func_11ac:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_11f8:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_1244:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -534,7 +534,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_13ae:
 code0438        16, 408, 652, 1
@@ -549,7 +549,7 @@ code043d        19, 224, 212
 code043c        19, 1
 code0442        19, @Talk_191a
 code0444        19, -1
-ret             
+ret
 
 @Talk_1480:
 code0301        8, 7
@@ -558,40 +558,40 @@ code047e        0, 1
 dialogtxt       "You know, my mom is a peddler."
 dialogtxt       "We're trying to make ourselves"
 dialogtxt       "known with craftsmen."
-code0309        
+code0309
 dialogtxt       "We plan on opening a shop."
 dialogtxt       "That's why I have to work hard"
 dialogtxt       "to save up money."
-code0309        
+code0309
 jumpz           @Cond_18aa, ($f1246 == 0)
 dialogtxt       "You're a Craftknight, right?"
 dialogtxt       "Want to hear about enhancement?"
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_15f6, "Listen to her lecture"
 choicetxt       @Choice_18b2, "Not interested"
-choicewait      
+choicewait
 
 @Choice_15f6:
 code047e        0, 1
 dialogtxt       "Do you know Acceleration Springs?"
 dialogtxt       "If you use one on your weapon,"
 dialogtxt       "it'll get Double Attack."
-code0309        
+code0309
 dialogtxt       "Ah! But based on the weapon type"
 dialogtxt       "some abilities become unusable."
 dialogtxt       "So, watch out, okay?"
-code0309        
+code0309
 dialogtxt       "But anyway, I have this special"
 dialogtxt       "material on sale right now,"
 dialogtxt       "at a paltry price of 350 Boam~."
-code0309        
+code0309
 dialogtxt       "Wanna buy it?"
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_174a, "Buy"
 choicetxt       @Choice_1860, "Don't buy"
-choicewait      
+choicewait
 
 @Choice_174a:
 code036c        370, 350
@@ -599,14 +599,14 @@ jumpz           @Cond_17de, ($h306 == 1)
 setvar          $f1246, 1
 code0302        7
 code0366        420, 1
-code0367        
+code0367
 code0364        -350
 code0445        16, 4
 code0446        16
 code0301        8, 7
 code047e        0, 1
 dialogtxt       "Thanks~"
-code0309        
+code0309
 goto            @Label_1902
 
 goto            @Choice_1860
@@ -619,7 +619,7 @@ code0301        8, 7
 code047e        0, 1
 dialogtxt       "Ehh~ What's this~"
 dialogtxt       "You don't have enough money~"
-code0309        
+code0309
 goto            @Label_1902
 
 goto            @Choice_1860
@@ -629,7 +629,7 @@ code047e        0, 1
 dialogtxt       "Ehh…"
 dialogtxt       "You're not buying anything?"
 dialogtxt       "Cheapskate~"
-code0309        
+code0309
 goto            @Label_1902
 
 goto            @Choice_18b2
@@ -644,11 +644,11 @@ code047e        0, 1
 dialogtxt       "You won't even listen?!"
 dialogtxt       "Just when I thought"
 dialogtxt       "I finally had a new client…"
-code0309        
+code0309
 @Label_1902:
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_191a:
 code0301        8, 7
@@ -657,12 +657,11 @@ code047e        0, 1
 dialogtxt       "That person is such a pain."
 dialogtxt       "He wants help chopping wood,"
 dialogtxt       "but only from a professional."
-code0309        
+code0309
 dialogtxt       "Everyone's an amateur at first."
 dialogtxt       "If I don't get a chance, how am I"
 dialogtxt       "going to get experience at all?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

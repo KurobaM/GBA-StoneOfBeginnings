@@ -42,8 +42,8 @@ dialogtxt       "What's wrong?"
 goto            @Label_0174
 
 @Label_0174:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0f68
 jumpz           @Cond_01a4, ($b003 == 0)
 code0479        1, 0, 12
@@ -67,7 +67,7 @@ goto            @Label_020c
 call            @Func_0f9e
 jumpz           @Cond_0450, ($b003 == 0)
 dialogtxt       "Analyzing..."
-code0309        
+code0309
 call            @Func_0fd4
 code0479        0, 0, 16
 call            @Func_0f32
@@ -84,24 +84,24 @@ dialogtxt       "Can we even cross this bridge?"
 goto            @Label_02d8
 
 @Label_02d8:
-code0309        
+code0309
 call            @Func_106e
 call            @Func_0f50
-code047b        
+code047b
 code043c        0, 2
 code048b        216, 152, 24
-code048c        
+code048c
 code040d        30
 code0479        1, 0, 12
 call            @Func_1002
 call            @Func_0f80
 dialogtxt       "Analysis Complete."
 dialogtxt       "This Bridge Is Stable."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1058
 call            @Func_0fbc
-code047b        
+code047b
 code0478        1, 0
 code0479        1, 0, 16
 code047d        1, 0
@@ -112,34 +112,34 @@ dialogtxt       "They look the same to me."
 goto            @Label_043e
 
 @Label_043e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1058
 call            @Func_0fbc
-code047b        
+code047b
 goto            @Cond_0450
 
 @Cond_0450:
 jumpz           @Cond_05f2, ($b003 == 1)
 dialogtxt       "Hmm..."
-code0309        
+code0309
 call            @Func_106e
 call            @Func_0fbc
-code047b        
+code047b
 code043c        0, 2
 code048b        216, 72, 24
-code048c        
+code048c
 code040d        30
 code0479        1, 0, 16
 call            @Func_1002
 call            @Func_0f80
 dialogtxt       "We should take caution."
 dialogtxt       "That bridge looks unstable."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1058
 call            @Func_0fbc
-code047b        
+code047b
 code0478        1, 0
 code0479        1, 0, 16
 code047d        1, 0
@@ -150,28 +150,28 @@ dialogtxt       "Both look the same to me."
 goto            @Label_05e0
 
 @Label_05e0:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1058
 call            @Func_0fbc
-code047b        
+code047b
 goto            @Cond_05f2
 
 @Cond_05f2:
 jumpz           @Cond_07b4, ($b003 == 2)
 dialogtxt       "You haven't noticed...?"
-code0309        
+code0309
 call            @Func_0fd4
 code0479        0, 0, 16
 call            @Func_0f32
 dialogtxt       "Noticed what?"
-code0309        
+code0309
 call            @Func_0f68
 code0479        1, 1, 13
 call            @Func_0f9e
 dialogtxt       "Oh, nothing."
 dialogtxt       "Just testing you."
-code0309        
+code0309
 call            @Func_0fd4
 code0479        0, 2, 14
 call            @Func_0f32
@@ -185,12 +185,12 @@ dialogtxt       "What do you mean?"
 goto            @Label_06fc
 
 @Label_06fc:
-code0309        
+code0309
 call            @Func_0f68
 code0479        1, 0, 13
 call            @Func_0f9e
 dialogtxt       "..."
-code0309        
+code0309
 call            @Func_0fd4
 code0479        0, 2, 16
 call            @Func_0f32
@@ -205,23 +205,23 @@ dialogtxt       "Oh, I got it!"
 goto            @Label_0796
 
 @Label_0796:
-code0309        
+code0309
 call            @Func_106e
 call            @Func_0f50
-code047b        
+code047b
 code043c        0, 2
 goto            @Cond_07b4
 
 @Cond_07b4:
 jumpz           @Cond_0966, ($b003 == 3)
 dialogtxt       "If I may..."
-code0309        
+code0309
 call            @Func_106e
 call            @Func_0fbc
-code047b        
+code047b
 code043c        0, 2
 code048b        216, 72, 24
-code048c        
+code048c
 code040d        30
 code0479        1, 2, 16
 call            @Func_1002
@@ -229,11 +229,11 @@ call            @Func_0f80
 dialogtxt       "That bridge..."
 dialogtxt       "I have a bad feeling about it..."
 dialogtxt       "Something is definitely wrong there."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1058
 call            @Func_0fbc
-code047b        
+code047b
 code0478        1, 0
 code0479        1, 0, 16
 code047d        1, 0
@@ -244,56 +244,56 @@ dialogtxt       "They look the same to me."
 goto            @Label_0954
 
 @Label_0954:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1058
 call            @Func_0fbc
-code047b        
+code047b
 goto            @Cond_0966
 
 @Cond_0966:
 code0489        0, 2, 24
-code048c        
+code048c
 code040d        15
-code0492        
+code0492
 code040d        15
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -308,7 +308,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -319,13 +319,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0cd8, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -407,69 +407,68 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0f12
 
 @Label_0f12:
-ret             
+ret
 
 @Func_0f14:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0f32:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0f50:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0f68:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0f80:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0f9e:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_0fbc:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0fd4:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_1002:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_1018:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 @Func_1058:
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_106e:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

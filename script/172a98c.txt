@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 42, 43, -1
 code0410        1, 42, 44, -1
 code0410        2, 42, 45, -1
-code0411        
+code0411
 code0430        46
 code0412        4, 1
 code0418        2
@@ -30,7 +30,7 @@ goto            @Label_01aa
 @Cond_017a:
 jumpz           @Label_01aa, ($h319 == 60)
 code041c        2, 128, 112, 1
-code0475        
+code0475
 goto            @Label_01aa
 
 @Label_01aa:
@@ -41,24 +41,24 @@ mapevpos        1, (30,17)-(31,22)
 mapev           2, @Event_02e0, 4
 mapevpos        2, (14,11)-(17,11)
 setvar          $h319, 3
-code0409        
+code0409
 code046e        13, 256, 0
-code041d        
+code041d
 placetxt        "Deckell Village - Mine Entrance"
-code040b        
+code040b
 
 @Event_027c:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         201 ; map 172940c
 
 @Event_02ae:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         205 ; map 172adec
 
 @Event_02e0:
@@ -69,16 +69,16 @@ code047e        0, 1
 dialogtxt       "This mine has plenty of materials..."
 dialogtxt       "but powerful Strays too."
 dialogtxt       "Let's go somewhere else for now."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_0a14
-code040b        
+code040b
 
 @Label_0386:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_039a:
@@ -88,48 +88,48 @@ code047e        0, 1
 dialogtxt       "Deckell Mine is off limits right now."
 dialogtxt       "The earthquake caused parts of"
 dialogtxt       "the mine to cave in."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -144,7 +144,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -155,13 +155,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_078c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -243,35 +243,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_09c6
 
 @Label_09c6:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 @Func_0a14:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -284,7 +284,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0bca:
 code0438        16, 370, 633, 1
@@ -293,12 +293,11 @@ code043d        16, 72, 148
 code043c        16, 1
 code0442        16, @Talk_0c34
 code0444        16, -1
-ret             
+ret
 
 @Talk_0c34:
 code0301        8, 7
 dialogtxt       "Meow~"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

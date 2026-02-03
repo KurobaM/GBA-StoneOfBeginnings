@@ -1,11 +1,11 @@
 code040d        15
 popuptxt        "Repaired Master's weapon."
-code0318        
+code0318
 code0366        523, -1
 code0333        2, 30
 code0445        2, 7
 code0446        2
-code0334        
+code0334
 code0331        38, 256
 code0478        0, 0
 code0479        0, 2, 14
@@ -17,28 +17,28 @@ call            @Func_0e6c
 call            @Func_0dd4
 dialogtxt       "Hmmm…"
 dialogtxt       "I see."
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0e28
 code0479        0, 2, 16
 call            @Func_0d86
 dialogtxt       "Um…"
 dialogtxt       "How is it?"
-code0309        
+code0309
 call            @Func_0dbc
 code0479        1, 2, 13
 call            @Func_0df2
 dialogtxt       "Alright, looks good."
 dialogtxt       "You pass!"
 dialogtxt       "Rob would be proud of you too."
-code0309        
+code0309
 call            @Func_0e28
 code0333        2, 30
 code0479        0, 11, 12
 call            @Func_0d86
 dialogtxt       "Master Rob…"
-code0309        
-code0334        
+code0309
+code0334
 code0331        32, 256
 code0479        0, 7, 13
 code0479        1, 1, 13
@@ -51,14 +51,14 @@ dialogbig       24, 116, 1, 0, 0, "…Yippie!"
 goto            @Label_026e
 
 @Label_026e:
-code030c        
+code030c
 call            @Func_0dbc
 code0479        1, 2, 16
 call            @Func_0df2
 dialogtxt       "It's still too early to celebrate."
 dialogtxt       "It may look fine, but we don't"
 dialogtxt       "know if it's truly up to snuff…"
-code0309        
+code0309
 call            @Func_0e28
 code0479        0, 2, 12
 call            @Func_0d86
@@ -73,73 +73,73 @@ dialogtxt       "…Right?"
 goto            @Label_0376
 
 @Label_0376:
-code0309        
+code0309
 call            @Func_0dbc
 code0479        1, 2, 12
 call            @Func_0df2
 dialogtxt       "It's been a while since we've"
 dialogtxt       "had a match, hasn't it?"
 dialogtxt       "How about it, [NAME 2]?"
-code0309        
+code0309
 call            @Func_0e28
 code0479        0, 5, 16
 call            @Func_0d86
 dialogtxt       "A match?"
-code0309        
+code0309
 call            @Func_0dbc
 code0479        1, 0, 12
 call            @Func_0df2
 dialogtxt       "I'll use the axe you"
 dialogtxt       "just repaired."
 dialogtxt       "You can use whatever you want."
-code0309        
+code0309
 code0479        1, 2, 14
 code0479        0, 0, 16
 dialogtxt       "But only one."
-code0309        
+code0309
 call            @Func_0e28
 code0479        0, 2, 14
 call            @Func_0d86
 dialogtxt       "Only one…?"
-code0309        
+code0309
 call            @Func_0dbc
 code0479        1, 2, 16
 call            @Func_0df2
 dialogtxt       "Right…, think of it as"
 dialogtxt       "putting your all of your training"
 dialogtxt       "with [NAME 1] to the test…"
-code0309        
+code0309
 code0479        1, 2, 12
 dialogtxt       "Bring me the best you've got."
-code0309        
+code0309
 call            @Func_0e28
 code0479        0, 2, 16
 call            @Func_0d86
 dialogtxt       "All of my training"
 dialogtxt       "with [NAME 1]…"
-code0309        
+code0309
 call            @Func_0dbc
 code0479        1, 1, 13
 call            @Func_0df2
 dialogtxt       "Heheh… I see you're taking"
 dialogtxt       "this seriously. I'll wait outside,"
 dialogtxt       "come out whenever you're ready."
-code0309        
+code0309
 call            @Func_0e28
 code0479        0, 0, 14
 call            @Func_0d86
 dialogtxt       "Outside."
 dialogtxt       "Got it…"
-code0309        
+code0309
 call            @Func_0ec2
 call            @Func_0da4
-code047b        
+code047b
 code043c        0, 1
 code0333        2, 30
 code046d        2, 192
 code043e        2, 6, 0
 walkto          2, $h128, ($h129 + 120), 1
-code0334        
+code0334
 code0331        15, 256
 walkwait        2
 code0443        2, 16, 0
@@ -158,48 +158,48 @@ dialogtxt       "I wonder which one to choose."
 goto            @Label_07d4
 
 @Label_07d4:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0e96
 call            @Func_0da4
-code047b        
-done            
+code047b
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -214,7 +214,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -225,13 +225,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0b2c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -313,68 +313,67 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0d66
 
 @Label_0d66:
-ret             
+ret
 
 @Func_0d68:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0d86:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_0da4:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0dbc:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0dd4:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0df2:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0e28:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_0e40:
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0e6c:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0e96:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0ec2:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

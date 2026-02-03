@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 147, 149, 152
 code0410        1, 147, 150, -1
 code0410        2, 148, 151, -1
-code0411        
+code0411
 code0430        153
 code0412        4, 1
 code0418        2
@@ -29,7 +29,7 @@ goto            @Cond_0178
 mapev           0, @Event_01fa, 4
 mapevpos        0, (36,37)-(37,42)
 setvar          $h319, 32
-code0409        
+code0409
 jumpz           @Cond_01de, ($f0035 == 1)
 code046e        38, 256, 0
 goto            @Label_01f6
@@ -39,24 +39,24 @@ code046e        15, 256, 0
 goto            @Label_01f6
 
 @Label_01f6:
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_01fa:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1331 ; map 1793c9c
 
 @Label_022c:
 code0006        21
-code040b        
+code040b
 
 @Label_0236:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_024a:
@@ -68,45 +68,45 @@ goto            @start
 goto            @Cond_0276
 
 @Cond_0276:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -121,7 +121,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -132,13 +132,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_05c2, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -220,34 +220,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_07fc
 
 @Label_07fc:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -260,7 +260,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0a00:
 code0438        17, 391, 645, 1
@@ -271,7 +271,7 @@ code0442        17, @Talk_0a9a
 code0444        17, -1
 mapev           20, @Event_0b6e, 32
 mapevpos        20, (32,36)-(34,36)
-ret             
+ret
 
 @Talk_0a9a:
 code0301        8, 7
@@ -280,21 +280,20 @@ code047e        0, 1
 dialogtxt       "This is all hearsay, but I heard"
 dialogtxt       "that there are ruins beyond the"
 dialogtxt       "far end of Sproat Grotto…"
-code0309        
+code0309
 dialogtxt       "Apparently a village used to"
 dialogtxt       "exist there, why not check"
 dialogtxt       "it out for yourselves?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_0b6e:
 code0301        8, 7
 dialogtxt       "If you can only muster one speck of"
 dialogtxt       "magic damage, it's useless against"
 dialogtxt       "opponents immune to it."
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

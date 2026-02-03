@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 118, 119, -1
 code0410        1, 118, 120, 122
 code0410        2, 118, 121, 123
-code0411        
+code0411
 code0430        124
 code0412        4, 1
 code0418        2
@@ -77,9 +77,9 @@ mapevpos        2, (15,18)-(16,18)
 mapev           31, @Event_0a64, 32
 mapevpos        31, (3,5)-(4,5)
 setvar          $h319, 22
-code0409        
+code0409
 code046e        14, 256, 0
-code041d        
+code041d
 jumpz           @Cond_055a, ($f0049 == 1 && $f0050 == 0)
 setvar          $f0050, 1
 code043e        0, 3, 0
@@ -95,26 +95,26 @@ code0006        1924
 setvar          $h137, 60
 setvar          $h136, 0
 call            @Func_0ad0
-code040a        
+code040a
 gotomap         524 ; map 173fb4c
 
 goto            @Cond_05c8
 
 @Cond_05c8:
-code040b        
+code040b
 
 @Event_05ca:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         521 ; map 173e35c
 
 @Event_05fc:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         525 ; map 173fe0c
 
 code0006        15
@@ -124,14 +124,14 @@ gotomap         $h100
 goto            @Cond_0652
 
 @Cond_0652:
-code040b        
+code040b
 
 @Event_0654:
 code043e        2, 3, 0
 @Label_0668:
 jumpz           @Cond_093c, 1
 code0350        1, 3
-code0351        
+code0351
 jumpz           @Cond_069a, ($b068 == -1)
 goto            @Cond_093c
 
@@ -139,14 +139,14 @@ goto            @Label_0938
 
 @Cond_069a:
 setvar          $h096, 63
-code040a        
-code0352        
+code040a
+code0352
 setvar          $b097, 0
 code0408        0
 code0410        0, 118, 119, -1
 code0410        1, 118, 120, 122
 code0410        2, 118, 121, 123
-code0411        
+code0411
 code0430        124
 code0412        4, 1
 code0418        2
@@ -179,7 +179,7 @@ mapev           2, @Event_0654, 32
 mapevpos        2, (15,18)-(16,18)
 mapev           31, @Event_0a64, 32
 mapevpos        31, (3,5)-(4,5)
-code0409        
+code0409
 code043e        2, 3, 0
 goto            @Label_0938
 
@@ -188,16 +188,16 @@ goto            @Label_0668
 
 @Cond_093c:
 code043e        2, 0, 0
-code040b        
+code040b
 
 @Label_0952:
 code0006        21
-code040b        
+code040b
 
 @Label_095c:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_0970:
@@ -206,68 +206,68 @@ code047d        0, 107
 code047e        0, 1
 dialogtxt       "Well, this is troublesome…"
 dialogtxt       "Do your best, [NAME 2]."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_09fc:
 code0301        8, 7
 code047d        0, 114
 code047e        0, 1
 dialogtxt       "Please take care of our daughter."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_0a64:
 code0301        8, 7
 dialogtxt       "A lady's secret lies beyond here◎"
 dialogtxt       "NO TRESPASSING!!!"
 dialogtxt       "　　　　　　　　　　　-Tier"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 @Func_0ad0:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -282,7 +282,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -293,13 +293,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0e18, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -381,34 +381,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_1052
 
 @Label_1052:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -421,7 +421,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_1256:
 code0438        16, 407, 651, 1
@@ -436,7 +436,7 @@ code043d        17, 216, 216
 code043c        17, 2
 code0442        17, @Talk_171e
 code0444        17, -1
-ret             
+ret
 
 @Talk_1328:
 code0301        8, 7
@@ -444,34 +444,34 @@ code047d        0, 148
 code047e        0, 1
 dialogtxt       "Oh, that hammer…"
 dialogtxt       "You must be a Craftknight."
-code0309        
+code0309
 dialogtxt       "I'm traveling with my daughter."
 dialogtxt       "She's not here now though;"
 dialogtxt       "probably out playing somewhere."
-code0309        
+code0309
 dialogtxt       "I know a lot about Smithing,"
 dialogtxt       "so feel free to ask anything."
-code0309        
+code0309
 code047e        0, 0
 choicetxt       @Choice_14a4, "About manufacturing…"
 choicetxt       @Choice_15b6, "About smithing ranks…"
 choicetxt       @Choice_16dc, "I'm fine for now."
-choicewait      
+choicewait
 
 @Choice_14a4:
 code047e        0, 1
 dialogtxt       "Then, I'll tell you about"
 dialogtxt       "Superior Weapons,"
 dialogtxt       "as a special service."
-code0309        
+code0309
 dialogtxt       "Sometimes you'll create weapons"
 dialogtxt       "that are better than usual."
 dialogtxt       "Those are Superior Weapons."
-code0309        
+code0309
 dialogtxt       "Superior Weapons have higher"
 dialogtxt       "stats and swing faster with"
 dialogtxt       "more efficiency."
-code0309        
+code0309
 goto            @Label_1706
 
 @Choice_15b6:
@@ -479,28 +479,27 @@ code047e        0, 1
 dialogtxt       "Alright, I'll teach you the"
 dialogtxt       "important points about"
 dialogtxt       "increasing your smithing rank."
-code0309        
+code0309
 dialogtxt       "Crafting experience is important,"
 dialogtxt       "but you won't know if you'll"
 dialogtxt       "gain it until you make a weapon."
-code0309        
+code0309
 dialogtxt       "If huge sparks start coming out,"
 dialogtxt       "it means you're gaining"
 dialogtxt       "experience."
-code0309        
+code0309
 goto            @Label_1706
 
 @Choice_16dc:
 code047e        0, 1
 dialogtxt       "Come see me anytime."
-code0309        
+code0309
 @Label_1706:
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_171e:
 setvar          $bv031, 2
 code0006        3916
-code040b        
-
+code040b

@@ -28,8 +28,8 @@ dialogtxt       "[NAME 1], where are you going?"
 goto            @Label_016a
 
 @Label_016a:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1164
 code0478        0, 2
 jumpz           @Cond_01a8, ($b003 == 0)
@@ -81,8 +81,8 @@ dialogtxt       "I'm sorry, but…"
 goto            @Cond_03a2
 
 @Cond_03a2:
-code0309        
-code047b        
+code0309
+code047b
 call            @Func_10f8
 code0479        1, 0, 12
 call            @Func_112e
@@ -99,10 +99,10 @@ dialogtxt       "Understood."
 goto            @Label_042a
 
 @Label_042a:
-code0309        
+code0309
 call            @Func_11fe
 call            @Func_114c
-code047b        
+code047b
 code043e        1, 6, 0
 walkto          1, 48, 280, 1
 walkwait        1
@@ -125,10 +125,10 @@ call            @Func_11a8
 call            @Func_10a4
 dialogtxt       "You're alone?"
 dialogtxt       "Perfect timing."
-code0309        
+code0309
 call            @Func_11fe
 call            @Func_10e0
-code047b        
+code047b
 code043e        2, 6, 0
 walkto          2, 144, 200, 1
 code043c        0, 1
@@ -149,17 +149,17 @@ call            @Func_1110
 dialogtxt       "As I said yesterday, I want you"
 dialogtxt       "to show me your abilities."
 dialogtxt       "See if you can repair this axe."
-code0309        
+code0309
 call            @Func_11fe
 call            @Func_114c
-code047b        
+code047b
 code043e        2, 6, 0
 walkto          2, 128, 184, 1
 walkwait        2
 code043e        2, 3, 0
 code043c        2, 2
 code0366        523, 1
-code0367        
+code0367
 code0445        0, 10
 code0446        0
 code0479        0, 5, 17
@@ -179,15 +179,15 @@ dialogtxt       "one you crafted with Master Rob!?"
 goto            @Label_0860
 
 @Label_0860:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_10f8
 code0479        1, 0, 12
 call            @Func_112e
 dialogtxt       "That's right."
 dialogtxt       "It broke while I was"
 dialogtxt       "fighting those goons…"
-code0309        
+code0309
 call            @Func_1164
 code0479        0, 2, 16
 call            @Func_10c2
@@ -202,15 +202,15 @@ dialogtxt       "Is it really okay for me to…?"
 goto            @Label_0950
 
 @Label_0950:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_10f8
 code0479        1, 2, 12
 call            @Func_112e
 dialogtxt       "What's wrong?"
 dialogtxt       "Don't think you can"
 dialogtxt       "do it alone?"
-code0309        
+code0309
 call            @Func_1164
 code0479        0, 2, 14
 call            @Func_10c2
@@ -227,63 +227,63 @@ dialogtxt       "Leave it to me!"
 goto            @Label_0a5e
 
 @Label_0a5e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_10f8
 code0479        1, 2, 13
 call            @Func_112e
 dialogtxt       "Don't mess it up"
 dialogtxt       "even more, you hear?"
-code0309        
+code0309
 call            @Func_1164
 code0479        0, 2, 12
 call            @Func_10c2
 dialogtxt       "Ugh…"
 dialogtxt       "I know that!"
-code0309        
+code0309
 call            @Func_11fe
 call            @Func_10e0
-code047b        
+code047b
 code0447        2, 1
 code0443        2, 16384, 1
 code043e        2, 0, 0
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -298,7 +298,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -309,13 +309,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0e68, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -397,69 +397,68 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_10a2
 
 @Label_10a2:
-ret             
+ret
 
 @Func_10a4:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_10c2:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_10e0:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_10f8:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_1110:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_112e:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_114c:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_1164:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_117c:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_1192:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_11a8:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_11fe:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

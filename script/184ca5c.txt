@@ -29,7 +29,7 @@ call            @Func_0b9e
 call            @Func_0a9a
 dialogtxt       "Whew…"
 dialogtxt       "That surprised me."
-code0309        
+code0309
 call            @Func_0aee
 code043c        1, 2
 jumpz           @Cond_015c, ($b003 == 0)
@@ -80,14 +80,14 @@ dialogtxt       "What should we do…"
 goto            @Cond_033a
 
 @Cond_033a:
-code0309        
+code0309
 call            @Func_0b5a
 code043c        0, 4
 code0479        0, 2, 14
 call            @Func_0ab8
 dialogtxt       "For now, I guess we'll just"
 dialogtxt       "go as far as we can!"
-code0309        
+code0309
 call            @Func_0aee
 jumpz           @Cond_03c2, ($b003 == 0)
 code0479        1, 0, 12
@@ -132,49 +132,49 @@ dialogtxt       "I'll do my best!"
 goto            @Cond_04f8
 
 @Cond_04f8:
-code0309        
+code0309
 call            @Func_0bf4
 call            @Func_0b42
-code047b        
-code0492        
+code047b
+code0492
 code043c        0, 3
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -189,7 +189,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -200,13 +200,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_085e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -288,65 +288,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a98
 
 @Label_0a98:
-ret             
+ret
 
 @Func_0a9a:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0ab8:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0aee:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0b24:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_0b42:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0b5a:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0b9e:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0bf4:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

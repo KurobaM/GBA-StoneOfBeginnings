@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 162, 164, 167
 code0410        1, 162, 165, -1
 code0410        2, 163, 166, 168
-code0411        
+code0411
 code0430        169
 code0412        4, 1
 code0418        2
@@ -50,7 +50,7 @@ mapevpos        3, (16,11)-(17,11)
 mapev           4, @Event_03e6, 8
 mapevpos        4, (41,39)-(42,39)
 setvar          $h319, 34
-code0409        
+code0409
 jumpz           @Cond_02ea, ($f0036 == 1)
 code046e        38, 256, 0
 goto            @Label_0302
@@ -60,21 +60,21 @@ code046e        15, 256, 0
 goto            @Label_0302
 
 @Label_0302:
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_0306:
 setvar          $h096, 32
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         732 ; map 1751f9c
 
 @Event_0338:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         736 ; map 17539fc
 
 @Event_036a:
@@ -83,9 +83,9 @@ code0419        0, 2, 0, 15, 8, 0
 code033a        109, 0
 code041b        0
 code041c        19, 136, 88, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         743 ; map 1755b2c
 
 @Event_03e6:
@@ -94,63 +94,63 @@ code0419        0, 2, 0, 40, 36, 0
 code033a        109, 0
 code041b        0
 code041c        19, 336, 312, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         744 ; map 1755f3c
 
 @Label_0462:
 code0006        21
-code040b        
+code040b
 
 @Label_046c:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Event_0480:
 setvar          $bv048, ($bv048 | 0x0001)
 code0461        2
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -165,7 +165,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -176,13 +176,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_07e6, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -264,34 +264,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a20
 
 @Label_0a20:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -304,7 +304,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0c24:
 code0438        16, 393, 645, 1
@@ -333,12 +333,12 @@ mapev           22, @Event_1086, 32
 mapevpos        22, (56,20)-(57,20)
 mapev           23, @Event_110c, 32
 mapevpos        23, (20,60)-(22,60)
-ret             
+ret
 
 @Talk_0e1e:
 setvar          $bv031, 3
 code0006        3917
-code040b        
+code040b
 
 @Talk_0e34:
 code0301        8, 7
@@ -347,12 +347,12 @@ code047e        0, 1
 dialogtxt       "Hey, let's pretend we're fighting."
 dialogtxt       "Don't treat me like an idiot~"
 dialogtxt       "I'll roundhouse kick you."
-code0309        
+code0309
 dialogtxt       "Apologize!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0eea:
 code0301        8, 7
@@ -361,49 +361,48 @@ code047e        0, 1
 dialogtxt       "Can you do something about this?"
 dialogtxt       "Earlier that kid hit,"
 dialogtxt       "er, no, kicked me."
-code0309        
+code0309
 dialogtxt       "He feinted with his knuckles"
 dialogtxt       "before roundhouse kicking me."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_0fa6:
 code0301        8, 7
 dialogtxt       "You too can protect Prosban!"
 dialogtxt       "The Prosban Vigilante Corps"
 dialogtxt       "is now accepting applications."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1018:
 code0301        8, 7
 dialogtxt       "Part time position available."
 dialogtxt       "Involves chopping firewood."
 dialogtxt       "Inquire at Marnail Station."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1086:
 code0301        8, 7
 dialogtxt       "　"
 dialogtxt       "　　　　　Looking for help!"
-code0309        
+code0309
 dialogtxt       "I always seem to run into fences."
 dialogtxt       "Is there a way to avoid that?"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_110c:
 code0301        8, 7
 dialogtxt       "This is the city of smithies."
 dialogtxt       "All of us here live to"
 dialogtxt       "forge weapons!"
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

@@ -9,13 +9,13 @@ call            @Func_078e
 call            @Func_06f6
 dialogtxt       "Are you ready to"
 dialogtxt       "leave the village?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_074a
 call            @Func_06a8
 choicetxt       @Choice_00ea, "Ready!"
 choicetxt       @Choice_00fa, "I'm forgetting something…"
-choicewait      
+choicewait
 
 @Choice_00ea:
 setvar          $f0134, 1
@@ -24,44 +24,44 @@ goto            @Choice_00fa
 @Choice_00fa:
 call            @Func_07e4
 call            @Func_06c6
-code047b        
-done            
+code047b
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -76,7 +76,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -87,13 +87,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_044e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -175,63 +175,62 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0688
 
 @Label_0688:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_06a8:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_06c6:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_06f6:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_074a:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_078e:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_07e4:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

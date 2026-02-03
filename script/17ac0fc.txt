@@ -39,18 +39,18 @@ dialogtxt       "I don't understand…!"
 goto            @Label_019a
 
 @Label_019a:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "I Do Not Comprehend Their"
 dialogtxt       "Objective Of Taking Lady Murno"
 dialogtxt       "To The G※an Ruins. However…"
-code0309        
+code0309
 code0479        1, 0, 12
 dialogtxt       "We Do Not Have Much Time Left."
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -67,10 +67,10 @@ dialogtxt       "get Murno back for everyone!"
 goto            @Label_0322
 
 @Label_0322:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_0332
 
 @Cond_0332:
@@ -89,18 +89,18 @@ dialogtxt       "I don't understand…!"
 goto            @Label_03dc
 
 @Label_03dc:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "I do not understand what they're"
 dialogtxt       "scheming by taking Murno deeper"
 dialogtxt       "into Govan Ruins, however…"
-code0309        
+code0309
 code0479        1, 2, 14
 dialogtxt       "Let us not waste any more time!"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -117,10 +117,10 @@ dialogtxt       "get Murno back for everyone!"
 goto            @Label_0552
 
 @Label_0552:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_0562
 
 @Cond_0562:
@@ -139,19 +139,19 @@ dialogtxt       "I don't understand…!"
 goto            @Label_060c
 
 @Label_060c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "I don't know what they plan to"
 dialogtxt       "do to Murno once they take her"
 dialogtxt       "deeper into Govan Ruins, but…"
-code0309        
+code0309
 code0479        1, 3, 14
 dialogtxt       "This isn't the time for"
 dialogtxt       "us to dawdle! Go, now!"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -168,10 +168,10 @@ dialogtxt       "get Murno back for everyone!"
 goto            @Label_0796
 
 @Label_0796:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_07a6
 
 @Cond_07a6:
@@ -190,18 +190,18 @@ dialogtxt       "I don't understand…!"
 goto            @Label_0850
 
 @Label_0850:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "I do not know what they plan to do"
 dialogtxt       "Lady Murno once they take her deep"
 dialogtxt       "into Goval Ruins, however…"
-code0309        
+code0309
 code0479        1, 2, 14
 dialogtxt       "We don't have much time anymore!"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -218,10 +218,10 @@ dialogtxt       "get Murno back for everyone!"
 goto            @Label_09ce
 
 @Label_09ce:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_09de
 
 @Cond_09de:
@@ -269,15 +269,15 @@ dialogtxt       "something else up her sleeve?"
 goto            @Label_0bb8
 
 @Label_0bb8:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "While That May Be A Possibility,"
 dialogtxt       "We Lack Sufficient DATA For Proof."
 dialogtxt       "We Don't Know What They Plan To Do."
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -285,7 +285,7 @@ jumpz           @Cond_0cf6, ($b002 == 0)
 dialogtxt       "So far, we know that Murno and the"
 dialogtxt       "others went further in the ruins."
 dialogtxt       "…And that's all, I guess."
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
@@ -295,23 +295,23 @@ goto            @Label_0d8c
 dialogtxt       "So far, we know that Murno and the"
 dialogtxt       "others went further in the ruins."
 dialogtxt       "…And that's all, I guess."
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
 goto            @Label_0d8c
 
 @Label_0d8c:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "Affirmative."
 dialogtxt       "Let Us Proceed Onward!"
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_0de4
 
 @Cond_0de4:
@@ -330,15 +330,15 @@ dialogtxt       "something else up her sleeve?"
 goto            @Label_0eca
 
 @Label_0eca:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "Perhaps it is so…"
 dialogtxt       "But I feel it is unlikely. Can she"
 dialogtxt       "even fight in her current state…?"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -346,7 +346,7 @@ jumpz           @Cond_0ffa, ($b002 == 0)
 dialogtxt       "So far, we know that Murno and the"
 dialogtxt       "others went further in the ruins."
 dialogtxt       "That's the gist of it…"
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
@@ -356,24 +356,24 @@ goto            @Label_108e
 dialogtxt       "So far, we know that Murno and the"
 dialogtxt       "others went further in the ruins."
 dialogtxt       "That's the gist of it…"
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
 goto            @Label_108e
 
 @Label_108e:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 2, 14
 call            @Func_2c7e
 dialogtxt       "Indeed!"
 dialogtxt       "No matter how perilous"
 dialogtxt       "our path may be!"
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_10e4
 
 @Cond_10e4:
@@ -392,15 +392,15 @@ dialogtxt       "something else up her sleeve?"
 goto            @Label_11ca
 
 @Label_11ca:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 14
 call            @Func_2c7e
 dialogtxt       "Well, perhaps?"
 dialogtxt       "Either way, I don't care about"
 dialogtxt       "what she's going to do, regardless."
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -408,7 +408,7 @@ jumpz           @Cond_12de, ($b002 == 0)
 dialogtxt       "Sure, if you see it that way…"
 dialogtxt       "At least we know that Murno and the"
 dialogtxt       "others went further in the ruins."
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
@@ -418,23 +418,23 @@ goto            @Label_1362
 dialogtxt       "Sure, if you see it that way…"
 dialogtxt       "At least we know that Murno and the"
 dialogtxt       "others went further in the ruins."
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
 goto            @Label_1362
 
 @Label_1362:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 3, 13
 call            @Func_2c7e
 dialogtxt       "If you know what you're gonna do"
 dialogtxt       "next, then at least stop dawdling!"
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_13be
 
 @Cond_13be:
@@ -453,15 +453,15 @@ dialogtxt       "something else up her sleeve?"
 goto            @Label_14a4
 
 @Label_14a4:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "Perhaps, from the looks of it…"
 dialogtxt       "Just what are they scheming? Just"
 dialogtxt       "thinking about it frightens me…"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -469,7 +469,7 @@ jumpz           @Cond_15de, ($b002 == 0)
 dialogtxt       "All we know right know is"
 dialogtxt       "that Murno and the others"
 dialogtxt       "went further in the ruins…"
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
@@ -479,23 +479,23 @@ goto            @Label_1672
 dialogtxt       "All we know right know is"
 dialogtxt       "that Murno and the others"
 dialogtxt       "went further in the ruins…"
-code0309        
+code0309
 code0479        0, 2, 15
 dialogtxt       "We don't have any choice, do we?"
 dialogtxt       "Let's just keep pressing on!"
 goto            @Label_1672
 
 @Label_1672:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 2, 15
 call            @Func_2c7e
 dialogtxt       "I agree with you."
 dialogtxt       "We should get going!"
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_16c0
 
 @Cond_16c0:
@@ -533,7 +533,7 @@ call            @Func_2c60
 dialogtxt       "I Detected A Big Surge Of Energy"
 dialogtxt       "Coming From Deep Within The R※ins."
 dialogtxt       "Please Exercise Caution."
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 16
 call            @Func_2c12
@@ -550,13 +550,13 @@ dialogtxt       "I think Murno's there too…"
 goto            @Label_18e8
 
 @Label_18e8:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "The Probability Rating Percentage"
 dialogtxt       "Is Quite High, Yet…"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -571,10 +571,10 @@ dialogtxt       "I'm ready when you are!"
 goto            @Label_19b0
 
 @Label_19b0:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_19c0
 
 @Cond_19c0:
@@ -583,7 +583,7 @@ call            @Func_2c60
 dialogtxt       "I sensed a tremendous surge"
 dialogtxt       "of energy deep within the ruins"
 dialogtxt       "just now…be careful!"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 16
 call            @Func_2c12
@@ -600,14 +600,14 @@ dialogtxt       "I think Murno's there too…"
 goto            @Label_1ae4
 
 @Label_1ae4:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 2, 14
 call            @Func_2c7e
 dialogtxt       "Perhaps you're right…"
 dialogtxt       "But if we step forward, we have"
 dialogtxt       "to fight them to get her back."
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -622,10 +622,10 @@ dialogtxt       "I'm ready when you are!"
 goto            @Label_1bb6
 
 @Label_1bb6:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_1bc6
 
 @Cond_1bc6:
@@ -634,7 +634,7 @@ call            @Func_2c60
 dialogtxt       "I just sensed a malicious"
 dialogtxt       "aura coming from deep"
 dialogtxt       "within the Govan Ruins…"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 16
 call            @Func_2c12
@@ -651,14 +651,14 @@ dialogtxt       "I think Murno's there too…"
 goto            @Label_1ce4
 
 @Label_1ce4:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 2, 13
 call            @Func_2c7e
 dialogtxt       "I can see her too, I think…"
 dialogtxt       "Just get ready before you"
 dialogtxt       "even think of charging at them."
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -673,10 +673,10 @@ dialogtxt       "I'm ready when you are!"
 goto            @Label_1da6
 
 @Label_1da6:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_1db6
 
 @Cond_1db6:
@@ -685,7 +685,7 @@ call            @Func_2c60
 dialogtxt       "I just sensed a very unpleasant"
 dialogtxt       "aura from deep within the ruins!"
 dialogtxt       "Please be careful…"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 16
 call            @Func_2c12
@@ -702,14 +702,14 @@ dialogtxt       "I think Murno's there too…"
 goto            @Label_1ee0
 
 @Label_1ee0:
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "I know we're going to face"
 dialogtxt       "Master Bostaph eventually, but…"
 dialogtxt       "We need to brace ourselves"
-code0309        
+code0309
 call            @Func_2cb4
 code0479        0, 2, 14
 call            @Func_2c12
@@ -724,10 +724,10 @@ dialogtxt       "I'm ready when you are!"
 goto            @Label_1fc4
 
 @Label_1fc4:
-code0309        
+code0309
 call            @Func_2d4e
 call            @Func_2c30
-code047b        
+code047b
 goto            @Cond_1fd4
 
 @Cond_1fd4:
@@ -765,18 +765,18 @@ call            @Func_2bf4
 dialogtxt       "Everyone must be worried about"
 dialogtxt       "us by now! Let's hurry back to"
 dialogtxt       "them as soon as we can!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "It Is Likely Injury Rates Will"
 dialogtxt       "Increase From The Explosion."
 dialogtxt       "We Must Leave Posthaste."
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 6
 code0479        0, 0, 16
 code047d        0, 107
@@ -785,21 +785,21 @@ call            @Func_2c12
 dialogtxt       "You're right…"
 dialogtxt       "It's thanks to you that both"
 dialogtxt       "of us are saved, [NAME 1]"
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 1, 12
 dialogtxt       "Thank you, [NAME 1]…"
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "You Do Not Need To Thank Me."
 dialogtxt       "My Primary Objective Has Always"
 dialogtxt       "Been Protecting You, Milady."
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 0
 code0479        0, 4, 12
 code047d        0, 0
@@ -807,11 +807,11 @@ call            @Func_2ccc
 call            @Func_2c12
 dialogtxt       "Gee…"
 dialogtxt       "Did you leave me out? You're cold…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d38
 call            @Func_2c48
-code047b        
+code047b
 code0478        1, 6
 code0479        1, 5, 13
 code047d        1, 107
@@ -820,11 +820,11 @@ call            @Func_2c7e
 dialogtxt       "Oh! Um…"
 dialogtxt       "Of course! Thank you,"
 dialogtxt       "[NAME 2]…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_237c
 
 @Cond_237c:
@@ -833,18 +833,18 @@ call            @Func_2bf4
 dialogtxt       "Everyone must be worried about"
 dialogtxt       "us by now! Let's hurry back to"
 dialogtxt       "them as soon as we can!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 16
 call            @Func_2c7e
 dialogtxt       "Hrm…It's likely that there a lot"
 dialogtxt       "of lot of casualities from that"
 dialogtxt       "blast. We should flee while we can."
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 6
 code0479        0, 0, 16
 code047d        0, 107
@@ -853,21 +853,21 @@ call            @Func_2c12
 dialogtxt       "You're right…"
 dialogtxt       "It's thanks to you that both"
 dialogtxt       "of us are saved, [NAME 1]"
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 1, 12
 dialogtxt       "Thank you, [NAME 1]…"
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 0, 12
 call            @Func_2c7e
 dialogtxt       "You don't need to thank this"
 dialogtxt       "old soul! My mission has always"
 dialogtxt       "been to protect you."
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 0
 code0479        0, 4, 12
 code047d        0, 0
@@ -875,11 +875,11 @@ call            @Func_2ccc
 call            @Func_2c12
 dialogtxt       "Gee…"
 dialogtxt       "Did you leave me out? You're cold…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d38
 call            @Func_2c48
-code047b        
+code047b
 code0478        1, 6
 code0479        1, 5, 13
 code047d        1, 107
@@ -888,11 +888,11 @@ call            @Func_2c7e
 dialogtxt       "Oh! Um…"
 dialogtxt       "Of course! Thank you,"
 dialogtxt       "[NAME 2]…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_263a
 
 @Cond_263a:
@@ -901,18 +901,18 @@ call            @Func_2bf4
 dialogtxt       "Everyone must be worried about"
 dialogtxt       "us by now! Let's hurry back to"
 dialogtxt       "them as soon as we can!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 0, 13
 call            @Func_2c7e
 dialogtxt       "Huff…that blast just now"
 dialogtxt       "really took a huge toll on me…"
 dialogtxt       "Guess I'll see what I can do."
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 6
 code0479        0, 4, 14
 code047d        0, 107
@@ -921,21 +921,21 @@ call            @Func_2c12
 dialogtxt       "I'm concerned about you…If you"
 dialogtxt       "weren't here, [NAME 1], I can't"
 dialogtxt       "imagine what would happen next…"
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 0, 16
 dialogtxt       "Thank you, [NAME 1]…"
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 2, 12
 call            @Func_2c7e
 dialogtxt       "Tsk…If you really mean it, then"
 dialogtxt       "you two better not be reckless!"
 dialogtxt       "…Promise me that."
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 0
 code0479        0, 4, 12
 code047d        0, 0
@@ -944,11 +944,11 @@ call            @Func_2c12
 dialogtxt       "Oh, gee…"
 dialogtxt       "I don't know why I feel"
 dialogtxt       "kind of left out right now…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d38
 call            @Func_2c48
-code047b        
+code047b
 code0478        1, 6
 code0479        1, 5, 13
 code047d        1, 107
@@ -957,11 +957,11 @@ call            @Func_2c7e
 dialogtxt       "Oh! Um…"
 dialogtxt       "Of course! Thank you,"
 dialogtxt       "[NAME 2]…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_2928
 
 @Cond_2928:
@@ -970,18 +970,18 @@ call            @Func_2bf4
 dialogtxt       "Everyone must be worried about"
 dialogtxt       "us by now! Let's hurry back to"
 dialogtxt       "them as soon as we can!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2c48
 code0479        1, 2, 14
 call            @Func_2c7e
 dialogtxt       "Indeed…We're likely to get"
 dialogtxt       "injured from that blast earlier."
 dialogtxt       "Let's hurry and leave…"
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 6
 code0479        0, 0, 16
 code047d        0, 107
@@ -990,21 +990,21 @@ call            @Func_2c12
 dialogtxt       "You're right…"
 dialogtxt       "It's thanks to you that both"
 dialogtxt       "of us are saved, [NAME 1]"
-code047b        
-code0309        
+code047b
+code0309
 code0479        0, 1, 12
 dialogtxt       "Thank you, [NAME 1]…"
-code0309        
+code0309
 call            @Func_2c48
 code0479        1, 1, 13
 call            @Func_2c7e
 dialogtxt       "Oh, goodness, me! You don't need"
 dialogtxt       "to thank me! Protecting you is"
 dialogtxt       "my mission after all, Milady!"
-code0309        
+code0309
 call            @Func_2d22
 call            @Func_2cb4
-code047b        
+code047b
 code0478        0, 0
 code0479        0, 4, 12
 code047d        0, 0
@@ -1012,11 +1012,11 @@ call            @Func_2ccc
 call            @Func_2c12
 dialogtxt       "Gee…"
 dialogtxt       "Did you leave me out? You're cold…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d38
 call            @Func_2c48
-code047b        
+code047b
 code0478        1, 6
 code0479        1, 5, 13
 code047d        1, 107
@@ -1025,82 +1025,81 @@ call            @Func_2c7e
 dialogtxt       "Oh! Um…"
 dialogtxt       "Of course! Thank you,"
 dialogtxt       "[NAME 2]…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_2d4e
 call            @Func_2c9c
-code047b        
+code047b
 goto            @Cond_2bee
 
 @Cond_2bee:
 goto            @Label_2bf2
 
 @Label_2bf2:
-done            
+done
 
 @Func_2bf4:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_2c12:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_2c30:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_2c48:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_2c60:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_2c7e:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_2c9c:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_2cb4:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_2ccc:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_2ce2:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_2cf8:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_2d22:
 code047a        0, 0, 1
-ret             
+ret
 
 @Func_2d38:
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_2d4e:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

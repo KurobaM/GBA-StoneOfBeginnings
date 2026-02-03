@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 180, 182, 185
 code0410        1, 180, 183, -1
 code0410        2, 181, 184, 186
-code0411        
+code0411
 code0430        187
 code0412        4, 1
 code0418        2
@@ -36,7 +36,7 @@ goto            @Label_021c
 @Cond_01be:
 jumpz           @Cond_01ee, ($h319 == 170)
 code041c        1, 16, 728, 4
-code0475        
+code0475
 goto            @Label_021c
 
 @Cond_01ee:
@@ -60,7 +60,7 @@ goto            @Cond_032c
 
 @Cond_032c:
 setvar          $h319, 36
-code0409        
+code0409
 jumpz           @Cond_0362, ($f0035 == 1)
 code046e        38, 256, 0
 goto            @Label_037a
@@ -70,9 +70,9 @@ code046e        15, 256, 0
 goto            @Label_037a
 
 @Label_037a:
-code041d        
+code041d
 placetxt        "Prosban　West Gate"
-code040b        
+code040b
 
 @Event_0396:
 setvar          $f0042, 1
@@ -81,26 +81,26 @@ code0006        2511
 code0461        4
 code0439        2
 code043b        2
-code040b        
+code040b
 
 @Event_03d8:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1132 ; map 1778c7c
 
 @Event_040a:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1136 ; map 177a3cc
 
 @Event_043c:
 setvar          $h096, 32
 setvar          $h315, 2
-code04a3        
+code04a3
 jumpz           @Cond_0486, ($h101 == 1)
 code043e        0, 3, 0
 code0006        16
@@ -109,14 +109,14 @@ goto            @Cond_0486
 @Cond_0486:
 jumpz           @Cond_04a0, ($h101 == 1)
 call            @Func_0bfe
-code040b        
+code040b
 
 goto            @Cond_04a0
 
 @Cond_04a0:
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3301 ; map 18a380c
 
 @Event_04c6:
@@ -125,64 +125,64 @@ code0419        0, 2, 0, 19, 11, 0
 code033a        109, 0
 code041b        0
 code041c        19, 168, 96, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1142 ; map 177c16c
 
 @Label_0542:
 code0006        21
-code040b        
+code040b
 
 @Label_054c:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 code0301        8, 7
 dialogtxt       "Some kind of message planned."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -197,7 +197,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -208,13 +208,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_08de, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -296,35 +296,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0b18
 
 @Label_0b18:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 @Func_0bfe:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -337,7 +337,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0d1c:
 code0438        16, 405, 645, 1
@@ -358,7 +358,7 @@ mapev           21, @Event_1052, 32
 mapevpos        21, (33,104)-(34,104)
 mapev           22, @Event_10d2, 32
 mapevpos        22, (37,104)-(38,104)
-ret             
+ret
 
 @Talk_0e7e:
 code0301        8, 7
@@ -366,10 +366,10 @@ code047d        0, 118
 code047e        0, 1
 dialogtxt       "You beat Red Wing?"
 dialogtxt       "Amazing…"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_0ef2:
 code0301        8, 7
@@ -377,42 +377,41 @@ code047d        0, 123
 code047e        0, 1
 dialogtxt       "This village is filthy."
 dialogtxt       "I hate it."
-code0309        
+code0309
 dialogtxt       "Is there anywhere quiet around here?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_0f8c:
 code0301        8, 7
 dialogtxt       "Up ahead in Surange Mine was"
 dialogtxt       "a terrifying Stray, Red Wing."
 dialogtxt       "It was defeated just recently."
-code0309        
+code0309
 dialogtxt       "However, there are still other"
 dialogtxt       "dangerous Strays in the Mine."
 dialogtxt       "Be careful if you go out∞"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1052:
 code0301        8, 7
 dialogtxt       "If your weapon only deals 1 damage,"
 dialogtxt       "you may have encountered an "
 dialogtxt       "opponent you must face with magic."
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_10d2:
 code0301        8, 7
 dialogtxt       "Look down↓"
-code0309        
+code0309
 dialogtxt       "↑To look up, press"
 dialogtxt       "START."
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

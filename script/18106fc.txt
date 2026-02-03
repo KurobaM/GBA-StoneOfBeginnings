@@ -10,12 +10,12 @@ code040d        30
 code047f        229
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code047d        0, 110
 code0301        16, 3
 code047e        0, 1
 dialogtxt       "Huh?"
-code0309        
+code0309
 code047e        0, 0
 code0302        3
 code040d        15
@@ -46,8 +46,8 @@ call            @Func_0f42
 call            @Func_0eaa
 dialogtxt       "Hrm?"
 dialogtxt       "Why are you here?"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0efe
 code0479        0, 4, 16
 call            @Func_0e5c
@@ -64,14 +64,14 @@ dialogtxt       "kinda ended up here…"
 goto            @Label_0330
 
 @Label_0330:
-code0309        
+code0309
 call            @Func_0e92
 code0479        1, 2, 12
 call            @Func_0ec8
 dialogtxt       "Just kinda?"
 dialogtxt       "I won't help you if you wander"
 dialogtxt       "your way into trouble again."
-code0309        
+code0309
 call            @Func_0efe
 code0479        0, 0, 14
 call            @Func_0e5c
@@ -86,17 +86,17 @@ dialogtxt       "Were you worried about me?"
 goto            @Label_0454
 
 @Label_0454:
-code0309        
+code0309
 call            @Func_0e92
 code0479        1, 11, 17
 call            @Func_0ec8
 dialogtxt       "N-no, I'm not!"
-code0309        
+code0309
 code0479        1, 2, 16
 dialogtxt       "I'm just on patrol."
 dialogtxt       "Our workshop is part"
 dialogtxt       "of the militia too."
-code0309        
+code0309
 call            @Func_0efe
 code0479        0, 0, 16
 call            @Func_0e5c
@@ -113,15 +113,15 @@ dialogtxt       "around Lute Cave too?"
 goto            @Label_05ba
 
 @Label_05ba:
-code0309        
+code0309
 call            @Func_0e92
 code0479        1, 5, 16
 call            @Func_0ec8
 dialogtxt       "Well…"
-code0309        
+code0309
 code0479        1, 2, 12
 dialogtxt       "That's right."
-code0309        
+code0309
 call            @Func_0efe
 code0479        0, 1, 12
 call            @Func_0e5c
@@ -138,13 +138,13 @@ dialogtxt       "thanks to you."
 goto            @Label_06ca
 
 @Label_06ca:
-code0309        
+code0309
 call            @Func_0e92
 code0479        1, 2, 14
 call            @Func_0ec8
 dialogtxt       "I told you, that wasn't it!"
 dialogtxt       "I wasn't trying to save you…"
-code0309        
+code0309
 call            @Func_0efe
 code0479        1, 2, 12
 code0479        0, 2, 16
@@ -162,66 +162,66 @@ dialogtxt       "have to have another match."
 goto            @Label_07fe
 
 @Label_07fe:
-code0309        
+code0309
 call            @Func_0e92
 code0479        1, 0, 16
 call            @Func_0ec8
 dialogtxt       "What do you mean?"
-code0309        
+code0309
 call            @Func_0efe
 code0479        0, 4, 14
 call            @Func_0e5c
 dialogtxt       "…"
-code0309        
+code0309
 call            @Func_0e92
 code0479        1, 2, 13
 call            @Func_0ec8
 dialogtxt       "Fine by me."
 dialogtxt       "But I won't lose."
-code0309        
+code0309
 call            @Func_0f98
 call            @Func_0ee6
-code047b        
+code047b
 code0333        2, 30
-done            
+done
 
 @Func_08ba:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_08fa:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -236,7 +236,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -247,13 +247,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0c02, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -335,65 +335,64 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0e3c
 
 @Label_0e3c:
-ret             
+ret
 
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_0e5c:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0e92:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0eaa:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0ec8:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_0ee6:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_0efe:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0f42:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0f98:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

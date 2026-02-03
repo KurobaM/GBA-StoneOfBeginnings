@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 47, 49, -1
 code0410        1, 47, 50, 53
 code0410        2, 48, 51, 54
-code0411        
+code0411
 code0430        57
 code0412        4, 1
 code0418        2
@@ -39,7 +39,7 @@ goto            @Cond_0284
 mapev           0, @Event_0312, 4
 mapevpos        0, (0,36)-(1,39)
 setvar          $h319, 4
-code0409        
+code0409
 jumpz           @Cond_02f6, ($f0058 == 1 && $f0060 == 0)
 code046e        38, 256, 0
 goto            @Label_030e
@@ -49,14 +49,14 @@ code046e        13, 256, 0
 goto            @Label_030e
 
 @Label_030e:
-code041d        
-code040b        
+code041d
+code040b
 
 @Event_0312:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         304 ; map 172e56c
 
 @Event_0344:
@@ -67,18 +67,18 @@ goto            @start
 goto            @Label_036a
 
 @Cond_0364:
-code040b        
+code040b
 
 goto            @Label_036a
 
 @Label_036a:
 code0006        21
-code040b        
+code040b
 
 @Label_0374:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_0388:
@@ -90,45 +90,45 @@ goto            @start
 goto            @Cond_03b4
 
 @Cond_03b4:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -143,7 +143,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -154,13 +154,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0700, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -242,34 +242,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_093a
 
 @Label_093a:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -282,7 +282,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0b3e:
 code0438        17, 366, 632, 1
@@ -291,7 +291,7 @@ code043d        17, 288, 224
 code043c        17, 4
 code0442        17, @Talk_0ba8
 code0444        17, -1
-ret             
+ret
 
 @Talk_0ba8:
 code0301        8, 7
@@ -300,8 +300,7 @@ code047e        0, 1
 dialogtxt       "There's a lot of Strays"
 dialogtxt       "outside the village."
 dialogtxt       "It's not safe to leave."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

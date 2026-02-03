@@ -39,13 +39,13 @@ dialogtxt       "I'll do my best!"
 goto            @Label_0196
 
 @Label_0196:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 0, 12
 call            @Func_12ca
 dialogtxt       "…"
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 1, 16
 call            @Func_125e
@@ -60,10 +60,10 @@ dialogtxt       "rely on [NAME 1] this time."
 goto            @Label_0238
 
 @Label_0238:
-code0309        
+code0309
 call            @Func_139a
 call            @Func_127c
-code047b        
+code047b
 goto            @Cond_0248
 
 @Cond_0248:
@@ -82,31 +82,31 @@ dialogtxt       "I'll do my best!"
 goto            @Label_02ee
 
 @Label_02ee:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 2, 12
 call            @Func_12ca
 dialogtxt       "That it is."
 dialogtxt       "As the saying goes, listen twice"
 dialogtxt       "as much as you speak. Meaning…"
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 0, 13
 call            @Func_125e
 dialogtxt       "Don't worry,"
 dialogtxt       "I'll be fine!"
 dialogtxt       "It'll work out somehow."
-code0309        
+code0309
 call            @Func_1294
 code0479        1, 1, 15
 call            @Func_12ca
 dialogtxt       "Listen to what"
 dialogtxt       "others are saying!"
-code0309        
+code0309
 call            @Func_139a
 call            @Func_12e8
-code047b        
+code047b
 goto            @Cond_0418
 
 @Cond_0418:
@@ -125,14 +125,14 @@ dialogtxt       "I'll do my best!"
 goto            @Label_04be
 
 @Label_04be:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 4, 12
 call            @Func_12ca
 dialogtxt       "I think it would be best"
 dialogtxt       "if you kept your mouth shut."
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 1, 17
 call            @Func_125e
@@ -145,10 +145,10 @@ dialogtxt       "Hey!"
 goto            @Label_056c
 
 @Label_056c:
-code0309        
+code0309
 call            @Func_139a
 call            @Func_127c
-code047b        
+code047b
 goto            @Cond_057c
 
 @Cond_057c:
@@ -167,15 +167,15 @@ dialogtxt       "I'll do my best!"
 goto            @Label_0622
 
 @Label_0622:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 2, 12
 call            @Func_12ca
 dialogtxt       "I'll be there to help!"
 dialogtxt       "We must convey Lady Murno's"
 dialogtxt       "charm to everyone!"
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 1, 16
 call            @Func_125e
@@ -188,10 +188,10 @@ dialogtxt       "Isn't that beside the point?"
 goto            @Label_06f8
 
 @Label_06f8:
-code0309        
+code0309
 call            @Func_139a
 call            @Func_127c
-code047b        
+code047b
 goto            @Cond_0708
 
 @Cond_0708:
@@ -239,13 +239,13 @@ dialogtxt       "I'll do my best!"
 goto            @Label_08a2
 
 @Label_08a2:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 0, 12
 call            @Func_12ca
 dialogtxt       "…"
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 1, 16
 call            @Func_125e
@@ -260,10 +260,10 @@ dialogtxt       "rely on [NAME 1] this time."
 goto            @Label_0944
 
 @Label_0944:
-code0309        
+code0309
 call            @Func_139a
 call            @Func_127c
-code047b        
+code047b
 goto            @Cond_0954
 
 @Cond_0954:
@@ -282,31 +282,31 @@ dialogtxt       "I'll do my best!"
 goto            @Label_09fa
 
 @Label_09fa:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 2, 12
 call            @Func_12ca
 dialogtxt       "That it is."
 dialogtxt       "As the saying goes, listen twice"
 dialogtxt       "as much as you speak. Meaning…"
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 0, 13
 call            @Func_125e
 dialogtxt       "Don't worry,"
 dialogtxt       "I'll be fine!"
 dialogtxt       "It'll work out somehow."
-code0309        
+code0309
 call            @Func_1294
 code0479        1, 1, 15
 call            @Func_12ca
 dialogtxt       "Listen to what"
 dialogtxt       "others are saying!"
-code0309        
+code0309
 call            @Func_139a
 call            @Func_12e8
-code047b        
+code047b
 goto            @Cond_0b24
 
 @Cond_0b24:
@@ -325,14 +325,14 @@ dialogtxt       "I'll do my best!"
 goto            @Label_0bca
 
 @Label_0bca:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 4, 12
 call            @Func_12ca
 dialogtxt       "I think it would be best"
 dialogtxt       "if you kept your mouth shut."
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 1, 17
 call            @Func_125e
@@ -345,10 +345,10 @@ dialogtxt       "Hey!"
 goto            @Label_0c78
 
 @Label_0c78:
-code0309        
+code0309
 call            @Func_139a
 call            @Func_127c
-code047b        
+code047b
 goto            @Cond_0c88
 
 @Cond_0c88:
@@ -367,15 +367,15 @@ dialogtxt       "I'll do my best!"
 goto            @Label_0d2e
 
 @Label_0d2e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 2, 12
 call            @Func_12ca
 dialogtxt       "I'll be there to help!"
 dialogtxt       "We must convey Lady Murno's"
 dialogtxt       "charm to everyone!"
-code0309        
+code0309
 call            @Func_1300
 code0479        0, 1, 16
 call            @Func_125e
@@ -388,10 +388,10 @@ dialogtxt       "Isn't that beside the point?"
 goto            @Label_0e04
 
 @Label_0e04:
-code0309        
+code0309
 call            @Func_139a
 call            @Func_127c
-code047b        
+code047b
 goto            @Cond_0e14
 
 @Cond_0e14:
@@ -406,8 +406,8 @@ call            @Func_1318
 call            @Func_1240
 dialogtxt       "We need to escort Murno"
 dialogtxt       "back to the workshop!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0478        1, 6
 code0479        1, 4, 14
@@ -417,8 +417,8 @@ call            @Func_12ca
 dialogtxt       "I'm sorry…"
 dialogtxt       "I ask so much of you,"
 dialogtxt       "but I'm always so useless…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1300
 code0479        0, 0, 13
 call            @Func_125e
@@ -435,10 +435,10 @@ dialogtxt       "That's really important!"
 goto            @Label_0fee
 
 @Label_0fee:
-code0309        
+code0309
 call            @Func_136e
 call            @Func_1294
-code047b        
+code047b
 code0478        0, 2
 jumpz           @Cond_1030, ($b003 == 0)
 code0479        0, 0, 12
@@ -489,84 +489,83 @@ dialogtxt       "Please do your best!"
 goto            @Cond_11f2
 
 @Cond_11f2:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1294
 code0479        1, 1, 12
 call            @Func_12ca
 dialogtxt       "Thank you,"
 dialogtxt       "[NAME 2],"
 dialogtxt       "[NAME 1]…"
-code0309        
+code0309
 call            @Func_139a
 call            @Func_12e8
-code047b        
+code047b
 goto            @Label_123e
 
 @Label_123e:
-done            
+done
 
 @Func_1240:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_125e:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_127c:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_1294:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_12ca:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_12e8:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_1300:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_1318:
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_132e:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_1344:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_136e:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_139a:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

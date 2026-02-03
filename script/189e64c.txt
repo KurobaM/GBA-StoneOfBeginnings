@@ -4,7 +4,7 @@ code0408        1
 code0410        0, 520, 555, -1
 code0410        1, 521, 556, -1
 code0410        2, 522, 557, 563
-code0411        
+code0411
 code0430        558
 code0412        4, 1
 code0418        2
@@ -52,9 +52,9 @@ goto            @Label_0392
 
 @Cond_0360:
 jumpz           @Label_0392, ($h319 == -3)
-code04a1        
+code04a1
 code041c        11, 0, 0, 1
-code0475        
+code0475
 goto            @Label_0392
 
 @Label_0392:
@@ -63,9 +63,9 @@ mapevpos        0, (32,69)-(37,69)
 mapev           1, @Event_0520, 8
 mapevpos        1, (24,9)-(25,9)
 setvar          $h319, 138
-code0409        
+code0409
 code046e        21, 256, 0
-code041d        
+code041d
 jumpz           @Cond_0446, ($b073 == 1)
 setvar          $b073, 0
 code0006        13
@@ -88,23 +88,23 @@ goto            @Label_0496
 
 @Label_0496:
 placetxt        "Rekui Water Ruins　Area 9"
-code040b        
+code040b
 
 @Label_04b4:
 setvar          $h096, 47
-code0332        
+code0332
 code033a        116, 0
 code0468        3
 code033e        116
-code040a        
+code040a
 code0006        31
 goto            @start
 
 @Event_04ee:
 setvar          $h096, 48
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         3248 ; map 189ddac
 
 @Event_0520:
@@ -113,58 +113,58 @@ code0419        0, 2, 5, 23, 4, 0
 code033a        110, 0
 code041b        0
 code041c        19, 200, 72, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         3250 ; map 189eadc
 
 @Label_059c:
 code0006        21
-code040b        
+code040b
 
 @Label_05a6:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -179,7 +179,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -190,13 +190,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0904, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -278,34 +278,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0b3e
 
 @Label_0b3e:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -318,5 +318,4 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
-
+ret

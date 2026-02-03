@@ -29,15 +29,15 @@ call            @Func_34b6
 dialogtxt       "Okay!"
 dialogtxt       "Let's go find out where"
 dialogtxt       "Anise is hiding!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "Our Search Area"
 dialogtxt       "Is North From Here"
 dialogtxt       "Until Marnail Station."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
@@ -54,10 +54,10 @@ dialogtxt       "We can't miss a thing!"
 goto            @Label_0236
 
 @Label_0236:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_0246
 
 @Cond_0246:
@@ -66,15 +66,15 @@ call            @Func_34b6
 dialogtxt       "Okay!"
 dialogtxt       "Let's go find out where"
 dialogtxt       "Anise is hiding!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "We are to search from here"
 dialogtxt       "until Marnail Station,"
 dialogtxt       "where the Smile Inn is."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
@@ -91,10 +91,10 @@ dialogtxt       "We can't miss a thing!"
 goto            @Label_039a
 
 @Label_039a:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_03aa
 
 @Cond_03aa:
@@ -103,15 +103,15 @@ call            @Func_34b6
 dialogtxt       "Okay!"
 dialogtxt       "Let's go find out where"
 dialogtxt       "Anise is hiding!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 13
 call            @Func_3540
 dialogtxt       "Our area is from here"
 dialogtxt       "until Marnail Station."
 dialogtxt       "I'll leave it to you."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
@@ -128,10 +128,10 @@ dialogtxt       "We can't miss a thing!"
 goto            @Label_04fc
 
 @Label_04fc:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_050c
 
 @Cond_050c:
@@ -140,15 +140,15 @@ call            @Func_34b6
 dialogtxt       "Okay!"
 dialogtxt       "Let's go find out where"
 dialogtxt       "Anise is hiding!"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 12
 call            @Func_3540
 dialogtxt       "Our search area is from here to"
 dialogtxt       "Marnail Station's Smile Inn."
 dialogtxt       "Let's do our best!"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
@@ -165,10 +165,10 @@ dialogtxt       "We can't miss a thing!"
 goto            @Label_0672
 
 @Label_0672:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_0682
 
 @Cond_0682:
@@ -216,23 +216,23 @@ dialogtxt       "Let's check it out!"
 goto            @Label_083c
 
 @Label_083c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "There Is A Ferocious Summon Beast"
 dialogtxt       "Called Red Wing In That Area."
 dialogtxt       "Please Take Caution."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
 dialogtxt       "I know!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_08fc
 
 @Cond_08fc:
@@ -251,33 +251,33 @@ dialogtxt       "Let's check it out!"
 goto            @Label_09c2
 
 @Label_09c2:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "There's a ferocious Summon Beast"
 dialogtxt       "called Red Wing in that area."
 dialogtxt       "As the saying goes,"
-code0309        
+code0309
 code0479        1, 2, 14
 dialogtxt       "Don't step on the tiger's tail."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 16
 call            @Func_34d4
 dialogtxt       "You're talking about your tail…"
 dialogtxt       "…Right?"
-code0309        
+code0309
 call            @Func_350a
 code0479        1, 1, 15
 call            @Func_3540
 dialogtxt       "I'm telling you to"
 dialogtxt       "be careful!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_0b10
 
 @Cond_0b10:
@@ -296,23 +296,23 @@ dialogtxt       "Let's check it out!"
 goto            @Label_0bd6
 
 @Label_0bd6:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 13
 call            @Func_3540
 dialogtxt       "I hear there's a ferocous Summon"
 dialogtxt       "Beast called Red Wing there."
 dialogtxt       "This will be fun…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 1, 16
 call            @Func_34d4
 dialogtxt       "I'd prefer if we didn't find it!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_0c90
 
 @Cond_0c90:
@@ -331,23 +331,23 @@ dialogtxt       "Let's check it out!"
 goto            @Label_0d56
 
 @Label_0d56:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 16
 call            @Func_3540
 dialogtxt       "I've heard of a ferocious Summon"
 dialogtxt       "Beast called Red Wing in there."
 dialogtxt       "Now, we must be careful…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
 dialogtxt       "I know!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_0e10
 
 @Cond_0e10:
@@ -395,23 +395,23 @@ dialogtxt       "Let's check it out!"
 goto            @Label_0fca
 
 @Label_0fca:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "There Is A Ferocious Summon Beast"
 dialogtxt       "Called Red Wing In That Area."
 dialogtxt       "Please Take Caution."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
 dialogtxt       "I know!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_108a
 
 @Cond_108a:
@@ -430,33 +430,33 @@ dialogtxt       "Let's check it out!"
 goto            @Label_1150
 
 @Label_1150:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "There's a ferocious Summon Beast"
 dialogtxt       "called Red Wing in that area."
 dialogtxt       "As the saying goes,"
-code0309        
+code0309
 code0479        1, 2, 14
 dialogtxt       "Don't step on the tiger's tail."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 16
 call            @Func_34d4
 dialogtxt       "You're talking about your tail…"
 dialogtxt       "…Right?"
-code0309        
+code0309
 call            @Func_350a
 code0479        1, 1, 15
 call            @Func_3540
 dialogtxt       "I'm telling you to"
 dialogtxt       "be careful!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_129e
 
 @Cond_129e:
@@ -475,23 +475,23 @@ dialogtxt       "Let's check it out!"
 goto            @Label_1364
 
 @Label_1364:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 13
 call            @Func_3540
 dialogtxt       "I hear there's a ferocous Summon"
 dialogtxt       "Beast called Red Wing there."
 dialogtxt       "This will be fun…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 1, 16
 call            @Func_34d4
 dialogtxt       "I'd prefer if we didn't find it!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_141e
 
 @Cond_141e:
@@ -510,23 +510,23 @@ dialogtxt       "Let's check it out!"
 goto            @Label_14e4
 
 @Label_14e4:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 16
 call            @Func_3540
 dialogtxt       "I've heard of a ferocious Summon"
 dialogtxt       "Beast called Red Wing in there."
 dialogtxt       "Now, we must be careful…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
 dialogtxt       "I know!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_159e
 
 @Cond_159e:
@@ -574,14 +574,14 @@ dialogtxt       "Let's check inside!"
 goto            @Label_1770
 
 @Label_1770:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "We May Encounter Enemies Inside."
 dialogtxt       "Please Be Careful."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 14
 call            @Func_34d4
@@ -596,10 +596,10 @@ dialogtxt       "I'll have to watch out…"
 goto            @Label_183e
 
 @Label_183e:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_184e
 
 @Cond_184e:
@@ -618,15 +618,15 @@ dialogtxt       "Let's check inside!"
 goto            @Label_1914
 
 @Label_1914:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 16
 call            @Func_3540
 dialogtxt       "We may be nearing"
 dialogtxt       "their hideout…"
 dialogtxt       "Don't let your guard down."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 14
 call            @Func_34d4
@@ -641,10 +641,10 @@ dialogtxt       "I'll be careful."
 goto            @Label_19f4
 
 @Label_19f4:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_1a04
 
 @Cond_1a04:
@@ -663,24 +663,24 @@ dialogtxt       "Let's check inside!"
 goto            @Label_1aca
 
 @Label_1aca:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 13
 call            @Func_3540
 dialogtxt       "Feels like they could show up at"
 dialogtxt       "any moment… Saves me the"
 dialogtxt       "trouble of hunting them down."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 5, 14
 call            @Func_34d4
 dialogtxt       "Hold on, [NAME 1]!"
 dialogtxt       "Calm down!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_1b8c
 
 @Cond_1b8c:
@@ -699,15 +699,15 @@ dialogtxt       "Let's check inside!"
 goto            @Label_1c52
 
 @Label_1c52:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 16
 call            @Func_3540
 dialogtxt       "Uu… We may be"
 dialogtxt       "approaching their hideout."
 dialogtxt       "Let's take it slow."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 14
 call            @Func_34d4
@@ -722,10 +722,10 @@ dialogtxt       "I'll be careful."
 goto            @Label_1d3e
 
 @Label_1d3e:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_1d4e
 
 @Cond_1d4e:
@@ -773,24 +773,24 @@ dialogtxt       "Let's check inside!"
 goto            @Label_1f14
 
 @Label_1f14:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "We May Have Been Detected"
 dialogtxt       "During Our Earlier Battle."
 dialogtxt       "Stay Cautious."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 16
 call            @Func_34d4
 dialogtxt       "Yeah."
 dialogtxt       "Move carefully…"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_1fe0
 
 @Cond_1fe0:
@@ -809,15 +809,15 @@ dialogtxt       "Let's check inside!"
 goto            @Label_20a6
 
 @Label_20a6:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 16
 call            @Func_3540
 dialogtxt       "I would hope they did not"
 dialogtxt       "notice anything after our"
 dialogtxt       "earlier battle…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 16
 call            @Func_34d4
@@ -834,10 +834,10 @@ dialogtxt       "Moving on…"
 goto            @Label_21a6
 
 @Label_21a6:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_21b6
 
 @Cond_21b6:
@@ -856,27 +856,27 @@ dialogtxt       "Let's check inside!"
 goto            @Label_227c
 
 @Label_227c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "That trash may have noticed us"
 dialogtxt       "during our earlier battle."
-code0309        
+code0309
 code0479        1, 2, 13
 dialogtxt       "Well, no matter."
 dialogtxt       "We'll erase them regardless."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 1, 16
 call            @Func_34d4
 dialogtxt       "Alright [NAME 1],"
 dialogtxt       "calm down, calm down…"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_2372
 
 @Cond_2372:
@@ -895,15 +895,15 @@ dialogtxt       "Let's check inside!"
 goto            @Label_2438
 
 @Label_2438:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 4, 16
 call            @Func_3540
 dialogtxt       "Uuu…"
 dialogtxt       "I hope our earlier battle"
 dialogtxt       "didn't expose us…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 16
 call            @Func_34d4
@@ -920,10 +920,10 @@ dialogtxt       "going further in."
 goto            @Label_2542
 
 @Label_2542:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_2552
 
 @Cond_2552:
@@ -971,24 +971,24 @@ dialogtxt       "Let's check inside!"
 goto            @Label_2718
 
 @Label_2718:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "Unable To Determine The Cause"
 dialogtxt       "Of The Strange Occurance."
 dialogtxt       "Please Exercise Caution."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 14
 call            @Func_34d4
 dialogtxt       "Got it!"
 dialogtxt       "I will!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_34f2
-code047b        
+code047b
 goto            @Cond_27c8
 
 @Cond_27c8:
@@ -1007,14 +1007,14 @@ dialogtxt       "Let's check inside!"
 goto            @Label_288e
 
 @Label_288e:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "We still don't know what that was."
 dialogtxt       "Be careful."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
@@ -1029,16 +1029,16 @@ dialogtxt       "Safety first, right?"
 goto            @Label_2964
 
 @Label_2964:
-code0309        
+code0309
 call            @Func_350a
 code0479        1, 2, 12
 call            @Func_3540
 dialogtxt       "Yes,"
 dialogtxt       "exactly."
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_29ac
 
 @Cond_29ac:
@@ -1057,14 +1057,14 @@ dialogtxt       "Let's check inside!"
 goto            @Label_2a72
 
 @Label_2a72:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 13
 call            @Func_3540
 dialogtxt       "We might get ambushed,"
 dialogtxt       "but we'll deal with it then…"
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 5, 14
 call            @Func_34d4
@@ -1079,15 +1079,15 @@ dialogtxt       "Don't scare me like that!"
 goto            @Label_2b48
 
 @Label_2b48:
-code0309        
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "Keep it together."
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_2b86
 
 @Cond_2b86:
@@ -1106,29 +1106,29 @@ dialogtxt       "Let's check inside!"
 goto            @Label_2c4c
 
 @Label_2c4c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 14
 call            @Func_3540
 dialogtxt       "I'm certain I saw someone."
 dialogtxt       "Please be careful."
-code0309        
+code0309
 call            @Func_3576
 code0479        0, 2, 12
 call            @Func_34d4
 dialogtxt       "Got it,"
 dialogtxt       "I will."
-code0309        
+code0309
 call            @Func_350a
 code0479        1, 4, 16
 call            @Func_3540
 dialogtxt       "I have a bad feeling about this…"
 dialogtxt       "I hope it was my imagination."
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_2d48
 
 @Cond_2d48:
@@ -1154,11 +1154,11 @@ dialogtxt       "[NAME 1] first!"
 goto            @Label_2e14
 
 @Label_2e14:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_35e4
 call            @Func_34f2
-code047b        
+code047b
 goto            @Label_34b4
 
 @Cond_2e26:
@@ -1200,8 +1200,8 @@ dialogtxt       "Let's get out of here!"
 goto            @Label_2f8c
 
 @Label_2f8c:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 jumpz           @Cond_2fbc, ($b003 == 0)
 code0479        1, 0, 12
@@ -1243,10 +1243,10 @@ dialogtxt       "Yes…"
 goto            @Cond_30b2
 
 @Cond_30b2:
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Label_34b4
 
 @Cond_30c2:
@@ -1289,17 +1289,17 @@ dialogtxt       "We'll be there soon!"
 goto            @Label_3224
 
 @Label_3224:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 0, 12
 call            @Func_3540
 dialogtxt       "Affirmative."
 dialogtxt       "Let's Hurry!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_3272
 
 @Cond_3272:
@@ -1316,17 +1316,17 @@ dialogtxt       "We'll be there soon!"
 goto            @Label_32e4
 
 @Label_32e4:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 12
 call            @Func_3540
 dialogtxt       "Right!"
 dialogtxt       "We must hurry!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_3330
 
 @Cond_3330:
@@ -1343,17 +1343,17 @@ dialogtxt       "We'll be there soon!"
 goto            @Label_33a2
 
 @Label_33a2:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 13
 call            @Func_3540
 dialogtxt       "Hmph…"
 dialogtxt       "How troublesome."
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_33f2
 
 @Cond_33f2:
@@ -1370,85 +1370,84 @@ dialogtxt       "We'll be there soon!"
 goto            @Label_3464
 
 @Label_3464:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_350a
 code0479        1, 2, 12
 call            @Func_3540
 dialogtxt       "Yes!"
 dialogtxt       "Let's go!"
-code0309        
+code0309
 call            @Func_3610
 call            @Func_355e
-code047b        
+code047b
 goto            @Cond_34b0
 
 @Cond_34b0:
 goto            @Label_34b4
 
 @Label_34b4:
-done            
+done
 
 @Func_34b6:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 @Func_34d4:
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 @Func_34f2:
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_350a:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_3540:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_355e:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 @Func_3576:
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 @Func_358e:
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_35ba:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_35e4:
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_3610:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

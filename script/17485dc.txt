@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 180, 182, 185
 code0410        1, 180, 183, -1
 code0410        2, 181, 184, 186
-code0411        
+code0411
 code0430        187
 code0412        4, 1
 code0418        2
@@ -50,7 +50,7 @@ goto            @Label_0336
 @Cond_02d8:
 jumpz           @Cond_0308, ($h319 == 170)
 code041c        1, 16, 728, 4
-code0475        
+code0475
 goto            @Label_0336
 
 @Cond_0308:
@@ -74,11 +74,11 @@ goto            @Cond_0446
 
 @Cond_0446:
 setvar          $h319, 36
-code0409        
+code0409
 code046e        15, 256, 0
-code041d        
+code041d
 placetxt        "Prosban　West Gate"
-code040b        
+code040b
 
 @Event_0484:
 setvar          $f0041, 1
@@ -88,7 +88,7 @@ setvar          $h096, 32
 setvar          $h137, 30
 setvar          $h136, 0
 call            @Func_0734
-code040a        
+code040a
 setvar          $h137, 1
 call            @Func_0774
 gotomap         642 ; map 1749c5c
@@ -96,15 +96,15 @@ gotomap         642 ; map 1749c5c
 @Event_04ee:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         632 ; map 17464dc
 
 @Event_0520:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         636 ; map 1747f2c
 
 @Event_0552:
@@ -121,11 +121,11 @@ dialogtxt       "I shouldn't wander off…"
 goto            @Label_05e2
 
 @Label_05e2:
-code0309        
+code0309
 code047e        0, 0
 code0302        7
 call            @Func_0d9c
-code040b        
+code040b
 
 @Event_0600:
 setvar          $h096, 32
@@ -133,19 +133,19 @@ code0419        0, 2, 0, 19, 11, 0
 code033a        109, 0
 code041b        0
 code041c        19, 168, 96, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         642 ; map 1749c5c
 
 @Label_067c:
 code0006        21
-code040b        
+code040b
 
 @Label_0686:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_069a:
@@ -155,50 +155,50 @@ code047e        0, 1
 dialogtxt       "You shouldn't go any further."
 dialogtxt       "There's a dangerous Stray"
 dialogtxt       "past here called Red Wing."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 @Func_0734:
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 @Func_0774:
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -213,7 +213,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -224,13 +224,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0a7c, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -312,35 +312,35 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0cb6
 
 @Label_0cb6:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 @Func_0d9c:
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -353,7 +353,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0eba:
 code0438        16, 395, 645, 1
@@ -366,7 +366,7 @@ mapev           21, @Event_1020, 32
 mapevpos        21, (33,104)-(34,104)
 mapev           22, @Event_1086, 32
 mapevpos        22, (37,104)-(38,104)
-ret             
+ret
 
 @Talk_0f84:
 code0301        8, 7
@@ -375,26 +375,25 @@ code047e        0, 1
 dialogtxt       "Hey, let's play Summon Beast!"
 dialogtxt       "I'll be the Summoner,"
 dialogtxt       "and you can be a Stray."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Event_1020:
 code0301        8, 7
 dialogtxt       "Bows require patience and"
 dialogtxt       "composure!"
 dialogtxt       "Here are some tips!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1086:
 code0301        8, 7
 dialogtxt       "\"Look below\""
-code0309        
+code0309
 dialogtxt       "…is what it says."
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

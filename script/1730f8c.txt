@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 93, 94, 97
 code0410        1, 93, 95, 98
 code0410        2, 93, 96, 99
-code0411        
+code0411
 code0430        100
 code0412        4, 1
 code0418        2
@@ -43,7 +43,7 @@ goto            @Cond_01ac
 mapev           0, @Event_026e, 4
 mapevpos        0, (5,31)-(6,31)
 setvar          $h319, 11
-code0409        
+code0409
 jumpz           @Cond_021e, ($f0058 == 1 && $f0060 == 0)
 code046e        38, 256, 0
 goto            @Label_0236
@@ -53,31 +53,31 @@ code046e        28, 256, 0
 goto            @Label_0236
 
 @Label_0236:
-code041d        
-code040b        
+code041d
+code040b
 
 @Talk_023a:
 setvar          $f0041, 1
 code043e        0, 3, 0
 code0006        1710
 code0442        2, @Talk_02be
-code040b        
+code040b
 
 @Event_026e:
 setvar          $h096, 32
 code041c        18, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         311 ; map 17306cc
 
 @Label_02a0:
 code0006        21
-code040b        
+code040b
 
 @Label_02aa:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_02be:
@@ -86,48 +86,48 @@ code047d        0, 119
 code047e        0, 1
 dialogtxt       "Good for you to have"
 dialogtxt       "a Summon Beast, δ!"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -142,7 +142,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -153,13 +153,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_066e, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -241,34 +241,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_08a8
 
 @Label_08a8:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -281,7 +281,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0aac:
 code0438        16, 369, 632, 1
@@ -296,11 +296,11 @@ code043d        17, 128, 168
 code043c        17, 4
 code0442        17, @Talk_0b88
 code0444        17, -1
-ret             
+ret
 
 @Talk_0b7e:
 code0006        3914
-code040b        
+code040b
 
 @Talk_0b88:
 code0301        8, 7
@@ -309,12 +309,11 @@ code047e        0, 1
 dialogtxt       "What's so fun about fishing?"
 dialogtxt       "You have to deal"
 dialogtxt       "with some eccentric old man!"
-code0309        
+code0309
 dialogtxt       "He said that I don't have the"
 dialogtxt       "qualifications to fish..."
 dialogtxt       "Really, what's so fun about that?"
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
-
+code040b

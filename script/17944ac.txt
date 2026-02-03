@@ -4,7 +4,7 @@ code0408        0
 code0410        0, 139, 141, 144
 code0410        1, 139, 142, -1
 code0410        2, 140, 143, 145
-code0411        
+code0411
 code0430        146
 code0412        4, 1
 code0418        2
@@ -87,7 +87,7 @@ mapevpos        6, (49,18)-(50,18)
 mapev           7, @Event_074c, 4
 mapevpos        7, (66,18)-(69,18)
 setvar          $h319, 31
-code0409        
+code0409
 jumpz           @Cond_04b2, ($f0035 == 1)
 code046e        38, 256, 0
 goto            @Label_04ca
@@ -103,7 +103,7 @@ code043c        16, (((($h130 - 1) + 2) & 0x0003) + 1)
 goto            @Cond_0512
 
 @Cond_0512:
-code041d        
+code041d
 jumpz           @Cond_0540, ($bv016 == 7)
 code043e        0, 3, 0
 goto            @Talk_079c
@@ -111,43 +111,43 @@ goto            @Talk_079c
 goto            @Cond_0540
 
 @Cond_0540:
-code040b        
+code040b
 
 @Event_0542:
 setvar          $h096, 32
 setvar          $h318, 0
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1331 ; map 1793c9c
 
 @Event_0580:
 setvar          $h096, 32
 setvar          $h318, 1
 code041c        17, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1331 ; map 1793c9c
 
 @Event_05be:
 setvar          $h096, 32
 code041c        17, 0, 0, 4
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1334 ; map 179509c
 
 @Event_05f0:
 setvar          $h096, 32
 code041c        17, 0, 0, 1
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1335 ; map 17956cc
 
 @Event_0622:
 setvar          $h096, 32
 code041c        17, 0, 0, 2
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1337 ; map 179622c
 
 @Event_0654:
@@ -156,9 +156,9 @@ code0419        0, 2, 0, 27, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 232, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1345 ; map 17983dc
 
 @Event_06d0:
@@ -167,26 +167,26 @@ code0419        0, 2, 0, 48, 15, 0
 code033a        109, 0
 code041b        0
 code041c        19, 400, 144, 3
-code041d        
+code041d
 code041a        0, 0
-code040a        
+code040a
 gotomap         1346 ; map 17988cc
 
 @Event_074c:
 setvar          $h096, 32
 code041c        18, 0, 0, 3
-code041d        
-code040a        
+code041d
+code040a
 gotomap         1347 ; map 1798cec
 
 @Label_077e:
 code0006        21
-code040b        
+code040b
 
 @Label_0788:
 setvar          $h096, 63
-code040a        
-code034f        
+code040a
+code034f
 goto            @start
 
 @Talk_079c:
@@ -204,45 +204,45 @@ goto            @start
 goto            @Cond_07e6
 
 @Cond_07e6:
-code040b        
+code040b
 
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -257,7 +257,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -268,13 +268,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0b32, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -356,34 +356,34 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0d6c
 
 @Label_0d6c:
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 - 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, $h128, ($h129 + 8), 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 - 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code046d        0, 192
 code043e        0, 6, 0
 walkto          0, ($h128 + 8), $h129, 1
 walkwait        0
-ret             
+ret
 
 code033a        196, 0
-code048e        
+code048e
 code031a        7
 code031b        7, -1, -1, 32767, 6
 code031c        7, 1
@@ -396,7 +396,7 @@ code031c        7, 2
 code031f        7
 code031a        7
 code033e        196
-ret             
+ret
 
 @Func_0f70:
 code0438        18, 399, 645, 1
@@ -417,7 +417,7 @@ mapev           21, @Event_1210, 32
 mapevpos        21, (56,21)-(58,21)
 mapev           22, @Event_1278, 32
 mapevpos        22, (76,37)-(76,38)
-ret             
+ret
 
 @Talk_10d2:
 code0301        8, 7
@@ -425,55 +425,54 @@ code047d        0, 120
 code047e        0, 1
 dialogtxt       "It truly takes talent to become"
 dialogtxt       "very resourceful, I must say."
-code0309        
+code0309
 code047e        0, 0
 code0302        7
-code040b        
+code040b
 
 @Talk_1144:
 code0301        8, 7
 dialogtxt       "…"
-code0309        
+code0309
 dialogtxt       "Meooow~"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1170:
 code0301        8, 7
 dialogtxt       "　"
 dialogtxt       "　　　　　　~Hey, hey!~"
-code0309        
+code0309
 dialogtxt       "Lately, I can hear a lot of strange"
 dialogtxt       "noises under the desk behind me…"
 dialogtxt       "It's creepy! Can't anyone help me?"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1210:
 code0301        8, 7
 dialogtxt       "Care to try our \"Lucky Draw\"?"
 dialogtxt       "It's available all day, everyday!"
 dialogtxt       "Guaranteed no losing tickets!"
-code0309        
+code0309
 code0302        7
-code040b        
+code040b
 
 @Event_1278:
 code0301        8, 7
 dialogtxt       "　"
 dialogtxt       "　　　　Fishing Buddies Newspaper"
 dialogtxt       "　　　　　　　　　-Special Edition"
-code0309        
+code0309
 dialogtxt       "I heard that a monster fish"
 dialogtxt       "lurks in Deckell Town's very"
 dialogtxt       "own fishing spot."
-code0309        
+code0309
 dialogtxt       "My pal who caught it spouted some"
 dialogtxt       "gibberish like \"IT DOESN'T"
 dialogtxt       "FIT THE SCREEN!\", or whatever."
-code0309        
+code0309
 code0302        7
-code040b        
-
+code040b

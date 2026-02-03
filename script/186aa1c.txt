@@ -1,4 +1,4 @@
-code0332        
+code0332
 code0331        40, 256
 code040d        15
 code0478        0, 0
@@ -40,8 +40,8 @@ dialogtxt       "I'll show you my determination!"
 goto            @Label_01a8
 
 @Label_01a8:
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_1000
 code0479        1, 5, 12
 call            @Func_1036
@@ -62,7 +62,7 @@ dialogtxt       "[NAME 1]…"
 goto            @Label_0270
 
 @Label_0270:
-code0309        
+code0309
 call            @Func_1000
 code0479        1, 2, 12
 call            @Func_1036
@@ -84,7 +84,7 @@ dialogtxt       "[NAME 1]…"
 goto            @Label_032e
 
 @Label_032e:
-code0309        
+code0309
 call            @Func_1000
 code0479        1, 2, 13
 call            @Func_1036
@@ -107,7 +107,7 @@ dialogtxt       "able to hold back, right?"
 goto            @Label_0426
 
 @Label_0426:
-code0309        
+code0309
 call            @Func_1000
 code0479        1, 2, 12
 call            @Func_1036
@@ -116,7 +116,7 @@ dialogtxt       "Well then, I shall also get serious…"
 goto            @Cond_0470
 
 @Cond_0470:
-code0309        
+code0309
 call            @Func_1106
 call            @Func_1054
 code031a        6
@@ -196,7 +196,7 @@ goto            @Label_0798
 @Label_0798:
 code0480        0, 1, 0, 0
 code0481        1
-code0482        
+code0482
 code040d        60
 code0481        0
 jumpz           @Cond_07e8, ($b003 == 0)
@@ -221,7 +221,7 @@ goto            @Label_083c
 @Label_083c:
 code0480        0, 1, 0, -30
 code0481        1
-code0482        
+code0482
 code043c        1, 2
 code043e        1, 3, 0
 code047d        0, 2
@@ -229,7 +229,7 @@ code0301        16, 1
 code047e        0, 1
 jumpz           @Cond_0906, ($b003 == 0)
 dialogbig       48, 116, 1, 0, 0, "Here I Come!!"
-code030c        
+code030c
 code047e        0, 0
 code0302        1
 goto            @Cond_0906
@@ -237,7 +237,7 @@ goto            @Cond_0906
 @Cond_0906:
 jumpz           @Cond_0964, ($b003 == 1)
 dialogbig       24, 116, 1, 0, 0, "Prepare yourself!!"
-code030c        
+code030c
 code047e        0, 0
 code0302        1
 goto            @Cond_0964
@@ -246,7 +246,7 @@ goto            @Cond_0964
 jumpz           @Cond_09c0, ($b003 == 2)
 dialogtxt       "I'll soon make you"
 dialogtxt       "regret those words…"
-code0309        
+code0309
 code047e        0, 0
 code0302        1
 goto            @Cond_09c0
@@ -254,50 +254,50 @@ goto            @Cond_09c0
 @Cond_09c0:
 jumpz           @Cond_0a1e, ($b003 == 3)
 dialogbig       24, 116, 1, 0, 0, "Here I come!!!"
-code030c        
+code030c
 code047e        0, 0
 code0302        1
 goto            @Cond_0a1e
 
 @Cond_0a1e:
 code0481        0
-done            
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -312,7 +312,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -323,13 +323,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_0d70, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -411,63 +411,62 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0faa
 
 @Label_0faa:
-ret             
+ret
 
 @Func_0fac:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_1000:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_1036:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_1054:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_10b0:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_1106:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret

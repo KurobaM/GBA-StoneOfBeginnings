@@ -7,7 +7,7 @@ code040d        15
 code048b        0, 160, 16
 code0491        0
 setvar          $hv000, 2
-code048c        
+code048c
 code040d        5
 code0445        0, 11
 code0446        0
@@ -21,8 +21,8 @@ call            @Func_0b9a
 call            @Func_0a96
 dialogtxt       "Um, if I remember correctly,"
 dialogtxt       "the Gold Faction is…"
-code047b        
-code0309        
+code047b
+code0309
 call            @Func_0aea
 jumpz           @Cond_0160, ($b003 == 0)
 code0479        1, 0, 12
@@ -48,7 +48,7 @@ jumpz           @Cond_0252, ($b003 == 0)
 dialogtxt       "Downtown, Past The"
 dialogtxt       "Turn At the Dead End."
 dialogtxt       "…Is What Jade Said."
-code0309        
+code0309
 dialogtxt       "Based On That,"
 dialogtxt       "I Believe It Is That Way."
 goto            @Cond_0252
@@ -74,10 +74,10 @@ dialogtxt       "it's that way!"
 goto            @Cond_033e
 
 @Cond_033e:
-code0309        
+code0309
 call            @Func_0bf0
 call            @Func_0b3e
-code047b        
+code047b
 code043c        0, 2
 code043c        1, 2
 code040d        5
@@ -110,51 +110,51 @@ dialogtxt       "Right right…"
 goto            @Label_04e4
 
 @Label_04e4:
-code0309        
+code0309
 call            @Func_0bda
 call            @Func_0b3e
-code047b        
+code047b
 code040d        15
 code0489        0, 2, 16
-code0492        
-code048c        
-done            
+code0492
+code048c
+done
 
 code031a        7
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031b        7, -1, -1, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031a        7
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 1
 code031f        7
-ret             
+ret
 
 code031a        6
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 1
 code031f        6
-ret             
+ret
 
 code031b        7, (-1 - $h139), $h140, $h136, $h137
 code031c        7, 2
 code031f        7
 code031a        7
-ret             
+ret
 
 code031b        6, $h139, 0, $h136, $h137
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -169,7 +169,7 @@ code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 code031a        7
 code031b        7, -1, -1, $h141, $h137
@@ -180,13 +180,13 @@ code031b        6, -1, -1, $h136, $h137
 code031c        6, 1
 code031f        6
 code031a        7
-ret             
+ret
 
 code031b        6, -1, -1, $h136, ($h137 / 2)
 code031c        6, 2
 code031f        6
 code031a        6
-ret             
+ret
 
 jumpz           @Cond_085a, ($h131 == 0)
 setvar          $h139, ($h139 | 0x0001)
@@ -268,66 +268,65 @@ setvar          $h139, ($h139 | 0x00008000)
 goto            @Label_0a94
 
 @Label_0a94:
-ret             
+ret
 
 @Func_0a96:
 code0301        2, 4
 code047e        0, 1
-ret             
+ret
 
 code0301        2, 7
 code047e        0, 1
-ret             
+ret
 
 code047e        0, 0
 code0302        4
-ret             
+ret
 
 @Func_0aea:
 code047e        0, 0
 code0302        7
-ret             
+ret
 
 @Func_0b02:
 code0301        4, 5
 code047e        1, 1
-ret             
+ret
 
 @Func_0b20:
 code0301        4, 7
 code047e        1, 1
-ret             
+ret
 
 @Func_0b3e:
 code047e        1, 0
 code0302        5
-ret             
+ret
 
 code047e        1, 0
 code0302        7
-ret             
+ret
 
 code047a        0, 1, 1
-ret             
+ret
 
 @Func_0b84:
 code047a        1, 1, 1
-ret             
+ret
 
 @Func_0b9a:
 code047a        0, 1, 1
 code047a        1, 1, 1
-ret             
+ret
 
 code047a        0, 0, 1
-ret             
+ret
 
 @Func_0bda:
 code047a        1, 0, 1
-ret             
+ret
 
 @Func_0bf0:
 code047a        0, 0, 1
 code047a        1, 0, 1
-ret             
-
+ret
