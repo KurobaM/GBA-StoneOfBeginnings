@@ -28,7 +28,7 @@
 .include "asm/name_input_cursor.asm"
 
 ; Allow using the debug menu features.
-.include "asm/debug_menu.asm"
+;.include "asm/debug_menu.asm"
 
 ;Solves location space limitations
 .include "asm/saving_location.asm"
@@ -46,7 +46,7 @@
 .include "asm/location_text.asm"
 
 ;psi3 debug
-.include "asm/psi3_debug.asm"
+;.include "asm/psi3_debug.asm"
 
 ;graphics
 .include "asm/title.asm"
