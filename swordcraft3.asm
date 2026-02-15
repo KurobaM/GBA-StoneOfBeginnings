@@ -45,6 +45,9 @@
 ;location text fixes
 .include "asm/location_text.asm"
 
+;psi3 debug
+.include "asm/psi3_debug.asm"
+
 ;graphics
 .include "asm/title.asm"
 .include "asm/gfx_craftsword_edit.asm"

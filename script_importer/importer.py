@@ -4,6 +4,7 @@
 from __future__ import annotations
 import hashlib
 from io import BytesIO
+import json
 import math
 import os
 import sys
@@ -74,7 +75,7 @@ def get_import_file(dir_path: str):
 
 
 def build_data(start: int, end: int, orig_rom: bytes,
-               entries: dict[int, Entry], files: dict[int, bytes]):
+               entries: dict[int, Entry], files: dict[int, bytes], filemap: dict[str,str] | None = None):
     count = int.from_bytes(orig_rom[start: start + 2], 'little')
     data: list[bytes] = []
     data.append(orig_rom[start: start+8])
@@ -115,11 +116,12 @@ def build_data(start: int, end: int, orig_rom: bytes,
         if last_idx == i:
             remain_size = end - start - 16 * e.new_block_idx
             e.new_block_count = remain_size // 16
-
         data.append(int.to_bytes(e.new_block_idx, 4, 'little'))
         data.append(int.to_bytes(e.new_block_count, 4, 'little'))
+        if filemap is not None:
+            filemap[f'{e.new_file_offset:x}'] = f'{e.file_offset:x}'
     data.append(padding)
-
+    
     for i in range(0, count):
         e = entries[i]
         data.append(entries[i].import_file)
@@ -181,15 +183,20 @@ if __name__ == '__main__':
         sys.exit(-1)
 
     files = get_import_file(import_folder)
+    filemap = dict()
     print(f'Region: {REGION_1["start"]:x} - {REGION_1["end"]:x}')
     entries_1 = parse_rom(REGION_1['start'], REGION_1['end'], orig_rom)
     patch_1 = build_data(REGION_1['start'], REGION_1['end'],
-                         orig_rom, entries_1, files)
+                         orig_rom, entries_1, files, filemap)
     print(f'Region: {REGION_2["start"]:x} - {REGION_2["end"]:x}')
     entries_2 = parse_rom(REGION_2['start'], REGION_2['end'], orig_rom)
     patch_2 = build_data(REGION_2['start'], REGION_2['end'],
-                         orig_rom, entries_2, files)
-
+                         orig_rom, entries_2, files, filemap)
+    mappath = os.path.join(os.path.dirname(__file__), 'psi3_map.json')
+    with open(mappath, 'w') as f:
+        json.dump(filemap, f)
+    print(f'Save psi3 map to: {os.path.abspath(mappath)}')
+    
     out = BytesIO(patched_rom)
     out.seek(REGION_1['start'])
     out.write(patch_1)
