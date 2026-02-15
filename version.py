@@ -308,6 +308,7 @@ if __name__ == '__main__':
     with open(config, 'w') as f:
         json.dump(RELEASE_HISTORY, f)
 
-    file = 'patches/swordcraft3.bps'
-    name, ext = os.path.splitext(file)
-    os.renames(file, f'{name}_v{vinfo}{ext}')
+    files = ['patches/swordcraft3.bps', 'patches/psi3_map.json']
+    for file in files:
+        name, ext = os.path.splitext(file)
+        os.renames(file, f'{name}_v{vinfo}{ext}')

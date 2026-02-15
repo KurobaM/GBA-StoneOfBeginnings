@@ -192,7 +192,7 @@ if __name__ == '__main__':
     entries_2 = parse_rom(REGION_2['start'], REGION_2['end'], orig_rom)
     patch_2 = build_data(REGION_2['start'], REGION_2['end'],
                          orig_rom, entries_2, files, filemap)
-    mappath = os.path.join(os.path.dirname(__file__), 'psi3_map.json')
+    mappath = os.path.join(os.path.dirname(__file__), '..', 'patches', 'psi3_map.json')
     with open(mappath, 'w') as f:
         json.dump(filemap, f)
     print(f'Save psi3 map to: {os.path.abspath(mappath)}')
