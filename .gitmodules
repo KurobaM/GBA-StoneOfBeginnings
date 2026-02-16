@@ -1,0 +1,4 @@
+[submodule "script"]
+	path = script
+	url = https://github.com/CornStarch9272/SNSC3-Translation.git
+	branch = IScript-Development

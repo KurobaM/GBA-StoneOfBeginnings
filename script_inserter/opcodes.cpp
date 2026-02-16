@@ -161,7 +161,7 @@ const Opcode optable[5][0x100]{
 		OP("e"),
 		UNUSED,
 		OP("es", "setname", OpcodeFlags::NORMAL, 0, 9),
-		OP("s", "dialogtxt", OpcodeFlags::NORMAL, 0, 20),
+		OP("s", "dialogtxt", OpcodeFlags::NORMAL, 0, 0),
 		OP(""),
 		OP("ee"),
 		OP("eeeees", "dialogbig", OpcodeFlags::NORMAL, 32),
