@@ -7,6 +7,7 @@ import os
 import re
 import subprocess
 import sys
+import zipfile
 
 
 @dataclass
@@ -256,6 +257,31 @@ def get_latest_major_commit():
         return CommitInfo(hash, author, float(timestamp), cmt)
 
 
+def get_latest_commit_info():
+    try:
+        result = subprocess.run(
+            ['git', 'log', '-1','--oneline', '--decorate'],
+            check=True, capture_output=True, text=True, encoding='utf-8')
+    except subprocess.CalledProcessError:
+        return ''
+    else:
+        return result.stdout
+
+        
+def save_release_info():
+    work_dir = os.getcwd()
+    code_dir = os.path.dirname(__file__)
+    script_dir = os.path.join(code_dir, 'script')
+    os.chdir(script_dir)
+    script_info = get_latest_commit_info()
+    os.chdir(code_dir)
+    code_info = get_latest_commit_info()
+    with open(os.path.join(code_dir, 'patches', 'release_info.txt'), 'w') as f:
+        f.write(f'GBA-StoneOfBeginnings: {code_info}\n')
+        f.write(f'SNSC3-Translation: {script_info}\n')
+    os.chdir(work_dir)
+
+
 def is_dirty():
     try:
         result = subprocess.run(
@@ -308,7 +334,13 @@ if __name__ == '__main__':
     with open(config, 'w') as f:
         json.dump(RELEASE_HISTORY, f)
 
-    files = ['patches/swordcraft3.bps', 'patches/psi3_map.json']
-    for file in files:
-        name, ext = os.path.splitext(file)
-        os.renames(file, f'{name}_v{vinfo}{ext}')
+    save_release_info()
+    files = ['patches/swordcraft3.bps', 'patches/psi3_map.json',
+             'patches/release_info.txt']
+    arc = f'patches/{vinfo}.zip'
+    try:
+        with zipfile.ZipFile(arc, 'w', zipfile.ZIP_DEFLATED) as zf:
+            for file in files:
+                zf.write(file)
+    except Exception as e:
+        print(f"Error: {e}")
