@@ -14,46 +14,54 @@ if __name__ == '__main__':
     else:
         delete = False if sys.argv[1] == '--keep' else True
     os.chdir(os.path.join(os.path.dirname(__file__), '..'))
-    folder = 'script'
-    rom = 'build\\swordcraft3-test.gba'
+    script_root = 'script'
+    includes = [os.path.join(script_root, sub_folder) for sub_folder in
+                ['Day 00', 'Day 01', 'Day 02', 'Day 03', 'Day 04', 'Day 05',
+                 'Day 06', 'Day 07', 'Day 08', 'Day 09', 'Day 10', 'Final Day',
+                 'Post Game', 'Unsorted']]
     print('Checking script folder ...')
     scripts: dict[str, str] = dict()
     time: dict[str, float] = dict()
     paths: dict[str, str] = dict()
-    for root, dirs, files in os.walk(folder):
-        for file in files:
-            if file.split('.')[-1] == 'txt':
+    for folder in includes:
+        for root, dirs, files in os.walk(folder):
+            count = 0
+            for file in files:
+                count += 1
+                if file.split('.')[-1] != 'txt':
+                    continue
                 path = os.path.join(root, file)
                 with open(path, 'rb') as f:
                     data = f.read()
-                if file in scripts:
-                    if scripts[file] == hashlib.sha256(data).hexdigest():
-                        print('Found duplicated file in another location:'
-                              f'"{paths[file]}"; skip "{path}"')
+                name = file.split('_')[-1]
+                if name in scripts:
+                    if scripts[name] == hashlib.sha256(data).hexdigest():
+                        print(f'Found duplicated "{name}" in another location.'
+                              f'Skip "{path}"')
                         if delete:
                             print(f'Delete: {path}')
                             os.remove(path)
                     else:
-                        if time[file] < os.path.getmtime(path):
-                            print('Found different file with same name:'
-                                  f' "{paths[file]}" ', end='')
+                        print(f'Found different "{name}":')
+                        if time[name] < os.path.getmtime(path):
+                            print(f' "{paths[file]}" ', end='')
                             print(f', older; using "{path}"')
                             if delete:
                                 print(f'Delete: {paths[file]}')
-                                os.remove(paths[file])
-                            scripts[file] = hashlib.sha256(data).hexdigest()
-                            time[file] = os.path.getmtime(path)
-                            paths[file] = path
+                                os.remove(paths[name])
+                            scripts[name] = hashlib.sha256(data).hexdigest()
+                            time[name] = os.path.getmtime(path)
+                            paths[name] = path
                         else:
-                            print('Found different file with same name:'
-                                  f' "{paths[file]}"; skip "{path}"')
+                            print(f'skip "{path}"')
                             if delete:
                                 print(f'Delete: {path}')
                                 os.remove(path)
                 else:
-                    scripts[file] = hashlib.sha256(data).hexdigest()
-                    time[file] = os.path.getmtime(path)
-                    paths[file] = path
+                    scripts[name] = hashlib.sha256(data).hexdigest()
+                    time[name] = os.path.getmtime(path)
+                    paths[name] = path
+            print(f'Checked {count} files in {folder}.')
 
     print('Checking scripts for change ...')
     config_path = os.path.join(os.path.dirname(__file__), 'tracking.json')
@@ -77,12 +85,13 @@ if __name__ == '__main__':
 
     print('Create bat file for compiling changed scripts ...')
     commands: list[tuple[str, str]] = []
+    rom = 'build\\swordcraft3-test.gba'
     for script_name in changed:
         path = paths[script_name]
         pos = script_name.split('.')[0]
         program_path = 'script_inserter\\swordcraft3c.exe'
         commands.append((script_name,
-                         f'{program_path} {rom} {path} --pos={pos} --quiet\n'))
+                         f'{program_path} {rom} "{path}" --pos={pos} --quiet\n'))
     bat = 'build/compile.bat'
     with open(bat, 'w') as f:
         f.write('echo --- Start compiling ----------------------\n')
