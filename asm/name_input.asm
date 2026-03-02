@@ -132,37 +132,7 @@ cmp r0, 15
 beq @doneInput
 cmp r0, 12
 beq @backspace
-
-; z desc     l r
-; - -------- - -
-; 0 hiragana 1 2
-; 1 katakana 0 2
-; 2 romanji  0 1
-mov r1, 14
-ldrb r1, [r2,r1]; z
-
-cmp r0, 9
-beq @right
-cmp r0, 6
-beq @left
-; default case
 b @done
-
-@left:
-cmp r1, 0
-beq @katakana
-mov r0, 0
-b @setScreen
-
-@katakana:
-mov r0, 1
-b @setScreen
-
-@right:
-cmp r1, 2
-beq @katakana
-mov r0, 2
-b @setScreen
 
 @inputChar:
 bl @func_inputChar
@@ -171,40 +141,13 @@ b @done
 @checkB:
 mov r0, 2
 and r0, r1
-beq @checkL
+beq @checkStart
 
 ; -------------------
 ; B PRESS (Backspace)
 ; -------------------
 @backspace:
 bl @func_backspace
-b @done
-
-
-@checkL:
-ldrb r3, [r2,14]
-ldr r0, =0x200
-and r0, r1
-beq @checkR
-
-; -------------------
-; L PRESS (Menu Left)
-; -------------------
-sub r0, r3, 1
-b @setScreen
-
-@checkR:
-ldr r0, =0x100
-and r0, r1
-beq @checkStart
-
-; --------------------
-; R PRESS (Menu Right)
-; --------------------
-add r0, r3, 1
-@setScreen:
-bl @func_setScreen
-bl @func_redraw
 b @done
 
 @checkStart:

@@ -26,6 +26,7 @@
 .include "asm/sjis2ascii.asm"
 
 .include "asm/name_input_cursor.asm"
+.include "asm/name_input_disable_kana.asm"
 
 ; Allow using the debug menu features.
 .include "asm/debug_menu.asm"
