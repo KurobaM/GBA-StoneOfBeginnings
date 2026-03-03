@@ -1,3 +1,9 @@
+.ifdef DEBUG
+.notice "Debug build"
+.else
+.notice "Release build"
+.endif
+
 .gba
 .open "swordcraft3.gba","build/swordcraft3-test.gba",0x08000000
 
@@ -29,7 +35,9 @@
 .include "asm/name_input_disable_kana.asm"
 
 ; Allow using the debug menu features.
+.ifdef DEBUG
 .include "asm/debug_menu.asm"
+.endif
 
 ;Solves location space limitations
 .include "asm/saving_location.asm"
@@ -47,7 +55,9 @@
 .include "asm/location_text.asm"
 
 ;psi3 debug
+.ifdef DEBUG
 .include "asm/psi3_debug.asm"
+.endif
 
 ;graphics
 .include "asm/title.asm"
@@ -70,47 +80,47 @@
 .include "asm/title_obj.asm"
 
 ;fishing_minigame
-.org 0x09646E2C 
-.import "asm/fishing/fishing_tile.lzss" 
-.org 0x0964684C 
-.import "asm/fishing/fishing_map.lzss" 
+.org 0x09646E2C
+.import "asm/fishing/fishing_tile.lzss"
+.org 0x0964684C
+.import "asm/fishing/fishing_map.lzss"
 
 ;link
-.org 0x0952891C 
-.import "asm/lzss/s_tsuushin_n_tile.lzss" 
-.org 0x0953682C 
-.import "asm/lzss/s_tsuushin_n_map.lzss" 
+.org 0x0952891C
+.import "asm/lzss/s_tsuushin_n_tile.lzss"
+.org 0x0953682C
+.import "asm/lzss/s_tsuushin_n_map.lzss"
 ;s_omake
-.org 0x0952A5EC 
-.import "asm//lzss/s_omake_n2_tile.lzss" 
-.org 0x09536DEC 
-.import "asm//lzss/s_omake_n2_map.lzss" 
+.org 0x0952A5EC
+.import "asm//lzss/s_omake_n2_tile.lzss"
+.org 0x09536DEC
+.import "asm//lzss/s_omake_n2_map.lzss"
 
 ;lottery minigame gfx
 .org 0x964DD6C
-.import "asm/lottery/start_ready.bin" 
+.import "asm/lottery/start_ready.bin"
 
 ;firewood minigame gfx
-.org 0x094CF11C 
-.import "asm/firewood/firewood_k1_tile.bin" 
-.org 0x094D3C4C 
-.import "asm/firewood/firewood_k1_map.bin" 
+.org 0x094CF11C
+.import "asm/firewood/firewood_k1_tile.bin"
+.org 0x094D3C4C
+.import "asm/firewood/firewood_k1_map.bin"
 
 ;minigame results
 .org 0x964F58C
-.import "asm/lottery/1_place.lzss" 
+.import "asm/lottery/1_place.lzss"
 .org 0x964FE2C
-.import "asm/lottery/2_place.lzss" 
+.import "asm/lottery/2_place.lzss"
 .org 0x965048C
-.import "asm/lottery/3_place.lzss" 
+.import "asm/lottery/3_place.lzss"
 .org 0x96509FC
-.import "asm/lottery/4_place.lzss" 
+.import "asm/lottery/4_place.lzss"
 .org 0x9650F1C
-.import "asm/lottery/5_place.lzss" 
-.org 0x0965513C 
-.import "asm/lottery/guumu_tile.lzss" 
-.org 0x0965827C 
-.import "asm/lottery/guumu_map.lzss" 
+.import "asm/lottery/5_place.lzss"
+.org 0x0965513C
+.import "asm/lottery/guumu_tile.lzss"
+.org 0x0965827C
+.import "asm/lottery/guumu_map.lzss"
 
 ;battle messages (guard, poison, sleep)
 .include "asm/guard.asm"
@@ -145,7 +155,7 @@
 .db 10
 .sjis "・stored weapons"
 .org 0x80C0074
-;.sjisn 
+;.sjisn
 ;.db 0x7F, 16 :: .ascii "  " :: .db 0x7F, 15 :: .ascii " " :: .db 0x7F, 0xFF
 .sjis "・techniques"
 .org 0x80C0060
@@ -160,8 +170,8 @@
 .asciiz "A button - Start B button - End"
 
 ;customize screen
-.org 0x0951237C 
-.import "asm/s_custom_1_k1_tile.lzss" 
-.org 0x09532E0C 
-.import "asm/s_custom_1_k1_map.lzss" 
+.org 0x0951237C
+.import "asm/s_custom_1_k1_tile.lzss"
+.org 0x09532E0C
+.import "asm/s_custom_1_k1_map.lzss"
 .close

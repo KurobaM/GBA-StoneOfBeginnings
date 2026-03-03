@@ -20,35 +20,26 @@ class CommitInfo:
     next: CommitInfo | None = None
 
 
-def eval_major(latest_major: CommitInfo | None) -> int:
+def eval_major(latest_major: CommitInfo | None, build_type:str='') -> int:
     if latest_major is None:
         return 0
-    match = re.match(r'Build v([0-9]+)\.0 \(.*?\)', latest_major.cmt)
+    if not build_type:
+        match = re.search(r'Build v([0-9]+)\.0 \(.*?\)', latest_major.cmt)
+    else:
+        match = re.search(r'Build v([0-9]+)\.0 \(' + build_type + '\)', latest_major.cmt)
     if not match:
         return 0
     major, = match.groups()
     return int(major)
 
 
-def eval_build_type(author: str, latest_major: CommitInfo | None) -> str:
-    if author != 'KurobaM':
-        return 'private'
-    if latest_major is None:
-        return 'beta'
-    match = re.match(r'Build v[0-9]+\.0 \((.*?)\)', latest_major.cmt)
+def parse_build_str(value: str) -> tuple[int, int, int]:
+    match = re.match(r'([0-9]+)\.([0-9]+)\.([0-9]+)', value)
     if not match:
-        return 'beta'
-    build_type, = match.groups()
-    return build_type
-
-
-def parse_build_str(value: str) -> tuple[int, int, int, str]:
-    match = re.match(r'([0-9]+)\.([0-9]+)\.([0-9]+)_(.*?)$', value)
-    if not match:
-        major, minor, patch, build_type = ('0', '0', '0', 'beta')
+        major, minor, patch = ('0', '0', '0')
     else:
-        major, minor, patch, build_type = match.groups()
-    return (int(major), int(minor), int(patch), build_type)
+        major, minor, patch = match.groups()
+    return (int(major), int(minor), int(patch))
 
 
 class BuildInfo:
@@ -62,13 +53,14 @@ class BuildInfo:
         self.type = build_type
 
     def __str__(self) -> str:
-        return f'{self.major}.{self.minor}.{self.patch}_{self.type}'
+        return (f'{self.major}.{self.minor}.{self.patch}'
+                f'_{self.type}-{self.commit.hash[:8]}')
 
     def get_version_info(self, date=False):
         if date:
             commit_time = datetime.fromtimestamp(self.commit.time)
             date_str = commit_time.strftime('%y%m%d')
-            return f'{date_str}_{self.type}'
+            return f'{date_str}_{self.type}-{self.commit.hash[:8]}'
         else:
             return str(self)
 
@@ -77,7 +69,7 @@ class BuildInfo:
                 f'{self.major}.{self.minor}.{self.patch}_{self.type}')
 
     def calc_minor_patch_value(
-            self, release_history: dict[str, dict[str, str]]):
+            self, release_history: dict[str, dict[str, str]], build_type: str):
         change = eval_changes(self.commit.hash)
         prev = self.commit.prev
         if prev is None:
@@ -86,7 +78,7 @@ class BuildInfo:
             time_str = datetime.fromtimestamp(
                 prev.time).strftime('%Y%m%d %H:%M:%S')
             if time_str in release_history[prev.hash]:
-                _, minor, patch, _ = parse_build_str(
+                _, minor, patch = parse_build_str(
                     release_history[prev.hash][time_str])
                 if change is ChangeType.MINOR:
                     return minor + 1, 0
@@ -96,7 +88,7 @@ class BuildInfo:
                     return minor, patch
 
         info = BuildInfo(prev)
-        info.autofill_missing_info(release_history)
+        info.autofill_missing_info(release_history, build_type)
         if change is ChangeType.MINOR:
             return info.minor + 1 if info.minor is not None else 1, 0
         elif change is ChangeType.PATCH:
@@ -106,35 +98,36 @@ class BuildInfo:
             return info.minor, info.patch
 
     def autofill_missing_info(
-            self, release_history: dict[str, dict[str, str]]):
+            self, release_history: dict[str, dict[str, str]], build_type: str):
         time_str = datetime.fromtimestamp(
             self.commit.time).strftime('%Y%m%d %H:%M:%S')
         if self.commit.hash in release_history:
             if time_str in release_history[self.commit.hash]:
-                major, minor, patch, build_type = parse_build_str(
+                major, minor, patch = parse_build_str(
                     release_history[self.commit.hash][time_str])
                 self.major = int(major)
                 self.minor = int(minor)
                 self.patch = int(patch)
-                self.type = build_type
+                if is_dirty():
+                    self.type = f'{build_type}(dirty)'
+                else:
+                    self.type = build_type
                 return
 
         latest_major = get_latest_major_commit()
         if self.major is None:
             self.major = eval_major(latest_major)
-        if self.type is None:
-            build_type = eval_build_type(self.commit.author, latest_major)
-            if self.commit.next is None:
-                if is_dirty():
-                    build_type = 'dirty'
-            self.type = f'{build_type}-{self.commit.hash[:8]}'
+        if is_dirty():
+            self.type = f'{build_type}(dirty)'
+        else:
+            self.type = build_type
         if self.minor is None or self.patch is None:
             self.minor, self.patch = self.calc_minor_patch_value(
-                release_history)
+                release_history, build_type)
         if 'dirty' in self.type:
             return
         release_history[self.commit.hash] = {
-            time_str: f'{self.major}.{self.minor}.{self.patch}_{self.type}'}
+            time_str: f'{self.major}.{self.minor}.{self.patch}'}
 
 
 def get_changes(commit_hash: str) -> list[str]:
@@ -166,6 +159,7 @@ except Exception:
         r'font/data/.*?width\.bin': ChangeType.PATCH,
         'system_messages/': ChangeType.PATCH,
         'script/': ChangeType.PATCH,
+        'script': ChangeType.PATCH,
         'gfx-scripts/': ChangeType.PATCH,
         r'asm/(?!vwf_font\.asm)': ChangeType.MINOR,
         'script_importer/override/': ChangeType.PATCH
@@ -213,7 +207,8 @@ def get_current_commit():
             current.prev = commit
             current.prev.next = current
             current = current.prev
-        current.prev = latest_major
+        if current.hash != latest_major.hash:
+            current.prev = latest_major
         if current.prev:
             current.prev.next = current
         return out
@@ -239,11 +234,15 @@ def get_commits_between(older_hash: str, newer_hash: str) -> list[CommitInfo]:
         return commits
 
 
-def get_latest_major_commit():
+def get_latest_major_commit(build_type:str = ''):
+    if not build_type:
+        pattern =  r"Build v[0-9]+\.0 \(.*?\)"
+    else:
+        pattern = r"Build v[0-9]+\.0 \(" + build_type + "\)"
     try:
         result = subprocess.run(
             [
-                'git', 'log', '--grep', r"Build v[0-9]+\.0 \(.*?\)",
+                'git', 'log', '--grep', pattern,
                 '-E', r'--pretty=format:%H;%an;%at;%s'
             ],
             check=True, capture_output=True, text=True, encoding='utf-8')
@@ -257,26 +256,30 @@ def get_latest_major_commit():
         return CommitInfo(hash, author, float(timestamp), cmt)
 
 
-def get_latest_commit_info():
+def get_latest_commit_info(show_branch: bool = False):
+    if show_branch:
+        cmd = ['git', 'log', '-1','--oneline', '--decorate']
+    else:
+        cmd = ['git', 'log', '-1','--oneline']
     try:
-        result = subprocess.run(
-            ['git', 'log', '-1','--oneline', '--decorate'],
-            check=True, capture_output=True, text=True, encoding='utf-8')
+        result = subprocess.run(cmd, check=True, capture_output=True,
+                                text=True, encoding='utf-8')
     except subprocess.CalledProcessError:
         return ''
     else:
         return result.stdout
 
         
-def save_release_info():
+def save_release_info(vinfo: str, show_branch: bool = False):
     work_dir = os.getcwd()
     code_dir = os.path.dirname(__file__)
     script_dir = os.path.join(code_dir, 'script')
     os.chdir(script_dir)
-    script_info = get_latest_commit_info()
+    script_info = get_latest_commit_info(show_branch)
     os.chdir(code_dir)
-    code_info = get_latest_commit_info()
+    code_info = get_latest_commit_info(show_branch)
     with open(os.path.join(code_dir, 'patches', 'release_info.txt'), 'w') as f:
+        f.write(f'--- Build: {vinfo} ---\n\n')
         f.write(f'GBA-StoneOfBeginnings: {code_info}\n')
         f.write(f'SNSC3-Translation: {script_info}\n')
     os.chdir(work_dir)
@@ -299,6 +302,18 @@ if __name__ == '__main__':
     else:
         date = False
 
+    if '--show-branch' in sys.argv:
+        branch = True
+    else:
+        branch = False
+
+    if 'DEBUG' in sys.argv:
+        build_type = 'debug'
+    elif 'RELEASE' in sys.argv:
+        build_type = 'release'
+    else:
+        raise ValueError('Invalid build type')
+
     os.chdir(os.path.dirname(__file__))
     RELEASE_HISTORY: dict[str, dict[str, str]] = dict()
 
@@ -316,7 +331,7 @@ if __name__ == '__main__':
     rebuild_history = False
     if len(RELEASE_HISTORY) == 0:
         rebuild_history = True
-    if not isinstance(next(iter(RELEASE_HISTORY.values())), dict):
+    elif not isinstance(next(iter(RELEASE_HISTORY.values())), dict):
         RELEASE_HISTORY = dict()
         rebuild_history = True
     if rebuild_history:
@@ -325,16 +340,16 @@ if __name__ == '__main__':
             current = current.prev
         while current is not None:
             info = BuildInfo(current)
-            info.autofill_missing_info(RELEASE_HISTORY)
+            info.autofill_missing_info(RELEASE_HISTORY, build_type)
             current = current.next
     info = BuildInfo(current_commit)
-    info.autofill_missing_info(RELEASE_HISTORY)
+    info.autofill_missing_info(RELEASE_HISTORY, build_type)
     vinfo = info.get_version_info(date)
 
     with open(config, 'w') as f:
         json.dump(RELEASE_HISTORY, f)
 
-    save_release_info()
+    save_release_info(str(info), branch)
     files = ['patches/swordcraft3.bps', 'patches/psi3_map.json',
              'patches/release_info.txt']
     arc = f'patches/{vinfo}.zip'
