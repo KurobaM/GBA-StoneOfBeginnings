@@ -14,8 +14,7 @@ lsr r1, r1, #13
 add r1, #8
 ldr r0, [r0, #0]
 bl IsPsi3
-pop {lr}
-bx lr
+pop {pc}
 .pool
 .endregion
 
@@ -27,23 +26,31 @@ lsl r1, r1, #16
 lsr r1, r1, #13
 add r1, #8
 bl IsPsi3
-pop {lr}
-bx lr
+pop {pc}
 .pool
 .endregion
 
 
 .autoregion
 .func IsPsi3
-push {lr}
+push {r4, lr}
 add r1, r0, r1
-ldr r1, [r1, #0]
+ldr r1, [r1]
 lsl r1, r1, #4
 add r0, r0, r1
+;dir test
+ldrh r1, [r0, #2]
+cmp r1, #1
+bne @@test_psi3
+ldr r1, [r0, #4]
+cmp r1, #4
+beq @@end
+@@test_psi3:
+ldr r4, =0x3007900     ; non psi3, size 0x180 (end = 0x3007a80)
 ldr r2, =0x33495350
 ldr r1, [r0]
 cmp r1, r2
-beq @@save
+beq @@psi3
 mov r1, #0
 ldrb r3, [r0, #5]
 add r1, r1, r3
@@ -54,15 +61,61 @@ ldrb r3, [r0, #8]
 lsl r3, r3, #24
 add r1, r1, r3
 cmp r1, r2
-bne @@end
-@@save:
-ldr r2, =0x3007AD0
+beq @@psi3
+ldr r3, [r4]
+ldr r2, =0x55555555
+cmp r3, r2      ; free ?
+bne @@test_full
+mov r3, #4
+b @@save_other
+@@test_full:
+cmp r3, #0x5f   ; full ?
+bhs @@end 
+;test exist
+mov r2, #0
+@@test_exist_loop:
+cmp r2, r3
+bhs @@test_end
+add r1, r2, #1
+lsl r1, r1, #2
+ldr r1, [r4, r1]
+cmp r0, r1
+beq @@end
+add r2, #1
+b @@test_exist_loop
+@@test_end:
+ldr r3, [r4]
+add r3, #1
+lsl r3, r3, #2 
+@@save_other: 
+str r0, [r4, r3]
+lsr r3, r3, #2
+str r3, [r4]
+b @@end
+@@psi3:
+ldr r2, =0x3007ad0
+ldr r1, [r2, #4]
+cmp r1, r0      ; changed?
+beq @@end
+@@changed:
+ldr r1, [r4]
+ldr r2, =0x55555555 
+cmp r1, r2      ; others free ?
+beq @@save_psi3
+add r1, #1
+mov r4, r0
+ldr r0, =0x3007900
+bl FreeMemory
+mov r0, r4
+@@save_psi3: 
+ldr r2, =0x3007ad0
+str r0, [r2, #4]
 lsl r1, r0, #5
 lsr r1, r1, #5
 str r1, [r2]
 @@end:
-pop {lr}
-bx lr
+pop {r4}
+pop {pc}
 .pool
 .endfunc
 .endautoregion
@@ -81,20 +134,87 @@ pop {pc}
 
 .autoregion
 .func DrawDebugInfo
-push {r4-r7, lr}
+push {r4, r5, lr}
+; bg mode check suitable
 ldr r0, =0x4000008
 ldrh r0, [r0]
 mov r1, #5
 lsl r1, r1, #8
 cmp r0, r1
 bne @@end
-ldr r6, =0x3007AD0
-ldr r0, [r6]
-ldr r1, =0x55555555
-cmp r0, r1
+; psi3
+ldr r1, =0x3007ad0
+ldr r0, [r1]
+ldr r2, =0x55555555
+cmp r0, r2
+beq @@other
+ldr r0, =0x2012810
+bl WriteHexChar
+@@other:
+;check enable write other assets info flag 0x3007ad8
+; flag = 1 -> draw info for other assets on screen
+; can be manual set by using emulator memory editor / debugger
+ldr r1, =0x3007ad0
+ldrb r0, [r1, #8]
+cmp r0, #1
+bne @@end
+ldr r1, =0x3007900
+ldr r2, =0x55555555
+ldr r0, [r1]
+cmp r0, r2
 beq @@end
+cmp r0, #47
+bls @@start
+mov r0, #47
+@@start:
+mov r4, r0          ;count
+mov r5, #0          ;index
+@@loop:
+cmp r5, r4
+bhs @@end 
+mov r0, r5
+; calc row col
+cmp r0, #32
+bhs @@col3
+lsr r1, r0, #1      ;r1: row
+mov r2, #1
+and r0, r2          ;r0: col
+b @@calc_sc
+@@col3:
+sub r0, #32
+add r1, r0, #1
+mov r0, #2
+@@calc_sc:
+lsl r3, r0, #3
+add r0, r3, r0
+mov r2, #22
+sub r0, r2, r0
+lsl r0, r0, #1
+lsl r1, r1, #6
+add r0, r0, r1      ;   8
+ldr r1, =0x2012810
+add r0, r1, r0
+add r5, #1
+lsl r1, r5, #2
+ldr r2, =0x3007900
+add r1, r2, r1
+bl WriteHexChar
+b @@loop
+@@end:
+pop {r4, r5}
+pop {pc}
+.pool
+.endfunc
+.endautoregion
+
+
+.autoregion
+.func WriteHexChar
+; r0 = screen address, r1 = value address
+push {r4-r7, lr}
+mov r5, r0
+mov r6, r1
 ldr r7, =HexChar
-ldr r5, =0x2012810
 mov r4, #0xF
 mov r3, #0
 @@loop:
@@ -111,8 +231,7 @@ cmp r3, #4
 blo @@loop
 @@end:
 pop {r4-r7}
-pop {lr}
-bx lr
+pop {pc}
 .pool
 .endfunc
 .endautoregion

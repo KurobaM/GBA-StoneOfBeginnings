@@ -46,6 +46,9 @@
 .include "asm/item_obtained.asm"
 .include "asm/money_obtained.asm"
 
+; subroutine for free custom alloc memory
+.include "asm/free_mem.asm"
+
 ;text dialog fixes
 .include "asm/golden_weapon_dialog.asm"
 .include "asm/battle_item_get_dialog.asm"
@@ -174,4 +177,8 @@
 .import "asm/s_custom_1_k1_tile.lzss"
 .org 0x09532E0C
 .import "asm/s_custom_1_k1_map.lzss"
+
+;other messages
+.include "asm/non_psi3_script_text.asm"
+
 .close

@@ -91,11 +91,7 @@ b 0x806A64A
 .autoregion
 .func WeaponCraftedStrConcat
 ; args r0: char *str1, r1: char* str2 -> return r0: char* str out
-push {r4-r7, lr}
-mov r7, r10
-mov r6, r9
-mov r5, r8
-push {r5-r7}
+push {lr}
 ldr r3, =0x3007a80
 mov r2, #0
 ; alloc 32 bytes; longest weapon name = 17, received text = 10, + 2 null = 29 
@@ -130,42 +126,7 @@ add r3, #1
 b @@loop2
 @@end2:
 ldr r0, =0x3007a80
-pop {r5-r7}
-mov r5, r8
-mov r6, r9
-mov r7, r10
-pop {r4-r7}
-pop {r1}
-bx r1
-.pool
-.endfunc
-.endautoregion
-
-.autoregion
-.func FreeMemory
-; args r0: *dword arr, r1: arr size 
-push {r4-r7, lr}
-mov r7, r10
-mov r6, r9
-mov r5, r8
-push {r5-r7}
-ldr r3, =0x55555555
-mov r2, #0
-@@loop:
-cmp r2, r1
-beq @@end
-str r3, [r0]
-add r0, #4
-add r2, #1
-b @@loop 
-@@end:
-pop {r5-r7}
-mov r5, r8
-mov r6, r9
-mov r7, r10
-pop {r4-r7}
-pop {r0}
-bx r0
+pop {pc}
 .pool
 .endfunc
 .endautoregion
