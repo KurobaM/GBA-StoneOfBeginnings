@@ -1,6 +1,6 @@
 # Copyright (C) 2026, KurobaM
 # SPDX-License-Identifier: GPL-3.0-or-later
-# SN CSM3 Font Editor v1.7.1
+# SN CSM3 Font Editor v1.7.2
 
 
 from __future__ import annotations
@@ -195,11 +195,12 @@ def unicode_text_to_pixmap(text: str, zoom_level: int):
             err.append(code.decode('sjis'))
     text_img = text_color[zoom(np.hstack(out), zoom_level)]
     th, tw = text_img.shape
-    err_msg = ('Invalid character(s): '
-               ', '.join([f"'{x}'" for x in err]))
+    w = tw // zoom_level
+    err_msg = 'Invalid character(s): ' + (
+        ', '.join([f"'{x}'" for x in err]) if err else 'none')
     return (QPixmap.fromImage(QImage(text_img.tobytes(),
                                      tw, th, QImage.Format.Format_RGBA8888)),
-            err_msg)
+            err_msg, w)
 
 
 def to_pixmap(glyph, zf):
@@ -638,11 +639,11 @@ class FontEditor(QWidget):
         txt = self.ui.line_preview.text()
         if not txt:
             return
-        pixmap, err = unicode_text_to_pixmap(txt, self.ui.spin_zoom.value())
+        pixmap, err, w = unicode_text_to_pixmap(txt, self.ui.spin_zoom.value())
         self.pi_text_preview.setPixmap(pixmap)
         self.sc_text_preview.setSceneRect(
             self.sc_text_preview.itemsBoundingRect())
-        self.ui.label_msg.setText(err)
+        self.ui.label_msg.setText(f'Width: {w}; {err}')
 
     def reset_glyph_preview(self):
         self.ui.label_preview_msg.setText('')

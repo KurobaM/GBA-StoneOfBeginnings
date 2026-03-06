@@ -1,20 +1,41 @@
 # Copyright (C) 2026, KurobaM
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+import hashlib
 import os
+import json
+import sys
 
 import numpy as np
+
 
 if __name__ == '__main__':
     folder = os.path.dirname(__file__)
     data_folder = os.path.join(folder, 'data')
     asm_folder = os.path.join(folder, '..', 'asm')
 
+    config_path = os.path.join(data_folder, 'config.json')
+    config = dict()
+    
     with open(os.path.join(data_folder, 'ascii_lut.bin'), 'rb') as f:
         data_a_lut = f.read()
 
     with open(os.path.join(data_folder, 'ascii_width.bin'), 'rb') as f:
         data_a_w = f.read()
+
+    config['lut'] = hashlib.sha256(data_a_lut).hexdigest()
+    config['w'] = hashlib.sha256(data_a_w).hexdigest()
+
+    if not os.path.isfile(config_path):
+        with open(config_path, 'w') as f:
+            json.dump(config, f)
+    else:
+        with open(config_path, 'r') as f:
+            data = json.load(f)
+        if data['lut'] == config['lut'] and data['w'] == config['w']:
+            sys.exit()
+        with open(config_path, 'w') as f:
+            json.dump(config, f)        
 
     ascii_lut = np.frombuffer(data_a_lut, np.uint16).tolist()
     ascii_width = np.frombuffer(data_a_w, np.uint8).tolist()
@@ -36,4 +57,3 @@ if __name__ == '__main__':
     with open(path, 'w') as f:
         f.write(vwf_font_asm)
     print(f'Write ascii font data to: {path}')
-        

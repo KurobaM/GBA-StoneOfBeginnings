@@ -9,6 +9,8 @@ swordcraft3-test_temp_asm.txt
 *.zip
 *.7z
 tracking.json
+config.json
+non_psi3_config.json
 __pycache__
 .vscode
 release.json
