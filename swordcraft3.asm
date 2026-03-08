@@ -90,14 +90,14 @@
 
 ;link
 .org 0x0952891C
-.import "asm/lzss/s_tsuushin_n_tile.lzss"
+.import "graphic/s_tsuushin_k1.cg4.lz77"
 .org 0x0953682C
-.import "asm/lzss/s_tsuushin_n_map.lzss"
+.import "graphic/s_tsuushin_k1.sc4.lz77"
 ;s_omake
 .org 0x0952A5EC
-.import "asm//lzss/s_omake_n2_tile.lzss"
+.import "graphic/s_omake_k1.cg4.lz77"
 .org 0x09536DEC
-.import "asm//lzss/s_omake_n2_map.lzss"
+.import "graphic/s_omake_k1.sc4.lz77"
 
 ;lottery minigame gfx
 .org 0x964DD6C
@@ -105,9 +105,9 @@
 
 ;firewood minigame gfx
 .org 0x094CF11C
-.import "asm/firewood/firewood_k1_tile.bin"
+.import "graphic/firewood_k1_tile.bin"
 .org 0x094D3C4C
-.import "asm/firewood/firewood_k1_map.bin"
+.import "graphic/firewood_k1_map.bin"
 
 ;minigame results
 .org 0x964F58C
@@ -121,9 +121,9 @@
 .org 0x9650F1C
 .import "asm/lottery/5_place.lzss"
 .org 0x0965513C
-.import "asm/lottery/guumu_tile.lzss"
+.import "graphic/lottery_rules_k1.cg4.lz77"
 .org 0x0965827C
-.import "asm/lottery/guumu_map.lzss"
+.import "graphic/lottery_rules_k1.sc4.lz77"
 
 ;battle messages (guard, poison, sleep)
 .include "asm/guard.asm"
@@ -174,9 +174,9 @@
 
 ;customize screen
 .org 0x0951237C
-.import "asm/s_custom_1_k1_tile.lzss"
+.import "graphic/s_custom_1_k1_tile.lzss"
 .org 0x09532E0C
-.import "asm/s_custom_1_k1_map.lzss"
+.import "graphic/s_custom_1_k1_map.lzss"
 
 ;other messages
 .include "asm/non_psi3_script_text.asm"
