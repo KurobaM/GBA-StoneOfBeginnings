@@ -98,6 +98,12 @@
 .import "graphic/s_omake_k1.cg4.lz77"
 .org 0x09536DEC
 .import "graphic/s_omake_k1.sc4.lz77"
+;bestiary
+.org 0x094FF70C
+.import "graphic/bestiary_k1.cg4.lz77"
+.org 0x0952F9EC
+.import "graphic/bestiary_k1.sc4.lz77"
+
 
 ;lottery minigame gfx
 .org 0x964DD6C
@@ -127,50 +133,6 @@
 
 ;battle messages (guard, poison, sleep)
 .include "asm/guard.asm"
-
-;fix for the item obtained window
-;.include "asm/battle_itemGet.asm"
-
-;missing system messages
-.org 0x80C0040
-.sjis "Start new game from saved data?"
-
-.org 0x80C0100
-.sjis " Stuff that will carry on:"
-
-.org 0x80C00E8
-.sjisn "・minigames scores"
-.db 16,12
-.sjis " "
-
-.org 0x80C00C8
-.sjisn "・craft ranks"
-.db 16,6
-.sjis "・bestiary"
-
-.org 0x80C00A8
-.sjisn "・special attacks"
-.db 2
-.sjis "・effects"
-
-.org 0x80C0084
-.sjisn "・fishing points"
-.db 10
-.sjis "・stored weapons"
-.org 0x80C0074
-;.sjisn
-;.db 0x7F, 16 :: .ascii "  " :: .db 0x7F, 15 :: .ascii " " :: .db 0x7F, 0xFF
-.sjis "・techniques"
-.org 0x80C0060
-.sjisn "・money            "
-
-;fishing and lottery minigame system messages
-.org 0x80C0228
-.asciiz "Select fishing rod"
-.org 0x80C0210
-.asciiz "Select bait to use"
-.org 0x80C0244
-.asciiz "A button - Start B button - End"
 
 ;customize screen
 .org 0x0951237C

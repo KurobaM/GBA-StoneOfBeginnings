@@ -159,6 +159,7 @@ except Exception:
         r'font/data/.*?width\.bin': ChangeType.PATCH,
         'system_messages/': ChangeType.PATCH,
         'script/': ChangeType.PATCH,
+        'graphic/': ChangeType.PATCH,
         'script': ChangeType.PATCH,
         'gfx-scripts/': ChangeType.PATCH,
         r'asm/(?!vwf_font\.asm)': ChangeType.MINOR,
