@@ -130,6 +130,11 @@
 .import "graphic/lottery_rules_k1.cg4.lz77"
 .org 0x0965827C
 .import "graphic/lottery_rules_k1.sc4.lz77"
+.org 0x964A99C
+.import "graphic/lottery_scr_k1.cg4.lz77"
+.org 0x0964B9AC
+.import "graphic/lottery_scr_k1.sc4.lz77"
+.include "asm/lottery_ticket.asm"
 
 ;battle messages (guard, poison, sleep)
 .include "asm/guard.asm"
