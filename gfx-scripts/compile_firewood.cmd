@@ -1,1 +1,0 @@
-call compile_uncomp ../swordcraft3.gba firewood_ex2 14cf11c 14d3c4c

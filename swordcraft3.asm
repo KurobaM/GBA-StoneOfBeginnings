@@ -63,11 +63,34 @@
 .endif
 
 ;graphics
-.include "asm/title.asm"
-.include "asm/gfx_craftsword_edit.asm"
+; title
+.org 0x095AE3AC
+.import "graphic/title.cg8"
+.org 0x095B34DC
+.import "graphic/title.sc8"
+
+;title options
+.include "asm/gfx_title_2player.asm"
+.include "asm/gfx_title_omake.asm"
+;title options EN
+.include "asm/title_obj.asm"
+
+; craft sword text
+.org 0x09593A8C
+.import "graphic/craft_sword.cg4"
+.org 0x0959479C
+.import "graphic/craft_sword.sc4"
+
 .include "asm/lyndbaum_text_en_1.asm"
 .include "asm/lyndbaum_text_en_2.asm"
-.include "asm/gfx_insert_lzss.asm"
+
+.org 0x954458C
+.import "asm/credits_craftsword_tile.lzss"
+.org 0x9544BFC
+.import "asm/credits_craftsword_map.lzss"
+.org 0x966090C
+.import "asm/select_hero.lz"
+
 .include "asm/select partner.asm"
 
 ;partner_info_gfx
@@ -75,12 +98,6 @@
 .include "asm/partner_info_gfx/flight_TL.asm"
 .include "asm/partner_info_gfx/power_TL.asm"
 .include "asm/partner_info_gfx/speed_TL.asm"
-
-;title options
-.include "asm/gfx_title_2player.asm"
-.include "asm/gfx_title_omake.asm"
-;title options EN
-.include "asm/title_obj.asm"
 
 ;fishing_minigame
 .org 0x09646E2C
