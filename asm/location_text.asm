@@ -6,8 +6,7 @@
 
 push {lr}
 bl GetLocationTxt
-pop {lr}
-bx lr
+pop {pc}
 .pool
 .endregion
 
@@ -35,8 +34,7 @@ beq @@end
 add r3, r3, 2
 b @@loop
 @@end:
-pop {lr}
-bx lr
+pop {pc}
 .pool
 .endfunc
 .endautoregion
@@ -64,8 +62,7 @@ ldr r2, =StringTable
 add r1, r1, r2
 ldr r0, [r1]
 @@end:
-pop {lr}
-bx lr
+pop {pc}
 .pool
 .endfunc
 .endautoregion

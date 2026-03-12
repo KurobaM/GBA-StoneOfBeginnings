@@ -34,8 +34,12 @@
 .include "asm/name_input_cursor.asm"
 .include "asm/name_input_disable_kana.asm"
 
+; subroutine for free custom alloc memory
+.include "asm/free_mem.asm"
+
 ; Allow using the debug menu features.
 .ifdef DEBUG
+.include "asm/vsync_debug.asm"
 .include "asm/debug_menu.asm"
 .endif
 
@@ -45,9 +49,6 @@
 ;Fixes obtained! issue with money and items
 .include "asm/item_obtained.asm"
 .include "asm/money_obtained.asm"
-
-; subroutine for free custom alloc memory
-.include "asm/free_mem.asm"
 
 ;text dialog fixes
 .include "asm/golden_weapon_dialog.asm"
@@ -81,8 +82,14 @@
 .org 0x0959479C
 .import "graphic/craft_sword.sc4"
 
-.include "asm/lyndbaum_text_en_1.asm"
-.include "asm/lyndbaum_text_en_2.asm"
+.org 0x0958632C
+.import "graphic/lyndbaum_text_1.cg4"
+.org 0x09586C1C
+.import "graphic/lyndbaum_text_1.sc4"
+.org 0x095870EC
+.import "graphic/lyndbaum_text_2.cg4"
+.org 0x0958791C
+.import "graphic/lyndbaum_text_2.sc4"
 
 .org 0x954458C
 .import "asm/credits_craftsword_tile.lzss"
@@ -101,9 +108,9 @@
 
 ;fishing_minigame
 .org 0x09646E2C
-.import "asm/fishing/fishing_tile.lzss"
+.import "graphic/fishing.cg4.lz77"
 .org 0x0964684C
-.import "asm/fishing/fishing_map.lzss"
+.import "graphic/fishing.sc4.lz77"
 
 ;link
 .org 0x0952891C

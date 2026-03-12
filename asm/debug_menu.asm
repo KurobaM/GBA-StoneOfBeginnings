@@ -150,12 +150,3 @@ UnlockAll:
 
 .org 0x08001C50
 bl VsyncAndDebug
-
-.autoregion
-.func VsyncAndDebug
-push r14
-bl 0x080001D0
-bl 0x080B8BE8
-pop r15
-.endfunc
-.endautoregion

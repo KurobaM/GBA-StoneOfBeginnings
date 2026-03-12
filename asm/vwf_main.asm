@@ -19,17 +19,6 @@ mov r4,r1
 mov r9,r2
 mov r8,r3
 
-; Logging of strings.
-ldrb r0,[r1,0]
-cmp r0,0x80
-blo @@skiplog
-mov r12,r12
-b @@skiplog
-.ascii "dd"
-.dh 0
-.asciiz "STR: %r1% = %r0%"
-.align 2
-@@skiplog:
 
 ; Copy bgColor to sp+0 for all calls to DrawStrGlyph.
 ldr r0, [sp, #40]
@@ -50,6 +39,11 @@ mov r6,0xFF
 ; r0=FREE, r1=FREE, r2=FREE, r3=FREE, r4=str, r5=oldStr, r6=widthOverride, r7=pixelsWritten
 ; r8=yoff, r9=codeout, r10=dst, r12=FREE?, r14=FREE
 ; sp+0=bgColor, sp+4=widthParam, sp+40=codepos
+
+; fix text too close to left border
+;mov r0, #1
+;b @@lookup_glyph
+
 
 @@nextChar:
 ; Read the first byte.
@@ -157,6 +151,7 @@ mov r0, #0x22
 lsl r1,r1,8
 orr r0,r1
 
+@@lookup_glyph:
 ; Now grab the glyph.
 bl LookupGlyph
 ; That returned the width in r1.
