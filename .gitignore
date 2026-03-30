@@ -16,3 +16,5 @@ __pycache__
 release.json
 version_config.json
 swordcraft3.sav
+*.idb
+*.i64

@@ -273,7 +273,7 @@ def get_latest_commit_info(show_branch: bool = False):
         
 def save_release_info(vinfo: str, show_branch: bool = False):
     work_dir = os.getcwd()
-    code_dir = os.path.dirname(__file__)
+    code_dir = os.path.abspath(os.path.dirname(__file__))
     script_dir = os.path.join(code_dir, 'script')
     os.chdir(script_dir)
     script_info = get_latest_commit_info(show_branch)
@@ -315,7 +315,7 @@ if __name__ == '__main__':
     else:
         raise ValueError('Invalid build type')
 
-    os.chdir(os.path.dirname(__file__))
+    os.chdir(os.path.abspath(os.path.dirname(__file__)))
     RELEASE_HISTORY: dict[str, dict[str, str]] = dict()
 
     config = 'release.json'

@@ -312,9 +312,12 @@ class EditorScene(QGraphicsScene):
             self.item.setPixmap(
                 to_editor_pixmap(self.glyph.data, self.glyph.width,
                                  self.v_guide, self.h_guide))
+
     def shift(self, dx, dy):
+        if self.glyph is None:
+            return
         max_y, max_x = self.glyph.data.shape
-        arr  = np.zeros((max_y, max_x), np.uint8)
+        arr = np.zeros((max_y, max_x), np.uint8)
         indices = [dx, max_x + dx, dy, max_y + dy,
                    0 - dx, max_x - dx, 0 - dy, max_y - dy]
         for i, v in enumerate(indices):
@@ -493,7 +496,8 @@ class FontEditor(QWidget):
         self.sc_editor.glyph_changed.connect(self.update_label_glyph)
         self.sc_editor.request_glyph_change.connect(self.handle_request_glyph)
         self.sc_editor.request_width_change.connect(self.handle_request_width)
-        self.sc_editor.request_apply_change.connect(self.handle_request_apply_change)
+        self.sc_editor.request_apply_change.connect(
+            self.handle_request_apply_change)
         self.glyph_update.connect(self.update_preview_text)
         self.glyph_update.connect(self.update_preview_glyph)
         self.reset_selected_glyph.connect(self.sc_editor.reset)
@@ -628,7 +632,7 @@ class FontEditor(QWidget):
         self.timer.stop()
 
     def random_text_preview(self):
-        if random.randint(0,1):
+        if random.randint(0, 1):
             txt = watanare
         else:
             txt = ''.join(random.sample(test, len(test)))
