@@ -63,6 +63,9 @@
 .include "asm/psi3_debug.asm"
 .endif
 
+; sfx text center align
+.include "asm/sfx_text.asm"
+
 ;graphics
 ; title
 .org 0x095AE3AC
