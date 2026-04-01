@@ -5,12 +5,23 @@
 .autoregion
 .func DrawDebugInfo
 push {r4, r5, lr}
+;disp cnt check
+ldr r2, =0x4000000
+ldrh r0, [r2]
+ldr r1, =0x1F40
+cmp r0, r1
+bne @@end
 ; bg mode check suitable
-ldr r0, =0x4000008
-ldrh r0, [r0]
+ldrh r0, [r2, #8]
 mov r1, #5
 lsl r1, r1, #8
 cmp r0, r1
+bne @@end
+; color check
+lsr r3, r2, #2
+add r2, r2, r3
+ldrh r0, [r2, #2]
+cmp r0, #0x0d
 bne @@end
 ; psi3
 ldr r1, =0x3007ad0
