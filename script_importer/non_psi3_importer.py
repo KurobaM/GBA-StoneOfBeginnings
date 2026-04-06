@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # to treat warning as error and perform 4 bytes align address:
-#   python -W error non_psi3.py    
+#   python -W error non_psi3.py
 
 from __future__ import annotations
 import hashlib
@@ -10,41 +10,187 @@ import os
 import json
 import sys
 
-from common import load_json, SjisString
+from common import (GbaAddr, load_json, StructArray,
+                    SjisString as String, SjisStrTable as Table)
 
 
-def auto_region_code(sjis: SjisString):
-    out = [
-        f'.org {hex(sjis.addr.value)}',
-        f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00',
-        '.endregion',
-        '',
-        '.autoregion',
-        f'txt_{hex(sjis.addr.value)[2:]}:',
-        '.db ' + ', '.join(
-            [f'0x{a:02x}' for a in sjis.trans.encode('sjis')]),
-        '.align 4',
-        '.endautoregion',
-        '']
-    for addr in sjis.p_addr:
-        out.extend([
-            f'.org {hex(addr.value)}',
-            f'.dw org(txt_{hex(sjis.addr.value)[2:]})',
-            ''])
-    return '\n'.join(out)
-        
-     
-def region_code(sjis: SjisString):
-    out = [
-        f'.org {hex(sjis.addr.value)}',
-        f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00',
-        '.db ' + ', '.join(
-            [f'0x{a:02x}' for a in sjis.trans.encode('sjis')]),
-        '.endregion',
-        '']
-    return '\n'.join(out)
+def clear_region_code(sjis: String, index: int | None = None,
+                      debug: bool = False):
+    if not debug or index is None:
+        if sjis.length == 0:
+            return f'; index={index} str={sjis.orig}\n'
+        return (
+            f'; index={index} str={sjis.orig}\n'
+            f'.org {hex(sjis.addr.value)}\n'
+            f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00\n'
+            '.endregion\n')
 
-    
+    if index > 0xffff:
+        raise NotImplementedError('Too many strings')
+    if sjis.length < 4:
+        return f'; index={index} str={sjis.orig}\n'
+    if sjis.length == 4:
+        code = f'.dw {hex(0x958d | (index & 0xffff) << 16)}'
+    else:
+        buffer = b'968' + int.to_bytes(index & 0xffff, 2, 'little')
+        code = '.db ' + ', '.join([f'0x{c:02x}' for c in buffer])
+    return (
+        f'; index={index} str={sjis.orig}\n'
+        f'.org {hex(sjis.addr.value)}\n'
+        f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00\n'
+        f'{code}\n'
+        '.endregion\n')
+
+
+def is_null(buffer: bytes):
+    null = True
+    for x in buffer:
+        if x > 0:
+            null = False
+            break
+    return null
+
+
+def sjis_to_bytes(s: str, max: int = 0):
+    data = s.encode('cp932')
+    if not max:
+        return data + b'\x00' * (len(data) % 2)
+    out = data + b'\x00' * (max - len(data))
+    if b'"' in out and len(out) > 4:
+        return out[: max - 2] + b'\x00\x00'
+    else:
+        return out[: max - 1] + b'\x00'
+
+
+def generate_struct_code(sa: StructArray):
+    out = [f'; structarray 0x{sa.addr.value:x}',]
+    for s in sa.content:
+        for sm in s.content:
+            max = sm.size
+            buffer = sjis_to_bytes(sm.data.trans, max)
+            code = ', '.join([f'0x{c:02x}' for c in buffer])
+            out.append(
+                f'.org {hex(sm.data.addr.value)}\n'
+                f'.area {hex(sm.data.addr.value + max)}-., 0x00\n'
+                f'.db {code}\n'
+                '.endarea\n')
+    return out
+
+
+def generate_auto_region_code(sjis: String, index: int):
+    if not sjis.trans:
+        return ''
+    buffer = sjis_to_bytes(sjis.trans)
+    if is_null(buffer):
+        return ''
+    code = ', '.join([f'0x{c:02x}' for c in buffer])
+    return (
+        f'.autoregion\n'
+        f'auto_txt_{index}:\n'
+        f'.db {code}\n'
+        '.align 4\n'
+        '.endautoregion\n')
+
+
+def generate_area_code(sjis: String):
+    if sjis.n_addr is not None and sjis.n_addr.value > 0x8000000:
+        addr = sjis.n_addr
+    else:
+        addr = sjis.addr
+    if sjis.length == 0 or not sjis.trans:
+        return '', GbaAddr(0)
+    buffer = sjis_to_bytes(sjis.trans, sjis.length)
+    if is_null(buffer):
+        return '', GbaAddr(0)
+    code = ', '.join([f'0x{c:02x}' for c in buffer])
+    return (
+        f'.org {hex(addr.value)}\n'
+        f'.area {hex(addr.value + sjis.length)}-., 0x00\n'
+        f'.db {code}\n'
+        '.endarea\n'), addr
+
+
+def generate_addr_code(addr: GbaAddr, s: String,
+                       p_addr: list[GbaAddr] | None = None):
+    out: list[str] = []
+    if p_addr is not None:
+        p = p_addr
+    else:
+        p = s.p_addr
+    if (addr.value > 0 and addr.value < 0x8000000) or p is None:
+        print(f'Skip: str({s.p_addr}, {s.addr}, {s.orig})')
+    else:
+        for a in p:
+            out.append(f'.org {hex(a.value)}\n'
+                       f'.dw {hex(addr.value)}\n')
+    return out
+
+
+def generate_auto_addr_code(s: String, index: int,
+                            p_addr: list[GbaAddr] | None = None):
+    out: list[str] = []
+    if p_addr is not None:
+        p = p_addr
+    else:
+        p = s.p_addr
+    if p is None:
+        print(f'Skip: str({s.p_addr}, {s.addr}, {s.orig})')
+    else:
+        for a in p:
+            out.append(f'.org {hex(a.value)}\n'
+                       f'.dw org(auto_txt_{index})\n')
+    return out
+
+
+def generate_str_code(map: dict[str, int], addr_map: dict[int, GbaAddr | None],
+                      s: String, p_addr: list[GbaAddr] | None = None,
+                      in_table: bool = False):
+    out: list[str] = []
+    if not s.trans:
+        return out
+    if not in_table:
+        p_addr = None
+        if s.p_addr is None:
+            print(f'Skip: str({s.p_addr}, {s.addr}, {s.orig})')
+            return out
+    if (in_table and s.addr.value == 0 and p_addr and s.p_addr
+            and p_addr[0].value != s.p_addr[0].value):
+        out.extend(generate_addr_code(s.addr, s, p_addr))
+        return out
+
+    index = map[s.trans]
+    addr = addr_map[index]
+    if addr is not None:
+        if addr.value == 0:
+            out.extend(generate_auto_addr_code(s, index, p_addr))
+        else:
+            out.extend(generate_addr_code(addr, s, p_addr))
+        return out
+
+    buffer = sjis_to_bytes(s.trans)
+    if len(buffer) <= s.length:
+        code, n_addr = generate_area_code(s)
+        if n_addr.value == 0:
+            return out
+        out.append(code)
+        if n_addr.value != s.addr.value:
+            out.extend(generate_addr_code(n_addr, s, p_addr))
+        else:
+            if in_table:
+                if not p_addr or not s.p_addr:
+                    raise ValueError()
+                if p_addr[0].value != s.p_addr[0].value:
+                    out.extend(generate_addr_code(n_addr, s, p_addr))
+        addr_map[index] = n_addr
+    else:
+        code = generate_auto_region_code(s, index)
+        out.append(code)
+        if '.autoregion' in code:
+            out.extend(generate_auto_addr_code(s, index, p_addr))
+            addr_map[index] = GbaAddr(0)
+    return out
+
+
 if __name__ == '__main__':
     path = os.path.abspath(os.path.join(
         os.path.dirname(__file__), '..', 'script/non_psi3', 'data.json'))
@@ -52,6 +198,8 @@ if __name__ == '__main__':
         os.path.dirname(__file__), '..', 'asm/non_psi3_script_text.asm'))
     config_path = os.path.abspath(os.path.join(
         os.path.dirname(__file__), 'non_psi3_config.json'))
+    if not os.path.isfile(path):
+        sys.exit()
     config = dict()
     with open(path, 'rb') as f:
         raw = f.read()
@@ -62,26 +210,65 @@ if __name__ == '__main__':
             json.dump(config, f)
     else:
         with open(config_path, 'r') as f:
-            data = json.load(f)
-        if data[path] == config[path]:
+            config_data = json.load(f)
+        if config_data[path] == config[path]:
             sys.exit()
-        with open(config_path, 'w') as f:
-            json.dump(config, f)      
-        
-    if os.path.isfile(path):
-        data = load_json(path)
-    else:
-        sys.exit()
-    out = ['; This file content is autogenerated']
+
+    data: dict[str, String | Table | StructArray | str] = load_json(path)
     data.pop('__version__')
-    for k in data:
-        sjis = data[k]
-        if len(sjis.trans.encode('sjis')) > sjis.length:
-            out.append(auto_region_code(sjis))
-        else:
-            if sjis.trans == '':
+
+    out = ['; This file content is auto-generated\n']
+    string: list[String] = []
+    table: list[Table] = []
+
+    for v in data.values():
+        if isinstance(v, StructArray):
+            out.extend(generate_struct_code(v))
+        elif isinstance(v, Table):
+            table.append(v)
+        elif isinstance(v, String):
+            string.append(v)
+
+    map: dict[str, int] = dict()
+    addr_map: dict[int, GbaAddr | None] = dict()
+    index = 0
+
+    for s in string:
+        if not s.trans:
+            out.append(clear_region_code(s))
+            continue
+        if s.trans not in map:
+            map[s.trans] = index
+            addr_map[index] = None
+            out.append(clear_region_code(s, index, True))
+            index += 1
+
+    for t in table:
+        for s in t.content:
+            if not s.trans:
+                out.append(clear_region_code(s))
                 continue
-            out.append(region_code(sjis))
-    with open(out_path, 'w') as f:
+            if s.trans not in map:
+                map[s.trans] = index
+                addr_map[index] = None
+                out.append(clear_region_code(s, index, True))
+                index += 1
+
+    for s in string:
+        out.extend(generate_str_code(map, addr_map, s))
+
+    for t in table:
+        base_addr = t.n_addr if (
+            t.n_addr is not None and t.n_addr.value > 0x8000000) else t.addr
+        if base_addr.value < 0x8000000:
+            print(f'Skip: table({t.p_addr}, {t.addr}, {t.length})')
+        for i, s in enumerate(t.content):
+            p_addr = GbaAddr(base_addr.value + i * 4)
+            out.extend(generate_str_code(map, addr_map, s, [p_addr], True))
+
+    with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(out))
-    print(f'Write non-psi3 script text to {out_path}')    
+    print(f'Write non-psi3 script text to {out_path}')
+
+    with open(config_path, 'w') as f:
+        json.dump(config, f)

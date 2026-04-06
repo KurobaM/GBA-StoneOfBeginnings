@@ -11,6 +11,7 @@ swordcraft3-test_temp_asm.txt
 tracking.json
 config.json
 non_psi3_config.json
+non_psi3_script_text.asm
 __pycache__
 .vscode
 release.json

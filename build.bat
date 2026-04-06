@@ -17,7 +17,7 @@ call .\build_stage\gen_non_psi3_script_text_asm.bat > build\build_log.txt 2>&1
 
 call .\build_stage\armips.bat %build% >> build\build_log.txt 2>&1
 
-call .\build_stage\system_message.bat >> build\build_log.txt 2>&1
+:: call .\build_stage\system_message.bat >> build\build_log.txt 2>&1
 
 call .\build_stage\compile_cmd_generate.bat  >> build\build_log.txt 2>&1
 
