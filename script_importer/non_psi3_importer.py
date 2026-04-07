@@ -14,17 +14,18 @@ from common import (GbaAddr, load_json, StructArray,
                     SjisString as String, SjisStrTable as Table)
 
 
-def clear_region_code(sjis: String, index: int | None = None,
-                      debug: bool = False):
-    if not debug or index is None:
-        if sjis.length == 0:
-            return f'; index={index} str={sjis.orig}\n'
-        return (
-            f'; index={index} str={sjis.orig}\n'
-            f'.org {hex(sjis.addr.value)}\n'
-            f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00\n'
-            '.endregion\n')
+def clear_region_code(sjis: String):
+    txt = json.dumps(sjis.orig, ensure_ascii=False)
+    if sjis.length == 0:
+        return f'; str={txt}\n'
+    return (
+        f'; str={txt}\n'
+        f'.org {hex(sjis.addr.value)}\n'
+        f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00\n'
+        '.endregion\n')
 
+
+def debug_code(sjis: String, index: int):
     if index > 0xffff:
         raise NotImplementedError('Too many strings')
     if sjis.length < 4:
@@ -35,11 +36,10 @@ def clear_region_code(sjis: String, index: int | None = None,
         buffer = b'968' + int.to_bytes(index & 0xffff, 2, 'little')
         code = '.db ' + ', '.join([f'0x{c:02x}' for c in buffer])
     return (
-        f'; index={index} str={sjis.orig}\n'
+        f'; index={index} str={json.dumps(sjis.orig, ensure_ascii=False)}\n'
         f'.org {hex(sjis.addr.value)}\n'
-        f'.region {hex(sjis.addr.value + sjis.length)}-., 0x00\n'
         f'{code}\n'
-        '.endregion\n')
+    )
 
 
 def is_null(buffer: bytes):
@@ -67,13 +67,19 @@ def generate_struct_code(sa: StructArray):
     for s in sa.content:
         for sm in s.content:
             max = sm.size
-            buffer = sjis_to_bytes(sm.data.trans, max)
+            buffer = sjis_to_bytes(sm.data.trans)
+            if buffer[-2] != 0 and len(buffer) + 2 <= max:
+                buffer = buffer + b'\x00\x00'
             code = ', '.join([f'0x{c:02x}' for c in buffer])
             out.append(
+                f'; txt={json.dumps(sm.data.trans, ensure_ascii=False)}\n'
                 f'.org {hex(sm.data.addr.value)}\n'
-                f'.area {hex(sm.data.addr.value + max)}-., 0x00\n'
+                f'.area {hex(sm.data.addr.value + len(buffer))}-., 0x00\n'
                 f'.db {code}\n'
-                '.endarea\n')
+                '.endarea\n'
+                f'.org {hex(sm.data.addr.value + len(buffer))}\n'
+                f'.region {hex(sm.data.addr.value + max)}-., 0x00\n'
+                '.endregion\n')
     return out
 
 
@@ -85,29 +91,12 @@ def generate_auto_region_code(sjis: String, index: int):
         return ''
     code = ', '.join([f'0x{c:02x}' for c in buffer])
     return (
+        f'; index={index}, txt={json.dumps(sjis.trans, ensure_ascii=False)}\n'
         f'.autoregion\n'
         f'auto_txt_{index}:\n'
         f'.db {code}\n'
         '.align 4\n'
         '.endautoregion\n')
-
-
-def generate_area_code(sjis: String):
-    if sjis.n_addr is not None and sjis.n_addr.value > 0x8000000:
-        addr = sjis.n_addr
-    else:
-        addr = sjis.addr
-    if sjis.length == 0 or not sjis.trans:
-        return '', GbaAddr(0)
-    buffer = sjis_to_bytes(sjis.trans, sjis.length)
-    if is_null(buffer):
-        return '', GbaAddr(0)
-    code = ', '.join([f'0x{c:02x}' for c in buffer])
-    return (
-        f'.org {hex(addr.value)}\n'
-        f'.area {hex(addr.value + sjis.length)}-., 0x00\n'
-        f'.db {code}\n'
-        '.endarea\n'), addr
 
 
 def generate_addr_code(addr: GbaAddr, s: String,
@@ -167,27 +156,12 @@ def generate_str_code(map: dict[str, int], addr_map: dict[int, GbaAddr | None],
             out.extend(generate_addr_code(addr, s, p_addr))
         return out
 
-    buffer = sjis_to_bytes(s.trans)
-    if len(buffer) <= s.length:
-        code, n_addr = generate_area_code(s)
-        if n_addr.value == 0:
-            return out
-        out.append(code)
-        if n_addr.value != s.addr.value:
-            out.extend(generate_addr_code(n_addr, s, p_addr))
-        else:
-            if in_table:
-                if not p_addr or not s.p_addr:
-                    raise ValueError()
-                if p_addr[0].value != s.p_addr[0].value:
-                    out.extend(generate_addr_code(n_addr, s, p_addr))
-        addr_map[index] = n_addr
-    else:
-        code = generate_auto_region_code(s, index)
-        out.append(code)
-        if '.autoregion' in code:
-            out.extend(generate_auto_addr_code(s, index, p_addr))
-            addr_map[index] = GbaAddr(0)
+    out.append(clear_region_code(s))
+    code = generate_auto_region_code(s, index)
+    out.append(code)
+    if '.autoregion' in code:
+        out.extend(generate_auto_addr_code(s, index, p_addr))
+        addr_map[index] = GbaAddr(0)
     return out
 
 
@@ -235,23 +209,19 @@ if __name__ == '__main__':
 
     for s in string:
         if not s.trans:
-            out.append(clear_region_code(s))
             continue
         if s.trans not in map:
             map[s.trans] = index
             addr_map[index] = None
-            out.append(clear_region_code(s, index, True))
             index += 1
 
     for t in table:
         for s in t.content:
             if not s.trans:
-                out.append(clear_region_code(s))
                 continue
             if s.trans not in map:
                 map[s.trans] = index
                 addr_map[index] = None
-                out.append(clear_region_code(s, index, True))
                 index += 1
 
     for s in string:
