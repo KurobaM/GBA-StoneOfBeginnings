@@ -62,7 +62,7 @@ def get_import_file(dir_path: str):
         if os.path.isfile(file_path) and file_path.endswith('.psi3'):
             with open(file_path, 'rb') as f:
                 files[int(file_name.split('.')[0], base=16)] = f.read()
-    
+
     override_dir = os.path.join(os.path.dirname(__file__), 'override')
     override = os.listdir(override_dir)
     for file_name in override:
@@ -75,7 +75,7 @@ def get_import_file(dir_path: str):
 
 
 def build_data(start: int, end: int, orig_rom: bytes,
-               entries: dict[int, Entry], files: dict[int, bytes], filemap: dict[str,str] | None = None):
+               entries: dict[int, Entry], files: dict[int, bytes], filemap: dict[str, str] | None = None):
     count = int.from_bytes(orig_rom[start: start + 2], 'little')
     data: list[bytes] = []
     data.append(orig_rom[start: start+8])
@@ -84,6 +84,8 @@ def build_data(start: int, end: int, orig_rom: bytes,
     freed = 0
     non_empty = 0
     replace = 0
+    free_offset = 0
+    free_size = 0
     for i in range(0, count):
         e = entries[i]
         if len(e.import_file) > 0:
@@ -114,6 +116,10 @@ def build_data(start: int, end: int, orig_rom: bytes,
         e.new_file_offset = start + 16 * e.new_block_idx
         e.new_block_count = math.ceil(len(entries[i].import_file) / 16)
         if last_idx == i:
+            free_offset = e.new_file_offset + 16 * (e.new_block_count + 1)
+            if free_offset > end:
+                free_offset = end
+            free_size = end - free_offset
             remain_size = end - start - 16 * e.new_block_idx
             e.new_block_count = remain_size // 16
         data.append(int.to_bytes(e.new_block_idx, 4, 'little'))
@@ -121,7 +127,7 @@ def build_data(start: int, end: int, orig_rom: bytes,
         if filemap is not None:
             filemap[f'{e.new_file_offset:x}'] = f'{e.file_offset:x}'
     data.append(padding)
-    
+
     for i in range(0, count):
         e = entries[i]
         data.append(entries[i].import_file)
@@ -129,7 +135,7 @@ def build_data(start: int, end: int, orig_rom: bytes,
     out = b''.join(data)
     if len(out) != end - start:
         raise ValueError('Generated invalid data')
-    return out
+    return out, (free_offset, free_size)
 
 
 REGION_1 = {'start': 0x134AD9C, 'end': 0x135B91C}
@@ -138,6 +144,9 @@ REGION_2 = {'start': 0x1718FFC, 'end': 0x18C8D9C}
 
 if __name__ == '__main__':
     info = False
+    calc_free = False
+    if '--calc-free' in sys.argv:
+        calc_free = True
     if len(sys.argv) < 5:
         root = Tk()
         root.withdraw()
@@ -173,8 +182,6 @@ if __name__ == '__main__':
     print(f'armips output file: {patched_rom_path}')
     with open(orig_rom_path, 'rb') as f:
         orig_rom = f.read()
-    with open(patched_rom_path, 'rb') as f:
-        patched_rom = f.read()
 
     ref = '39bc4cf448106aa4b8cdde235632ffb57432c4b1919c8843510b70b3787fad2d'
     sha256 = hashlib.sha256(orig_rom).hexdigest()
@@ -186,33 +193,56 @@ if __name__ == '__main__':
     filemap = dict()
     print(f'Region: {REGION_1["start"]:x} - {REGION_1["end"]:x}')
     entries_1 = parse_rom(REGION_1['start'], REGION_1['end'], orig_rom)
-    patch_1 = build_data(REGION_1['start'], REGION_1['end'],
-                         orig_rom, entries_1, files, filemap)
+    patch_1, free_1 = build_data(REGION_1['start'], REGION_1['end'],
+                                 orig_rom, entries_1, files, filemap)
     print(f'Region: {REGION_2["start"]:x} - {REGION_2["end"]:x}')
     entries_2 = parse_rom(REGION_2['start'], REGION_2['end'], orig_rom)
-    patch_2 = build_data(REGION_2['start'], REGION_2['end'],
-                         orig_rom, entries_2, files, filemap)
-    mappath = os.path.join(os.path.dirname(__file__), '..', 'patches', 'psi3_map.json')
-    with open(mappath, 'w') as f:
-        json.dump(filemap, f)
-    print(f'Save psi3 map to: {os.path.abspath(mappath)}')
-    
-    out = BytesIO(patched_rom)
-    out.seek(REGION_1['start'])
-    out.write(patch_1)
-    out.seek(REGION_2['start'])
-    out.write(patch_2)
-    with open(export_path, 'wb') as f:
-        f.write(out.getvalue())
-    print(f'Export file path: {export_path}')
+    patch_2, free_2 = build_data(REGION_2['start'], REGION_2['end'],
+                                 orig_rom, entries_2, files, filemap)
 
-    if len(sys.argv) > 5:
-        if '--write-info' in sys.argv[5:]:
-            info = True
-    if info:
-        for e in entries_1.values():
-            if len(e.import_file) > 0:
-                print(repr(e))
-        for e in entries_2.values():
-            if len(e.import_file) > 0:
-                print(repr(e))
+    if calc_free:
+        code = ['; This file content is auto-generated\n']
+        end = REGION_1['end']
+        if free_1[1] > 16:
+            code.append(f'.org {hex(free_1[0] + 0x8000000)}\n'
+                        f'.region {hex(end + 0x8000000)}\n'
+                        '.endregion\n')
+        end = REGION_2['end']
+        if free_2[1] > 16:
+            code.append(f'.org {hex(free_2[0] + 0x8000000)}\n'
+                        f'.region {hex(end + 0x8000000)}\n'
+                        '.endregion\n')
+        export_path_2 = os.path.abspath(os.path.join(
+            os.path.dirname(__file__), '..', 'asm/psi3_free.asm'))
+        with open(export_path_2, 'w') as f:
+            f.write('\n'.join(code))
+        print(f'Export code path: {export_path_2}')
+
+    if not calc_free:
+        mappath = os.path.join(os.path.dirname(
+            __file__), '..', 'patches', 'psi3_map.json')
+        with open(mappath, 'w') as f:
+            json.dump(filemap, f)
+        print(f'Save psi3 map to: {os.path.abspath(mappath)}')
+
+        with open(patched_rom_path, 'rb') as f:
+            patched_rom = f.read()
+        out = BytesIO(patched_rom)
+        out.seek(REGION_1['start'])
+        out.write(patch_1)
+        out.seek(REGION_2['start'])
+        out.write(patch_2)
+        with open(export_path, 'wb') as f:
+            f.write(out.getvalue())
+        print(f'Export file path: {export_path}')
+
+        if len(sys.argv) > 5:
+            if '--write-info' in sys.argv[5:]:
+                info = True
+        if info:
+            for e in entries_1.values():
+                if len(e.import_file) > 0:
+                    print(repr(e))
+            for e in entries_2.values():
+                if len(e.import_file) > 0:
+                    print(repr(e))

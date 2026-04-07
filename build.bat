@@ -13,7 +13,9 @@ python init.py
 
 call .\build_stage\gen_font_asm.bat > build\build_log.txt 2>&1
 
-call .\build_stage\gen_non_psi3_script_text_asm.bat > build\build_log.txt 2>&1
+call .\build_stage\calc_psi3_free.bat >> build\build_log.txt 2>&1
+
+call .\build_stage\gen_non_psi3_script_text_asm.bat >> build\build_log.txt 2>&1
 
 call .\build_stage\armips.bat %build% >> build\build_log.txt 2>&1
 
