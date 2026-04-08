@@ -88,8 +88,35 @@ class GbaAddr:
                           'Convert to 4 bytes aligned address.')
             self.value = value & 0x0ffffffc
 
+    def is_not_word_align(self):
+        return bool(self.value & 0x3)
+
+    def __str__(self):
+        return hex(self.value)
+
     def __repr__(self):
-        return f"{hex(self.value)}"
+        return hex(self.value)
+
+    def __eq__(self, value: object) -> bool:
+        return isinstance(value, GbaAddr) and self.value == value.value
+
+    def __hash__(self) -> int:
+        return hash(self.value)
+
+    def __ne__(self, value: object) -> bool:
+        return not self.__eq__(value)
+
+    def __lt__(self, other: GbaAddr):
+        return self.value < other.value
+
+    def __le__(self, other: GbaAddr):
+        return self.value < other.value
+
+    def __gt__(self, other: GbaAddr):
+        return self.value > other.value
+
+    def __ge__(self, other: GbaAddr):
+        return self.value >= other.value
 
 
 class SjisStrTable:
@@ -103,7 +130,7 @@ class SjisStrTable:
         self.n_addr = new_addr
 
     def __repr__(self):
-        return f'SJIS Table({self.addr}, {self.p_addr}, {self.length}'
+        return f'String {self.addr} [{self.length}]'
 
     @classmethod
     def from_addr(cls, pointer_addr: list[int],
@@ -138,7 +165,7 @@ class StructArray:
         self.n_addr = new_addr
 
     def __repr__(self):
-        return f'Struct({self.addr}, {self.p_addr}, {self.count}'
+        return f'Struct {self.addr} [{self.count}]'
 
     @classmethod
     def from_addr(cls, pointer_addr: list[int],
@@ -170,7 +197,7 @@ class Struct:
         self.n_addr = new_addr
 
     def __repr__(self):
-        return f'Struct({self.addr}, {self.p_addr}, {self.size}'
+        return f'Struct({self.addr}, size={self.size})'
 
     @classmethod
     def from_addr(cls, pointer_addr: list[int] | None,
@@ -211,7 +238,25 @@ class SjisString:
 
     def __repr__(self):
         txt = self.orig.rstrip('\x00')
-        return f'SJIS({self.addr}, {self.p_addr}, {self.length}, {txt})'
+        return f'String ({self.addr}, {self.length}, {txt})'
+
+    def __eq__(self, value: object) -> bool:
+        if not isinstance(value, SjisString):
+            return False
+        if self.addr != value.addr:
+            return False
+        if self.length != value.length:
+            return False
+        return True
+
+    def merge(self, other: SjisString):
+        if self.__eq__(other):
+            if self.p_addr is not None:
+                if other.p_addr is not None:
+                    self.p_addr = sorted(list(set(self.p_addr + other.p_addr)))
+            else:
+                if other.p_addr is not None:
+                    self.p_addr = other.p_addr
 
     @classmethod
     def from_addr(cls, pointer_addr: list[int] | None,

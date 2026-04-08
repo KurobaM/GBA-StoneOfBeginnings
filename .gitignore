@@ -12,6 +12,7 @@ tracking.json
 config.json
 non_psi3_config.json
 non_psi3_script_text.asm
+non_psi3_script_text_struc.asm
 __pycache__
 .vscode
 release.json

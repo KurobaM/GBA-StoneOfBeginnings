@@ -143,7 +143,7 @@
 .include "asm/saving.asm"
 
 ; Fixes and tweaks for the naming screen.
-.include "asm/naming.asm"
+;.include "asm/naming.asm"
 .include "asm/name_input.asm"
 .include "asm/sjis2ascii.asm"
 
@@ -289,6 +289,7 @@
 .import "graphic/s_custom_1_k1.9532e0c.sc4.lz77"
 
 ;other messages
+.include "asm/non_psi3_script_text_struc.asm"
 .include "asm/non_psi3_script_text.asm"
 
 .close
