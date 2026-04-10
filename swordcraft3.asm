@@ -19,6 +19,57 @@
 .include "asm/name_portrait_check.asm"
 
 
+; Reduces the size of scripts so we don't have to worry about space much.
+.include "asm/script_expr.asm"
+
+; Patches to allow text to be wider and other tweaks.
+.include "asm/craft.asm"
+.include "asm/menu.asm"
+.include "asm/shop.asm"
+.include "asm/saving.asm"
+
+; Fixes and tweaks for the naming screen.
+;.include "asm/naming.asm"
+.include "asm/name_input.asm"
+.include "asm/sjis2ascii.asm"
+
+.include "asm/name_input_cursor.asm"
+.include "asm/name_input_disable_kana.asm"
+
+; subroutine for free custom alloc memory
+.include "asm/free_mem.asm"
+
+; Allow using the debug menu features.
+.ifdef DEBUG
+.include "asm/vsync_debug.asm"
+.include "asm/debug_menu.asm"
+.endif
+
+;Solves location space limitations
+.include "asm/saving_location.asm"
+
+;Fixes obtained! issue with money and items
+.include "asm/item_obtained.asm"
+.include "asm/money_obtained.asm"
+
+;text dialog fixes
+.include "asm/golden_weapon_dialog.asm"
+.include "asm/battle_item_get_dialog.asm"
+.include "asm/weapon_crafted.asm"
+
+;location text fixes
+.include "asm/location_text.asm"
+
+;psi3 debug
+.ifdef DEBUG
+.include "asm/psi3_debug.asm"
+.endif
+
+; sfx text center align
+.include "asm/sfx_text.asm"
+
+;graphics
+
 ; name tag
 .org 0x9dbed8c
 .import "graphic/name_tag/100.9dbed8c.cg4"
@@ -133,56 +184,25 @@
 .org 0x9dc702c
 .import "graphic/name_tag/155.9dc702c.cg4"
 
-; Reduces the size of scripts so we don't have to worry about space much.
-.include "asm/script_expr.asm"
 
-; Patches to allow text to be wider and other tweaks.
-.include "asm/craft.asm"
-.include "asm/menu.asm"
-.include "asm/shop.asm"
-.include "asm/saving.asm"
+;partner_info
+.org 0x967abcc
+.import "graphic/rundor_info.0967abcc.cg4"
+.org 0x967c63c
+.import "graphic/rundor_info.0967c63c.sc4"
+.org 0x9687f3c
+.import "graphic/enzi_info.9687f3c.cg4"
+.org 0x96945cc
+.import "graphic/enzi_info.96945cc.cg4"
+.org 0x968968c
+.import "graphic/killfith_info.968968c.sc4"
+.org 0x969605c
+.import "graphic/killfith_info.969605c.sc4"
+.org 0x96a2d5c
+.import "graphic/rufeel_info.96a2d5c.cg4"
+.org 0x96a47ec
+.import "graphic/rufeel_info.96a47ec.sc4"
 
-; Fixes and tweaks for the naming screen.
-;.include "asm/naming.asm"
-.include "asm/name_input.asm"
-.include "asm/sjis2ascii.asm"
-
-.include "asm/name_input_cursor.asm"
-.include "asm/name_input_disable_kana.asm"
-
-; subroutine for free custom alloc memory
-.include "asm/free_mem.asm"
-
-; Allow using the debug menu features.
-.ifdef DEBUG
-.include "asm/vsync_debug.asm"
-.include "asm/debug_menu.asm"
-.endif
-
-;Solves location space limitations
-.include "asm/saving_location.asm"
-
-;Fixes obtained! issue with money and items
-.include "asm/item_obtained.asm"
-.include "asm/money_obtained.asm"
-
-;text dialog fixes
-.include "asm/golden_weapon_dialog.asm"
-.include "asm/battle_item_get_dialog.asm"
-.include "asm/weapon_crafted.asm"
-
-;location text fixes
-.include "asm/location_text.asm"
-
-;psi3 debug
-.ifdef DEBUG
-.include "asm/psi3_debug.asm"
-.endif
-
-; sfx text center align
-.include "asm/sfx_text.asm"
-
-;graphics
 ; title
 .org 0x095AE3AC
 .import "graphic/title.95ae3ac.cg8"
@@ -218,12 +238,6 @@
 .import "asm/select_hero.lz"
 
 .include "asm/select partner.asm"
-
-;partner_info_gfx
-.include "asm/partner_info_gfx/balance_TL.asm"
-.include "asm/partner_info_gfx/flight_TL.asm"
-.include "asm/partner_info_gfx/power_TL.asm"
-.include "asm/partner_info_gfx/speed_TL.asm"
 
 ;fishing_minigame
 .org 0x09646E2C

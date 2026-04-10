@@ -17,12 +17,14 @@ mov r1, #5
 lsl r1, r1, #8
 cmp r0, r1
 bne @@end
-; color check
+; color check in range 0x0a - 0x0f / 0x1f
 lsr r3, r2, #2
 add r2, r2, r3
 ldrh r0, [r2, #2]
-cmp r0, #0x0d
-bne @@end
+cmp r0, #0x0a
+blo @@end
+cmp r0, #0x10
+bhs @@end
 ; psi3
 ldr r1, =0x3007ad0
 ldr r0, [r1]

@@ -175,7 +175,7 @@ ldr r2,[r6,0]
 
 ; At this point, it's either 0x0080 or 0x0081.
 cmp r4,0x81
-blo @@code81BitNot
+beq @@code81BitNot
 
 @@code80BoolNot:
 ; Boolean not, code 0x0080.
